@@ -1,0 +1,16 @@
+image: python:latest
+pages:
+  stage: deploy
+  only:
+    - main
+  script:
+    - cat /etc/*-release
+    - ls /usr/local/include/python3.10/
+    - export DEBIAN_FRONTEND=noninteractive
+    - apt-get -yq update
+    - /usr/local/bin/python -m pip install --upgrade pip
+    - /usr/local/bin/python -m pip install -r requirements.txt
+    - mkdocs build --site-dir public
+  artifacts:
+    paths:
+      - public

@@ -1,5 +1,3 @@
-# pnsi
+# Expérience avec MkDocs et Pyodide
 
-Spécialité NSI en classe de première
-
-test ssh
+Présentation : https://e-nsi.gitlab.io/exp2/
