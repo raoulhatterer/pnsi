@@ -1,4 +1,4 @@
 # Expérience avec MkDocs et Pyodide
 
-Présentation : https://forge.aeif.fr/lyceemed/pnsi
+Présentation : http://lyceemed.forge.aeif.fr/pnsi
 
