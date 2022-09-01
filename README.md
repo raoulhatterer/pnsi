@@ -1,3 +1,4 @@
 # Expérience avec MkDocs et Pyodide
 
-Présentation : https://e-nsi.gitlab.io/exp2/
+Présentation : https://forge.aeif.fr/lyceemed/pnsi
+

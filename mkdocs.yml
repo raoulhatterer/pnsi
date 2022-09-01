@@ -1,6 +1,6 @@
 site_name: "Première Spécialité NSI (Lycée de la méditerranée La Ciotat)"
 site_url: https://raoulhatterer.github.io/pnsi # mkdocs serve
-repo_url: https://forge.aeif.fr/lyceemed/pnsi
+repo_url: http://lyceemed.forge.aeif.fr/pnsi
 edit_uri: tree/main/docs/
 
 docs_dir: docs
