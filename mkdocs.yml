@@ -91,12 +91,12 @@ markdown_extensions:
         permalink: ⚓︎
         toc_depth: 3
 
-extra:
-    social:
-        - icon: fontawesome/brands/discourse
-          link: https://mooc-forums.inria.fr/moocnsi/
-          name: Le forum des enseignants de NSI
-    site_url: https://e-nsi.gitlab.io/exp2/
+#extra:
+#    social:
+#        - icon: fontawesome/brands/discourse
+#          link: https://mooc-forums.inria.fr/moocnsi/
+#          name: Le forum des enseignants de NSI
+#    site_url: https://e-nsi.gitlab.io/exp2/
 
 
 plugins:
