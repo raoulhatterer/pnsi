@@ -11,8 +11,8 @@
 !!! abstract "Programme"
     Nous traiterons les différentes entrées du programme dans les chapitres suivants :
 
-    === "T1 Démarrer en Python"
-        **Thème 1 : Démarrer en Python**
+    === "T1 Les bases de Python"
+        **Thème 1 : Les bases de Python**
 
         - 1.1 [Variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
         - 1.2 [Boucle For](./T1_Demarrer_en_Python/1.2_Boucle_for/cours/)
