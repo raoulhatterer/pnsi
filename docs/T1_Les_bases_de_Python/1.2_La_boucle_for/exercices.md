@@ -124,7 +124,7 @@
     === "Énoncé"
         On souhaite calculer la somme des 1000 premiers nombres entiers naturels, c'est-à-dire:
 
-        $1+2+3+4+5+ \dots +999+1000$
+        $$1+2+3+4+5+ \dots +999+1000$$
 
         Écrire un programme avec une variable `somme` **accumulateur** (comme à l'exercice 3) qui contiendra la valeur souhaitée en fin de programme.
 
@@ -148,7 +148,7 @@
         ```
 
       
-!!! capytale "À faire sur Capytale : [activité 7eee-52815](https://capytale2.ac-paris.fr/web/c-auth/list?returnto=/web/code/7eee-52815)"
+!!! capytale "À faire sur Capytale : [activité 196e-660566](https://capytale2.ac-paris.fr/web/c/196e-660566/atr)"
     !!! example "Exercice 1"
         === "Énoncé"
             Proposer un code qui écrit la **table de multiplication** de 7, de 8 et de 9.

@@ -525,7 +525,7 @@ Sans surprise, en Python, nous utiliserons donc le ```snake_case```:
 
 - ```je_suis_une_variable```
 - ```je_suis_une_fonction```
-- ```je_suis_une_méthode```
+- ```je_suis_une_methode```
 - ```JE_SUIS_UNE_CONSTANTE```.
 
 ![image](data/smart.jpg){: .center width=40%}

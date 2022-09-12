@@ -4,7 +4,7 @@
 
 
 
-## 1. Les énumérables
+## 1. Les itérables
 
 En mathématiques, on dit qu'un ensemble est *dénombrable* lorsqu'on peut associer à chaque élément de l'ensemble un nombre (traditionnellement 1, 2, 3 ...)
 
@@ -12,7 +12,7 @@ En mathématiques, on dit qu'un ensemble est *dénombrable* lorsqu'on peut assoc
 - les voitures qui roulent sur l'autoroute sont dénombrables.
 - l'eau qui coule d'un robinet n'est pas dénombrable.
 
-En informatique, il existe un concept similaire qui va désigner les objets que l'on peut **énumérer**, c'est-à-dire les décomposer en une succession ordonnée d'éléments. On les appelle les **énumérables** ou les **itérables** (Python utilise le mot anglais ```iterable```).
+En informatique, il existe un concept similaire qui va désigner les objets que l'on peut **énumérer**, c'est-à-dire les décomposer en une succession ordonnée d'éléments. On les appelle les **itérables** (Python utilise le mot anglais ```iterable``` voulant dire énumérable en français).
 
 - la variable ```NSI``` (qui est de type ```String```) est énumérable : on peut la décomposer en  ```N```,  ```S```, ```I```.
 - la variable ```[4, 3, 17]```  (qui est de type ```List```) est énumérable : on peut la décomposer en  ```4```,  ```3```, ```17```.
@@ -163,7 +163,7 @@ Il y a mieux !
     ```
 Là encore, le ```i``` est une variable muette.
 
-## 4. Tout sur le ```range```. 
+## 4. Tout sur le ```range``` 
 
 ### 4.1 Retour sur l'exemple précédent.
 Si nous rendions la variable ```i``` moins muette ?

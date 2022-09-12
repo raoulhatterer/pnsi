@@ -2,10 +2,11 @@
 !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous !
   
-
-## Thèmes en cours d'étude :
+## Déjà présenté
 - [Conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours/#conditions-materielles)
-- [Variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
+- [Les variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
+## Thèmes en cours d'étude :
+- [La boucle For](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
 
 ## Programme
 !!! abstract "Programme"
@@ -14,11 +15,11 @@
     === "T1 Les bases de Python"
         **Thème 1 : Les bases de Python**
 
-        - 1.1 [Variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
-        - 1.2 [Boucle For](./T1_Demarrer_en_Python/1.2_Boucle_for/cours/)
-        - 1.3 [Boucle While](./T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
-        - 1.4 [Instruction conditionnelle If](./T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/)
-        - 1.5 [Fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
+        - 1.1 [Les variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
+        - 1.2 [La boucle `for`](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
+        - 1.3 [La boucle `while`](./T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
+        - 1.4 [L'instruction conditionnelle `if`](./T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/)
+        - 1.5 [Les fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
 
     
     === "T2 Représentation des données"
