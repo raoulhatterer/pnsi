@@ -1,11 +1,10 @@
 
-!!! abstract ":star: Actualités :star:"
-    - Bonne rentrée à toutes et à tous !
+
   
 ## Déjà présenté
 - [Conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours/#conditions-materielles)
 - [Les variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
-## Thèmes en cours d'étude :
+## Thèmes en cours d'étude
 - [La boucle For](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
 
 ## Programme
