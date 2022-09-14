@@ -4,7 +4,22 @@ Comme pour tous les langages de programmation, il n'existe pas **un** logiciel p
 
 
 
-## Installer un IDE (par exemple Thonny)
+## Installer un IDE (par exemple Anaconda)
+
+
+Au lycée nous utiliserons [Anaconda](https://www.anaconda.com/products/distribution). 
+
+![image](data/install_anaconda.png){: .center}
+
+Pour l'installer:
+
+1. Rendez vous sur la page [https://www.anaconda.com/products/distribution](https://www.anaconda.com/products/distribution)
+
+2. Téléchargez et installez la version qui correspond à votre système d'exploitation (Windows, Mac, Linux) en cliquant sur Download.
+
+
+
+## Alternatives (par exemple  Thonny)
 
 ![image](data/install_thonny.png){: .center}
 
@@ -13,9 +28,11 @@ Comme pour tous les langages de programmation, il n'existe pas **un** logiciel p
 
 2. Téléchargez et installez la version qui correspond à votre système d'exploitation (Windows, Mac, Linux).
 
-## Alternatives
 
-Pyzo, PyCharm, Spyder, VisualStudioCode... impossible de toutes les citer !
+
+Il y a d'autres alternatives: Pyzo, PyCharm, Spyder, VisualStudioCode... impossible de toutes les citer !
+
+
 
 ## Solutions en ligne
 En ligne, sans aucune installation, vous pouvez utiliser [https://console.basthon.fr/](https://console.basthon.fr/)
