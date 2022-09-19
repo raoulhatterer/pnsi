@@ -1,11 +1,12 @@
 
 
   
-## Déjà présenté
-- [Conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours/#conditions-materielles)
-- [Les variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
+
 ## Thèmes en cours d'étude
-- [La boucle For](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
+- [Les variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
+- Les boucles:
+    - [La boucle `for ... in ...`](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
+    - [La boucle `while`](T1_Les_bases_de_Python/1.3_La_boucle_while/cours.md)
 
 ## Programme
 !!! abstract "Programme"
@@ -15,8 +16,8 @@
         **Thème 1 : Les bases de Python**
 
         - 1.1 [Les variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
-        - 1.2 [La boucle `for`](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
-        - 1.3 [La boucle `while`](./T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
+        - 1.2 [La boucle `for ... in ...`](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
+        - 1.3 [La boucle `while`](T1_Les_bases_de_Python/1.3_La_boucle_while/cours.md)
         - 1.4 [L'instruction conditionnelle `if`](./T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/)
         - 1.5 [Les fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
 

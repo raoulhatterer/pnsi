@@ -1,12 +1,15 @@
-# 1.3 Boucle While
+# 1.3 La boucle `while`
 
-## 1. Premiers exemples
+## 1. Introduction
 
-À la différence essentielle des boucles `for`, dont on peut savoir à l'avance combien de fois elles vont être exécutées, les boucles `while` sont des boucles dont on ne sort que lorsqu'une condition n'est plus satisfaite. 
-
-Avec donc le risque de rester infiniment bloqué à l'intérieur !  
+- Nous avons vu que les boucles `for`, sont des boucles dont on peut savoir à l'avance combien de fois elles vont être exécutées. Ce n'est pas le cas des boucles `while`.
+- Les boucles `while` sont des boucles dont on ne sort que lorsqu'une *condition* n'est plus satisfaite. Avec donc le risque de rester infiniment bloqué à l'intérieur !  
 
 ![image](data/danger.jpg){: .center width=40%}
+
+
+## Premiers exemples
+
 
 !!! note "Exemple fondateur n°1 :heart:"
     Le programme suivant :

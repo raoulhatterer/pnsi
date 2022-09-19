@@ -7,3 +7,4 @@
     - [La boucle for](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
 - séance 3 (mardi 20/11/22):
     - Processing et P5 
+    - [La boucle `while`](T1_Les_bases_de_Python/1.3_La_boucle_while/cours.md)

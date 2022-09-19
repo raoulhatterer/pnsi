@@ -1,4 +1,4 @@
-# 1.2 La boucle For
+# 1.2 La boucle `for ... in ...`
 
 ![image](data/meme.png){: .center width=30%}
 
