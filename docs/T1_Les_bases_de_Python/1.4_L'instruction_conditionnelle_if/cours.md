@@ -1,11 +1,11 @@
-# 1.4 Instruction conditionnelle if
+# 1.4 L'instruction conditionnelle `if`
 
 ![image](data/if_else_meme.jpeg){: .center width=50%}
 
 
 
-L'instruction conditionnelle `if` permet de soumettre l'exécution d'instructions à une condition donnée.
-Cette condition sera une expression booléenne, comme pour la boucle `while`.
+L'instruction conditionnelle ```#!python if``` permet de soumettre l'exécution d'instructions à une condition donnée.
+Cette condition sera une expression booléenne, comme pour la boucle ```#!python while```.
 
 ## 1. Exemples fondateurs
 Dans les exemples ci-dessous, changez la valeur affectée à la variable ```age``` et observer les modifications de comportement du programme.
@@ -135,7 +135,39 @@ True
         ) }}
 
 
-## 3. Les cas multiples : utilisation de `elif` 
+
+
+
+## 3. Un test très fréquent : le test de divisibilité
+
+
+!!! note "Exemple fondateur n°3 :heart:"
+    Pour tester si un nombre ```n``` est divisible par un nombre ```d```, on teste si le reste de la division euclidienne de ```n``` par ```d``` est égal à 0 :
+
+    ```python
+    n = 17
+    if n % 2 == 0:
+        print(n, "est un nombre pair")
+    else:
+        print(n, "est un nombre impair")
+    ```     
+
+
+!!! example "Exercice"
+    === "Énoncé"
+        Afficher la liste de tous les nombres entre 1 et 100 qui sont divisibles à la fois par 2 et par 7. 
+    === "Correction"
+        {{ correction(True,
+        "
+        ```python linenums='1'
+        for n in range(1,101):
+            if n % 2 == 0 and n % 7 == 0:
+                print(n)
+        ```
+        "
+        ) }}
+
+## 4. Les cas multiples : utilisation de `elif` 
 
 Dans les situations où l'on veut effectuer des instructions différentes selon les différentes valeurs prises par une variable, on peut imbriquer les instructions `if` ... `else`.
 
@@ -188,7 +220,7 @@ else:
 ```
 
 
-## 4. Récréation : à vous d'obéir !
+## 5. Récréation : à vous d'obéir !
 
 ![image](data/compute.png){: .center width=30%}
 

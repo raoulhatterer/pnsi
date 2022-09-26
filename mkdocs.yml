@@ -116,5 +116,6 @@ extra_javascript:
   - xtra/interpreter.js
 
 extra_css:
+  - stylesheets/extra.css
   - xtra/pyoditeur.css
   - xtra/ajustements.css                      # ajustements
