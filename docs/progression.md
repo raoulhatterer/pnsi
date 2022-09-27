@@ -25,3 +25,8 @@
 !!! done "séance 4 (mardi 27/09/22):"
     -  [L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/1.4_L'instruction_conditionnelle_if/cours/)
     ??? note "Devoirs"
+        - Déposer deux documents `exos_du_cours_if.ipynb` et `exercices_if.ipynb` dans votre dossier personnel sur le site collaboratif;
+        - Faire l'exercice 2 sur Capytale.
+  
+  
+
