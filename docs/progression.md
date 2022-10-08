@@ -28,5 +28,11 @@
         - Déposer deux documents `exos_du_cours_if.ipynb` et `exercices_if.ipynb` dans votre dossier personnel sur le site collaboratif;
         - Faire l'exercice 2 sur Capytale.
   
+!!! done "séance 5 (mardi 04/10/22):"
+    -  Correction des exercices
+    - DS1
+    ??? note "Devoirs"
+        - Les absents au DS auront à le rattraper.
+  
   
 
