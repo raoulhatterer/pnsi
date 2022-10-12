@@ -273,7 +273,33 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
             for k in range(10,-1,-1):
                 print(k, end = ' ')
             ```
+
+!!! example "Exercice 4:"
+    - La fonction `len(chaine)`retourne la longueur d'une chaîne de caractère. 
+    - L'instruction `chaine[indice]` permet d'obtenir la lettre se trouvant à la position `indice` dans `chaine`.
     
+    Comparer les deux méthodes suivantes. Puis proposer un script pour afficher une à une les lettres d'un mot sauf la dernière lettre. 
+    === "Méthode 1"
+        ```python
+        for lettre in mot:
+            print(lettre)
+        ```
+    === "Méthode 2"
+        ```python
+        for indice in range(len(chaine)):
+            print(chaine[indice])
+        ```
+    === "Correction"
+        Les deux méthodes proposées affichent la même chose à savoir une lettre après l'autre de la chaîne de caractère. 
+        Pour éviter d'afficher la dernière lettre on peut faire:
+        ```python
+        for indice in range(len(chaine)-1):
+            print(chaine[indice])
+        ```
+
+
+
+
 ## 5. Une situation classique : la double boucle
 
 Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors du parcours de tous les pixels d'une image (voir les exercices graphiques sous Processing). Prenons pour l'instant un exemple numérique.

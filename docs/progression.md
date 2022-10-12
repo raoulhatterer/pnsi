@@ -29,10 +29,19 @@
         - Faire l'exercice 2 sur Capytale.
   
 !!! done "séance 5 (mardi 04/10/22):"
-    -  Correction des exercices
+    - Correction des exercices
     - DS1
     ??? note "Devoirs"
         - Les absents au DS auront à le rattraper.
+  
+!!! done "séance 6 (mardi 11/10/22):"
+    - Correction du contrôle
+    - Présentation de
+        - `len(chaine)` : donne la longueur de `chaine` qui est une chaîne de caractères
+        - `chaine[indice]` : donne la lettre se trouvant à la position `indice`
+    
+    ??? note "Devoirs"
+        - Faire la [correction du contrôle sur Capytale](https://capytale2.ac-paris.fr/web/c/49b9-818224) 
   
   
 
