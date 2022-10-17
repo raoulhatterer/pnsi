@@ -2,7 +2,10 @@ image: python:latest
 pages:
   stage: deploy
   only:
+    # Trigger a new build and deploy only when there is a push to the
+    # below branch(es)
     - main
+    - master
   script:
     - cat /etc/*-release
     - ls /usr/local/include/python3.10/
@@ -10,7 +13,7 @@ pages:
     - apt-get -yq update
     - /usr/local/bin/python -m pip install --upgrade pip
     - /usr/local/bin/python -m pip install -r requirements.txt
-    - mkdocs build --site-dir public
+    - mkdocs build --site-dir public --verbose
   artifacts:
     paths:
       - public

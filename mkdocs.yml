@@ -1,6 +1,7 @@
 site_name: "Première Spécialité NSI (Lycée de la méditerranée La Ciotat)"
 site_url: https://raoulhatterer.github.io/pnsi # mkdocs serve
 repo_url: http://lyceemed.forge.aeif.fr/pnsi
+site_dir: public
 edit_uri: tree/main/docs/
 
 docs_dir: docs
@@ -46,7 +47,6 @@ theme:
 markdown_extensions:
     - meta
     - abbr
-
     - def_list                      # Les listes de définition.
     - attr_list                     # Un peu de CSS et des attributs HTML.
     - footnotes                     # Notes[^1] de bas de page.  [^1]: ma note.
@@ -105,6 +105,8 @@ plugins:
       exclude:
         - N*/*/*/*.md         # les REM
         - N*/*/*/*.py         # Les corrigés
+        - N*/*/*/*.ipynb      # Les corrigés
+        - N*/*/*/Corrections        # Les corrigés
         - xtra/*.md           # inutile de chercher cela
   - awesome-pages:
         collapse_single_pages: true

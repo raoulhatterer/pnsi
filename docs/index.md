@@ -4,7 +4,7 @@
   
 
 ## Thème(s) en cours d'étude 
--  Dans le Thème1: [L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/1.4_L'instruction_conditionnelle_if/cours/)
+-  Dans le Thème1: [Les fonctions](T1_Les_bases_de_Python/1.5_Les_fonctions/cours)
 
 ## Programme
 !!! abstract "Programme"
@@ -17,7 +17,7 @@
         - 1.2 [La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
         - 1.3 [La boucle ```#!python while```](T1_Les_bases_de_Python/1.3_La_boucle_while/cours.md)
         - 1.4 [L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/1.4_L'instruction_conditionnelle_if/cours/)
-        - 1.5 [Les fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
+        - 1.5 [Les fonctions](T1_Les_bases_de_Python/1.5_Les_fonctions/cours)
 
     
     === "T2 Représentation des données"
