@@ -4,7 +4,7 @@
   
 
 ## Thème(s) en cours d'étude 
--  Dans le Thème1: [Les fonctions](T1_Les_bases_de_Python/1.5_Les_fonctions/cours)
+-  Dans le Thème1: [Les fonctions](T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours)
 
 ## Programme
 !!! abstract "Programme"
