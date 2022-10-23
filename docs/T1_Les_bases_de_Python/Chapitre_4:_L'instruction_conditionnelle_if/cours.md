@@ -1,4 +1,4 @@
-# 1.4 L'instruction conditionnelle `if`
+# Chapitre 4: L'instruction conditionnelle `if`
 
 ![image](data/if_else_meme.jpeg){: .center width=50%}
 

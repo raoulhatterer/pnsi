@@ -1,4 +1,4 @@
-# 1.5 Les fonctions
+# Chapitre 5: Les fonctions
 
 ![image](data/meme.jpg){: .center width=40%}
 
