@@ -43,5 +43,11 @@
     ??? note "Devoirs"
         - Faire la [correction du contrôle sur Capytale](https://capytale2.ac-paris.fr/web/c/49b9-818224) 
   
+!!! done "séance 7 (mardi 18/10/22):"
+    - DS1 Saisie du code manquant pour ceux qui ont eu du mal à tout faire
+    - [Les fonctions](T1_Les_bases_de_Python/1.5_Les_fonctions/cours)
+
+    ??? note "Devoirs"
+        - Déposer deux documents `exos_du_cours_fonctions.ipynb` et `exercices_fonctions.ipynb` dans votre dossier personnel sur le site collaboratif;
   
 

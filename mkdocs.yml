@@ -1,5 +1,8 @@
 site_name: "Première Spécialité NSI (Lycée de la méditerranée La Ciotat)"
-site_url: https://raoulhatterer.github.io/pnsi # mkdocs serve
+site_description: Cours et exercices de première en spécialité NSI
+site_author: R. Hatterer
+site_url: https://forge.aeif.fr/lyceemed/pnsi
+# https://raoulhatterer.github.io/pnsi # mkdocs serve
 repo_url: http://lyceemed.forge.aeif.fr/pnsi
 site_dir: public
 edit_uri: tree/main/docs/
@@ -21,6 +24,7 @@ theme:
     name: material
     font: false                     # RGPD ; pas de fonte Google
     language: fr                    # français
+
     palette:                        # Palettes de couleurs jour/nuit
       - media: "(prefers-color-scheme: light)"
         scheme: default
@@ -42,7 +46,7 @@ theme:
         - navigation.top
         - toc.integrate
         - header.autohide
-
+        - content.code.annotate 
 
 markdown_extensions:
     - meta
