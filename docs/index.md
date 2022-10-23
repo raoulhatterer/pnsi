@@ -13,11 +13,11 @@
     === "T1 Les bases de Python"
         **Thème 1 : Les bases de Python**
 
-        - 1.1 [Les variables](T1_Les_bases_de_Python/1.1_Variables/cours/)
-        - 1.2 [La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/1.2_La_boucle_for/cours.md)
-        - 1.3 [La boucle ```#!python while```](T1_Les_bases_de_Python/1.3_La_boucle_while/cours.md)
-        - 1.4 [L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/1.4_L'instruction_conditionnelle_if/cours/)
-        - 1.5 [Les fonctions](T1_Les_bases_de_Python/1.5_Les_fonctions/cours)
+        - Chapitre 1: [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)
+        - Chapitre 2: [La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
+        - Chapitre 3: [La boucle ```#!python while```](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
+        - Chapitre 4: [L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours/)
+        - Chapitre 5: [Les fonctions](T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours)
 
     
     === "T2 Représentation des données"

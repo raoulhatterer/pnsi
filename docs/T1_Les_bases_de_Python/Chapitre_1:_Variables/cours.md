@@ -1,8 +1,8 @@
-# 1.1 Les variables
+# Chapitre 1: Les variables
 
-## A. Pourquoi des variables ?
+## 1. Pourquoi des variables ?
 
-### A.1 Introduction
+### 1.1 Introduction
 Considérons la phrase *«nous allons stocker le prix du spectacle dans une variable  ```a```, qui vaudra donc au départ 32.»*
 
 Il y a plusieurs commentaires à faire sur une telle annonce :
@@ -13,7 +13,7 @@ Il y a plusieurs commentaires à faire sur une telle annonce :
 - Cette valeur est fixée *au départ* à 32. On dira en informatique qu'elle est *initialisée* à 32.
 - Si cette valeur ne change pas, on dira qu'elle est constante. Cela peut paraître inutile de donner un nom à quelque chose qui ne change pas, mais cela est très utile de définir les constantes au début d'un programme. 
 
-### A.2 On code !
+### 1.2 On code !
 La phrase précédente donnera donc lieu à la ligne Python suivante :
 
 ```python
@@ -62,8 +62,8 @@ NameError: name 'b' is not defined
 
 Remarquez bien l'erreur lorsqu'on a fait appel à une variable ```b``` qui n'avait jamais été définie, comme le dit explicitement le message ```NameError: name 'b' is not defined``` 
 
-## B. Le fonctionnement interne
-### B.1 Explication simplifiée
+## 2. Le fonctionnement interne
+### 2.1 Explication simplifiée
 En première intention, il est possible d'expliquer le fonctionnement interne de l'affectation des variables par la *métaphore des tiroirs* :
 
 
@@ -87,8 +87,8 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
 !!! warning "Partie difficile (optionnelle)"
     *La métaphore du tiroir est malheureusement un peu trop simplificatrice.*
 
-    ### B.2 Une réalité bien plus complexe...
-    #### B.2.1 La commande ```id()``` : l'adresse du tiroir ?
+    ### 2.2 Une réalité bien plus complexe...
+    #### 2.2.1 La commande ```id()``` : l'adresse du tiroir ?
     Python possède une fonction qui renvoie l'adresse mémoire de la variable donnée en argument. 
 
     ```python
@@ -99,7 +99,7 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
 
     Faites le test avec votre propre IDE Python (vous n'obtiendrez pas forcément la même valeur d'adresse mémoire)
 
-    #### B.2.2 Cela se complique.
+    #### 2.2.2 Cela se complique2
     Sans refermer notre IDE, écrasons la valeur de ```b``` avec une nouvelle valeur :
     ```python
     >>> b = 12
@@ -114,7 +114,7 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
 
     La modification de la valeur de ```b``` ne s'est pas faite «en place», la variable ```b``` s'est déplacée : que s'est-il donc passé ?
 
-    #### B.2.3 Tentative d'explication
+    #### 2.2.3 Tentative d'explication
 
     L'affectation 
     ```python
@@ -169,27 +169,27 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
     - Deux variables peuvent pointer vers le même espace-mémoire.
 
 
-### B.3 Une histoire en 2 temps : évaluation, affectation
+### 2.3 Deux étapes : évaluation, affectation
 
 Observons l'instruction
 ```python
 >>> a = 2 + 3
 ```
 
-#### B.3.1 Étape 1 : **l'évaluation**
+#### 2.3.1 Étape 1 : **l'évaluation**
 
 Python va prendre la partie à droite du signe égal et va l'évaluer, ce qui signifie qu'il va essayer de lui donner une valeur. Dans nos exemples, cette valeur sera numérique, mais elle peut être d'un autre type (voir plus loin)
 
 
 Ici, Python effectue le calcul 2 + 3 et l'évalue à la valeur 5.
 
-#### B.3.2 Étape 2 : **l'affectation**
+#### 2.3.2 Étape 2 : **l'affectation**
 Une fois évaluée l'expression à droite du signe =, il ne reste plus qu'à l'affecter à la variable (déjà existante ou pas) située à gauche du signe =.
 
 Comme expliqué précédemment, un «lien» est fait entre le nom de la variable et l'adresse-mémoire qui contient la valeur évaluée.
 ```a``` sera donc lié à la valeur 5. Plus simplement, on dira que «```a``` vaut 5» 
 
-#### B.3.2 L'incrémentation d'une variable.
+#### 2.3.2 L'incrémentation d'une variable.
 
 *«Incrémenter»* une variable signifie l'augmenter. 
 
@@ -294,7 +294,7 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
         ```
 
 
-#### B.3.3 L'échange de variables
+#### 2.3.3 L'échange de variables
 Après l'incrémentation, une autre technique de base reviendra fréquemment dans nos codes : **l'échange de variables**.
 
 Imaginons les variables suivantes :
@@ -383,13 +383,16 @@ Vous pouvez vérifier maintenant que les valeurs de ```a``` et de ```b``` ont bi
 
 
 
-## C. Différents types de variables
+## 3. Différents types de variables
 
 Pour l'instant, les variables que nous avons manipulées contiennent toutes des nombres entiers.
 
 Sauf les maisons de Poudlard, qui sont des ~~mots~~ chaînes de caractères.
 
 Pour différencier la nature de ce que peut contenir une variable, on parle alors de **type de variable**.
+
+
+### 3.1 Types de base
 
 En voici quelques uns, que nous découvrirons au fil de l'année :
 
@@ -418,7 +421,7 @@ Il suffit dans la console d'utiliser la fonction `type`.
 <class 'int'>
 ```
 
-### C.1 Python et le typage dynamique
+### 3.2 Typage dynamique
 
 Jusqu'à présent, nous ne nous sommes pas occupés de préciser à Python le type de notre variable.
 
@@ -457,9 +460,9 @@ Python a changé tout seul le type de notre variable, sans intervention. On parl
 
 
 
-## D. Bonnes pratiques de nommage
+## 4. Bonnes pratiques de nommage
 
-### D.1 Ce qui est autorisé et ce qui ne l'est pas
+### 4.1 Ce qui est autorisé et ce qui ne l'est pas
 
 Pour nommer correctement une variable, il existe des règles à respecter.
 
@@ -486,7 +489,7 @@ Pour nommer correctement une variable, il existe des règles à respecter.
 
 
 
-### D.2 Du sens, du sens, du sens
+### 4.2 Du sens, du sens, du sens
 
 Hormis pour les indices (de boucles, de tableaux...) un nom de variable (dans un programme destiné à être lu, par vous ou quelqu'un d'autre) doit **impérativement avoir du sens** :
 
@@ -512,13 +515,13 @@ La longueur du nom de la variable (*«c'est trop long à taper»*) n'est plus un
 Mais comment former ces longs mots ?
 
 
-### D.3 Syntaxe des noms à rallonge
+### 4.3 Syntaxe des noms à rallonge
 
 !!! abstract "Comment accoler des mots"
     - S'il est composé, le nom peut être de la forme:
         - ```snake_case``` : les mots sont séparés par des underscores. 
         - ```camelCase``` : les mots sont séparés par des majuscules mais la 1ère lettre est minuscule. Conseillé en Javascript.
-        - ```PascalCase``` : les mots sont séparés par des majuscules et la 1ère lettre est majuscule. Conseillé en C.
+        - ```PascalCase``` : les mots sont séparés par des majuscules et la 1ère lettre est majuscule. Conseillé en 3.
         - ```kebab-case``` : les mots sont séparés par des tirets courts. Conseillé en HTML - CSS. 
 
 Sans surprise, en Python, nous utiliserons donc le ```snake_case```:
