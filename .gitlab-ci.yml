@@ -1,19 +1,20 @@
-image: python:latest
+image: python:3.10-alpine
 pages:
+  tags:
+    - pages
   stage: deploy
-  only:
-    # Trigger a new build and deploy only when there is a push to the
-    # below branch(es)
-    - main
-    - master
+  variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  cache:
+    paths:
+      - .cache/pip
+      - .venv
+  before_script:
+    - python -m venv .venv
+    - source .venv/bin/activate
+    - pip install -r requirements.txt
   script:
-    - cat /etc/*-release
-    - ls /usr/local/include/python3.11/
-    - export DEBIAN_FRONTEND=noninteractive
-    - apt-get -yq update
-    - /usr/local/bin/python -m pip install --upgrade pip
-    - /usr/local/bin/python -m pip install -r requirements.txt
-    - mkdocs build --site-dir public --verbose
+    - mkdocs build --site-dir public
   artifacts:
     paths:
       - public
