@@ -274,14 +274,14 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
                 print(k, end = ' ')
             ```
 
-!!! example "Exercice 4:"
+!!! example "Exercice 3:"
     - La fonction `len(chaine)`retourne la longueur d'une chaîne de caractère. 
     - L'instruction `chaine[indice]` permet d'obtenir la lettre se trouvant à la position `indice` dans `chaine`.
     
     Comparer les deux méthodes suivantes. Puis proposer un script pour afficher une à une les lettres d'un mot sauf la dernière lettre. 
     === "Méthode 1"
         ```python
-        for lettre in mot:
+        for lettre in chaine:
             print(lettre)
         ```
     === "Méthode 2"
@@ -334,7 +334,7 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
     <iframe width="800" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20a%20in%20range%281,5%29%3A%0A%20%20%20%20for%20b%20in%20range%281,4%29%3A%0A%20%20%20%20%20%20%20%20p%20%3D%20a%20*%20b%0A%20%20%20%20%20%20%20%20print%28a,%20'*',%20b,%20'%3D',%20p%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 
-!!! example "Exercice 3"
+!!! example "Exercice 4"
     === "Énoncé"
         Écrire un programme qui affiche :
         ```python
