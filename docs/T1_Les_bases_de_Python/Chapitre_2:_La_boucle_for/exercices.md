@@ -138,6 +138,7 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
+    
         Calculer $1\times 2 \times 3 \times \dots 99 \times 100$.
     === "Correction"
         ```python linenums='1'
@@ -149,7 +150,7 @@
 
       
 !!! capytale "À faire sur Capytale : [activité 196e-660566](https://capytale2.ac-paris.fr/web/c/196e-660566/atr)"
-    !!! example "Exercice 1"
+    !!! example "{{ exercice() }}"
         === "Énoncé"
             Proposer un code qui écrit la **table de multiplication** de 7, de 8 et de 9.
     
@@ -170,7 +171,7 @@
                 for b in range(1, 10):
                     print(a, '*', b, '=', a*b)
             ```
-    !!! example "Exercice 2"
+    !!! example "{{ exercice() }}"
         === "Énoncé"
             Sur un jeu d'échecs, les cases sont repérées par une lettre (de A jusqu'à H) et par un chiffre (de 1 jusqu'à 8).
 
