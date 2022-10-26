@@ -60,13 +60,13 @@ markdown_extensions:
     - pymdownx.mark                 # Passage ==surligné==.
     - pymdownx.tilde                # Passage ~~barré~~ ou en ~indice~.
     - pymdownx.highlight:           # Coloration syntaxique du code
-        auto_title: true
+        auto_title: true            # 
         auto_title_map:
-            "Python": "🐍 Script Python"
-            "Python Console Session": "🐍 Console Python"
-            "Text Only": "📋 Texte"
-            "E-mail": "📥 Entrée"
-            "Text Output": "📤 Sortie"
+          "Python": "🐍 Script Python"                  # utliser py3 ou python
+          "Python Console Session": "🐍 Console Python" # utiliser pycon
+          "Text Only": "📋 Texte"
+          "E-mail": "📥 Entrée"
+          "Text Output": "📤 Sortie"
     - pymdownx.inlinehilite         # pour  `#!python  <python en ligne>`
     - pymdownx.snippets             # Inclusion de fichiers externe.
     - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
@@ -83,7 +83,7 @@ markdown_extensions:
 
     - pymdownx.superfences:
         custom_fences:
-          - name: mermaid
+          - name: mermaid          # Mermaid lets you create diagrams
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_code_format
 

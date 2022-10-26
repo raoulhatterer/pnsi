@@ -12,7 +12,7 @@ En Python, une fonction se crée avec le mot-clé `def`.
 ![image](data/f1.png){: .center }
 
 !!! note "Exemple fondateur n°1 :heart:"
-    ```python linenums='1'
+    ```py3 linenums='1'
     def accueil():
         print("bonjour")
         print("comment allez-vous ?")
@@ -24,7 +24,7 @@ Lorsque l'interpréteur Python parcourt cette fonction, **rien** ne s'affiche : 
 Ce sera le cas pour toutes les fonctions : elles doivent être **appelées** pour s'exécuter.
 
 
-```python
+```pycon
 >>> accueil()
 bonjour
 comment allez-vous ?

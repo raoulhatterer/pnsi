@@ -16,7 +16,7 @@ Il y a plusieurs commentaires à faire sur une telle annonce :
 ### 1.2 On code !
 La phrase précédente donnera donc lieu à la ligne Python suivante :
 
-```python
+```pycon
 >>> a = 32
 ```
 !!! warning "Attention"
@@ -49,7 +49,7 @@ La phrase précédente donnera donc lieu à la ligne Python suivante :
  
 Une fois la valeur 32 stockée dans la variable ```a```, on peut alors utiliser cette variable :
 
-```python
+```pycon
 >>> a
 32
 >>> a + 5
@@ -68,7 +68,7 @@ En première intention, il est possible d'expliquer le fonctionnement interne de
 
 
 Écrire  l'instruction :
-```python
+```pycon
 >>> a = 2
 ```
 
@@ -91,7 +91,7 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
     #### 2.2.1 La commande ```id()``` : l'adresse du tiroir ?
     Python possède une fonction qui renvoie l'adresse mémoire de la variable donnée en argument. 
 
-    ```python
+    ```pycon
     >>> b = 7
     >>> id(b)
     9788800
@@ -101,11 +101,11 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
 
     #### 2.2.2 Cela se complique2
     Sans refermer notre IDE, écrasons la valeur de ```b``` avec une nouvelle valeur :
-    ```python
+    ```pycon
     >>> b = 12
     ```
     et redemandons l'adresse de ```b``` :
-    ```python
+    ```pycon
     >>> id(b)
     9788960
     ```
@@ -117,13 +117,13 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
     #### 2.2.3 Tentative d'explication
 
     L'affectation 
-    ```python
+    ```pycon
     >>> b = 9
     ```
     ne provoque pas la réservation définitive d'un espace-mémoire pour la variable ```b```, mais la création d'un lien vers un espace-mémoire qui contient la valeur 9. Ce lien consiste en l'adresse-mémoire de cette valeur 9. 
 
     Cette adresse-mémoire vaut (sur ma configuration personnelle) ```9788864```.
-    ```python
+    ```pycon
     >>> id(b)
     9788864
     ```
@@ -139,7 +139,7 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
     Si on créé une nouvelle variable ```tokyo``` aussi égale à 9, elle va aussi *pointer* vers la même adresse-mémoire :
 
 
-    ```python
+    ```pycon
     >>> tokyo = 9
     >>> id(tokyo)
     9788864
@@ -148,7 +148,7 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
 
     Affectons maintenant à ```tokyo``` la valeur 2020 et observons son adresse-mémoire :
 
-    ```python
+    ```pycon
     >>> tokyo = 2020
     >>> id(tokyo)
     139762979309936
@@ -158,7 +158,7 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
 
     De manière plus surprenante, si on créé une nouvelle variable ```jo``` qui vaut *aussi* 2020, Python va ouvrir une *autre* adresse-mémoire pour y stocker 2020, alors qu'il l'a déjà stockée ailleurs :
 
-    ```python
+    ```pycon
     >>> jo = 2020
     >>> id(jo)
     139762979310064
@@ -172,7 +172,7 @@ Cette explication est suffisante pour aborder la notion de variable : c'est un m
 ### 2.3 Deux étapes : évaluation, affectation
 
 Observons l'instruction
-```python
+```pycon
 >>> a = 2 + 3
 ```
 
@@ -194,7 +194,7 @@ Comme expliqué précédemment, un «lien» est fait entre le nom de la variable
 *«Incrémenter»* une variable signifie l'augmenter. 
 
 Imaginons une variable appelée ```compteur```. Au démarrage de notre programme, elle est initialisée à la valeur 0. 
-```python
+```pycon
 >>> compteur = 0
 ```
 
@@ -202,7 +202,7 @@ Considérons qu'à un moment du programme, cette variable doit être modifiée, 
 
 En Python, cela s'écrira :
 
-```python
+```pycon
 >>> compteur = compteur + 1
 ```
 
@@ -211,7 +211,7 @@ Observée avec des yeux de mathématicien, la précédente instruction est une h
 ![image](data/memex.png){: .center width=30%}
 
 Vue avec des yeux d'informaticien, voilà comment est interprétée la commande
-```python
+```pycon
 >>> compteur = compteur + 1
 ```
 
@@ -229,13 +229,13 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
     
     === "Syntaxe «classique»"
         L'incrémentation d'une variable ```compteur``` s'écrira donc en Python :
-        ```python
+        ```pycon
         >>> compteur = compteur + 1
         ```
 
     === "Syntaxe «Pythonesque»"
         Mais il existe aussi une syntaxe particulière, un peu plus courte :
-        ```python
+        ```pycon
         >>> compteur += 1
         ```
         Cette syntaxe peut se ranger dans la catégorie des **sucres syntaxiques** : c'est bien de la connaître, c'est amusant de s'en servir, mais son utilisation n'est en rien obligatoire.
@@ -248,12 +248,12 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
         On initialise une variable ```score``` à 100 et on l'augmente de 15.
 
     === "Correction"
-        ```python
+        ```pycon
         >>> score = 100
         >>> score = score + 15
         ```
         ou bien
-        ```python
+        ```pycon
         >>> score = 100
         >>> score += 15
         ```
@@ -266,12 +266,12 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
         On initialise une variable ```cellule``` à 1 et on la multiplie par 2.
 
     === "Correction"
-        ```python
+        ```pycon
         >>> cellule = 1
         >>> cellule = cellule * 2
         ```
         ou bien
-        ```python
+        ```pycon
         >>> cellule = 1
         >>> cellule *= 2
         ```
@@ -283,12 +283,12 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
         On initialise une variable ```capital``` à 1000 et on lui enlève 5%.
 
     === "Correction"
-        ```python
+        ```pycon
         >>> capital = 1000
         >>> capital = capital - capital * 5/100
         ```
         ou bien
-        ```python
+        ```pycon
         >>> capital = 1000
         >>> capital *= 0.95
         ```
@@ -299,7 +299,7 @@ Après l'incrémentation, une autre technique de base reviendra fréquemment dan
 
 Imaginons les variables suivantes :
 
-```python
+```pycon
 >>> a = 3
 >>> b = 5
 ```
@@ -307,7 +307,7 @@ Le but est d'échanger les valeurs de ```a``` et de ```b```.
 
 ▸ **Méthode naïve**
 
-```python
+```pycon
 >>> a = b
 >>> b = a
 ```
@@ -315,7 +315,7 @@ Le but est d'échanger les valeurs de ```a``` et de ```b```.
 Que valent ```a``` et ```b``` maintenant ?
 
 Malheureusement :
-```python
+```pycon
 >>> a
 5
 >>> b
@@ -335,7 +335,7 @@ La méthode est évidente : il nous faut un troisième verre.
 
 Nous allons faire de même pour nos variables. Nous allons utiliser une variable **temporaire** (on parle aussi de variable **tampon**) pour conserver la mémoire de la valeur de ```a``` (par exemple) avant que celle-ci ne se fasse écraser :
 
-```python
+```pycon
 >>> a = 3
 >>> b = 5
 >>> temp = a
@@ -349,14 +349,14 @@ Vous pouvez vérifier maintenant que les valeurs de ```a``` et de ```b``` ont bi
 
 !!! info "Syntaxe classique et syntaxe Pythonesque :heart:"
     L'échange de deux variables ```a``` et de ```b``` s'écrit donc :
-    ```python
+    ```pycon
     >>> temp = a
     >>> a = b
     >>> b = temp
     ```
     Mais il existe aussi une syntaxe particulière à Python, bien plus courte :
 
-    ```python
+    ```pycon
     >>> a, b = b, a
     ```
     C'est de nouveau un *sucre syntaxique*. Cette syntaxe nous dispense de créer nous-même une troisième variable. Mais pas de miracle : en interne, Python crée lui-même cette variable temporaire. La simultanéité n'existe pas en informatique.
@@ -364,20 +364,20 @@ Vous pouvez vérifier maintenant que les valeurs de ```a``` et de ```b``` ont bi
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Une petite erreur s'est glissée à Poudlard :
-        ```python
+        ```pycon
         >>> maisonHarry = "Serpentard"
         >>> maisonMalfoy =  "Gryffondor"
         ```
         Corriger cette erreur, de deux manières différentes.
 
     === "Correction"
-        ```python
+        ```pycon
         >>> t = maisonHarry
         >>> maisonHarry = maisonMalfoy
         >>> maisonMalfoy = t
         ```
         ou plus rapidement :
-        ```python
+        ```pycon
         >>> maisonHarry, maisonMalfoy = maisonMalfoy, maisonHarry
         ```
 
@@ -415,7 +415,7 @@ En voici quelques uns, que nous découvrirons au fil de l'année :
 Comment connaître le type d'une variable ?
 Il suffit dans la console d'utiliser la fonction `type`.
 
-```python
+```pycon
 >>> a = 1
 >>> type(a)
 <class 'int'>
@@ -425,7 +425,7 @@ Il suffit dans la console d'utiliser la fonction `type`.
 
 Jusqu'à présent, nous ne nous sommes pas occupés de préciser à Python le type de notre variable.
 
-```python
+```pycon
 a = 3
 ```
 
@@ -445,7 +445,7 @@ Le compilateur C renverra une erreur : on ne peut pas stocker une chaîne de car
 
 Et en Python ?
 
-```python
+```pycon
 >>> a = 3
 >>> type(a)
 <class 'int'>
