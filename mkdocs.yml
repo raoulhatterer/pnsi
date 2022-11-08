@@ -62,7 +62,7 @@ markdown_extensions:
     - pymdownx.highlight:           # Coloration syntaxique du code
         auto_title: true            # 
         auto_title_map:
-          "Python": "🐍 Script Python"                  # utliser py3 ou python
+          "Python": <span style="color:black">🐍 Script Python</span> # utliser py3 ou python
           "Python Console Session": "🐍 Console Python" # utiliser pycon
           "Text Only": "📋 Texte"
           "E-mail": "📥 Entrée"

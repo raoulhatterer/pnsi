@@ -34,12 +34,12 @@ Il existe donc une instruction permettant de faire une (ou plusieurs) action(s) 
 
 !!! note "Exemple fondateur n°1 :heart:"
     Le programme suivant :
-    ```python linenums='1'
+    ```python linenums='1' 
     for k in 'NSI':
         print(k)
     ```
     va donner ceci :
-    ```python
+    ```pycon
     N
     S
     I
@@ -65,7 +65,7 @@ Ici, il y a simplement un ```print(k)```, donc chaque lettre de ```"NSI"``` s'af
             print("bonjour")
         ``` 
     === "Correction"
-        ```python
+        ```pycon
         bonjour
         bonjour
         bonjour

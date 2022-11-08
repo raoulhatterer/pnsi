@@ -2,5 +2,6 @@ nav:
     - Accueil : index.md
     - Progression et devoirs : progression.md
     - Thème 1 : T1_Les_bases_de_Python
+    - Thème 2 : T2_Representation_des_donnees
     - Divers : T7_Divers
     - Remerciements : remerciements.md

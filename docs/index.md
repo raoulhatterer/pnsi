@@ -5,6 +5,7 @@
 
 ## Thème(s) en cours d'étude 
 -  Dans le Thème1: [Les fonctions](T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours)
+-  Dans le Thème2: [Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
 
 ## Programme
 !!! abstract "Programme"
@@ -23,15 +24,15 @@
     === "T2 Représentation des données"
         **Thème 2 :  Représentation des données**
 
-        - 2.1 [Listes](./T2_Representation_des_donnees/2.1_Listes/cours/)
-        - 2.2 [Tuples](./T2_Representation_des_donnees/2.2_Tuples/cours/)
-        - 2.3 [Dictionnaires](./T2_Representation_des_donnees/2.3_Dictionnaires/cours/)
-        - 2.4 [Bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
-        - 2.5 [Booléens](./T2_Representation_des_donnees/2.5_Booleens/cours/)
-        - 2.6 [Codage des caractères](./T2_Representation_des_donnees/2.6_Codage_caracteres/cours/)
-        - 2.7 [Codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
-        - 2.8 [Codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
-        - 2.9 [Chaînes de caractères](./T2_Representation_des_donnees/2.9_Chaines_caracteres/cours/)
+        - Chapitre 1: [Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
+        - Chapitre 2: [Les tuples](./T2_Representation_des_donnees/2.2_Tuples/cours/)
+        - Chapitre 3: [Les dictionnaires](./T2_Representation_des_donnees/2.3_Dictionnaires/cours/)
+        - Chapitre 4: [Les bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
+        - Chapitre 5: [Les booléens](./T2_Representation_des_donnees/2.5_Booleens/cours/)
+        - Chapitre 6: [Le codage des caractères](./T2_Representation_des_donnees/2.6_Codage_caracteres/cours/)
+        - Chapitre 7: [Le codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
+        - Chapitre 8: [Le codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
+        - Chapitre 9: [Les chaînes de caractères](./T2_Representation_des_donnees/2.9_Chaines_caracteres/cours/)
 
     === "T3 Architecture matérielle"
         **Thème 3 : Architecture matérielle**
