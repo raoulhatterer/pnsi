@@ -56,3 +56,18 @@
 
     ??? note "Devoirs"
         - Préparer le Contrôle sur l'ensemble du thème 1.
+
+!!! done "séance 9 (mardi 15/11/22):"
+    - [Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
+    - DS2 sur tout le thème 1
+
+    ??? note "Devoirs"
+        - Exercices sur les listes
+
+!!! done "séance 10 (mardi 22/11/22):"
+    - Correction du DS2
+    - Exercices sur les listes
+    
+    ??? note "Devoirs"
+        - Enregister votre correction du DS2 sur capytale
+        - Exercices sur les listes à déposer dans votre répertoire personnel sur le site collaboratif.
