@@ -71,3 +71,14 @@
     ??? note "Devoirs"
         - Enregister votre correction du DS2 sur capytale
         - Exercices sur les listes à déposer dans votre répertoire personnel sur le site collaboratif.
+
+!!! done "séance 11 (mardi 29/11/22):"
+    - Correction des exercices sur les listes
+    - [Le monde de Reeborg](http://reeborg.ca/reeborg.html?lang=fr&mode=python&menu=%2Fworlds%2Fmenus%2Fselect_collection_fr.json&name=Autres%20mondes&url=%2Fworlds%2Fmenus%2Fselect_collection_fr.json). 
+    
+    ??? note "Devoirs"
+        - Exercices du [monde de Reeborg](http://reeborg.ca/reeborg.html?lang=fr&mode=python&menu=%2Fworlds%2Fmenus%2Fselect_collection_fr.json&name=Autres%20mondes&url=%2Fworlds%2Fmenus%2Fselect_collection_fr.json). 
+        - Consignes:
+            - Choisir « [L'introduction de Reeborg](http://reeborg.ca/reeborg.html?lang=fr&mode=python&menu=%2Fworlds%2Fmenus%2Fselect_collection_fr.json&name=Autres%20mondes&url=%2Fworlds%2Fmenus%2Fselect_collection_fr.json#) ».
+            - Les réponses des mondes allant de `But1` à `Autour 4` sont à mettre sur Capytale (code: 418b-1035748).
+            - Les instructions ```break```et ```repeat``` sont interdites.
