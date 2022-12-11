@@ -152,9 +152,90 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
 
 !!! note "Exercice 4"
     === "Énoncé"
-        - Apprenez à [ajouter des tableaux](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061455-ajoutez-des-tableaux){:target="_blank"}
-        - Créer un fichier `tableau.html`et un fichier `style.css ` afin de recréer la page suivante qui  explique comment inclure des caractères spéciaux en HTML.
+        - Apprenez à [ajouter des tableaux](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061455-ajoutez-des-tableaux){:target="_blank"} et à les mettre en forme en CSS.
+        - Utiliser la balise `<code> </code>` pour représenter un court fragment de code machine.
+        - Créez un fichier `tableau.html`et un fichier `style.css ` afin de recréer la page suivante qui explique comment inclure des caractères spéciaux en HTML.
+        - Ne pas oublier de mettre en forme les bordures du tableau grâce à la feuille de style.
         ![image](data/caracteres+speciaux.png)
+    === "Correction"
+    {{ correction(False,
+    "
+        ```html linenums='1'
+            <h1>Références d'entités : inclure les caractères spéciaux en HTML</h1>
+                <p>
+                En HTML, les caractères 
+                <code>&lt;</code>
+                , 
+                <code>&gt;</code>
+                ,
+                <code>&quot;</code>
+                ,
+                <code>&apos;</code>
+                 et 
+                <code>&amp;</code>
+                sont des caractères spéciaux. Ils font partie de la syntaxe HTML elle-même, alors
+                comment inclure un de ces caractères dans du texte, par exemple si vous voulez vraiment
+                utiliser une esperluette (&amp;) ou un signe inférieur (&lt;), qui ne soit pas
+                interprété en tant que code comme les navigateurs pourraient le faire ?
+                </p>
+                <p>Nous devons utiliser les références des caractères — des codes spéciaux qui
+                représentent des caractères et peuvent être utilisés dans ces circonstances exactes.
+                Chaque référence de caractère est démarrée avec une esperluette (&amp;), et se termine
+                par un point-virgule (;).</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Le caractère</th>
+                                <th>Référence équivalent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;</td>
+                                <td>
+                                    <code>&amp;lt;</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&gt;</td>
+                                <td>
+                                    <code>&amp;gt;</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&quot;</td>
+                                <td>
+                                    <code>&amp;quot;</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&apos;</td>
+                                <td>
+                                    <code>&amp;apos;</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&amp;</td>
+                                <td>
+                                    <code>&amp;amp;</code>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+        ```
+        ```{.css}
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 15px;
+        }
+        ```
+        "
+        ) }}
+
+        
 
 #### Pour conclure
 
