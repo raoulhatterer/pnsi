@@ -75,7 +75,7 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
 #### La liste des balises html
 
 Si vous avez besoin de retrouver facilement sur une balise html, vous pouvez télécharger et consulter 
-[la liste des balises html](./data/Glossaire+des+balises+HTML.pdf) de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra).
+[la liste des balises html](./data/Glossaire+des+balises+HTML.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
 
 
 ### 1.2 ```html``` + ```css``` 
