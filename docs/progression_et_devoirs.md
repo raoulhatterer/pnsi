@@ -82,3 +82,12 @@
             - Choisir « [L'introduction de Reeborg](http://reeborg.ca/reeborg.html?lang=fr&mode=python&menu=%2Fworlds%2Fmenus%2Fselect_collection_fr.json&name=Autres%20mondes&url=%2Fworlds%2Fmenus%2Fselect_collection_fr.json#) ».
             - Les réponses des mondes allant de `But1` à `Autour 4` sont à mettre sur Capytale (code: 418b-1035748).
             - Les instructions ```break```et ```repeat``` sont interdites.
+
+!!! done "séance 12 (mardi 6/12/22):"
+    - Correction des exercices Reeborg
+    - Cours sur le HTML et le CSS (dans le Thème 6) sur [les interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/) 
+    
+    ??? note "Devoirs"
+        - Étudier le cours pour apprendre les bases de HTML (très important) et de CSS (moins important)
+        - Faire le Quiz dont le lien est donné dans le cours.
+        - Exercice 4  (celui portant sur les tableaux HTML) du cours permettant de  vérifier votre maîtrise du HTML et du CSS. Les fichiers sont à déposer dans votre répertoire personnel sur le site collaboratif.
