@@ -52,20 +52,30 @@ Il a été inventé en 1992 par [Tim Berners-Lee](https://fr.wikipedia.org/wiki/
     
     ```
 
-Vous pouvez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette magnifique page.
+Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette magnifique page et **suivez le lien qui s'y trouve pour apprendre le fonctionnement des balises html**.
 
 {{ initexo(0)}}
 !!! example "{{ exercice() }}"
     === "Énoncé"
       - Créez un dossier contenant un fichier ```mapage.html```.
       - Créez une page contenant une image et un lien vers le site du lycée.
-      - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel [Sublime Text](https://www.sublimetext.com){:target="_blank"}  installé au lycée.
+      - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel.
       - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
        
+#### En résumé
 
+- Pour créer une page web, on crée un fichier ayant l'extension  `.html`  , qui pourra être ouvert dans le navigateur web simplement en faisant un double-clic dessus.
+- Chaque fichier HTML est constitué de balises.
+- Les balises peuvent avoir plusieurs formes :
+    - `<balise>` `</balise>`  : **balises en paires**, elles s'ouvrent et se ferment pour délimiter le contenu (début et fin d'un titre, par exemple) ;
+    - `<balise>`  : **balises orphelines** (on ne les insère qu'en un seul exemplaire), elles permettent d'insérer un élément à un endroit précis (par exemple une image).
+- Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg">`  ).
+- Une page web est constituée de deux sections principales : l'en-tête`<head>` `</head>`  dont le contenu n'apparaît pas dans l'affichage de la page et le corps `<body>` `</body>`  qui, lui, apparaît.
 
+#### La liste des balises html
 
-
+Si vous avez besoin de retrouver facilement sur une balise html, vous pouvez télécharger et consulter 
+[la liste des balises html](./data/Glossaire+des+balises+HTML.pdf) de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra).
 
 
 ### 1.2 ```html``` + ```css``` 
