@@ -72,7 +72,7 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
 - Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg">`  ).
 - Une page web est constituée de deux sections principales : l'en-tête`<head>` `</head>`  dont le contenu n'apparaît pas dans l'affichage de la page et le corps `<body>` `</body>`  qui, lui, apparaît.
 
-#### La liste des balises html
+#### Aide mémoire
 
 Si vous avez besoin de retrouver facilement sur une balise html, vous pouvez télécharger et consulter 
 [la liste des balises html](./data/Glossaire+des+balises+HTML.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
