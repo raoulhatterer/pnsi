@@ -150,9 +150,11 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
     ![](data/login_apres.png){: .center}
 
 
-
-
-
+!!! note "Exercice 4"
+    === "Énoncé"
+        - Apprenez à [ajouter des tableaux](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061455-ajoutez-des-tableaux){:target="_blank"}
+        - Créer un fichier `tableau.html`et un fichier `style.css ` afin de recréer la page suivante qui  explique comment inclure des caractères spéciaux en HTML.
+        ![image](data/caracteres+speciaux.png)
 
 #### Pour conclure
 
@@ -262,7 +264,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 - le cours d'OpenClassrooms : [https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript){:target="_blank"}
 - le site W3 (W3 javascript)[https://www.w3schools.com/js/]{:target="_blank"}
 
-!!! note "Exercice 4"
+!!! note "Exercice 5"
     - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !
 
 
@@ -280,7 +282,7 @@ Rappelons que toutes les pages que nous avons créées jusqu'à présent sont un
 Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via les frameworks Django, Jinja2, Flask...), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.
 
 
-!!! note "Exercice 5: Un service Web (activité pages 196-197 du manuel)"
+!!! note "Exercice 6: Un service Web (activité pages 196-197 du manuel)"
     - Le langage PHP est souvent utilisé à cet effet. Dans ce TP, nous utilisons à la place la bibliothèque `jinja2`. 
     - Télécharger le programme `serveur.py` (un lien est donné en haut de la page 196) ainsi que les autres fichiers fournis.
     - Ouvrir fichier `serveur.py` dans spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés).
