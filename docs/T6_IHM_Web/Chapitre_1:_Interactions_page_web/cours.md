@@ -62,20 +62,36 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
       - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel.
       - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
        
-#### En résumé
+#### Pour conclure
 
-- Pour créer une page web, on crée un fichier ayant l'extension  `.html`  , qui pourra être ouvert dans le navigateur web simplement en faisant un double-clic dessus.
-- Chaque fichier HTML est constitué de balises.
-- Les balises peuvent avoir plusieurs formes :
-    - `<balise>` `</balise>`  : **balises en paires**, elles s'ouvrent et se ferment pour délimiter le contenu (début et fin d'un titre, par exemple) ;
-    - `<balise>`  : **balises orphelines** (on ne les insère qu'en un seul exemplaire), elles permettent d'insérer un élément à un endroit précis (par exemple une image).
-- Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg">`  ).
-- Une page web est constituée de deux sections principales : l'en-tête`<head>` `</head>`  dont le contenu n'apparaît pas dans l'affichage de la page et le corps `<body>` `</body>`  qui, lui, apparaît.
+!!! done "À retenir"
 
-#### Aide mémoire
+    - Pour créer une page web, on crée un fichier ayant l'extension  `.html`  , qui pourra être ouvert dans le navigateur web simplement en faisant un double-clic dessus.
+    - Chaque fichier HTML est constitué de balises.
+    - Les balises peuvent avoir plusieurs formes :
+        - `<balise> </balise>`  : **balises en paires**, elles s'ouvrent et se ferment pour délimiter le contenu (début et fin d'un titre, par exemple) ;
+        - `<balise>`  : **balises orphelines** (on ne les insère qu'en un seul exemplaire), elles permettent d'insérer un élément à un endroit précis (par exemple une image).
+    - Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg">`  ).
+    - Une page web est constituée de deux sections principales : l'en-tête`<head> </head>`  dont le contenu n'apparaît pas dans l'affichage de la page et le corps `<body> </body>`  qui, lui, apparaît.
 
-Si vous avez besoin de retrouver facilement sur une balise html, vous pouvez télécharger et consulter 
-[la liste des balises html](./data/Glossaire+des+balises+HTML.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
+#### En savoir plus
+
+- [le cours d'OpenClassrooms](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3){:target="_blank"} (l'inscription est gratuite)
+- Le cours interactif sur le HTML [du site w3schools](https://www.w3schools.com/html/){:target="_blank"}
+
+
+
+
+###  Aide mémoire HTML
+
+??? info "Si vous avez besoin de retrouver facilement une balise html"
+    Vous pouvez télécharger et consulter 
+    [la liste des balises html](./data/Glossaire+des+balises+HTML.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
+    
+
+#### Quiz
+
+- [Maîtriser les bases de HTML5](https://openclassrooms.com/fr/courses/1603881-creez-votre-sitee-web-avec-html5-et-css3/exercises/4740){:target="_blank"}
 
 
 ### 1.2 ```html``` + ```css``` 
@@ -121,10 +137,8 @@ Le fichier ```css``` (souvent nommé ```style.css```) doit être référencé au
 
 Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendre sur Capytale (code 5b2f-1072956).
 
-**En savoir plus** 
 
-- le cours d'OpenClassrooms : [https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3){:target="_blank"}
-- Le site W3:  [W3html](https://www.w3schools.com/html/){:target="_blank"} [W3 CSS](https://www.w3schools.com/css/default.asp){:target="_blank"}
+
 
 !!! note "Exercice 2"
     Reprenez votre page de l'exercice 1 et rajoutez une feuille de style.
@@ -134,6 +148,41 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
     ![](data/login_avant.png){: .center}
     - Modifiez le fond du cadre de login à l'aide des attributs de style de la page.
     ![](data/login_apres.png){: .center}
+
+
+
+
+
+
+#### Pour conclure
+
+!!! done "À retenir"
+    - CSS est un autre langage qui vient compléter le HTML. Son rôle est de mettre en forme votre page web.
+    - Pour écrire le code CSS, on crée un fichier séparé portant l'extension `.css`  comme `style.css`.
+    - Pour lier les fichiers CSS et HTML, on rajoute une ligne dans la balise `<head> </head>` du fichier HTML :  `<link href="style.css" rel="stylesheet">`
+    - En CSS, on sélectionne les portions de la page HTML qu'on veut modifier, et on change leur présentation avec des propriétés CSS :
+    ```{.css}
+    balise1
+    {
+        propriete1: valeur1;
+        propriete2: valeur2;
+    }
+    ```
+    - Il existe plusieurs façons de sélectionner la portion de page que l'on veut mettre en forme. Par exemple, on peut viser :
+        - toutes les balises d'un même type, en écrivant simplement leur nom (`h1`par exemple) ;
+        - certaines balises spécifiques, auxquelles on a donné des noms à l'aide des attributs `class` ou `id`(`.nom-classe` ou `#nom-id`) ;
+        - uniquement les balises qui se trouvent à l'intérieur d'autres balises (`h3`,`em`).
+
+
+###  Aide mémoire CSS
+
+??? "Si vous avez besoin de retrouver facilement  une propriété css"
+    Vous pouvez télécharger et consulter [la liste des propriétés css](./data/Glossaire+des+propriétés+CSS.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
+
+#### En savoir plus
+
+- [le cours d'OpenClassrooms](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061278-integrez-le-css-dans-la-page-html){:target="_blank"} (l'inscription est gratuite)
+- le cours interactif sur le CSS [du site w3schools](https://www.w3schools.com/css/default.asp){:target="_blank"}
 
 
 
