@@ -94,4 +94,6 @@
 
 !!! done "séance 13 (mardi 13/12/22):"
     - Correction de l'exercice 4
-    - Réalisation de pages html personnelles
+    - Réalisation de pages html personnelles    
+    ??? note "Devoirs"
+        - Exercice 5: Réalisation de pages html personnelles à déposer dans votre répertoire personnel sur le site collaboratif.
