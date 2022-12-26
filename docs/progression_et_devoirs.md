@@ -91,3 +91,7 @@
         - Étudier le cours pour apprendre les bases de HTML (très important) et de CSS (moins important)
         - Faire le Quiz dont le lien est donné dans le cours.
         - Exercice 4  (celui portant sur les tableaux HTML) du cours permettant de  vérifier votre maîtrise du HTML et du CSS. Les fichiers sont à déposer dans votre répertoire personnel sur le site collaboratif.
+
+!!! done "séance 13 (mardi 13/12/22):"
+    - Correction de l'exercice 4
+    - Réalisation de pages html personnelles

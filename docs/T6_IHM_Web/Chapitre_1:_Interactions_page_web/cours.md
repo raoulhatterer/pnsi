@@ -84,7 +84,7 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
 
 ###  Aide mémoire HTML
 
-??? info "Si vous avez besoin de retrouver facilement une balise html"
+??? done "Si vous avez besoin de retrouver facilement une balise html"
     Vous pouvez télécharger et consulter 
     [la liste des balises html](./data/Glossaire+des+balises+HTML.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
     
@@ -144,10 +144,16 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
     Reprenez votre page de l'exercice 1 et rajoutez une feuille de style.
 
 !!! note "Exercice 3"
-    - Allez sur la page de connexion à Atrium et affichez l'inspecteur d'élement de votre navigateur (généralement accessible en appuyant sur ```F12``` )
-    ![](data/login_avant.png){: .center}
-    - Modifiez le fond du cadre de login à l'aide des attributs de style de la page.
-    ![](data/login_apres.png){: .center}
+    === "Énoncé"
+        - Allez sur la page de connexion à Atrium et affichez l'inspecteur d'élement de votre navigateur (généralement accessible en appuyant sur ```F12``` )
+        ![](data/login_avant.png){: .center}
+        - Modifiez le fond du cadre de login à l'aide des attributs de style de la page.
+        ![](data/login_apres.png){: .center}
+    
+    === "Correction"
+        - Clic droit puis «Inspecter l'élément»
+        - ```<div class=​"portlet-content" style=​"background-color:​rgb(174,185,104)​">​```
+    
 
 
 !!! note "Exercice 4"
@@ -256,10 +262,9 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
         - certaines balises spécifiques, auxquelles on a donné des noms à l'aide des attributs `class` ou `id`(`.nom-classe` ou `#nom-id`) ;
         - uniquement les balises qui se trouvent à l'intérieur d'autres balises (`h3`,`em`).
 
-
 ###  Aide mémoire CSS
 
-??? "Si vous avez besoin de retrouver facilement  une propriété css"
+??? done "Si vous avez besoin de retrouver facilement  une propriété css"
     Vous pouvez télécharger et consulter [la liste des propriétés css](./data/Glossaire+des+propriétés+CSS.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
 
 #### En savoir plus
@@ -267,7 +272,11 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
 - [le cours d'OpenClassrooms](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061278-integrez-le-css-dans-la-page-html){:target="_blank"} (l'inscription est gratuite)
 - le cours interactif sur le CSS [du site w3schools](https://www.w3schools.com/css/default.asp){:target="_blank"}
 
-
+!!! note "Exercice 5"
+    Réalisation d'une page web personnelle
+    === "Énoncé"
+        - Pour la forme: pour le contenu, écrire un fichier 'html' (ou mieux plusieurs fichiers `html` liés entre eux) sans mettre d'accents pour le nom des fichiers)  et un fichier `style1.css` pour le style (remplacer le chiffre 1 par votre numéro d'élève dans la liste de la classe de NSI). __Utiliser un maximum des balises `html` et des propriétés `css` citées dans les deux aide-mémoire ci-dessus (que je vous demanderai d'imprimer et d'amener en cours).__ 
+        - Pour le fond: présentez-vous, présentez vos parents, les études que vous souhaitez faire et par la suite le métier que vous souhaitez exercer. Présentez aussi votre œuvre culturelle préférée  (livre, film, tableau, musique...), en expliquant pourquoi elle vous a marqué. Faites-nous part de votre animal totem (celui qui correspond le mieux à votre caractère ou à votre sensibilité) en expliquant votre choix. Ajoutez d'autres sections si vous le souhaitez (du moment qu'elles sont personnelles). Terminez par une section où vous indiquerez combien de balises `html` vous avez utilisées (vous en donnerez la liste) et vous ferez de même pour les  styles `css`.
 
 
 ## 2. Quand le client peut agir sur sa page : exemple avec JavaScript
@@ -345,7 +354,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 - le cours d'OpenClassrooms : [https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript){:target="_blank"}
 - le site W3 (W3 javascript)[https://www.w3schools.com/js/]{:target="_blank"}
 
-!!! note "Exercice 5"
+!!! note "Exercice 6"
     - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !
 
 
@@ -363,7 +372,7 @@ Rappelons que toutes les pages que nous avons créées jusqu'à présent sont un
 Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via les frameworks Django, Jinja2, Flask...), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.
 
 
-!!! note "Exercice 6: Un service Web (activité pages 196-197 du manuel)"
+!!! note "Exercice 7: Un service Web (activité pages 196-197 du manuel)"
     - Le langage PHP est souvent utilisé à cet effet. Dans ce TP, nous utilisons à la place la bibliothèque `jinja2`. 
     - Télécharger le programme `serveur.py` (un lien est donné en haut de la page 196) ainsi que les autres fichiers fournis.
     - Ouvrir fichier `serveur.py` dans spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés).
