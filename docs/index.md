@@ -25,8 +25,8 @@
         **Thème 2 :  Représentation des données**
 
         - Chapitre 1: [Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
-        - Chapitre 2: [Les tuples](./T2_Representation_des_donnees/Chapitre_2_Tuples/cours/)
-        - Chapitre 3: [Les dictionnaires](./T2_Representation_des_donnees/Chapitre_3_Dictionnaires/cours/)
+        - Chapitre 2: [Les tuples](./T2_Representation_des_donnees/Chapitre_2:_Tuples/cours/)
+        - Chapitre 3: [Les dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
         - Chapitre 4: [Les bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
         - Chapitre 5: [Les booléens](./T2_Representation_des_donnees/2.5_Booleens/cours/)
         - Chapitre 6: [Le codage des caractères](./T2_Representation_des_donnees/2.6_Codage_caracteres/cours/)
