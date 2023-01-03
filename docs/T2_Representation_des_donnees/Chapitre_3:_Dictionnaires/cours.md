@@ -2,7 +2,7 @@
 
 ![image](data/BO.png){: .center}
 
-# 1. Les dictionnaires : premiers exemples
+## 1. Les dictionnaires : premiers exemples
 
 Une liste est un ensemble d'éléments accessibles par leur **indice**. Cet indice est en quelque sorte la «place» de l'élément dans la liste.
 On peut dire que cet indice est **la clé** qui permet d'accéder à l'élément.
