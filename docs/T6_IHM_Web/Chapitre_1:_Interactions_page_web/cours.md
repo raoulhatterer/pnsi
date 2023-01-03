@@ -350,9 +350,9 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 
 **En savoir plus**
 
-- le guide JavaScript de la fondation Mozilla : [https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide){:target="_blank"}
-- le cours d'OpenClassrooms : [https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript){:target="_blank"}
-- le site W3 (W3 javascript)[https://www.w3schools.com/js/]{:target="_blank"}
+- [le guide JavaScript de la fondation Mozilla](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide){:target="_blank"}
+- [le cours d'OpenClassrooms sur le javascript](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript){:target="_blank"}
+- [le site W3 sur le javascript](https://www.w3schools.com/js/){:target="_blank"}
 
 !!! note "Exercice 6"
     - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !

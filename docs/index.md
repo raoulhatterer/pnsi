@@ -4,7 +4,8 @@
   
 
 ## Thème(s) en cours d'étude 
--  Dans le Thème6: [Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
+- Dans le Thème6: [Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
+- Dans le Thème2: [les tuples](./T2_Representation_des_donnees/Chapitre_2:_Tuples/cours/) et [les dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
 
 ## Programme
 !!! abstract "Programme"
@@ -24,8 +25,8 @@
         **Thème 2 :  Représentation des données**
 
         - Chapitre 1: [Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
-        - Chapitre 2: [Les tuples](./T2_Representation_des_donnees/2.2_Tuples/cours/)
-        - Chapitre 3: [Les dictionnaires](./T2_Representation_des_donnees/2.3_Dictionnaires/cours/)
+        - Chapitre 2: [Les tuples](./T2_Representation_des_donnees/Chapitre_2_Tuples/cours/)
+        - Chapitre 3: [Les dictionnaires](./T2_Representation_des_donnees/Chapitre_3_Dictionnaires/cours/)
         - Chapitre 4: [Les bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
         - Chapitre 5: [Les booléens](./T2_Representation_des_donnees/2.5_Booleens/cours/)
         - Chapitre 6: [Le codage des caractères](./T2_Representation_des_donnees/2.6_Codage_caracteres/cours/)

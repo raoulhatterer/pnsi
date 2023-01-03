@@ -97,3 +97,5 @@
     - Réalisation de pages html personnelles    
     ??? note "Devoirs"
         - Exercice 5: Réalisation de pages html personnelles à déposer dans votre répertoire personnel sur le site collaboratif.
+
+!!! done "séance 14 (mardi 03/01/23):"

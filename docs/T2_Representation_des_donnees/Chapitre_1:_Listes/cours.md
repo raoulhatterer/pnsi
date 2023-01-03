@@ -1,4 +1,4 @@
-# Chapitre 1 Les listes
+# Chapitre 1: Les listes
 
 ![image](data/BO.png){: .center}
 
