@@ -358,9 +358,9 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 
 !!! note "Exercice 6"
     === "Énoncé"
-        Créer:
-      + un `<input>` de type `range` permettant de transmette un age qui sera compris entre 7 ans et 100 ans
-      + un bouton permettant d'afficher l'âge de la personne et si la personne est mineure ou majeure
+        - Créer:
+            + un `<input>` de type `range` permettant de transmette un âge qui sera compris entre 7 ans et 100 ans
+            + un bouton permettant d'afficher l'âge de la personne et si la personne est mineure ou majeure
         <div>
         <input type="range" id="age" name="age"
         min="7" max="100">
@@ -369,8 +369,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         </div>
         <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         <p id="majorite"></p>
-        
-    
+        - Placer le javascript dans un fichier annexe.
     === "Correction"
         ```html
         <!DOCTYPE html>
@@ -388,6 +387,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
                  min="7" max="100">
             <label for="age">Age</label>
              </div>
+            // une façon de transmettre la valeur 
             <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         
             <p id="majorite"></p>
@@ -398,25 +398,65 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         ```javascript
         
         function majorite(age){
-         const limite=18;
-         var message;
-         if (age < limite){
-         	message = " Tu es mineur";
+        const limite=18; //const permet de déclarer une constante
+        var message;     //var permet de déclarer une variable globale
+        if (age < limite){
+ 	        message = " Tu es mineur";
         } else {
-        	message = " Vous êtes majeur";
+	    message = " Vous êtes majeur";
         }
         
-        message = "age:" + age + message;
-        console.log(message);
+        message = "âge:" + age + message;
+        // affichage dans la console
+        console.log(message); 
+        // affichage dans une balise html
         document.getElementById("majorite").innerHTML= message;
         }
         
         ```
 
+!!! note "Exercice 7"
+    === "Énoncé"
+        - Créer:
+            + un `<input>` de type `text` (le type par défaut) permettant de rentrer un nombre qu'on souhaite compris entre 7 et 100
+            + un bouton permettant de tester si la donnée est correcte.
+        - Inclure le javascript dans fichier html
+    === "Correction"
+        ```html
+        <!DOCTYPE html>
+        <html>
+        <body>
+                
+        <h1>Validation par fonction JavaScript</h1>
+        
+        <p>Saisir un nombre compris entre 7 and 100:</p>
+        
+        <input id="numb">
+        
+        <button type="button" onclick="myFunction()">Valider</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+        function myFunction() {
+          let x = document.getElementById("numb").value; //autre façon de récupérer la valeur
+          let text;
+          if (isNaN(x) || x < 7 || x > 100) {
+            text = "Entrée non valide";
+          } else {
+            text = "Entrée valide";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+        
+        </body>
+        </html>         
+        ```
         
         
 
-!!! note "Exercice 7"
+!!! note "Exercice 8"
     - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !
 
 
@@ -434,7 +474,7 @@ Rappelons que toutes les pages que nous avons créées jusqu'à présent sont un
 Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via les frameworks Django, Jinja2, Flask...), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.
 
 
-!!! note "Exercice 8: Un service Web (activité pages 196-197 du manuel)"
+!!! note "Exercice 9: Un service Web (activité pages 196-197 du manuel)"
     - Le langage PHP est souvent utilisé à cet effet. Dans ce TP, nous utilisons à la place la bibliothèque `jinja2`. 
     - Télécharger le programme `serveur.py` (un lien est donné en haut de la page 196) ainsi que les autres fichiers fournis.
     - Ouvrir fichier `serveur.py` dans spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés).
