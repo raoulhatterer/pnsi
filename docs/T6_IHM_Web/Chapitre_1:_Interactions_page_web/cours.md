@@ -354,7 +354,69 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 - [le cours d'OpenClassrooms sur le javascript](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript){:target="_blank"}
 - [le site W3 sur le javascript](https://www.w3schools.com/js/){:target="_blank"}
 
+
+
 !!! note "Exercice 6"
+    === "Énoncé"
+        Créer:
+      + un `<input>` de type `range` permettant de transmette un age qui sera compris entre 7 ans et 100 ans
+      + un bouton permettant d'afficher l'âge de la personne et si la personne est mineure ou majeure
+        <div>
+        <input type="range" id="age" name="age"
+        min="7" max="100">
+        </input>
+        <label for="age">Age</label>
+        </div>
+        <button type="button" onclick="majorite(age.value);">Majeur ?</button>
+        <p id="majorite"></p>
+        
+    
+    === "Correction"
+        ```html
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>un peu d'action</title>
+          </head>
+          <body>
+            <script src="script.js"></script>
+        
+            <h1>Majorité</h1>
+            <div>
+            <input type="range" id="age" name="age"
+                 min="7" max="100">
+            <label for="age">Age</label>
+             </div>
+            <button type="button" onclick="majorite(age.value);">Majeur ?</button>
+        
+            <p id="majorite"></p>
+          </body>
+        </html>
+        ```
+        
+        ```javascript
+        
+        function majorite(age){
+         const limite=18;
+         var message;
+         if (age < limite){
+         	message = " Tu es mineur";
+        } else {
+        	message = " Vous êtes majeur";
+        }
+        
+        message = "age:" + age + message;
+        console.log(message);
+        document.getElementById("majorite").innerHTML= message;
+        }
+        
+        ```
+
+        
+        
+
+!!! note "Exercice 7"
     - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !
 
 
@@ -372,7 +434,7 @@ Rappelons que toutes les pages que nous avons créées jusqu'à présent sont un
 Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via les frameworks Django, Jinja2, Flask...), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.
 
 
-!!! note "Exercice 7: Un service Web (activité pages 196-197 du manuel)"
+!!! note "Exercice 8: Un service Web (activité pages 196-197 du manuel)"
     - Le langage PHP est souvent utilisé à cet effet. Dans ce TP, nous utilisons à la place la bibliothèque `jinja2`. 
     - Télécharger le programme `serveur.py` (un lien est donné en haut de la page 196) ainsi que les autres fichiers fournis.
     - Ouvrir fichier `serveur.py` dans spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés).
