@@ -387,7 +387,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
                  min="7" max="100">
             <label for="age">Age</label>
              </div>
-            // une façon de transmettre la valeur 
+            // ici la fonction transmet la valeur 
             <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         
             <p id="majorite"></p>
@@ -432,7 +432,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         <p>Saisir un nombre compris entre 7 and 100:</p>
         
         <input id="numb">
-        
+        // ici la fonction ne transmet pas la valeur
         <button type="button" onclick="myFunction()">Valider</button>
         
         <p id="demo"></p>
