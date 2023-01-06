@@ -99,3 +99,12 @@
         - Exercice 5: Réalisation de pages html personnelles à déposer dans votre répertoire personnel sur le site collaboratif.
 
 !!! done "séance 14 (mardi 03/01/23):"
+    -  [Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/) (la partie JavaScript)
+    - [Les tuples](./T2_Representation_des_donnees/Chapitre_2:_Tuples/cours/) et [les dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
+    ??? note "Devoirs"
+        - À déposer dans votre répertoire personnel sur le site collaboratif:
+            - fichier `ipynb` avec les exercices du cours sur les tuples 
+            - fichier `ipynb` avec les exercices du cours sur les dictionnaires
+            - exercice 8 (ou on vous demande d'utliser JavaScript) [Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
+    
+    
