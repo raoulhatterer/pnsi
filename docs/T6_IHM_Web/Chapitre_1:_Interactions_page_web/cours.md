@@ -291,7 +291,7 @@ Le JavaScript va venir régler le problème n°2 : il est possible de fabriquer 
 
 Inventé en 1995 par [Brendan Eich](https://fr.wikipedia.org/wiki/Brendan_Eich){:target="_blank"} pour le navigateur Netscape, le langage JavaScript s'est imposé comme la norme auprès de tous les navigateurs pour apporter de l'interactivité aux pages web.
 
-!!! abstract "Exemple de couple ```html``` / ```javascript``` minimal"
+!!! abstract "Exemple de couple ```html``` / ```JavaScript``` minimal"
     Notre fichier ```index.html``` fait référence, au sein d'une balise ```<script>```, à un fichier externe ```script.js``` qui contiendra notre code JavaScript.   
 
     - fichier ```index.html``` : 
@@ -351,8 +351,8 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 **En savoir plus**
 
 - [le guide JavaScript de la fondation Mozilla](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide){:target="_blank"}
-- [le cours d'OpenClassrooms sur le javascript](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript){:target="_blank"}
-- [le site W3 sur le javascript](https://www.w3schools.com/js/){:target="_blank"}
+- [le cours d'OpenClassrooms sur le JavaScript](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript){:target="_blank"}
+- [le site W3 sur le JavaScript](https://www.w3schools.com/js/){:target="_blank"}
 
 
 
@@ -369,7 +369,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         </div>
         <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         <p id="majorite"></p>
-        - Placer le javascript dans un fichier annexe.
+        - Placer le JavaScript dans un fichier annexe.
     === "Correction"
         ```html
         <!DOCTYPE html>
@@ -420,7 +420,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         - Créer:
             + un `<input>` de type `text` (le type par défaut) permettant de rentrer un nombre que l'on souhaite compris entre 7 et 100
             + un bouton permettant de tester si la donnée est correcte.
-        - Inclure le javascript dans le fichier html
+        - Inclure le JavaScript dans le fichier html
     === "Correction"
         ```html
         <!DOCTYPE html>
@@ -473,11 +473,60 @@ Rappelons que toutes les pages que nous avons créées jusqu'à présent sont un
 
 Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via les frameworks Django, Jinja2, Flask...), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.
 
+!!! abstract "Exemple de serveur qui se contente de lire des formulaires"
+    - Le langage PHP est souvent utilisé à cet effet. Dans ce TP, nous utilisons à la place la bibliothèque `jinja2`. 
+    - Placer les fichiers suivants dans un même dossier:
+        - Le fichier [`serveur.py`](./serveur.py) (ce nom devra être conservé) sera à utiliser tel quel. Nous n'aurons pas à le modifier (sauf si l'on désire changer le port). **Il ne devra pas être exécuté**, mais il **devra être présent** au côté des autres fichiers.
+        - Les fichiers qu'il faudra modifier sont les fichiers:
+            - `dynserveur.py` (ce nom peut être changé) qui contient le code que l'on souhaite voir exécuter sur le serveur. Ce fichier devra être exécuté dans Spyder. 
+            - `formulaire1.html` (ce nom peut être changé) qui contient un formulaire (voir page 202 du livre) permettant d'envoyer des données sous forme de dictionnaire au serveur. 
+    === "dynserveur.py"
+    ```python
+    from serveur import get_template, render, OK, Redirect, pageDynamique, lancerServeur
+    
+    def traitement1(url, vars):
+        """Traitement du formulaire1"""
+        print("Le formulaire à envoyé:",vars)
+        return Redirect('/formulaire1.html')
+    
+    pageDynamique('/traitement_formulaire1', traitement1)
+
+    # Lancer le serveur
+    lancerServeur()
+    ```
+    === "formulaire1.html"
+        - À l'exécution du script `dynserveur.py` dans Spyder, le serveur devrait se lancer et un message devrait vous dire sur quel port (habituellement sur le port 8000). 
+        - Se rendre ensuite à l'adresse suivante `http://127.0.0.1:8000` ou tout simplement `127.0.0.1:8000`. 
+        - Les fichiers présents dans votre dossier doivent aparaitre dans votre navigateur internet.
+        - À partir de là vous pouvez ouvrir `formulaire1.html`
+        - Vérifiez que tout fonctionne et que les données sont bien envoyées sous forme de dictionnaire.
+    ```html
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Formulaire de base</title>
+      </head>
+      <body>
+        <h1>Formulaire de base</h1>
+        <form action="/traitement_formulaire1" method="POST">
+          <label>Message : <input type="text" name="msg"></label><br>
+          <input name="age" type="number" value="42" min="0" max="100"/><br>
+          <input name="regle" type="range" value="60"/><br>
+          <input type="submit" value="Envoyer">
+        </form>
+      </body>
+    </html>
+    ```
+    
+
+
+
 
 !!! note "Exercice 9: Un service Web (activité pages 196-197 du manuel)"
-    - Le langage PHP est souvent utilisé à cet effet. Dans ce TP, nous utilisons à la place la bibliothèque `jinja2`. 
     - Télécharger le programme `serveur.py` (un lien est donné en haut de la page 196) ainsi que les autres fichiers fournis.
-    - Ouvrir fichier `serveur.py` dans spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés).
+    - Résumé de ce qu'il faut faire pour lancer le serveur (une fois que les fichiers sont bien complétés conformément à ce qui est demandé dans l'activité): ouvrir fichier `dynserveur.py` dans Spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés).
         
    
-    
+!!! note "Exercice 10"
+    - exercice 17 page 212: Boite à secrets (requette POST)
+
