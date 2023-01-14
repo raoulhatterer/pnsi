@@ -547,7 +547,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
     
 !!! note "Exercice 10"
     - exercice 17 page 212: Boite à secrets (requette POST)
-    === "Quelques indications supplémentaires"
+    ??? "Quelques indications supplémentaires"
         - Télécharger les 2 fichiers qui sont fournis avec l’exercice.
         - Les renommer `serveur.py` et `secret.py`
         - Dans le fichier `secret.py` rechercher l'instruction `Pagedynamique` pour déterminer le nom de l'action 
