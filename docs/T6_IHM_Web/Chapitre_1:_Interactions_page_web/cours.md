@@ -474,7 +474,7 @@ Rappelons que toutes les pages que nous avons créées jusqu'à présent sont un
 Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via les frameworks Django, Jinja2, Flask...), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.
 
 !!! abstract "Exemple de serveur qui se contente de lire des formulaires"
-    - Le langage PHP est souvent utilisé à cet effet. Dans ce TP, nous utilisons à la place la bibliothèque `jinja2`. 
+    - Langage: Dans ce TP, nous utilisons le langage Python via la bibliothèque `jinja2`. 
     - Placer les fichiers suivants dans un même dossier:
         - Le fichier [`serveur.py`](./serveur.py) (ce nom devra être conservé) sera à utiliser tel quel. Nous n'aurons pas à le modifier (sauf si l'on désire changer le port). **Il ne devra pas être exécuté**, mais il **devra être présent** au côté des autres fichiers.
         - Les fichiers qu'il faudra modifier sont les fichiers:
@@ -496,7 +496,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
     ```
     === "formulaire1.html"
         - À l'exécution du script `dynserveur.py` dans Spyder, le serveur devrait se lancer et un message devrait vous dire sur quel port (habituellement sur le port 8000). 
-        - Se rendre ensuite à l'adresse suivante `http://127.0.0.1:8000` ou tout simplement `127.0.0.1:8000`. 
+        - Se rendre ensuite à l'adresse suivante `http://127.0.0.1:8000` ou tout simplement `127.0.0.1:8000` ou `localhost:8000`. 
         - Les fichiers présents dans votre dossier doivent aparaitre dans votre navigateur internet.
         - À partir de là vous pouvez ouvrir `formulaire1.html`
         - Vérifiez que tout fonctionne et que les données sont bien envoyées sous forme de dictionnaire.
@@ -517,6 +517,17 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
       </body>
     </html>
     ```
+
+!!! done "À retenir"
+    - Une page web peut contenir plusieurs formulaires.
+    - Un formulaire peut contenir plusieurs `<input>` dont obligatoirement un `<input>` de type `sumit` pour soumettre le formulaire.
+    - Lors de la soumission d'un formulaire, c'est-à-dire lorsque l’on clique le bouton «Envoyer», le navigateur communique deux éléments au serveur:
+        - une URL spécifiée grâce à l'attribut `action` du formulaire (dans l'exemple ci-dessus, l'url `"/traitement_formulaire1"` est une [URL relative](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL){:target="_blank"} où `/` correspond au dossier racine) ;
+        - un dictionnaire qui contient les valeurs saisies dans le formulaire.
+    - À la réception de ces éléments, le serveur:
+        - se sert de l'URL pour faire le lien avec une fonction (grâce à `pageDynamique`) ;
+        - effectue un traitement des données dans la fonction ;
+        - renvoie une page au navigateur.
     
 
 
@@ -524,9 +535,26 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
 
 !!! note "Exercice 9: Un service Web (activité pages 196-197 du manuel)"
     - Télécharger le programme `serveur.py` (un lien est donné en haut de la page 196) ainsi que les autres fichiers fournis.
-    - Résumé de ce qu'il faut faire pour lancer le serveur (une fois que les fichiers sont bien complétés conformément à ce qui est demandé dans l'activité): ouvrir fichier `dynserveur.py` dans Spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés).
+    - Résumé de ce qu'il faut faire pour lancer le serveur (une fois que les fichiers sont bien complétés conformément à ce qui est demandé dans l'activité): ouvrir fichier `dynserveur.py` dans Spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés). Ouvrir `localhost:8000` dans un navigateur.
         
-   
+
+!!! done "Utiliser un template pour générer une page HTML"
+    - Jinja2 est ce que l’on appelle un moteur de templates (patrons en français…). L'intérêt de Jinja2 est qu’il est écrit en Python et très fortement intégré à ce langage. 
+
+    - Les moteurs de templates fonctionnent quasiment tous de la même manière : à partir d’un patron (template), on effectue le rendu en transmettant un contexte.
+
+    - Un patron est constitué de parties fixes et de parties variables ; Jinja2 fournit même des boucles et des tests. Il est ainsi possible de générer différentes sorties avec un même patron en fonction du contexte.
+    
 !!! note "Exercice 10"
     - exercice 17 page 212: Boite à secrets (requette POST)
+    === "Quelques indications supplémentaires"
+        - Télécharger les 2 fichiers qui sont fournis avec l’exercice.
+        - Les renommer `serveur.py` et `secret.py`
+        - Dans le fichier `secret.py` rechercher l'instruction `Pagedynamique` pour déterminer le nom de l'action 
+        - créer un fichier secret.html contenant un formulaire avec notamment: 
+            - une zone de saisie de type `text` pour le nom ;
+            - une zone de saisie de type `password` pour le mot de passe ;
+            - une zone de saisie de type `text` pour le secret ;
+            - un bouton pour envoyer le formulaire.
 
+        - Dans ce même fichier html, rajouter le code jinja2 pour permettre d'afficher l'ancien message secret envoyé par le serveur. 

@@ -107,4 +107,13 @@
             - fichier `ipynb` avec les exercices du cours sur les dictionnaires
             - exercice 8 (ou on vous demande d'utliser JavaScript) [Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
     
+!!! done "séance 15 (mardi 10/01/23):"
+    - Correction des pages personnelles en html et css.
+    -  [Interactions sur une page web](../T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/) (la partie JavaScript)
+    - [Les tuples](../T2_Representation_des_donnees/Chapitre_2:_Tuples/cours/) et [les dictionnaires](../T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
+    ??? note "Devoirs"
+        - À déposer dans votre répertoire personnel sur le site collaboratif:
+            - exercice 9 [Interactions sur une page web](../T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
+            - exercice 10 [Interactions sur une page web](../T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
+    
     
