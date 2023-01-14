@@ -550,7 +550,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
     ??? "Quelques indications supplémentaires"
         - Télécharger les 2 fichiers qui sont fournis avec l’exercice.
         - Les renommer `serveur.py` et `secret.py`
-        - Dans le fichier `secret.py` rechercher l'instruction `Pagedynamique` pour déterminer le nom de l'action 
+        - Dans le fichier `secret.py` rechercher l'instruction `Pagedynamique` pour déterminer le nom de l'action qu'il faudra utiliser dans le formulaire.
         - créer un fichier secret.html contenant un formulaire avec notamment: 
             - une zone de saisie de type `text` pour le nom ;
             - une zone de saisie de type `password` pour le mot de passe ;
