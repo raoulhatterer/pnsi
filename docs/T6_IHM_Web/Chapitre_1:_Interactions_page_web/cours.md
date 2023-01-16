@@ -140,10 +140,10 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
 
 
 
-!!! note "Exercice 2"
+!!! example "{{ exercice() }}"
     Reprenez votre page de l'exercice 1 et rajoutez une feuille de style.
 
-!!! note "Exercice 3"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         - Allez sur la page de connexion à Atrium et affichez l'inspecteur d'élement de votre navigateur (généralement accessible en appuyant sur ```F12``` )
         ![](data/login_avant.png){: .center}
@@ -155,8 +155,7 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
         - ```<div class=​"portlet-content" style=​"background-color:​rgb(174,185,104)​">​```
     
 
-
-!!! note "Exercice 4"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         - Apprenez à [ajouter des tableaux](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061455-ajoutez-des-tableaux){:target="_blank"} et à les mettre en forme en CSS.
         - Utiliser la balise `<code> </code>` pour représenter un court fragment de code machine.
@@ -272,7 +271,8 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
 - [le cours d'OpenClassrooms](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061278-integrez-le-css-dans-la-page-html){:target="_blank"} (l'inscription est gratuite)
 - le cours interactif sur le CSS [du site w3schools](https://www.w3schools.com/css/default.asp){:target="_blank"}
 
-!!! note "Exercice 5"
+
+!!! example "{{ exercice() }}"
     Réalisation d'une page web personnelle
     === "Énoncé"
         - Pour la forme: pour le contenu, écrire un fichier 'html' (ou mieux plusieurs fichiers `html` liés entre eux) sans mettre d'accents pour le nom des fichiers)  et un fichier `style1.css` pour le style (remplacer le chiffre 1 par votre numéro d'élève dans la liste de la classe de NSI). __Utiliser un maximum des balises `html` et des propriétés `css` citées dans les deux aide-mémoire ci-dessus (que je vous demanderai d'imprimer et d'amener en cours).__ 
@@ -356,7 +356,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 
 
 
-!!! note "Exercice 6"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         - Créer:
             + un `<input>` de type `range` permettant de transmette un âge qui sera compris entre 7 ans et 100 ans
@@ -415,7 +415,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         
         ```
 
-!!! note "Exercice 7"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         - Créer:
             + un `<input>` de type `text` (le type par défaut) permettant de rentrer un nombre que l'on souhaite compris entre 7 et 100
@@ -456,7 +456,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         
         
 
-!!! note "Exercice 8"
+!!! example "{{ exercice() }}"
     - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !
 
 
@@ -533,7 +533,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
 
 
 
-!!! note "Exercice 9: Un service Web (activité pages 196-197 du manuel)"
+!!! example "{{ exercice() }}: Un service Web (activité pages 196-197 du manuel)"
     - Télécharger le programme `serveur.py` (un lien est donné en haut de la page 196) ainsi que les autres fichiers fournis.
     - Résumé de ce qu'il faut faire pour lancer le serveur (une fois que les fichiers sont bien complétés conformément à ce qui est demandé dans l'activité): ouvrir fichier `dynserveur.py` dans Spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier `serveur.py` par contre les autres fichiers pourront si besoin être modifiés). Ouvrir `localhost:8000` dans un navigateur.
         
@@ -545,7 +545,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
 
     - Un patron est constitué de parties fixes et de parties variables ; Jinja2 fournit même des boucles et des tests. Il est ainsi possible de générer différentes sorties avec un même patron en fonction du contexte.
     
-!!! note "Exercice 10"
+!!! example "{{ exercice() }}"
     - exercice 17 page 212: Boite à secrets (requette POST)
     ??? "Quelques indications supplémentaires"
         - Télécharger les 2 fichiers qui sont fournis avec l’exercice.
