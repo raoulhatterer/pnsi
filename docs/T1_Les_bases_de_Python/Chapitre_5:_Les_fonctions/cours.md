@@ -47,7 +47,7 @@ Dans ce cas d'utilisation, la fonction ```accueil``` n'est qu'un raccourci, une 
             print("meoww")
     ```
 
-```python
+```pycon
 >>> chat_penible(3)
 meoww
 meoww
@@ -76,7 +76,7 @@ Une fonction peut avoir de multiples paramètres :
             print(mot)
     ```
     
-```python
+```pycon
 >>> repete("NSI", 3)
 NSI
 NSI
@@ -86,7 +86,7 @@ NSI
 L'ordre des paramètres passés est alors important ! Le code ci-dessous est incorrect.
 
 
-```python
+```pycon
 >>> repete(3, "test")
 ---------------------------------------------------------------------------
 
@@ -128,7 +128,7 @@ Le renvoi d'une valeur se fait grâce au mot-clé `return`.
         return 2*x + 3
     ```
 
-```python
+```pycon
 >>> f(10)
 23
 ```
@@ -140,7 +140,7 @@ Le renvoi d'une valeur se fait grâce au mot-clé `return`.
 !!! danger "Différence fondamentale entre ```return``` et ```print``` :star: :star: :star:"
     Le mot-clé ```return``` de l'exemple précédent fait que l'expression ```f(10)``` est **égale** à 23.
     On peut d'ailleurs écrire en console :
-    ```python
+    ```pycon
     >>> f(10) + 5
     28
     ```
@@ -150,12 +150,12 @@ Le renvoi d'une valeur se fait grâce au mot-clé `return`.
         print(2*x + 3)
     ```
     On pourrait avoir *l'illusion* que la fonction ```g``` fait correctement son travail :
-    ```python
+    ```pycon
     >>> g(10)
     23
     ```
     Mais ```g``` se contente **d'afficher** sa valeur calculée, et non pas de la renvoyer. En effet :
-    ```python
+    ```pycon
     >>> g(10) + 5
     23
     Traceback (most recent call last):
@@ -180,7 +180,7 @@ def g(x):
 ```
 
 
-```python
+```pycon
 >>> g(4)
 ce texte sera bien affiché
 11
@@ -195,7 +195,7 @@ def h(x):
 ```
 
 
-```python
+```pycon
 >>> h(4)
 11
 ```
@@ -204,7 +204,7 @@ def h(x):
 
 - Pour les puristes, une fonction sans valeur renvoyée sera plutôt appelée *procédure*. Le mot *fonction* est alors réservé aux fonctions qui ont effectivement un `return`.
 
-- On peut doter artificiellement à toutes les fonctions d'un ```return```, en renvoyant la valeur ```None``` :
+- On peut doter artificiellement toutes les fonctions d'un ```return```, en renvoyant la valeur ```None``` :
 ```python linenums='1'
 def chat_penible(n):
     for k in range(n):
@@ -319,7 +319,7 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
         if objet == "banane":
             score -= 300
     ```
-    ```python
+    ```pycon
     >>> ramasse_objet("champignon")
     >>> score
     20
@@ -337,7 +337,7 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
             score -= 300
         return score # je renvoie le nouveau score
     ```
-    ```python
+    ```pycon
     >>> score = ramasse_objet("champignon", score)
     >>> score
     20
@@ -352,7 +352,7 @@ Si une fonction peut être assimilée à un outil, il est normal de se demander 
 
 Observons les fonctions pré-définies par Python, et notamment une des premières que nous avons rencontrées : la fonction ```print()```. Son mode d'emploi est accessible grâce à la commande ```help(print)```.
 
-```python
+```pycon
 >>> help(print)
 Help on built-in function print in module builtins:
 
@@ -387,7 +387,7 @@ Il est possible, voire souhaitable (dès qu'on créé un code comportant plusieu
 
     On peut donc maintenant demander de l'aide pour cette fonction :
 
-    ```python
+    ```pycon
     >>> help(chat_penible)
     Help on function chat_penible in module __main__:
 
@@ -406,7 +406,7 @@ Les exercices de [cette feuille](../exercices/) sont (presque) tous livrés avec
 
 Ces tests reposent sur le mot-clé ```assert```, qui va lever une erreur lorsqu'il est suivi d'une expression évaluée à ```False``` :
 
-```python
+```pycon
 >>> assert 3 > 2
 >>> assert 3 > 5
 Traceback (most recent call last):

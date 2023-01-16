@@ -21,14 +21,14 @@ Quel peut être l'intérêt d'un tuple par rapport à une liste ?
 
 
 
-```python
+```pycon
 >>> monPremierTuple = (3, 5, 6)
 ```
 
 Un tuple se différencie d'une liste par l'utilisation des parenthèses au lieu des crochets.
 
 
-```python
+```pycon
 >>> type(monPremierTuple)
 tuple
 ```
@@ -36,7 +36,7 @@ tuple
 
 À noter qu'un tuple peut être déclaré sans parenthèses. C'est toutefois à éviter.
 
-```python
+```pycon
 >>> taille = 600, 800
 >>> type(taille)
 tuple
@@ -46,7 +46,7 @@ tuple
 Comme pour une liste ou une chaîne de caractère, l'accès se fait par un indice entre **crochets**.
 
 
-```python
+```pycon
 >>> a = (12, 25, 6)
 >>> a[0]
 12
@@ -54,7 +54,7 @@ Comme pour une liste ou une chaîne de caractère, l'accès se fait par un indic
 ## 3. Tentative de modification d'un tuple
 
 
-```python
+```pycon
 >>> a[0] = 4
     ---------------------------------------------------------------------------
     TypeError                                 Traceback (most recent call last)
@@ -74,7 +74,7 @@ Comme pour une liste ou une chaîne de caractère, l'accès se fait par un indic
 On retrouve bien évidemment les deux méthodes utilisables pour les listes :
 
 ### 4.1 Parcours par indice
-```python
+```pycon
 >>> for k in range(len(a)):
         print(a[k])
 12
@@ -86,7 +86,7 @@ On retrouve bien évidemment les deux méthodes utilisables pour les listes :
 ### 4.1 Parcours par élément
 
 
-```python
+```pycon
 >>> for k in a :
         print(k)
 12
@@ -108,7 +108,7 @@ def division(a, b):
 ```
 
 
-```python
+```pycon
 >>> division(49,12)
 (4,1)
 ```
@@ -121,15 +121,35 @@ def division(a, b):
         Écrire une fonction qui prend en argument les coordonnées de deux points et qui renvoie le milieu de ces deux points.
 
         La fonction doit fonctionner de cette manière :
-        ```python
+        ```pycon
         >>> C = (45, 12)
         >>> D = (49, 32)
         >>> milieu(C,D)
         (47, 22)
         ```
+        ```python
+        def milieu(point1, point2):
+            """
+            En entrée: attends les coordonnées de deux points (sous forme de tuples).
+            En sortie: renvoie (sous forme de tuple) les coordonnées du point millieu de deux points.
+            """
+            # votre code
+        ```
 
     === "Correction"
-         
+        {{ correction(True,
+        "
+        ```python linenums='1'
+        def milieu(point1, point2):
+            abscisse = (point1[0]+point2[0]) / 2
+            ordonnee = (point1[1]+point2[1]) / 2
+            return (abscisse, ordonnee)
+        ```
+        "
+        ) }}
+
+
+
 
 <!--
 
