@@ -1,15 +1,21 @@
 
 <!-- !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous ! -->
-  
 
 ## Thème(s) en cours d'étude 
 - Dans le Thème6: [Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
 - Dans le Thème2: [les tuples](./T2_Representation_des_donnees/Chapitre_2:_Tuples/cours/) et [les dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
 
+
+## Exercices pratiques pour vous entraîner
+
+- Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entrainement à la pratique de la programmation en lien avec la spécialité NSI. 
+
+- Pour chaque exercice, on trouve un énoncé, souvent pour créer une fonction, puis des exemples d'application de la fonction. Ensuite, une zone de saisie du code qui est accompagné des premiers tests. Il y a des tests secrets qui permettent ensuite d'accepter (ou valider) votre code.
+
 ## Programme
-!!! abstract "Programme"
-    Nous traiterons les différentes entrées du programme dans les chapitres suivants :
+??? abstract "Nous traiterons les différentes entrées du programme dans les chapitres suivants…"
+    
 
     === "T1 Les bases de Python"
         **Thème 1 : Les bases de Python**

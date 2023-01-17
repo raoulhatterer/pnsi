@@ -2,11 +2,26 @@
 
 ![image](data/BO.png){: .center}
 
-## 1. Côté client : comment envoyer des paramètres à un serveur ?
+## 1. Les deux principales requêtes HTTP
 
-### 1.1. La méthode GET
+
+
+Dans le cas de sites Web modernes et interactifs, les clients (c’est-à-dire les navigateurs Web) récupèrent non seulement un document HTML sur le serveur, mais lui envoient aussi souvent des informations comme :
+
+- Le texte d’un terme de recherche que l’utilisateur a saisi dans le champ de recherche
+- Le contenu d’un formulaire rempli
+- La sélection des filtres dans une boutique en ligne
+
+Pour la transmission de ces informations au serveur, le protocole HTTP prévoit différentes méthodes de requête. Les deux plus importantes sont **GET** et **POST**. Bien que les deux aboutissent au même résultat, elles sont fondamentalement différentes.
+
+
+
+## 2. La méthode GET
 
 Considérons le formulaire suivant, inclus dans une page html ouverte dans le navigateur du client :
+
+
+**Formulaire**
 
 ```html 
 Le mot de passe est :
@@ -43,10 +58,30 @@ Les paramètres passés au serveur par la méthode GET sont transmis **dans l'ur
 
 ![](data/get1.png){: .center}
 
-Évidemment, c'est une méthode catastrophique pour la transmission des mots de passe. Par contre, c'est une méthode efficace pour accéder directement à une page particulière : ainsi l'url [https://www.google.fr/search?q=bordeaux](https://www.google.fr/search?q=bordeaux){:target="_blank"} nous amènera directement au résultat de la recherche Google sur le mot-clé «bordeaux».
+Évidemment, c'est une méthode catastrophique pour la transmission des mots de passe. Par contre, c'est une méthode efficace pour accéder directement à une page particulière : ainsi l'url [https://www.google.fr/search?q=la ciotat](https://www.google.fr/search?q=la ciotat){:target="_blank"} nous amènera directement au résultat de la recherche Google pour «la ciotat».
 
 
-### 1.2. La méthode POST
+!!! done "À retenir"
+    - Avec la méthode GET, les données à envoyer au serveur sont écrites directement dans l’URL. Dans la fenêtre de votre navigateur, cela ressemble à ceci :
+    
+    ```www.example.com/register.php?firstname=peter&name=miller&age=55&gender=male```
+
+    - Toutes les informations saisies par l’utilisateur (les paramètres dits URL) sont transmises aussi librement que l’URL elle-même. Cela présente des avantages et des inconvénients.
+    ####Avantages
+    - Les paramètres de l’URL peuvent être enregistrés avec l’adresse du site Web. Cela permet de mettre une requête de recherche en marque-page et de la récupérer plus tard.
+    - Si nécessaire, la page peut également être récupérée via l’historique de navigation.
+    - Cela est utile pour visualiser par exemple régulièrement une section de carte Google Maps ou pour enregistrer des pages Web contenant certains paramètres de filtrage et de tri.
+    #### Inconvénients
+    - Le principal inconvénient de la méthode GET est l’absence de protection des données. Les paramètres URL envoyés sont non seulement visibles par tous dans la barre d’adresse du navigateur, mais sont également stockés sans chiffrement dans l’historique du navigateur, dans le cache et dans le fichier log du serveur.
+    - Un deuxième inconvénient est sa capacité limitée : suivant le serveur Web et le navigateur, l’URL ne peut pas contenir plus de 2048 caractères. De plus, les paramètres des URL ne peuvent contenir que des caractères ASCII (lettres, chiffres, caractères spéciaux, etc.), et non des données binaires telles que des fichiers audio ou des images.
+
+
+
+
+
+
+
+## 3. La méthode POST
 
 Dans notre code de formulaire du 1.1, modifions l'attribut ```method```, auparavant égal à ```"get"```. Passons-le égal à ```"post"```  :
 
@@ -71,21 +106,53 @@ Les paramètres passés au serveur par la méthode POST **ne sont pas visibles**
 
 Donc, la transmission du mot de passe est bien sécurisée par la méthode POST ? 
 
-:warning: Pas du tout ! Si le protocole de transmission est du ```http```  et non pas du ```https```, n'importe qui interceptant le trafic peut lire le contenu de la requête et y trouver le mot de passe en clair.
+:warning: Pas du tout ! Si le protocole de transmission est du ```http```  et non pas du ```https```, n'importe qui interceptant le trafic peut lire le contenu de la requête et y trouver le mot de passe en clair. Par exemple, voici ce que nous révèle les outils de développeur du navigateur:
 
-**Exemple avec [Wireshark](https://www.wireshark.org/)** :
-
-![](data/wireshark.png){: .center}
+![](data/post.png){: .center}
 
 Le contenu de la variable ```"pass"``` est donc visible dans le contenu de la requête. 
 
 Le passage en ```https``` chiffre le contenu de la requête et empêche donc la simple lecture du mot de passe.
 
 
+!!! done "À retenir"
+    - La méthode POST écrit les paramètres URL (Uniform Resource Locator) dans la requête HTTP pour le serveur. Les paramètres ne sont donc pas visibles pour les utilisateurs et la portée des requêtes POST est illimitée.
+    #### Avantages
+    - Lorsqu’il s’agit de transmettre des données sensibles au serveur, par exemple un formulaire d’inscription avec nom d’utilisateur et mot de passe, la méthode POST permet de garder la confidentialité nécessaire.
+    - Les données ne sont pas mises en cache et n’apparaissent pas dans l’historique de navigation.
+    - La flexibilité est également de mise avec POST : non seulement des textes courts, mais aussi des données de toute taille et de tout type peuvent être transmis, comme des photos ou des vidéos.
+    #### Inconvénients
+    - Si une page Web est mise à jour avec un formulaire dans le navigateur (par exemple, en utilisant le bouton « Précédent » / « Retour »), les données du formulaire doivent être de nouveau soumises. Vous avez certainement déjà vu des avertissements qui s’y réfèrent. Il existe un risque que les données soient envoyées plusieurs fois par inadvertance, ce qui peut déclencher des commandes en double par exemple. Toutefois, les programmes de boutiques en ligne les plus récents peuvent empêcher ces problèmes.
+    - Les données transmises par la méthode POST ne peuvent pas être sauvegardées sous forme de marque-page avec l’URL.
 
 
 
-#### Résumé : quand utiliser GET ou POST ?
+## Synthèse
+|                                                                           	|  GET   	                                                   |  POST                                                                      |
+| :-----------------------------------------------------------------------------| :------------------------------------------------------------| :--------------------------------------------------------------------------|
+|**Visibilité**   	                                                            | Visible pour l’utilisateur dans le champ d’adresse	       |Invisible pour l’utilisateur                                                |
+|Marque-page et **historique de navigation**	                                | Les paramètres de l’URL sont stockés en même temps que l’URL.|L’URL est enregistrée sans paramètres URL.                                  |
+|**Cache** et fichier log du serveur                                            | Les paramètres de l’URL sont stockés sans chiffrement	       |Les paramètres de l’URL ne sont pas enregistrés automatiquement.            |
+|**Comportement** lors de l’actualisation du navigateur / Bouton « précédent »	| Les paramètres de l’URL ne sont pas envoyés à nouveau.	   |Le navigateur avertit que les données du formulaire doivent être renvoyées. |
+|**Type de données**	                                                        | Caractères ASCII uniquement.	                               |Caractères ASCII mais également données binaires.                           |
+|**Longueur des données**	                                                    | Limitée - longueur maximale de l’URL à 2048 caractères.	   |Illimitée.                                                                  |
+
+###Une simple « règle de base » pour finir :
+
+- GET pour les paramètres d’un site Web que l'on consulte (filtres, tri, saisies de recherche, etc.). La base de données du serveur est consultée mais pas modifiée.
+- POST pour la transmission d'informations et de données de la part de l’utilisateur. La base de données du serveur est modifiée.
+
+
+
+ ![](data/alertepost.png){: .center}
+
+Cette fenêtre est caractéristique de l'utilisation d'une méthode POST.
+
+
+
+<!-- 
+
+##Résumé : quand utiliser GET ou POST ?
 - **GET** : la méthode GET doit être utilisée quand les paramètres à envoyer :
     - n'ont pas de caractère confidentiel. 
     - n'ont pas vocation à créer des modifications sur le serveur (ceci est plus une bonne pratique qu'une interdiction technique)
@@ -101,89 +168,6 @@ Le passage en ```https``` chiffre le contenu de la requête et empêche donc la 
     ![](data/alertepost.png){: .center}
 
     Cette fenêtre est caractéristique de l'utilisation d'une méthode POST.
-
-## 2. Côté serveur : comment récupérer les paramètres envoyés ?
-
-Du côté du serveur, le langage utilisé (PHP, Java...) doit récupérer les paramètres envoyés pour modifier les élements d'une nouvelle page, mettre à jour une base de données, etc. Comment sont récupérées ces valeurs ? 
-
-#### Exemple en PHP
-
- L'acronyme **PHP** signifie **P**HP : **H**ypertext **P**rocessor (c'est un [acronyme récursif](https://fr.wikipedia.org/wiki/Sigles_auto-r%C3%A9f%C3%A9rentiels){:target="_blank"}).
-
- Notre exemple va contenir deux fichiers :
-
- - une page ```page1.html``` , qui contiendra un formulaire et qui renverra, par la méthode GET, un paramètre à la page ```page2.php```.
- - une page ```page2.php``` , qui génèrera un code ```html ``` personnalisé en fonction du paramètre reçu.  
-
-#### ```page1.html``` 
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>exemple</title>
-  </head>
-  <body>
- Votre OS actuel est un : 
-<form action=page2.php method="get">
-<p>
-    <input type="radio" name="OS" value="Windows"> Windows </input>
-    <input type="radio" name="OS" value="MacOS"> MacOS </input>
-    <input type="radio" name="OS" value="GNU/Linux"> GNU/Linux </input>
-</p>
-<p> 
-    <input type="submit" value="Valider" />
-</p>
-</form>
-  </body>
-</html>
-``` 
-
-#### ```page2.php``` 
-```php
- <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Le meilleur OS</title>
-    </head>
-    <body>
- <p>
-	<?php
-  if (isset($_GET['OS']))
-  {
-	Print("Vous avez raison, ");
-  echo $_GET['OS'];
-  Print(" est le meilleur des OS.");
-  }
-	?>
-	</p>
-
-</body>
-</html>
-```
-
-#### Détail du fonctionnement :
- 1. À l'arrivée sur la page ```page1.html```, un formulaire de type boutons radio lui propose :
- ![](data/exphp1.png){: .center}
- 2. Lorsque l'utilisateur clique sur «Valider», la variable nommée ```OS``` va recevoir la valeur choisie et va être transmise par une requête GET à l'url donnée par la variable ```action``` définie en début de formulaire.
- Ici, le navigateur va donc demander à accéder à la page ```page2.php?OS=MacOS``` (par exemple)
- 3. Le serveur PHP qui héberge la page ```page2.php``` va recevoir la demande d'accès à la page ainsi que la valeur de la variable ```OS```.
- Dans le code PHP, on reconnait :
-     - le booléen ```isset($_GET['OS'])```  qui vérifie si le paramètre ```OS``` a bien reçu une valeur.
-     - l'expression ```$_GET['OS']``` qui récupère cette valeur. 
-     Si la valeur avait été transmise par méthode POST (pour un mot de passe, par exemple), la variable aurait été récupérée par ```$_POST['OS']```. Elle n'aurait par contre pas été affichée dans l'url de la page.
-4. La page ```page2.php?OS=MacOS``` s'affiche sur le navigateur de l'utilisateur :
-
-![](data/exphp2.png){: .center}
-
-#### Remarque
-L'exemple ci-dessus est un mauvais exemple : rien ne justifie l'emploi d'un serveur distant. L'affichage de ce message aurait très bien pu se faire en local sur le navigateur du client, en Javascript par exemple.
-
-L'envoi de paramètre à un serveur distant est nécessaire pour aller interroger une base de données, par exemple (lorsque vous remplissez un formulaire sur le site de la SNCF, les bases de données des horaires de trains, des places disponibles et de leurs tarifs ne sont pas hébergées sur votre ordinateur en local...).
-
-La vérification d'un mot de passe doit aussi se faire sur un serveur distant.
 
 
 ## Exercice : attaque par force brute et requête GET
@@ -267,4 +251,4 @@ Lequel ?
 
 
 
-
+ -->

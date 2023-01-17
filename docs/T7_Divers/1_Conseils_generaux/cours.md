@@ -59,7 +59,7 @@ def accueil(n):
 - tout le code qui est précédé ```>>>``` est à taper en console.
 
 Exemple :
-```python
+```pycon
 >>> accueil(5)
 ```
 
