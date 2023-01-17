@@ -1,4 +1,4 @@
-# Chapitre 3 Requêtes GET, POST et formulaires
+# Chapitre 3: Requêtes GET, POST et formulaires
 
 ![image](data/BO.png){: .center}
 
