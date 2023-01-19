@@ -546,15 +546,101 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
     - Un patron est constitué de parties fixes et de parties variables ; Jinja2 fournit même des boucles et des tests. Il est ainsi possible de générer différentes sorties avec un même patron en fonction du contexte.
     
 !!! example "{{ exercice() }}"
-    - exercice 17 page 212: Boite à secrets (requette POST)
-    ??? "Quelques indications supplémentaires"
-        - Télécharger les 2 fichiers qui sont fournis avec l’exercice.
-        - Les renommer `serveur.py` et `secret.py`
-        - Dans le fichier `secret.py` rechercher l'instruction `Pagedynamique` pour déterminer le nom de l'action qu'il faudra utiliser dans le formulaire.
-        - créer un fichier secret.html contenant un formulaire avec notamment: 
-            - une zone de saisie de type `text` pour le nom ;
-            - une zone de saisie de type `password` pour le mot de passe ;
-            - une zone de saisie de type `text` pour le secret ;
-            - un bouton pour envoyer le formulaire.
+    === "Énoncé"
+        - exercice 17 page 212: Boite à secrets (requette POST)
+        ??? "Quelques indications supplémentaires"
+            - Télécharger les 2 fichiers qui sont fournis avec l’exercice.
+            - Les renommer `serveur.py` et `secret.py`
+            - Dans le fichier `secret.py` rechercher l'instruction `Pagedynamique` pour déterminer le nom de l'action qu'il faudra utiliser dans le formulaire.
+            - Créer un fichier secret.html contenant un formulaire avec notamment: 
+                - une zone de saisie de type `text` pour le nom ;
+                - une zone de saisie de type `password` pour le mot de passe ;
+                - une zone de saisie de type `text` pour le secret ;
+                - un bouton pour envoyer le formulaire.
+            - Dans le fichier `secret.py` rechercher le nom des clés utilisées par le dictionnaire `secrets` pour déterminer l'attribut `name` des différentes zones de saisie.
+            - Dans ce même fichier html, rajouter le code jinja2 pour permettre d'afficher l'ancien message secret envoyé par le serveur. 
+    === "Correction `secret.html`"
+    {{ correction(True,
+    "
+    
+        ```html
+        <html> 
+          <head>
+            <meta charset='utf-8'>
+            <title>Boite à secrets est une page dynamique</title>
+          </head>
+        
+          <body>
+            <h1>Boîte à secrets</h1>
+            <form action='/secret' method='POST'>
+              Nom :                  <input type='text'     name='nom'>        <br>
+              Mot de passe :         <input type='password' name='motdepasse'> <br>
+              Secret à enregistrer : <input type='text'     name='secret'>     <br><br>
+                                     <input type='submit'   value='Valider'>
+            </form>
+            <hr>
+            <p>{{message}}</p>
+          </body>
+        </html>
+        ```
+        "
+        ) }}
+        
+    === "Correction `secret.py`"
+    {{ correction(True,
+    "
+        ```python 
+        from serveur import get_template, render, OK, pageDynamique, lancerServeur
+        import requests
+        
+        # dictionnaire des secrets : la clé est le nom,
+        #                            la valeur est un tuple (mot de passe, secret)
+        secrets = {}
 
-        - Dans ce même fichier html, rajouter le code jinja2 pour permettre d'afficher l'ancien message secret envoyé par le serveur. 
+        
+        def secret(url, vars):
+            print('Fonction secret appelée')
+            print(vars)
+            # extraire les valeurs du formulaire
+            # vars est un dictionaire
+            nom = vars['nom']  # valeur pour la clé 'nom'
+            motdepasse = vars['motdepasse'] # valeur pour la clé 'motdepasse' 
+            secret = vars['secret'] # valeur pour la clé 'secret'
+            msg = ''
+            if nom not in secrets:
+                # créer un nouveau secret pour ce nom 
+                secrets[nom] = (motdepasse, secret) 
+                msg = 'Secret enregistré'
+            else:
+                # récuperer le contenu du secret
+                (mdp, s) = secrets[nom]
+                # vérifier si le mot de passe est corret
+                if mdp != motdepasse:
+                    msg = 'mot de passe incorrect !'
+                else:
+                    # révéler l'ancien secret (si vide) 
+                    if secret == '':
+                        msg = 'ancien secret : ' + s
+                    else:
+                    # enregistrer le nouveau secret (si non vide)
+                        secrets[nom] = (motdepasse, secret) # écrase l'ancien secret
+            # retourner la page avec le message
+            template = get_template('secret.html')
+            return OK(render(template, {'message': msg}))
+
+
+        def affichage_initial(url, vars):
+            # Affiche la page secret.html avec {{ message }} = ''
+            template = get_template('secret.html')
+            msg = ''
+            return OK(render(template, {'message': msg}))
+        
+        pageDynamique('/secret', secret) # appel par submit du formulaire
+        pageDynamique('/secret.html', affichage_initial) # ouverture initiale de la page
+        
+        lancerServeur()
+        
+        
+        ```
+        "
+        ) }}
