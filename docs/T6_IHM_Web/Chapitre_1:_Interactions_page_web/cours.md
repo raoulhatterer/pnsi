@@ -644,3 +644,29 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
         ```
         "
         ) }}
+
+!!! example "{{ exercice() }}"
+    === "Énoncé"
+        1. Créer un fichier `formulaire.html` contenant le code permettant d'afficher le plan de classe vierge suivant:
+           ![](data/planclasse.png){: .center}
+           Utiliser le style `css` suivant pour la mise en forme:
+           ```{.css}
+           html{
+               font-size: 1em;
+           }
+           h1{
+               font-size: 1.5em;
+               text-align: center;
+           }
+           table{
+               margin-left: auto; 
+               margin-right: auto;
+           }
+           th, td {
+               border: 1px solid black;
+               padding: 10px;
+           }
+           ```
+        2. Rajouter le code nécessaire pour obtenir le formulaire suivant:
+           ![](data/Formulaire_eleve.png){: .center}
+        3. Créer un fichier `dynserveur.py` et ajouter un patron au fichier `formulaire.html` pour remplir les cases du plan de classe au fur et à mesure que des places sont attribuées aux élèves. Le code affichera «place libre» dans les cases restant libres.
