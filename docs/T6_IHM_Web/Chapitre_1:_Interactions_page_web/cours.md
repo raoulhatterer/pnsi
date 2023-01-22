@@ -862,7 +862,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
                 <h1>Plan de classe</h1>
             
                 <table>
-                              <tr>
+                  <tr>
                     <th>info 2</th>
                     <th>Colonne A</th>
                     <th>Colonne B</th>
