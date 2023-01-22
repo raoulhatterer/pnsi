@@ -673,4 +673,260 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
                ```
             2. Rajouter le code nécessaire pour obtenir le formulaire suivant:
                ![](data/Formulaire_eleve.png){: .center}
-            3. Créer un fichier `dynserveur.py` et ajouter un patron au fichier `formulaire.html` pour remplir les cases du plan de classe au fur et à mesure que des places sont attribuées aux élèves. Le code affichera «place libre» dans les cases restant libres.
+            3. Créer un fichier `dynserveur.py` et ajouter un patron au fichier `formulaire.html` pour remplir les cases du plan de classe au fur et à mesure que des places sont attribuées aux élèves. Le code affichera «place libre» dans les cases restant libres. Enregistrer le fichier html modifié sous un nouveau nom: `patron.html`.
+        === "Correction"
+        {{ correction(True,
+        "
+            - fichier `formulaire.html`
+            ```html
+            <html>
+              <head>
+                <meta charset='utf-8'>
+                <title>Formulaire de base</title>
+                <link href='style.css' rel='stylesheet' type='text/css' />
+              </head>
+              <body>
+            
+            
+                <h1>Plan de classe</h1>
+            
+                <table>
+                  <tr>
+                    <th>info 2</th>
+                    <th>Colonne A</th>
+                    <th>Colonne B</th>
+                    <th>Colonne C</th>
+                    <th>Colonne D</th>
+                    <th>Colonne E</th>
+                  </tr>
+                  <tr>
+                    <th>Rang 1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Rang 2</th>
+                    <td></td>
+                    <td></td>
+                              <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Rang 3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Rang 4</th>
+                    <td></td>
+                    <td></td>
+                      <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+            
+                <h1>Formulaire élève</h1>
+                <form action='/eleve' method='POST'>
+                  <label for='zone1'>Nom:</label>
+                  <input type='text' id='zone1' name='nom'><br/>
+                  <label for='zone2'>Prénom:</label>
+                  <input type='text' id='zone2' name='prenom'><br/>
+                  <p>Colonne:
+                    <input type='radio' id='zoneA' name='colonne' value='A'>
+                    <label for='zoneA'>A</label>
+                    <input type='radio' id='zoneB' name='colonne' value='B'>
+                    <label for='zoneB'>B</label>
+                    <input type='radio' id='zoneC' name='colonne' value='C'>
+                    <label for='zoneC'>C</label>
+                    <input type='radio' id='zoneD' name='colonne' value='D'>
+                    <label for='zoneD'>D</label>
+                    <input type='radio' id='zoneE' name='colonne' value='E'>
+                    <label for='zoneE'>E</label><br>
+                  </p>
+                  <p>
+                    <label for='zoneRang'>Rang:</label>
+                    <input type='number' id='zoneRang' name='rang' min='1' max='4'>
+                  </p>     
+                  <input type='submit' value='Envoyer'>
+                </form>
+              </body>
+            </html>
+            ```
+
+            - fichier `dynserveur.py`
+            ```python 
+            from serveur import get_template, render, OK, Redirect, pageDynamique, lancerServeur
+           
+            # Traitement des données
+            # Créer 4 listes nommées rang1, rang2, rang3 et rang4
+            # Chaque rang comporte 5 places initialement libres donc
+            pl = 'place libre'
+            rang1 = [pl, pl, pl, pl, pl]
+            rang2 = [pl, pl, pl, pl, pl] 
+            rang3 = [pl, pl, pl, pl, pl]
+            rang4 = [pl, pl, pl, pl, pl]
+            
+            def traitement(url, vars):
+                '''Traitement du formulaire1'''
+                # Vérifions la récupération des données par le serveur
+                # Pour cela, affichons dans la console python le dictionnaire 
+                # envoyé par le formulaire.
+                print('Le formulaire à envoyé:',vars)
+
+                # On peut prévoir de contrôler la validité des données transmises 
+                colonne_valide, rang_valide, place_disponible = True, True, True
+
+                # Traitement des données
+                # Utilisons les 4 listes pour stocker le nom des élèves à l'endroit le
+                # plus logique au fur et à mesure de leur réception par le serveur.
+                
+                # Détermination de l'index de liste suivant la colonne
+                if   vars['colonne']=='A': index = 0
+                elif vars['colonne']=='B': index = 1
+                elif vars['colonne']=='C': index = 2
+                elif vars['colonne']=='D': index = 3
+                elif vars['colonne']=='E': index = 4
+                else: colonne_valide = False
+                # remarque: colonne_valide n'est pas exploité mais pourrait l'être 
+                if   vars['rang']=='1':
+                    if rang1[index]==pl: rang1[index] =  vars['prenom'] + ' ' + vars['nom']
+                    else: place_disponible = False
+                elif vars['rang']=='2':
+                    if rang2[index]==pl: rang2[index] =  vars['prenom'] + ' ' + vars['nom']
+                    else: place_disponible = False
+                elif   vars['rang']=='3':
+                    if rang3[index]==pl: rang3[index] =  vars['prenom'] + ' ' + vars['nom']
+                    else: place_disponible = False
+                elif   vars['rang']=='4':
+                    if rang4[index]==pl: rang4[index] =  vars['prenom'] + ' ' + vars['nom']
+                    else: place_disponible = False
+                else: rang_valide = False
+                # remarque: rang_valide n'est pas exploité mais pourrait l'être
+
+                # On peut prévoir d'afficher une alerte dans la console
+                # si un emplacement était déjà occupé
+                if not place_disponible:
+                    col = vars['colonne']
+                    rg  = vars['rang']
+                    print(f'Alerte: vérifier la place {col}{rg}')
+                
+                # Afficher le plan dans la console
+                # permet de vérifier que la gestion des 4 listes est correcte
+                affiche_plan_dans_console()
+                cle = vars['colonne']+vars['rang']
+                print(cle)
+                
+                
+                # Si c'est le cas on peut renvoyer les listes vers la page html
+                template = get_template('patron.html')
+                msg = {'rang1': rang1,
+                       'rang2': rang2,
+                       'rang3': rang3,
+                       'rang4': rang4}
+                return OK(render(template, msg))
+                
+            pageDynamique('/eleve', traitement)
+            
+            def affiche_plan_dans_console():
+                '''
+                Affiche le plan de classe dans la console
+                étape intermédiaire de vérification
+                '''
+                print('rang1:', rang1)
+                print('rang2:', rang2)
+                print('rang3:', rang3)
+                print('rang4:', rang4)
+            
+            # Lancer le serveur
+            lancerServeur()
+            ```
+
+            - fichier `patron.html`
+            ```html
+            <html>
+              <head>
+                <meta charset='utf-8'>
+                <title>Formulaire et plan</title>
+                <link href='style.css' rel='stylesheet' type='text/css' />
+              </head>
+              <body>
+            
+                <h1>Plan de classe</h1>
+            
+                <table>
+                              <tr>
+                    <th>info 2</th>
+                    <th>Colonne A</th>
+                    <th>Colonne B</th>
+                    <th>Colonne C</th>
+                    <th>Colonne D</th>
+                    <th>Colonne E</th>
+                  </tr>
+                  <tr>
+                    <th>Rang 1</th>
+                    {%for eleve in rang1%}
+                    <td>{{eleve}}</td>
+                    {% endfor %}
+                  </tr>
+                  <tr>
+                    <th>Rang 2</th>
+                    {%for eleve in rang2%}
+                    <td>{{eleve}}</td>
+                    {% endfor %}
+                  </tr>
+                  <tr>
+                    <th>Rang 3</th>
+                    {%for eleve in rang3%}
+                    <td>{{eleve}}</td>
+                    {% endfor %}
+                  </tr>
+                  <tr>
+                    <th>Rang 4</th>
+                    {%for eleve in rang4%}
+                    <td>{{eleve}}</td>
+                    {% endfor %}
+                  </tr>
+                </table>
+            
+                <h1>Formulaire élève</h1>
+                <form action='/eleve' method='POST'>
+                  <label for='zone1'>Nom:</label>
+                  <input type='text' id='zone1' name='nom'><br/>
+                  <label for='zone2'>Prénom:</label>
+                  <input type='text' id='zone2' name='prenom'><br/>
+                  <p>Colonne:
+                    <input type='radio' id='zoneA' name='colonne' value='A'>
+                    <label for='zoneA'>A</label>
+                    <input type='radio' id='zoneB' name='colonne' value='B'>
+                    <label for='zoneB'>B</label>
+                    <input type='radio' id='zoneC' name='colonne' value='C'>
+                    <label for='zoneC'>C</label>
+                    <input type='radio' id='zoneD' name='colonne' value='D'>
+                    <label for='zoneD'>D</label>
+                    <input type='radio' id='zoneE' name='colonne' value='E'>
+                    <label for='zoneE'>E</label><br>
+                  </p>
+                  <p>
+                    <label for='zoneRang'>Rang:</label>
+                    <input type='number' id='zoneRang' name='rang' min='1' max='4'>
+                  </p>
+                  <input type='submit' value='Envoyer'>
+                </form>
+              
+              </body>
+            </html>
+            ```
+            
+            - Ne pas oublier le fichier `style.css`
+            
+            - Tous ces fichiers doivent être dans un même dossier qui doit également contenir le fichier `serveur.py`.
+            "
+            ) }}
