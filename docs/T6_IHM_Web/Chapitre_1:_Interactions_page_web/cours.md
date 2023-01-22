@@ -775,7 +775,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
             rang4 = [pl, pl, pl, pl, pl]
             
             def traitement(url, vars):
-                '''Traitement du formulaire1'''
+                '''Traitement du formulaire'''
                 # Vérifions la récupération des données par le serveur
                 # Pour cela, affichons dans la console python le dictionnaire 
                 # envoyé par le formulaire.
