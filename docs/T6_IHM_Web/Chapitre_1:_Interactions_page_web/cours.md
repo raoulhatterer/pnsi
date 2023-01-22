@@ -647,6 +647,10 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
 !!! example "{{ exercice() }}"
     ??? "Plan de classe"
         === "Énoncé"
+            ??? "Ressources autorisées:"
+                - Ce cours
+                - Votre manuel sur Correlyce
+                - Vous avez également le droit de consulter les différents fichiers que vous avez déjà utilisés dans le cadre des exemples et exercices du cours.
             1. Créer un fichier `formulaire.html` contenant le code permettant d'afficher le plan de classe vierge suivant:
                ![](data/planclasse.png){: .center}
                Utiliser le style `css` suivant pour la mise en forme:
