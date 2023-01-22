@@ -711,7 +711,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
                     <th>Rang 2</th>
                     <td></td>
                     <td></td>
-                              <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                   </tr>
@@ -727,7 +727,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
                     <th>Rang 4</th>
                     <td></td>
                     <td></td>
-                      <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                   </tr>
