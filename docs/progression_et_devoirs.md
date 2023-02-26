@@ -117,3 +117,18 @@
             - exercice 10 [Interactions sur une page web](../T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
     
     
+!!! done "séance 16 (mardi 17/01/23):"
+    - Serveur web: correction des exercices 9 et 10
+    - Requêtes GET et POST
+    - Présentation du contrôle de l'an passé (plan de classe)
+??? note "Devoir"
+    - Préparer le contrôle sur les serveurs web
+    
+!!! done "séance 17 (mardi 24/01/23):"
+    - Contrôle: serveur web (les absents auront à faire un contrôle de rattrapage)
+
+!!! done "séance annulée (mardi 31/01/23):"
+    - Grève
+    
+!!! done "séance annulée (mardi 07/02/23):"
+    - Arrêt maladie (grippe)
