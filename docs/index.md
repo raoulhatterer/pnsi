@@ -3,9 +3,8 @@
     - Bonne rentrée à toutes et à tous ! -->
 
 ## Thème(s) en cours d'étude 
-- Dans le Thème6: [Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
-- Dans le Thème2: [les tuples](./T2_Representation_des_donnees/Chapitre_2:_Tuples/cours/) et [les dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
-
+- Dans le Thème3: [Architecture réseau](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
+- Dans le Thème3: [Protocoles de communication](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
 
 ## Exercices pratiques pour vous entraîner
 
@@ -43,11 +42,11 @@
     === "T3 Architecture matérielle"
         **Thème 3 : Architecture matérielle**
 
-        - Chapitre 1 [Microbit](./T3_Architecture_materielle/3.1_Microbit/cours/)
-        - Chapitre 2 [Architecture Von Neumann](./T3_Architecture_materielle/3.2_Architecture_Von_Neumann/cours/)
-        - Chapitre 3 [Architecture réseau](./T3_Architecture_materielle/3.3_Architecture_reseau/cours/)
-        - Chapitre 4 [Protocoles de communication dans un réseau](./T3_Architecture_materielle/3.4_Protocoles_de_communication/cours/)
-        - Chapitre 5 [Découverte des commandes Linux](./T3_Architecture_materielle/3.5_Decouverte_des_commandes_Linux/cours/)
+        - Chapitre 1: [Microbit](./T3_Architecture_materielle/3.1_Microbit/cours/)
+        - Chapitre 2: [Architecture Von Neumann](./T3_Architecture_materielle/3.2_Architecture_Von_Neumann/cours/)
+        - Chapitre 3: [Architecture réseau](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
+        - Chapitre 4: [Protocoles de communication dans un réseau](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
+        - Chapitre 5: [Découverte des commandes Linux](./T3_Architecture_materielle/3.5_Decouverte_des_commandes_Linux/cours/)
 
     === "T4 Algorithmique"
         **Thème 4 : Algorithmique**
