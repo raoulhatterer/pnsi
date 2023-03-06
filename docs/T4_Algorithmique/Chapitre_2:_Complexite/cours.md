@@ -17,7 +17,7 @@ Nous observerons surtout comment évolue ce temps d'exécution en fonction de la
 !!! aide "Exemple d'algorithme"
     ![image](data/env.png){: .center}
     Votre travail est de mettre des bulletins dans des enveloppes pour une campagne de communication.  
-    L'algorithme en jeu ici est "je prends un bulletin, je le plie, je le mets dans l'enveloppe, je ferme l'enveloppe". 
+    L'algorithme en jeu ici est «je prends un bulletin, je le plie, je le mets dans l'enveloppe, je ferme l'enveloppe». 
     
     On suppose que vous travaillez à un rythme constant.  
     Le premier jour, on vous donne $n$ enveloppes à remplir. Vous mettez un temps $T$ pour les traiter.  
