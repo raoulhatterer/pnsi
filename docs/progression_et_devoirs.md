@@ -121,8 +121,8 @@
     - Serveur web: correction des exercices 9 et 10
     - Requêtes GET et POST
     - Présentation du contrôle de l'an passé (plan de classe)
-??? note "Devoir"
-    - Préparer le contrôle sur les serveurs web
+    ??? note "Devoirs"
+        - Préparer le contrôle sur les serveurs web
     
 !!! done "séance 17 (mardi 24/01/23):"
     - Contrôle: serveur web (les absents auront à faire un contrôle de rattrapage)
@@ -132,3 +132,11 @@
     
 !!! done "séance annulée (mardi 07/02/23):"
     - Arrêt maladie (grippe)
+    
+!!! done "séance 18 (mardi 28/02/23):"
+    - [Architecture réseau](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)                 
+    - [Protocoles de communication](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/) 
+    - Correction du contrôle `serveur web`
+    ??? note "Devoirs"
+        - Exercices du cours
+        - Terminer la correction du contrôle `serveur web` et la déposer dans votre répertoire personnel sur le site collaboratif
