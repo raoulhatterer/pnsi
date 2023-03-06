@@ -41,9 +41,13 @@ Ces deux algorithmes ont pour particularité de :
 Considérons la liste `[5, 4, 2, 1]`  
 Voici le fonctionnement de l'algorithme :  
 
-<center>
-<gif-player src="data/selection.gif" speed="1" play></gif-player>
-</center>
+
+<!-- <center> -->
+<!-- <gif-player src="https://forge.aeif.fr/lyceemed/pnsi/-/blob/main/docs/T4_Algorithmique/Chapitre_4%3A_Tri_par_selection/data/selection.gif" speed="1" play></gif-player> -->
+<!-- </center> -->
+
+
+![image](data/selection.gif){: .center}
 
 ## 2. Principe
 
@@ -99,7 +103,7 @@ Pour réaliser ceci, le travail va se faire en manipulant les indices des élém
 ## 4. Complexité de l'algorithme
 
 ### 4.0. De quoi parle-t-on ?
-:arrow_right: [Cours sur la complexité](https://glassus.github.io/premiere_nsi/T4_Algorithmique/4.2_Complexite/cours/){. target="_blank"}
+:arrow_right: [Cours sur la complexité](../../Chapitre_2:_Complexite/cours/){. target="_blank"}
   
 ### 4.1. Calcul du nombre d'opérations
 
