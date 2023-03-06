@@ -3,6 +3,9 @@
     - Bonne rentrée à toutes et à tous ! -->
 
 ## Thème(s) en cours d'étude 
+- Dans le Thème4: [Extremums et moyennes](./T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
+- Dans le Thème4: [Tri par insertion](./T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
+- Dans le Thème4: [Tri par sélection](./T4_Algorithmique/Chapitre_4:_Tri_par_selection/cours/)
 - Dans le Thème3: [Architecture réseau](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
 - Dans le Thème3: [Protocoles de communication](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
 
