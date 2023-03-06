@@ -42,7 +42,7 @@ Considérons la liste `[5, 4, 2, 1]`
 Voici le fonctionnement de l'algorithme :  
 
 <center>
-<gif-player src="./data/selection.gif" speed="1" play></gif-player>
+<gif-player src="data/selection.gif" speed="1" play></gif-player>
 </center>
 
 ## 2. Principe
