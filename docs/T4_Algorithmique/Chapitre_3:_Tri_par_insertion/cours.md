@@ -13,9 +13,11 @@
 Considérons la liste `[7, 5, 2, 8, 1, 4]`  
 Voici le fonctionnement de l'algorithme :  
 
-<center>
-<gif-player src="https://glassus.github.io/premiere_nsi/T4_Algorithmique/4.3_Tri_par_insertion/data/insertion1.gif" speed="1" play></gif-player>
-</center>
+<!-- <center> -->
+<!-- <gif-player src="https://glassus.github.io/premiere_nsi/T4_Algorithmique/4.3_Tri_par_insertion/data/insertion1.gif" speed="1" play></gif-player> -->
+<!-- </center> -->
+
+![image](data/insertion1.gif){: .center}
 
 
 **Explications :**
