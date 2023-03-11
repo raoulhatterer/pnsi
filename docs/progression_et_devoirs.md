@@ -140,3 +140,12 @@
     ??? note "Devoirs"
         - Exercices du cours
         - Terminer la correction du contrôle `serveur web` et la déposer dans votre répertoire personnel sur le site collaboratif
+
+!!! done "séance 19 (mardi 07/03/23):"
+    - Correction du contrôle `serveur web`
+    - Dans le thème 4 Algorithmique:
+        - chapitre 1: moyenne et extremums ;
+        - chapitre 2: complexité ;
+        - chapitre 3: tri par insertion (version simple).
+    ??? note "Devoirs"
+        - Exercices du cours algorithmique: savoir faire par cœur les exercices ❤️ du chapitre 1 et l'exercice `Tri par insertion (version simple)` du chapitre 3.
