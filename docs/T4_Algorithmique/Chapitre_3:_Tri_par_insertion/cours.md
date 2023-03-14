@@ -202,7 +202,7 @@ une propriété $P(n)$ est vraie si :
 - $P(0)$ (par exemple) est vraie
 - Pour tout entier naturel $n$, si $P(n)$ est vraie alors $P(n+1)$ est vraie.
 
-Ici, la propriété serait : « Quand $i$ varie entre 1 et $n=longueur(liste)$, la sous-liste de longueur $i$ est triée dans l'ordre croissant.»
+Ici, la propriété serait : « Quand $i$ varie entre 1 et $n=longueur(liste)$, la sous-liste de longueur $i$ est triée dans l'ordre croissant».
 
 !!! aide "Vocabulaire"
     On appelle cette propriété un **invariant de boucle**.  
@@ -211,9 +211,9 @@ Ici, la propriété serait : « Quand $i$ varie entre 1 et $n=longueur(liste)$, 
 
 Dans notre algorithme de tri par insertion, l'invariant de boucle est «Le tableau `lst[1:i]` est trié» :
 
-- INITIALISATION : La valeur avant de rentrer dans la boucle est `i=1`, donc le tableau `lst[1:1]` contient un seul élément. Un tableau contenant un seul élément est forcément trié (trivial), notre invariant "le tableau `lst[1:i]` est trié" est donc vrai.
+- INITIALISATION : La valeur avant de rentrer dans la boucle est `i=1`, donc le tableau `lst[1:1]` contient un seul élément. Un tableau contenant un seul élément est forcément trié (trivial), notre invariant «le tableau `lst[1:i]` est trié» est donc vrai.
 
-- CONSERVATION : si l'invariant de boucle est vrai avant une itération de la boucle : "Le tableau `lst[1:i-1]` est trié", alors il le reste à la fin de l'itération : "Le tableau `lst[1:i]` est trié".
+- CONSERVATION : si l'invariant de boucle est vrai avant une itération de la boucle : «Le tableau `lst[1:i-1]` est trié», alors il le reste à la fin de l'itération : «Le tableau `lst[1:i]` est trié».
 Si on insère `lst[i]` à sa place dans le tableau `lst[1:i-1]`, alors le tableau `lst[1:i]` sera évidemment trié.
 
 - TERMINAISON : La dernière valeur prise de `i` dans la boucle est `i=n`, donc le tableau `lst[1:n]` sera trié.
