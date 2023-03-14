@@ -180,10 +180,10 @@ Est-on sûr que notre algorithme va s'arrêter ?
 Le programme est constitué d'une boucle `while` imbriquée dans une boucle `for`. Seule la boucle `while` peut provoquer une non-terminaison de l'algorithme. Observons donc ses conditions de sortie : 
 
 ```python
- while  k >= 0 and l[k] > cle :
+ while  k >= 0 and lst[k] > cle :
 ```
 
-La condition `l[k] > cle` ne peut pas être rendue fausse avec certitude. 
+La condition `lst[k] > cle` ne peut pas être rendue fausse avec certitude. 
 Par contre, la condition `k >= 0` sera fausse dès que la variable `k` deviendra négative. Or la ligne 
 `k = k - 1` nous assure que la variable `k` diminuera à chaque tour de boucle. La condition  `k >= 0` deviendra alors forcément fausse au bout d'un certain temps.
 
@@ -202,16 +202,23 @@ une propriété $P(n)$ est vraie si :
 - $P(0)$ (par exemple) est vraie
 - Pour tout entier naturel $n$, si $P(n)$ est vraie alors $P(n+1)$ est vraie.
 
-Ici, la propriété serait : « Quand $k$ varie entre 0 et `longueur(liste) -1`, la sous-liste de longueur $k$ est triée dans l'ordre croissant.»
+Ici, la propriété serait : « Quand $i$ varie entre 1 et $n=longueur(liste)$, la sous-liste de longueur $i$ est triée dans l'ordre croissant.»
 
 !!! aide "Vocabulaire"
     On appelle cette propriété un **invariant de boucle**.  
     *Invariant* siginifie qu'elle reste vraie pour chaque boucle.
 
-- quand $k$ vaut 0, on place le minimum $m_0$ de la liste en position 0, la sous-liste [$m_0$] est donc triée.
--  si la sous-liste de $k$ éléments [$m_0, m_1, ..., m_{k-1}$] est triée, l'algorithme rajoute en dernière position de la liste le minimum de la sous-liste restante, dont tous les éléments sont supérieurs au maximum de la sous-liste de $k$ éléments. La sous-liste de $k+1$ éléments [$m_0, m_1, ..., m_{k-1}, m_k$] est donc elle aussi triée.
 
+Dans notre algorithme de tri par insertion, l'invariant de boucle est «Le tableau `lst[1:i]` est trié» :
 
+- INITIALISATION : La valeur avant de rentrer dans la boucle est `i=1`, donc le tableau `lst[1:1]` contient un seul élément. Un tableau contenant un seul élément est forcément trié (trivial), notre invariant "le tableau `lst[1:i]` est trié" est donc vrai.
+
+- CONSERVATION : si l'invariant de boucle est vrai avant une itération de la boucle : "Le tableau `lst[1:i-1]` est trié", alors il le reste à la fin de l'itération : "Le tableau `lst[1:i]` est trié".
+Si on insère `lst[i]` à sa place dans le tableau `lst[1:i-1]`, alors le tableau `lst[1:i]` sera évidemment trié.
+
+- TERMINAISON : La dernière valeur prise de `i` dans la boucle est `i=n`, donc le tableau `lst[1:n]` sera trié.
+
+Cette démonstration nous permet d'affirmer que l'algorithme de tri par insertion est correct.
 
 
 
