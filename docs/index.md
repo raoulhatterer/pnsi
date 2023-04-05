@@ -3,6 +3,7 @@
     - Bonne rentrée à toutes et à tous ! -->
 
 ## Thème(s) en cours d'étude 
+- [Projets](./T8_Projets/1_Consignes/cours/)
 - Dans le Thème4: [Extremums et moyennes](./T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
 - Dans le Thème4: [Tri par insertion](./T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
 - Dans le Thème4: [Tri par sélection](./T4_Algorithmique/Chapitre_4:_Tri_par_selection/cours/)
