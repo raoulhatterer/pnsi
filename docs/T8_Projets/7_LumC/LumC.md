@@ -28,13 +28,13 @@ Au travers de la démarche de projet, les compétences à acquérir sont : Analy
 
 Les notes tiennent compte du respect des délais.
 
-| Critère collectifs               | Observation du groupe LumC | note | barème |
-|:---------------------------------|----------------------------|------|--------|
-| Constitution du groupe           |                            |      | /1     |
-| Désignation d'un porte-parole    |                            |      | /1     |
-| Choix d'un thème (chapitre d'ES) |                            |      | /1     |
-| Communication* du groupe         |                            |      | /2     |
-| **TOTAL**                        |                            |      |        |
+| Critère collectifs               | Observation du groupe LumC   | note | barème |
+|:---------------------------------|------------------------------|------|--------|
+| Constitution du groupe           | délai dépassé donc attribuée | 0    | /1     |
+| Désignation d'un porte-parole    |                              |      | /1     |
+| Choix d'un thème (chapitre d'ES) |                              |      | /1     |
+| Communication* du groupe         |                              |      | /2     |
+| **TOTAL**                        |                              |      |        |
 
 | Critères individuels                                             | Observation de l'élève | note | barème |
 |:-----------------------------------------------------------------|------------------------|------|--------|

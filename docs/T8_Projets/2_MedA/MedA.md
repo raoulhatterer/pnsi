@@ -1,6 +1,6 @@
 # MedA
 
-## Chapitre à traiter: Le son, phénomène vibratoire (chapitre 11)
+## Chapitre à traiter: "Le son, phénomène vibratoire" (chapitre 11)
 
 ??? info "Contenu du programme d'enseignement scientifique (Hatier)"
     ![image](data/sommaireES_Hatier.png){: .center}
@@ -29,13 +29,13 @@ Au travers de la démarche de projet, les compétences à acquérir sont : Analy
 
 Les notes tiennent compte du respect des délais.
 
-| Critère collectifs               | Observation du groupe MedA | note | barème |
-|:---------------------------------|----------------------------|------|--------|
-| Constitution du groupe           |                            |      | /1     |
-| Désignation d'un porte-parole    |                            |      | /1     |
-| Choix d'un thème (chapitre d'ES) |                            |      | /1     |
-| Communication* du groupe         |                            |      | /2     |
-| **TOTAL**                        |                            |      |        |
+| Critère collectifs               | Observation du groupe MedA                            | note | barème |
+|:---------------------------------|-------------------------------------------------------|------|--------|
+| Constitution du groupe           | délai dépassé donc attribuée                          | 0    | /1     |
+| Désignation d'un porte-parole    | GUEGUEN Antoine (10 avril)                            | 1    | /1     |
+| Choix d'un thème (chapitre d'ES) | chapitre 11 "Le son, phénomène vibratoire" (10 avril) | 1    | /1     |
+| Communication* du groupe         |                                                       |      | /2     |
+| **TOTAL**                        |                                                       |      |        |
 
 | Critères individuels                                             | Observation de l'élève | note | barème |
 |:-----------------------------------------------------------------|------------------------|------|--------|

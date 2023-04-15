@@ -15,7 +15,7 @@
  | LumA           | Projets |
  |:--------------:|:-------:|
  | MICHEL Mathieu |         |
- | BOYER Mikael   |         |
+ | BOYER Mikael*  |         |
 
 
 (* porte-parole du groupe)
@@ -30,8 +30,8 @@ Les notes tiennent compte du respect des délais.
 
 | Critère collectifs               | Observation du groupe LumA | note | barème |
 |:---------------------------------|----------------------------|------|--------|
-| Constitution du groupe           |                            |      | /1     |
-| Désignation d'un porte-parole    |                            |      | /1     |
+| Constitution du groupe           | oui (le 4 avril)           | 1    | /1     |
+| Désignation d'un porte-parole    | BOYER Mikael               | 1    | /1     |
 | Choix d'un thème (chapitre d'ES) |                            |      | /1     |
 | Communication* du groupe         |                            |      | /2     |
 | **TOTAL**                        |                            |      |        |

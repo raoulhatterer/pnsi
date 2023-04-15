@@ -1,6 +1,6 @@
 # LumB
 
-## Chapitre à traiter: ?  (chapitre ? )
+## Chapitre à traiter: "Le bilan thermique du corps humain" (chapitre 7)
 
 ??? info "Contenu du programme d'enseignement scientifique (Hatier)"
     ![image](data/sommaireES_Hatier.png){: .center}
@@ -12,11 +12,11 @@
 ## Constitution de l'équipe et projets
 
 
- | LumB                    | Projets |
- |:-----------------------:|:-------:|
- | CHARMASSON Alexandre    |         |
- | DACOSTANEIVA Marcellino |         |
- | DUA Terence             |         |
+ | LumB                     | Projets |
+ |:------------------------:|:-------:|
+ | CHARMASSON Alexandre     |         |
+ | DACOSTANEIVA Marcellino* |         |
+ | DUA Terence              |         |
 
 (* porte-parole du groupe)
 
@@ -28,13 +28,13 @@ Au travers de la démarche de projet, les compétences à acquérir sont : Analy
 
 Les notes tiennent compte du respect des délais.
 
-| Critère collectifs               | Observation du groupe LumB | note | barème |
-|:---------------------------------|----------------------------|------|--------|
-| Constitution du groupe           |                            |      | /1     |
-| Désignation d'un porte-parole    |                            |      | /1     |
-| Choix d'un thème (chapitre d'ES) |                            |      | /1     |
-| Communication* du groupe         |                            |      | /2     |
-| **TOTAL**                        |                            |      |        |
+| Critère collectifs               | Observation du groupe LumB                                 | note | barème |
+|:---------------------------------|------------------------------------------------------------|------|--------|
+| Constitution du groupe           | consignes non respectées                                   | 0    | /1     |
+| Désignation d'un porte-parole    | DACOSTANEIVA Marcellino (5 avril)                          | 1    | /1     |
+| Choix d'un thème (chapitre d'ES) | chapitre 7: "Le bilan thermique du corps humain" (5 avril) | 1    | /1     |
+| Communication* du groupe         |                                                            |      | /2     |
+| **TOTAL**                        |                                                            |      |        |
 
 | Critères individuels                                             | Observation de l'élève | note | barème |
 |:-----------------------------------------------------------------|------------------------|------|--------|

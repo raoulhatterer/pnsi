@@ -1,6 +1,6 @@
 # MedB
 
-## Chapitre à traiter: Le son, phénomène vibratoire (chapitre 11)
+## Chapitre à traiter: "Le son, une information à coder" (chapitre 13)
 
 ??? info "Contenu du programme d'enseignement scientifique (Hatier)"
     ![image](data/sommaireES_Hatier.png){: .center}
@@ -29,13 +29,13 @@ Au travers de la démarche de projet, les compétences à acquérir sont : Analy
 
 Les notes tiennent compte du respect des délais.
 
-| Critère collectifs               | Observation du groupe MedB | note | barème |
-|:---------------------------------|----------------------------|------|--------|
-| Constitution du groupe           |                            |      | /1     |
-| Désignation d'un porte-parole    |                            |      | /1     |
-| Choix d'un thème (chapitre d'ES) |                            |      | /1     |
-| Communication* du groupe         |                            |      | /2     |
-| **TOTAL**                        |                            |      |        |
+| Critère collectifs               | Observation du groupe MedB                              | note | barème |
+|:---------------------------------|---------------------------------------------------------|------|--------|
+| Constitution du groupe           | hors délai donc attribuée                               | 0    | /1     |
+| Désignation d'un porte-parole    | PHILIPPON Leo (8 avril)                                 | 1    | /1     |
+| Choix d'un thème (chapitre d'ES) | chapitre 13 "Le son, une information à coder" (8 avril) | 1    | /1     |
+| Communication* du groupe         |                                                         |      | /2     |
+| **TOTAL**                        |                                                         |      |        |
 
 | Critères individuels                                             | Observation de l'élève | note | barème |
 |:-----------------------------------------------------------------|------------------------|------|--------|
