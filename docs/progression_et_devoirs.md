@@ -151,3 +151,13 @@
         - Exercices du cours algorithmique: savoir faire par cœur les exercices ❤️ du chapitre 1 et l'exercice `Tri par insertion (version simple)` du chapitre 3. 
         - Si vous êtes interrogés pour vérifier que vous avez fait vos devoirs, cela signifie que vous devez être capable d'écrire sur une feuille de papier n'importe lequel de ces algorithmes en moins de 7 minutes.
         - Apprendre un algorithme par cœur, ne dispense pas de se donner la peine de comprendre son fonctionnement.
+
+
+
+!!! done "séance 20 (mardi 14/03/23):"
+    - Dans le thème 4 Algorithmique:
+        - chapitre 3: tri
+    ??? note "Devoirs"
+        - Projet
+
+
