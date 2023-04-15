@@ -158,6 +158,6 @@
     - Dans le thème 4 Algorithmique:
         - chapitre 3: tri
     ??? note "Devoirs"
-        - Projet
+        - Projet à remettre au retour des vacances de printemps 
 
 
