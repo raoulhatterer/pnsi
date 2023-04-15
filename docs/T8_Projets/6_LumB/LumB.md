@@ -59,4 +59,4 @@ Au travers du code source qui sera transmis au professeur, les critères d'éval
 
 - Chaque élève doit être capable d'expliquer comment s'intègre sa tâche dans le projet global et critiquer le résultat obtenu. Une partie du compte-rendu peut être commune à tous les membres de l'équipe et se poursuivre par les présentations individuelles du travail de chacun.
 
-- La présentation donnera lieu à une captation vidéo. Cette vidéo sera évaluée en tant que prestation du projet.
+- La présentation donnera lieu à une captation vidéo. Cette vidéo sera évaluée en tant que prestation du projet. Elle prendra la forme d'une captation de l'écran et de vos commentaires en voix off. Vous ne devez pas apparaître dans la vidéo.

@@ -156,8 +156,8 @@
 
 !!! done "séance 20 (mardi 14/03/23):"
     - Dans le thème 4 Algorithmique:
-        - chapitre 3: tri
+        - chapitre 3: tri par sélection
     ??? note "Devoirs"
-        - Projet à remettre au retour des vacances de printemps 
+        - Projet à remettre au retour des vacances de printemps (code source + vidéo de présentation). 
 
 
