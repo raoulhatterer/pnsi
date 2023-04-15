@@ -1,4 +1,4 @@
-# Projets
+# Consignes
 
 
 ## Constitution des équipes
@@ -21,16 +21,6 @@
         | BOYER Mikael   | DACOSTANEIVA Marcellino | GRANIER Niels |
         |                | DUA Terence             | SINICA Romain |
          
-         
-         
-         
-         
-         
-         
-         
-
-
-
 ## Sujets
 - Concernant les sujets, je souhaiterais que les sujets des différents projets soient __inspirés par le contenu du programme d'enseignement scientifique__, car c'est une discipline suivie par tous les élèves et qui donne facilement la possibilité d'en dégager des projets de programmation. De plus, cela devrait garantir un travail original sachant que s'approprier le travail d'autres personnes est interdit.   
 
@@ -38,9 +28,12 @@
 ??? info "Contenu du programme d'enseignement scientifique (Hatier)"
     ![image](data/sommaireES_Hatier.png){: .center}
     
-
+- Chacun des élèves d'une équipe travaillera sur un programme python différent, mais portant sur le même chapitre. Une fois que vous serez fixés, dites-moi concrètement quel est le projet de chacun et je vous dirai s'il y a assez de programmation dans chacune de vos propositions ou si cela me parait trop léger. 
 
 - Ces projets peuvent être plus ou moins ambitieux suivant votre niveau en programmation: vous pouvez ajouter une interface graphique, un serveur web... 
+
+
+
 
 ## Exemple de projet
 - Projet réalisé par un élève [https://youtu.be/oLlt0fwXRY4](https://youtu.be/oLlt0fwXRY4). Remarque: Cette année-là, la consigne était de réaliser un projet à partir du programme de la spécialité physique-chimie. 
