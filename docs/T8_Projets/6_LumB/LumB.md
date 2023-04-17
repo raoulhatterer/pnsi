@@ -12,11 +12,11 @@
 ## Constitution de l'équipe et projets
 
 
- | LumB                     | Projets |
- |:------------------------:|:-------:|
- | CHARMASSON Alexandre     |         |
- | DACOSTANEIVA Marcellino* |         |
- | DUA Terence              |         |
+ | LumB                     | Projets                                              |
+ |:------------------------:|:----------------------------------------------------:|
+ | DACOSTANEIVA Marcellino* | Le corps humain un échangeur thermique               |
+ | DUA Terence              | La libération d'énergie thermique par le métabolisme |
+ | CHARMASSON Alexandre     | La puissance thermique du corps humain               |
 
 (* porte-parole du groupe)
 
@@ -43,7 +43,6 @@ Les notes tiennent compte du respect des délais.
 | Implication de l'élève dans sa tâche individuelle                |                        |      | /1     |
 | Implication et disponibilité de l'élève dans le projet collectif |                        |      | /1     |
 | **TOTAL**                                                        |                        |      |        |
-
 
 (* fréquence et qualité des échanges avec le professeur, prise en compte des remarques...)
 
