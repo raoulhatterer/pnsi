@@ -1,6 +1,6 @@
 # LumC
 
-## Chapitre à traiter: ?  (chapitre ? )
+## Chapitre à traiter: "Les éléments chimiques" (chapitre 1)
 
 ??? info "Contenu du programme d'enseignement scientifique (Hatier)"
     ![image](data/sommaireES_Hatier.png){: .center}
@@ -12,11 +12,11 @@
 ## Constitution de l'équipe et projets
 
 
- | LumC          | Projets |
- |:-------------:|:-------:|
- | GACHI Naelle  |         |
- | GRANIER Niels |         |
- | SINICA Romain |         |
+ | LumC           | Projets          |
+ |:--------------:|:----------------:|
+ | GACHI Naelle   |                  |
+ | GRANIER Niels* | La radioactivité |
+ | SINICA Romain  |                  |
 
 (* porte-parole du groupe)
 
@@ -28,13 +28,13 @@ Au travers de la démarche de projet, les compétences à acquérir sont : Analy
 
 Les notes tiennent compte du respect des délais.
 
-| Critère collectifs               | Observation du groupe LumC   | note | barème |
-|:---------------------------------|------------------------------|------|--------|
-| Constitution du groupe           | délai dépassé donc attribuée | 0    | /1     |
-| Désignation d'un porte-parole    |                              |      | /1     |
-| Choix d'un thème (chapitre d'ES) |                              |      | /1     |
-| Communication* du groupe         |                              |      | /2     |
-| **TOTAL**                        |                              |      |        |
+| Critère collectifs               | Observation du groupe LumC                          | note | barème |
+|:---------------------------------|-----------------------------------------------------|------|--------|
+| Constitution du groupe           | délai dépassé donc attribuée                        | 0    | /1     |
+| Désignation d'un porte-parole    | GRANIER Niels (retard 19/04)                        | 0.5  | /1     |
+| Choix d'un thème (chapitre d'ES) | Chapitre 1: "Les éléments chimiques" (retard 10/04) | 0.5  | /1     |
+| Communication* du groupe         |                                                     |      | /2     |
+| **TOTAL**                        |                                                     |      |        |
 
 | Critères individuels                                             | Observation de l'élève | note | barème |
 |:-----------------------------------------------------------------|------------------------|------|--------|
