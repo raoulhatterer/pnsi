@@ -12,11 +12,11 @@
 ## Constitution de l'équipe et projets
 
 
- | LumB                     | Projets                                              |
- |:------------------------:|:----------------------------------------------------:|
- | DACOSTANEIVA Marcellino* | Le corps humain un échangeur thermique               |
- | DUA Terence              | La libération d'énergie thermique par le métabolisme |
- | CHARMASSON Alexandre     | La puissance thermique du corps humain               |
+ | LumB                     | Projets                                              | Validé   |
+ |:------------------------:|:----------------------------------------------------:|----------|
+ | DACOSTANEIVA Marcellino* | Le corps humain un échangeur thermique               |          |
+ | DUA Terence              | La libération d'énergie thermique par le métabolisme |          |
+ | CHARMASSON Alexandre     | La puissance thermique du corps humain (ex 4 p 125)  | le 20/04 |
 
 (* porte-parole du groupe)
 
