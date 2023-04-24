@@ -14,8 +14,8 @@
 
  | LumB                     | Projets                                              | Validé   |
  |:------------------------:|:----------------------------------------------------:|----------|
- | DACOSTANEIVA Marcellino* | Le corps humain un échangeur thermique               |          |
- | DUA Terence              | La libération d'énergie thermique par le métabolisme |          |
+ | DACOSTANEIVA Marcellino* | Le corps humain un échangeur thermique               | le 24/04 |
+ | DUA Terence              | La libération d'énergie thermique par le métabolisme | le 24/04 |
  | CHARMASSON Alexandre     | La puissance thermique du corps humain (ex 4 p 125)  | le 20/04 |
 
 (* porte-parole du groupe)
