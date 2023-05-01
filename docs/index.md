@@ -4,11 +4,8 @@
 
 ## Thème(s) en cours d'étude 
 - [Projets](./T8_Projets/1_Consignes/consignes/)
-- Dans le Thème4: [Extremums et moyennes](./T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
-- Dans le Thème4: [Tri par insertion](./T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
-- Dans le Thème4: [Tri par sélection](./T4_Algorithmique/Chapitre_4:_Tri_par_selection/cours/)
-- Dans le Thème3: [Architecture réseau](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
-- Dans le Thème3: [Protocoles de communication](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
+- Thème4: Algorithmique
+
 
 ## Exercices pratiques pour vous entraîner
 
@@ -55,13 +52,13 @@
     === "T4 Algorithmique"
         **Thème 4 : Algorithmique**
 
-        - Chapitre 1 [Extremums et moyennes](./T4_Algorithmique/4.1_Extremums_et_moyennes/cours/)
-        - Chapitre 2 [Complexité](./T4_Algorithmique/4.2_Complexite/cours/)
-        - Chapitre 3 [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)
-        - Chapitre 4 [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
-        - Chapitre 5 [Dichotomie](./T4_Algorithmique/4.5_Dichotomie/cours/)
-        - Chapitre 6 [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
-        - Chapitre 7 [Algorithme KNN](./T4_Algorithmique/4.7_Algorithme_KNN/cours/)
+        - Chapitre 1 [Extremums et moyennes](./T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
+        - Chapitre 2 [Complexité](./T4_Algorithmique/Chapitre_2:_Complexite/cours/)
+        - Chapitre 3 [Tri par insertion](./T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
+        - Chapitre 4 [Tri par sélection](./T4_Algorithmique/Chapitre_4:_Tri_par_selection/cours/)
+        - Chapitre 5 [Dichotomie](./T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
+        - Chapitre 6 [Algorithmes gloutons](./T4_Algorithmique/Chapitre_6:_Algorithmes_gloutons/cours/)
+        - Chapitre 7 [Algorithme KNN](./T4_Algorithmique/Chapitre_7:_Algorithme_KNN/cours/)
 
     === "T5 Traitement de données"
         **Thème 5 : Traitement de données**
