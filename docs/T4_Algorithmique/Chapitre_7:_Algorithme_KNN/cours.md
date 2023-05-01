@@ -15,8 +15,9 @@ La méthode du KNN va trouver quels sont, dans une base de données déjà bien 
 ![](data/picKNN.png)
 
 **Notre objectif :** 
-Nous allons reprendre le jeu de données sur les joueurs du top14 utilisé ici https://github.com/glassus/nsi/blob/master/Premiere/Theme06_Traitement_de_donnees/03_Pandas_eleves.ipynb
+Nous allons reprendre le jeu de données sur les joueurs du top14 utilisé ici 
 
+https://forge.aeif.fr/lyceemed/pnsi/-/blob/main/docs/T4_Algorithmique/Chapitre_7:_Algorithme_KNN/data/03_Pandas_eleves.ipynb
 
 **Question :** si on croise une personne nous disant qu'elle veut jouer en top14, et qu'elle nous donne son poids et sa taille, peut-on lui prédire à quel poste elle devrait jouer ?
 
