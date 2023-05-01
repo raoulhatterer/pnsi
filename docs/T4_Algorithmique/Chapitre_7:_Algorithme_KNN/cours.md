@@ -19,6 +19,9 @@ Nous allons reprendre le jeu de données sur les joueurs du top14 utilisé ici
 
 https://forge.aeif.fr/lyceemed/pnsi/-/blob/main/docs/T4_Algorithmique/Chapitre_7:_Algorithme_KNN/data/03_Pandas_eleves.ipynb
 
+qui utilise le fichier [top14.csv](data/top14.csv)
+
+
 **Question :** si on croise une personne nous disant qu'elle veut jouer en top14, et qu'elle nous donne son poids et sa taille, peut-on lui prédire à quel poste elle devrait jouer ?
 
 Dans toute idée de classification il y a l'idée de **distance**. Il faut comprendre la distance comme une _mesure de la différence_. 
@@ -34,7 +37,7 @@ import pandas as pd #import du module pandas, abrégé classiquement par "pd"
 
 
 ```python
-df = pd.read_csv('data/top14.csv', encoding = 'utf-8')
+df = pd.read_csv('top14.csv', encoding = 'utf-8')
 ```
 
 ### Résultat attendu :
@@ -64,9 +67,9 @@ knn(93,188)
 
 
 
-
-    'Ailier'
-
+```pycon
+'Ailier'
+```
 
 
 ## Influence du paramètre $k$
@@ -86,27 +89,27 @@ def knn(poids, taille, k):
 for k in range(1,20):
     print(knn(93,188,k))
 ```
-
-    Centre
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-    Ailier
-
+```pycon
+Centre
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+Ailier
+```
 
 On s'aperçoit que la prédiction est très stable... sauf si $k=1$ !  
 Il se trouve qu'un joueur possède **exactement** ces caractéristiques physiques (Pierre-Louis BARASSI) et qu'il joue Centre :
