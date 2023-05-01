@@ -13,7 +13,7 @@ en anglais : _greedy algorithms_
 
 La question (presque philosophique) est : 
 
-*Lorsqu'on fait à chaque étape le meilleur choix possible, est-ce que la solution finale à laquelle on arrive est la meilleure possible ?*
+*Lorsqu'on fait à chaque étape le meilleur choix possible, est-ce que la solution finale à laquelle on arrive est la meilleure possible?*
 
 Formulé autrement :
 
@@ -410,4 +410,4 @@ Par contre, la force brute est inenvisageable pour si le nombre d'objets est gra
 ## Conclusion 
 
 La stratégie gloutonne donne très rapidement des solutions **satisfaisantes** mais **pas forcément optimales**. Pour beaucoup de problèmes (dont le problème du sac à dos), la recherche d'une solution optimale sans passer par la force brute semble impossible (mais n'est pas démontrée).  
-Dans ce cas-là, la stratégie gloutonne peut être employée pour avoir vite et bien une solution convenable, même si peut-être non optimale. On dit que la stratégie gloutonne est une **heuristique** de résolution. On sait que ce n'est pas forcément optimal, mais faute de mieux, on s'en contente...
+Dans ce cas-là, la stratégie gloutonne peut être employée pour avoir vite et bien une solution convenable, même si peut-être non optimale. On dit que la stratégie gloutonne est une **heuristique** (c-à-d qui sert à la découverte) de résolution. On sait que ce n'est pas forcément optimal, mais faute de mieux, on s'en contente...

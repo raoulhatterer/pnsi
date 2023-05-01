@@ -1,4 +1,4 @@
-# 4.5 Dichotomie
+# Chapitre 5: Dichotomie
 
 *ou comment rechercher efficacement dans une liste triée ?*
 
@@ -376,7 +376,10 @@ Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la
 - méthode 2: la recherche dans une liste 10 fois plus grand prend environ 1,2 fois plus de temps : la vitesse de l'algorithme est bien proportionnelle au **logarithme** de la taille $n$ de la liste.  $\frac{\log(1000000)}{\log(100000)} \approx 1,2$
 
 
-**Remarque :** Il ne faut toutefois pas oublier que la méthode dichotomique, bien plus rapide, nécessite que la liste ait été auparavant triée. Ce qui rajoute du temps de calcul ! (cf [tri par insertion](https://github.com/glassus/nsi/blob/master/Premiere/Theme05_Algorithmique/03_Tri_par_insertion.ipynb) ou [tri par sélection](https://github.com/glassus/nsi/blob/master/Premiere/Theme05_Algorithmique/04_Tri_par_selection.ipynb) )
+**Remarque :** Il ne faut toutefois pas oublier que la méthode dichotomique, bien plus rapide, nécessite que la liste ait été auparavant triée. Ce qui rajoute du temps de calcul ! (cf 
+[Tri par insertion](../Chapitre_3:_Tri_par_insertion/cours.md) 
+[Tri par sélection](../Chapitre_4:_Tri_par_selection/cours.md) 
+)
 
 
 ```python
