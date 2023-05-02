@@ -12,12 +12,12 @@
 ## Constitution de l'équipe et projets
 
 
- | MedA                   | Projets |
- |:----------------------:|:-------:|
- | ARSLAN Roman           |         |
- | DI VITO COGNIAT Zoe    |         |
- | GOMEZ-BARTHEYE Esteban |         |
- | GUEGUEN Antoine*       |         |
+ | MedA                   | Projets                                             |
+ |:----------------------:|:---------------------------------------------------:|
+ | ARSLAN Roman           |                                                     |
+ | DI VITO COGNIAT Zoe    | Représentation temporelle d'un son pur (30/04/2023) |
+ | GOMEZ-BARTHEYE Esteban |                                                     |
+ | GUEGUEN Antoine*       |                                                     |
 
 (* porte-parole du groupe)
 

@@ -1,6 +1,15 @@
 # MedC
 
-## Chapitre à traiter: ?  (chapitre ? )
+## Chapitre à traiter:  "Le rayonnement solaire"  (chapitre 4 )
+
+
+Bonjour Nathan,
+Incluez les autres élèves du groupe en destinataires de vos messages.
+C’était à vous d’étudier le livre pour voir quel chapitre vous inspire le plus. Prenez vos responsabilités.
+De toute façon, tous les chapitres comportent des exercices. Et les exercices peuvent souvent être adaptés en programmes. Donc, en ce qui me concerne, je vous en aurais attribué un chapitre choisi au hasard. Je vous valide le chapitre 4 sur puisqu'il a votre préférence.  Tâchez de rattraper votre retard dans l'avancement du projet.
+Salutations,
+
+
 
 ??? info "Contenu du programme d'enseignement scientifique (Hatier)"
     ![image](data/sommaireES_Hatier.png){: .center}
@@ -14,7 +23,7 @@
 
  | MedC                  | Projets |
  |:---------------------:|:-------:|
- | RAMANGA Nathan        |         |
+ | RAMANGA Nathan*       |         |
  | SUY Heng Tan          |         |
  | TURCAT Raphael        |         |
  | VAN DE ROSIEREN Isaac |         |
@@ -29,13 +38,13 @@ Au travers de la démarche de projet, les compétences à acquérir sont : Analy
 
 Les notes tiennent compte du respect des délais.
 
-| Critère collectifs               | Observation du groupe MedC   | note | barème |
-|:---------------------------------|------------------------------|------|--------|
-| Constitution du groupe           | délai dépassé donc attribuée | 0    | /1     |
-| Désignation d'un porte-parole    |                              |      | /1     |
-| Choix d'un thème (chapitre d'ES) |                              |      | /1     |
-| Communication* du groupe         |                              |      | /2     |
-| **TOTAL**                        |                              |      |        |
+| Critère collectifs               | Observation du groupe MedC                                     | note | barème |
+|:---------------------------------|----------------------------------------------------------------|------|--------|
+| Constitution du groupe           | délai dépassé donc attribuée                                   | 0    | /1     |
+| Désignation d'un porte-parole    | RAMANGA Nathan (02/05/23) délai dépassé                        | 0.5  | /1     |
+| Choix d'un thème (chapitre d'ES) | (chapitre 4) "Le rayonnement solaire" (02/05/23) délai dépassé | 0.5  | /1     |
+| Communication* du groupe         |                                                                |      | /2     |
+| **TOTAL**                        |                                                                |      |        |
 
 | Critères individuels                                             | Observation de l'élève | note | barème |
 |:-----------------------------------------------------------------|------------------------|------|--------|
