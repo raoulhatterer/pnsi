@@ -1,4 +1,4 @@
-# Progression et devoirs
+># Progression et devoirs
 
 !!! done "séance 1 (mardi 6/09/22):"
     - [Les conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours.md)
@@ -152,12 +152,22 @@
         - Si vous êtes interrogés pour vérifier que vous avez fait vos devoirs, cela signifie que vous devez être capable d'écrire sur une feuille de papier n'importe lequel de ces algorithmes en moins de 7 minutes.
         - Apprendre un algorithme par cœur, ne dispense pas de se donner la peine de comprendre son fonctionnement.
 
-
-
 !!! done "séance 20 (mardi 14/03/23):"
     - Dans le thème 4 Algorithmique:
         - chapitre 3: tri par sélection
     ??? note "Devoirs"
         - Projet à remettre au retour des vacances de printemps (code source + vidéo de présentation). 
+
+!!! done "séance 21 (mardi 02/05/23):"
+    - Dans le thème 4 Algorithmique:
+        - chapitre 5: Dichotomie
+        - chapitre 6: Algorithmes gloutons
+        - chapitre 7: Algorithmes des k-plus-proches-voisins
+    ??? note "Devoirs"
+        - Commencer à réfléchir à comment faire converger les différents projets de votre groupe en un seul Projet. La réalisation de certains projets est à revoir et sera évoquée lors de la prochaine séance. Remarque: Ceux qui n'ont pas encore rendu leur projet pénalisent l'avancement global du groupe.
+        - Terminer l'activité permettant l'étude du chapitre 7
+        - Apprendre par cœur les deux algorithmes suivants:
+            - Recherche dichotomique dans une liste triée (chapitre 5)
+            - Rendu de monnaie (chapitre 6)
 
 
