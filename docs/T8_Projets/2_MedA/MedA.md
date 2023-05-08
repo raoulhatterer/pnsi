@@ -12,12 +12,14 @@
 ## Constitution de l'équipe et projets
 
 
- | MedA                   | Projets                                             |
- |:----------------------:|:---------------------------------------------------:|
- | ARSLAN Roman           |                                                     |
- | DI VITO COGNIAT Zoe    | Représentation temporelle d'un son pur (30/04/2023) |
- | GOMEZ-BARTHEYE Esteban |                                                     |
- | GUEGUEN Antoine*       |                                                     |
+ | MedA                   | Projets                                | Validé     |
+ |:----------------------:|:--------------------------------------:|------------|
+ | ARSLAN Roman           | Proposition hors sujet                 |            |
+ | DI VITO COGNIAT Zoe    | Représentation temporelle d'un son pur | 30/04/2023 |
+ | GOMEZ-BARTHEYE Esteban | Pas de communication jusqu'à présent   |            |
+ | GUEGUEN Antoine*       | Fréquences des harmoniques d'une note  | 30/04/2013 |
+
+
 
 (* porte-parole du groupe)
 

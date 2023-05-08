@@ -12,10 +12,10 @@
 ## Constitution de l'équipe et projets
 
 
- | LumA           | Projets |
- |:--------------:|:-------:|
- | MICHEL Mathieu |         |
- | BOYER Mikael*  |         |
+ | LumA           | Projets              |
+ |:--------------:|:--------------------:|
+ | MICHEL Mathieu | Pas de communication |
+ | BOYER Mikael*  | Pas de communication |
 
 
 (* porte-parole du groupe)
