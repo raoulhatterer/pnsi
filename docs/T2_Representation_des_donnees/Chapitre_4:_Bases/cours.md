@@ -1,4 +1,4 @@
-# 2.4 Représentation d'un entier positif dans différentes bases
+# Chapitre 4 Représentation d'un entier positif dans différentes bases
 
 ![image](data/BO.png){: .center}
 
@@ -161,7 +161,3 @@ On peut utiliser la fonction `int("nombre",base)`.
  255
 ```
 
-
-## 3. Du binaire inattendu
-
-[Le message secret de Perseverance](../../../T6_Mini-projets/Exercice_Perseverance/ )
