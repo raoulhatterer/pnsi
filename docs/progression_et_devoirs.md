@@ -170,4 +170,16 @@
             - Recherche dichotomique dans une liste triée (chapitre 5)
             - Rendu de monnaie (chapitre 6)
 
+!!! done "séance 22 (mardi 02/09/23):"
+    - Revue de projet
+    - Dans le thème 2 Représentation des données:
+        - chapitre 4: Les bases
+        - chapitre 5: Les booléens
+    ??? note "Devoirs"
+        - Corriger le code de votre projet et refaire la vidéo de sa présentation en tenant compte des remarques formulées lors de la revue de projet.
+        - Apprendre par cœur:
+            - La conversion à la main (sans calculatrice ni ordinateur) d'un nombre quelconque entre la base 2, la base 10 et la base 16. On se limitera aux nombres binaires de 8 bits.
+            - La table de vérité de: OR, AND, XOR, NOR, NAND.
+
+
 

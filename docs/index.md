@@ -4,7 +4,9 @@
 
 ## Thème(s) en cours d'étude 
 - [Projets](./T8_Projets/1_Consignes/consignes/)
-- Thème4: Algorithmique
+- Thème2: Représentation des données 
+    - Les bases
+    - Les booléens
 
 
 ## Exercices pratiques pour vous entraîner
