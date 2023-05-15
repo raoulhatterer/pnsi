@@ -1,4 +1,4 @@
-# 2.6 Codage des caractères
+# Chapitre 6: Codage des caractères
 Tout pour comprendre et Ã©viter les erreurs d'encodage
 
 ![image](data/BO.png){: .center}

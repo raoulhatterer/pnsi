@@ -24,7 +24,7 @@ Salutations,
 | MedC                  | Projets                                     | Validé     |
 |:---------------------:|:-------------------------------------------:|------------|
 | RAMANGA Nathan*       | Équivalence masse-énergie d'après ex 8 p 82 | 06/05/2023 |
-| SUY Heng Tan          | Proposition non validée                     | 08/05/2023 |
+| SUY Heng Tan          | Loi de Wien d'après 9 p 83                  | 13/05/2023 |
 | TURCAT Raphael        | Pas de communication                        |            |
 | VAN DE ROSIEREN Isaac | Panneau solaire d'après ex 6 p82            | 08/05/2023 |
 

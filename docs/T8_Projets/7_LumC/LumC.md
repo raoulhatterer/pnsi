@@ -12,11 +12,11 @@
 ## Constitution de l'équipe et projets
 
 
- | LumC           | Projets                  | Validé   |
- |:--------------:|:------------------------:|----------|
- | GACHI Naelle   | Pas de communication     |          |
- | GRANIER Niels* | La radioactivité         | 19/04/23 |
- | SINICA Romain  | Décroissance radioactive | 06/05/23 |
+| LumC           | Projets                  | Validé   |
+|:--------------:|:------------------------:|----------|
+| GACHI Naelle   | Pas de communication     |          |
+| GRANIER Niels* | La radioactivité         | 19/04/23 |
+| SINICA Romain  | Décroissance radioactive | 06/05/23 |
 
 
 (* porte-parole du groupe)

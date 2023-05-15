@@ -12,12 +12,12 @@
 ## Constitution de l'équipe et projets
 
 
- | MedB            | Projets                                   | Validé     |
- |:---------------:|:-----------------------------------------:|------------|
- | KERCHOUNI Anna  |                                           |            |
- | MICHAUD Clément | Compression et fréquences                 | 01/05/2023 |
- | MOUTON Oscar    | Compression et paramètres de numérisation | 02/05/2023 |
- | PHILIPPON Leo*  | Compression et qualité musicale           | 01/05/2023 |
+| MedB            | Projets                                   | Validé     |
+|:---------------:|:-----------------------------------------:|------------|
+| KERCHOUNI Anna  |                                           |            |
+| MICHAUD Clément | Compression et fréquences                 | 01/05/2023 |
+| MOUTON Oscar    | Compression et paramètres de numérisation | 02/05/2023 |
+| PHILIPPON Leo*  | Compression et qualité musicale           | 01/05/2023 |
 
 (* porte-parole du groupe)
 

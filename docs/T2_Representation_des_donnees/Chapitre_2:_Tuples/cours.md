@@ -1,4 +1,4 @@
-# Chapitre 2 : les Tuples
+# Chapitre 2: les Tuples
 
 ![image](data/BO.png){: .center}
 

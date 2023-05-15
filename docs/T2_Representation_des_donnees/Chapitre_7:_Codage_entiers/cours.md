@@ -1,4 +1,4 @@
-# 2.7 Codage des entiers
+# Chapitre 7 Codage des entiers
 
 ![image](data/BO.png){: .center}
 
