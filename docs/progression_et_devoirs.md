@@ -170,8 +170,8 @@
             - Recherche dichotomique dans une liste triée (chapitre 5)
             - Rendu de monnaie (chapitre 6)
 
-!!! done "séance 22 (mardi 02/09/23):"
-    - Revue de projet
+!!! done "séance 22 (mardi 09/05/23):"
+    - Revue de projet n°1
     - Dans le thème 2 Représentation des données:
         - chapitre 4: Les bases
         - chapitre 5: Les booléens
@@ -180,6 +180,18 @@
         - Apprendre par cœur:
             - La conversion à la main (sans calculatrice ni ordinateur) d'un nombre quelconque entre la base 2, la base 10 et la base 16. On se limitera aux nombres binaires de 8 bits.
             - La table de vérité de: OR, AND, XOR, NOR, NAND.
+
+!!! done "séance 23 (mardi 16/05/23):"
+    - Revue de projet n°2
+    - Dans le thème 2 Représentation des données:
+        - chapitre 5: Les booléens (énigme du personnage mystère)
+        - chapitre 6: Représentation des entiers
+    ??? note "Devoirs"
+        - Corriger le code de votre projet et refaire la vidéo de sa présentation en tenant compte des remarques formulées lors de la revue de projet.
+        - Énigme du personnage mystère à terminer. Mettre votre script dans votre répertoire personnel sur le site collaboratif. 
+        - Apprendre par cœur:
+            - Le rôle des fonctions `ord()`, `bin()`, `int(k,2)`, `hex()`, `split()` et savoir en donner un exemple d'utilisation.
+
 
 
 

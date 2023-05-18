@@ -1,7 +1,9 @@
 # Énigme
 
+<!-- 
 Vous pouvez faire cette énigme sur Capytale 
 [https://capytale2.ac-paris.fr/web/c/d75d-1631078](https://capytale2.ac-paris.fr/web/c/d75d-1631078){. target="_blank"}
+ -->
 
 ## 1. À la recherche du personnage mystère
 
