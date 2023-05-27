@@ -8,7 +8,7 @@
 5. [Les booléens](../../T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
 6. [Codage des caractères](../../T2_Representation_des_donnees/Chapitre_6:_Codage_caracteres/cours/)
 7. [Codage des entiers](../../T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours/)
+8. [Les flottants](../../T2_Representation_des_donnees/Chapitre_8:_Flottants/cours/)
 <!--
-8. [Codage des non-entiers](../2.8_Codage_non-entiers/cours/)
 9. [Chaînes de caractères](../2.9_Chaines_caracteres/cours/)
 -->

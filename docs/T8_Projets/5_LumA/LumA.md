@@ -12,10 +12,11 @@
 ## Constitution de l'équipe et projets
 
 
-| LumA           | Projets              |
-|:--------------:|:--------------------:|
-| MICHEL Mathieu | Pas de communication |
-| BOYER Mikael*  | Pas de communication |
+| LumA           | Projets                                                                     | Date        |
+|:--------------:|:---------------------------------------------------------------------------:|-------------|
+| MICHEL Mathieu | Pas de communication                                                        |             |
+| BOYER Mikael*  | Lien youtube vers une vidéo sans échanges préalables pour valider le projet | 16 mai 2023 |
+
 
 
 (* porte-parole du groupe)

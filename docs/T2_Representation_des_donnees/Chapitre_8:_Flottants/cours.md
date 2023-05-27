@@ -1,4 +1,4 @@
-# Chapitre 8 Codage des non-entiers
+# Chapitre 8 Codage des flottants
 
 ![image](data/BO.png){: .center}
 

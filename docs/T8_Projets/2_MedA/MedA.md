@@ -16,7 +16,7 @@
 |:----------------------:|:--------------------------------------:|------------|
 | ARSLAN Roman           | Corde                                  | 15/05/2023 |
 | DI VITO COGNIAT Zoe    | Représentation temporelle d'un son pur | 30/04/2023 |
-| GOMEZ-BARTHEYE Esteban | Pas de communication jusqu'à présent   |            |
+| GOMEZ-BARTHEYE Esteban | Courbes en javascript                  | 16/05/2023 |
 | GUEGUEN Antoine*       | Fréquences des harmoniques d'une note  | 30/04/2013 |
 
 

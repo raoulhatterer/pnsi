@@ -185,12 +185,24 @@
     - Revue de projet n°2
     - Dans le thème 2 Représentation des données:
         - chapitre 5: Les booléens (énigme du personnage mystère)
-        - chapitre 6: Représentation des entiers
+        - chapitre 6: Codage des caractères
     ??? note "Devoirs"
         - Corriger le code de votre projet et refaire la vidéo de sa présentation en tenant compte des remarques formulées lors de la revue de projet.
         - Énigme du personnage mystère à terminer. Mettre votre script dans votre répertoire personnel sur le site collaboratif. 
         - Apprendre par cœur:
             - Le rôle des fonctions `ord()`, `bin()`, `int(k,2)`, `hex()`, `split()` et savoir en donner un exemple d'utilisation.
+
+!!! done "séance 24 (mardi 23/05/23):"
+    - Revue de projet n°3
+    - Dans le thème 2 Représentation des données:
+        - chapitre 5: Correction de l'énigme du personnage mystère
+        - chapitre 7: Représentation des entiers
+        - chapitre 8: Les flottants
+    ??? note "Devoirs"
+        - **Remise définitive** des projets individuels: 
+            - Corriger le code de votre projet et refaire la vidéo de sa présentation en tenant compte des remarques formulées lors des revues de projet. 
+            - **S'assurer que vos camarades de groupe aient TOUS REMIS UN TRAVAIL pour cette date limite**. Même en cas d'absence à la prochaine séance, l'élève devra quand même avoir déposé son travail dans le dossier projets et transmis un lien vers sa vidéo pour cette date butoir.
+        - Apprendre par cœur le script permettant de trouver une valeur approchée de la solution à une équation donnée à l'aide d'une boucle while.
 
 
 
