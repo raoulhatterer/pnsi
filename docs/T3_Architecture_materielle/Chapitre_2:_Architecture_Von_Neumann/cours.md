@@ -24,8 +24,6 @@ On distingue 4 zones essentielles :
 
 ## 2. Activité 1 : simulation d'un programme en assembleur
 
-<!-- Cette activité est disponible [ici](https://www.youtube.com/watch?v=5xABe90yolM){. target="_blank"} en vidéo. -->
-
 <!-- <iframe width="933" height="668" src="https://www.youtube.com/embed/5xABe90yolM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ### 2.1 Le programme que nous étudierons
@@ -103,7 +101,7 @@ Une fois transformé en binaire, on retrouve le code donné au début du paragra
     ![image](data/encodage.png){: .center width=60%}
     
 
-
+L'activité précédente est disponible [ici en vidéo](https://www.youtube.com/watch?v=5xABe90yolM){. target="_blank"} (utilise une ancienne version du simulateur).
 
 
 !!! abstract "Exercice"

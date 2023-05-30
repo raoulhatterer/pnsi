@@ -4,9 +4,9 @@
 
 ## Thème(s) en cours d'étude 
 - [Projets](./T8_Projets/1_Consignes/consignes/)
-- Thème2: Représentation des données 
-    - Les bases
-    - Les booléens
+- Dans le thème3 Architecture matérielle:
+    - chapitre 1: Microbit
+    - chapitre 2: Architecture Von Neumann
 
 
 ## Exercices pratiques pour vous entraîner
@@ -45,8 +45,8 @@
     === "T3 Architecture matérielle"
         **Thème 3 : Architecture matérielle**
 
-        - Chapitre 1: [Microbit](./T3_Architecture_materielle/3.1_Microbit/cours/)
-        - Chapitre 2: [Architecture Von Neumann](./T3_Architecture_materielle/3.2_Architecture_Von_Neumann/cours/)
+        - Chapitre 1: [Microbit](./T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
+        - Chapitre 2: [Architecture Von Neumann](./T3_Architecture_materielle/Chapitre_2:_Architecture_Von_Neumann/cours/)
         - Chapitre 3: [Architecture réseau](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
         - Chapitre 4: [Protocoles de communication dans un réseau](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
         - Chapitre 5: [Découverte des commandes Linux](./T3_Architecture_materielle/3.5_Decouverte_des_commandes_Linux/cours/)

@@ -204,6 +204,17 @@
             - **S'assurer que vos camarades de groupe aient TOUS REMIS UN TRAVAIL pour cette date limite**. Même en cas d'absence à la prochaine séance, l'élève devra quand même avoir déposé son travail dans le dossier projets et transmis un lien vers sa vidéo pour cette date butoir.
         - Apprendre par cœur le script permettant de trouver une valeur approchée de la solution à une équation donnée à l'aide d'une boucle while.
 
+!!! done "séance 25 (mardi 30/05/23):"
+    - Collecte des liens vers la vidéo de présentation du projet
+    - Dans le thème 3 Architecture matérielle:
+        - chapitre 1: Microbit
+        - chapitre 2: Architecture Von Neumann
+
+    ??? note "Devoirs"
+        - Chapitre 1 Microbit : Terminer les exercices du chapitre.
+        - Chapitre 2: Étudier l'activité 1. Savoir utiliser le simulateur pour réaliser un programme simple en assembleur Y86.
+        - Projets: faire conveger tous les projets individuels de votre groupe en un seul projet collectif cohérent. 
+
 
 
 
