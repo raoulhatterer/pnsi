@@ -1,11 +1,11 @@
-# 3.1 Microbit
+# Chapitre 1: Microbit
 
 ![image](data/BO.png){: .center}
 
 
 
 
-## 0. Présentation de la carte BBC micro:bit
+## Présentation de la carte BBC micro:bit
 
 **BBC micro:bit** est une carte à [microcontrôleur](https://fr.wikipedia.org/wiki/Microcontr%C3%B4leur) conçue en 2015 au Royaume-Uni pour développer l'apprentissage de l'algorithmique et de la programmation.
 
@@ -80,7 +80,7 @@ La vitesse de défilement peut être ralentie ou accélérée à l'aide du param
 
 ```python
 from microbit import *
-display.scroll("mauriac", delay=20)
+display.scroll("La Ciotat", delay=20)
 ```
 
 #### 2.1.2 Afficher une "image" `display.show(image)`

@@ -1,4 +1,4 @@
-# 3.2 Architecture Von Neumann
+# Chapitre 2: Architecture Von Neumann
 
 ![image](data/BO.png){: .center}
 
@@ -24,9 +24,9 @@ On distingue 4 zones essentielles :
 
 ## 2. Activité 1 : simulation d'un programme en assembleur
 
-Cette activité est disponible [ici](https://www.youtube.com/watch?v=5xABe90yolM){. target="_blank"} en vidéo.
+<!-- Cette activité est disponible [ici](https://www.youtube.com/watch?v=5xABe90yolM){. target="_blank"} en vidéo. -->
 
-<iframe width="933" height="668" src="https://www.youtube.com/embed/5xABe90yolM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="933" height="668" src="https://www.youtube.com/embed/5xABe90yolM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ### 2.1 Le programme que nous étudierons
 
@@ -163,7 +163,7 @@ int main()
 
 char saisie[50] = "";
 printf("Accès restreint : saisissez votre mot de passe \n");
-while (strcmp(saisie,"NSIMAURIAC")!=0)
+while (strcmp(saisie,"NSI")!=0)
 {
 printf("Mot de passe ? \n");
 scanf("%s",&saisie);
@@ -189,18 +189,18 @@ return 0;
 
 ### 3.2 Observation du fichier binaire
 
-À l'aide du programme [GHex](https://doc.ubuntu-fr.org/ghex){. target="_blank"} , il est possible d'aller observer la valeur des octets directement dans le fichier binaire `crackme`.
+À l'aide d'un programme (par  exemple [GHex](https://doc.ubuntu-fr.org/ghex){. target="_blank"} sous linux) , il est possible d'aller observer la valeur des octets directement dans le fichier binaire `crackme`.
 ![image](data/cap_crackme.png){: .center}
 
 Ce fichier binaire est écrit en langage-machine. Il est donc incompréhensible pour un autre humain... même si GHex nous aide en affichant notamment (dans la partie droite) les chaînes de caractères... dont notre mot de passe ;)
 
 ### 3.3 Modification du fichier binaire
-Dans notre code C l'instruction `while (strcmp(saisie,"NSIMAURIAC")!=0)` est le cœur de la vérification du mot de passe. En assembleur, elle va donner naissance à une instruction `JNE` (pour Jump if Not Equal, voir [ici](https://www.gladir.com/LEXIQUE/ASM/jumpif.htm){. target="_blank"} ). Cette instruction est codée en hexadécimal par l'opcode `75 C5`. Nous allons rechercher ces octets et les remplacer par `90 90`, `90` étant l'opcode pour `NOP` (ne rien faire).
+Dans notre code C l'instruction `while (strcmp(saisie,"NSI")!=0)` est le cœur de la vérification du mot de passe. En assembleur, elle va donner naissance à une instruction `JNE` (pour Jump if Not Equal, voir [ici](https://www.gladir.com/LEXIQUE/ASM/jumpif.htm){. target="_blank"} ). Cette instruction est codée en hexadécimal par l'opcode `75 C5`. Nous allons rechercher ces octets et les remplacer par `90 90`, `90` étant l'opcode pour `NOP` (ne rien faire).
 
-- Recherchez dans GHex `75 C5`.
+- Recherchez `75 C5` dans GHex ou équivalent.
 - Remplacez par `90 90`.
 - Sauvegardez le fichier sous le nom `crackme2`. Vous pouvez sinon le télécharger [ici](data/desassemblage/crackme2){. target="_blank"} 
-- Rendez ce fichier exécutable par `sudo chmod 777 crackme2`
+- Sous mac ou linux, rendez ce fichier exécutable par `sudo chmod 777 crackme2`
 - Exécutez ce code et constatez les changements !
 
 ### 3.4 Conclusion
@@ -208,8 +208,8 @@ Le désassemblage d'un programme est une opération très complexe et les opéra
 Néanmoins, il est parfois possible d'agir au niveau le plus bas (le langage-machine) pour modifier un code, comme nous venons de le faire.
 
 
-??? quote "Bibliographie "
-    - Numérique et Sciences Informatiques, Terminale, T. BALABONSKI, S. CONCHON, J.-C. FILLIATRE, K. NGUYEN, éditions ELLIPSES.
-    - Prépabac NSI, Terminale, G.CONNAN, V.PETROV, G.ROZSAVOLGYI, L.SIGNAC, éditions HATIER.
-    - Cours du DIU-EIL, Architecture matérielle, Raymond Namyst, Université de Bordeaux. 
+<!-- ??? quote "Bibliographie " -->
+<!--     - Numérique et Sciences Informatiques, Terminale, T. BALABONSKI, S. CONCHON, J.-C. FILLIATRE, K. NGUYEN, éditions ELLIPSES. -->
+<!--     - Prépabac NSI, Terminale, G.CONNAN, V.PETROV, G.ROZSAVOLGYI, L.SIGNAC, éditions HATIER. -->
+<!--     - Cours du DIU-EIL, Architecture matérielle, Raymond Namyst, Université de Bordeaux.  -->
 
