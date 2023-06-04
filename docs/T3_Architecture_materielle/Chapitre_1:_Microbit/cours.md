@@ -24,12 +24,10 @@ La carte micro:bit dispose des [spécificités techniques](https://microbit.org/
 
 ## 1. "Hello world !", virtuellement ou IRL...
 
-### 1.1 À distance ? Pas de micro:bit ? le simulateur est là !
+### 1.1 À distance ? Pas de micro:bit ? les simulateurs sont là !
 
-Rendez-vous sur la page [https://create.withcode.uk/](https://create.withcode.uk/)
 
-Effacez le code existant et collez-le code ci-dessous :
-
+Copiez le code suivant:
 
 ```python
 from microbit import *
@@ -40,20 +38,38 @@ while True:
     sleep(2000)
 ```
 
-Cliquez sur le triangle vert en bas à droite. C'est parti !
-![](data/create.png)
+Puis utilisez un de ces deux simulateurs: 
 
-Pour éviter des erreurs, fermez la fenêtre de droite (le simulateur) à chaque fois que vous modifiez votre code de la partie gauche.
+=== "Simulateur 1"
+    - Rendez-vous sur la page [https://python.microbit.org/](https://python.microbit.org/)
+    - Effacez le code existant et collez-le code que vous aviez copié.
+    - Cliquez sur le triangle dessiné sur la carte microbit. C'est parti !
+    ![](data/create1.png)
+
+=== "Simulateur 2"
+    - Rendez-vous sur la page [https://create.withcode.uk/](https://create.withcode.uk/)
+    - Effacez le code existant et collez-le code que vous aviez copié.
+    - Cliquez sur le triangle vert en bas à droite. C'est parti !
+    ![](data/create2.png)
+
+    - Pour éviter des erreurs, fermez la fenêtre de droite (le simulateur) à chaque fois que vous modifiez votre code de la partie gauche.
 
 ### 1.2 Avec une micro:bit réelle
 
-1. Branchez la carte sur un port USB. Un lecteur MICROBIT apparait dans les périphériques USB.
-2. Rendez-vous sur l'adresse  [https://create.withcode.uk/](https://create.withcode.uk/)
-3. Modifiez le code présent puis cliquez sur la flèche verte.
-4. Vous pouvez télécharger le fichier .hex en cliquant sur Download HEX.
-5. Transférez (par copier-coller, ou "envoyer vers") ce fichier .hex dans votre lecteur micro:bit.
+=== "Méthode 1"
+    1. Branchez la carte sur un port USB. Un lecteur MICROBIT apparait dans les périphériques USB.
+    2. Rendez-vous sur l'adresse  [https://python.microbit.org/](https://python.microbit.org/)
+    3. Modifiez le code présent puis cliquez sur la flèche verte.
+    4. Vous pouvez téléverser le fichier dans votre carte microbit en cliquant sur `Send to micro:bit` (&#x205D; Connect).
 
-Cette procédure est à répeter à chaque nouveau code.
+=== "Méthode 2"
+    1. Branchez la carte sur un port USB. Un lecteur MICROBIT apparait dans les périphériques USB.
+    2. Rendez-vous sur l'adresse  [https://create.withcode.uk/](https://create.withcode.uk/)
+    3. Modifiez le code présent puis cliquez sur la flèche verte.
+    4. Vous pouvez télécharger le fichier .hex en cliquant sur `Download HEX`.
+    5. Transférez (par copier-coller, ou "envoyer vers") ce fichier .hex dans votre lecteur micro:bit.
+
+    Cette procédure est à répeter à chaque nouveau code.
 
 ## 2. Découverte des fonctionnalités
 
