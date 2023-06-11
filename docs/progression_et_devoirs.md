@@ -216,5 +216,13 @@
         - Projets: faire conveger tous les projets individuels de votre groupe en un seul projet collectif cohérent. 
 
 
+!!! done "séance 26 (mardi 06/06/23):"
+    - Correction de 2 projets élèves:
+        - Projet1  : Problème de priorité des opérations
+        - Projet2  : Problème de représentation d'un signal sinusoïdal en Javascript
+    - Dans le thème 3 Architecture matérielle:
+        - chapitre 1: Réalisation d'un motif en spirale sur carte Microbit réelle
+
+
 
 
