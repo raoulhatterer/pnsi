@@ -98,7 +98,7 @@ La variable ```m``` prend successivement les valeurs ```'N```, ```'A'```, ```'S'
 
     ```
     va donner ceci :
-    ```python
+    ```pycon
     je vais au lycée le lundi
     je vais au lycée le mardi
     je vais au lycée le mercredi
@@ -154,7 +154,7 @@ Il y a mieux !
         print("We're up all night to get lucky")
     ```
     va donner ceci :
-    ```python
+    ```pycon
     We're up all night to get lucky
     We're up all night to get lucky
     We're up all night to get lucky
@@ -173,7 +173,7 @@ for i in range(5):
     print(i, "We're up all night to get lucky")
 ```
 va donner ceci :
-```python
+```pycon
 0 We're up all night to get lucky
 1 We're up all night to get lucky
 2 We're up all night to get lucky
@@ -192,7 +192,7 @@ va donner ceci :
 
     ```
     va donner ceci :
-    ```python
+    ```pycon
     0
     1
     2
@@ -210,7 +210,7 @@ va donner ceci :
 
     ```
     va donner ceci :
-    ```python
+    ```pycon
     5
     7
     9
@@ -313,7 +313,7 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
             print(a, '*', b, '=', p)
     ```
     va donner ceci :
-    ```python
+    ```pycon
     1 * 1 = 1
     1 * 2 = 2
     1 * 3 = 3
@@ -337,7 +337,7 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
 !!! example "Exercice 4"
     === "Énoncé"
         Écrire un programme qui affiche :
-        ```python
+        ```pycon
         Papa dit : « et une cuillère pour Riri ! »
         Papa dit : « et une cuillère pour Fifi ! »
         Papa dit : « et une cuillère pour Loulou ! »
