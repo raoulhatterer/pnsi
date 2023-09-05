@@ -2,11 +2,16 @@
 <!-- !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous ! -->
 
-## Thème(s) en cours d'étude 
-- [Projets](./T8_Projets/1_Consignes/consignes/)
-- Dans le thème3 Architecture matérielle:
-    - chapitre 1: Microbit
-    - chapitre 2: Architecture Von Neumann
+!!! abstract ":star: Actualités :star:"
+    - Bonne rentrée à toutes et à tous ! 
+
+
+
+<!-- ## Thème(s) en cours d'étude  -->
+<!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
+<!-- - Dans le thème3 Architecture matérielle: -->
+<!--     - chapitre 1: Microbit -->
+<!--     - chapitre 2: Architecture Von Neumann -->
 
 
 ## Exercices pratiques pour vous entraîner
