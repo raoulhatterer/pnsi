@@ -7,7 +7,10 @@
 
 
 
-<!-- ## Thème(s) en cours d'étude  -->
+
+
+## Thèmes en cours d'étude :
+- :arrow_right: [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)  
 <!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
 <!-- - Dans le thème3 Architecture matérielle: -->
 <!--     - chapitre 1: Microbit -->

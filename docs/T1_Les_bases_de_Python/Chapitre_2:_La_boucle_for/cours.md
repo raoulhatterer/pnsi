@@ -1,5 +1,7 @@
 # Chapitre 2: La boucle `for ... in ...`
 
+{{ initexo(0) }}
+
 ![image](data/meme.png){: .center width=30%}
 
 
@@ -57,7 +59,7 @@ Il existe donc une instruction permettant de faire une (ou plusieurs) action(s) 
 
 Ici, il y a simplement un ```print(k)```, donc chaque lettre de ```"NSI"``` s'affiche l'une après l'autre.
 
-!!! example "Exercice 1"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         Que donne le script suivant ?
         ```python linenums='1'
@@ -65,12 +67,17 @@ Ici, il y a simplement un ```print(k)```, donc chaque lettre de ```"NSI"``` s'af
             print("bonjour")
         ``` 
     === "Correction"
+        {{ correction(False,
+        "
         ```pycon
         bonjour
         bonjour
         bonjour
         bonjour
         ``` 
+        "
+        ) }}
+        
 
 Dans cet exercice, la **variable de boucle** ```m``` est **muette** : elle n'apparaît dans les instructions indentées sous le ```for```. 
 
@@ -243,7 +250,7 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
 
 
 
-!!! example "Exercice 2"
+!!! example "{{ exercice() }}"
 
         Faire afficher les séries de nombres suivantes.
         
@@ -251,30 +258,46 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
 
         A. ```0 1 2 3 4 5``` 
         ??? note "Correction"
+            {{ correction(False,
+            "
             ```python linenums='1'
             for k in range(6):
                 print(k, end = ' ')
             ```
+            "
+            ) }}
         B. ```10 11 12 13 14 15 ``` 
         ??? note "Correction"
+            {{ correction(False,
+            "        
             ```python linenums='1'
             for k in range(10,16):
                 print(k, end = ' ')
             ```
+            "
+            ) }}
         C. ```3 6 9 12 ``` 
         ??? note "Correction"
+            {{ correction(False,
+            "
             ```python linenums='1'
             for k in range(3,13,3):
                 print(k, end = ' ')
             ```
+            "
+            ) }}
         D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
         ??? note "Correction"
+            {{ correction(False,
+            "        
             ```python linenums='1'
             for k in range(10,-1,-1):
                 print(k, end = ' ')
             ```
+            "
+            ) }}
 
-!!! example "Exercice 3:"
+!!! example "{{ exercice() }}"
     - La fonction `len(chaine)`retourne la longueur d'une chaîne de caractère. 
     - L'instruction `chaine[indice]` permet d'obtenir la lettre se trouvant à la position `indice` dans `chaine`.
     
@@ -292,10 +315,14 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
     === "Correction"
         Les deux méthodes proposées affichent la même chose à savoir une lettre après l'autre de la chaîne de caractère. 
         Pour éviter d'afficher la dernière lettre on peut faire:
+        {{ correction(False,
+        "
         ```python
         for indice in range(len(chaine)-1):
             print(chaine[indice])
         ```
+        "
+        ) }}
 
 
 
@@ -334,7 +361,7 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
     <iframe width="800" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20a%20in%20range%281,5%29%3A%0A%20%20%20%20for%20b%20in%20range%281,4%29%3A%0A%20%20%20%20%20%20%20%20p%20%3D%20a%20*%20b%0A%20%20%20%20%20%20%20%20print%28a,%20'*',%20b,%20'%3D',%20p%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 
-!!! example "Exercice 4"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         Écrire un programme qui affiche :
         ```pycon
@@ -349,11 +376,16 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
         Mamie dit : « et une cuillère pour Loulou ! »
         ```
     === "Correction"
+        {{ correction(False,
+        "    
         ```python linenums='1'
-        for perso1 in ["Papa", "Maman", "Mamie"]:
-            for perso2 in ["Riri", "Fifi", "Loulou"]:
-                print(perso1, "dit : « et une cuillère pour", perso2, "! »")
+        for perso1 in ['Papa', 'Maman', 'Mamie']:
+            for perso2 in ['Riri', 'Fifi', 'Loulou']:
+                print(perso1, 'dit : « et une cuillère pour', perso2, '! »')
         ```
+        "
+        ) }}
+
 
 ## 6. Pour conclure
 
