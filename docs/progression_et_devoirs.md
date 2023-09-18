@@ -5,5 +5,5 @@
     - [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
         - Installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-        - Déposer un fichier `variable.ipynb` contenant les exercices du chapitre sur les variables dans votre dossier personnel sur le site collaboratif.
+        - Déposer un fichier `variable.ipynb` contenant les exercices du chapitre sur les variables dans le casier qui se trouve à l'emplacement Documents > Élèves > 2023-2024 > PNSI > Devoirs sur le site collaboratif.
         
