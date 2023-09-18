@@ -13,4 +13,5 @@
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Déposer un fichier `boucle_for.ipynb` contenant les exercices du chapitre sur la boucle for dans le casier qui se trouve à l'emplacement Documents > Élèves > 2023-2024 > PNSI > Devoirs sur le site collaboratif.
+        - 
 
