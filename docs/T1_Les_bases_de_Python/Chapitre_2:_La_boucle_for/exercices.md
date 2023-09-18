@@ -10,7 +10,7 @@
         ```
 
         Utilisez cette liste pour produire la sortie suivante:
-        ```python
+        ```pycon
         Tahar a eu le César du meilleur acteur
         Omar a eu le César du meilleur acteur
         Guillaume a eu le César du meilleur acteur
@@ -19,28 +19,30 @@
         Roschdy a eu le César du meilleur acteur
         ```
     === "Correction"
+        {#
         ```python linenums='1'
         liste_acteurs = ['Tahar', 'Omar', 'Guillaume', 'Swann', 'Alex', 'Roschdy']
 
         for acteur in liste_acteurs:
             print(acteur, "a eu le César du meilleur acteur")
         ```
-
+        #}
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        1. Fabriquer la chaîne de caractères suivante (qui comporte 80 caractères) :
-        ```python
+        1. À l'aide d'une boucle `for`, fabriquer la chaîne de caractères suivante (qui comporte 80 caractères) :
+        ```pycon
         IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
         ```
-        2. Fabriquer la chaîne de caractères suivante :
-        ```python
+        2. À l'aide de deux boucles `for` imbriquées, fabriquer la chaîne de caractères suivante :
+        ```pycon
         IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
         NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
         ```
     === "Correction"
+        {#
         1.
         ```python linenums='1'
         sol = ""
@@ -48,7 +50,7 @@
             sol = sol + 'I'
 
         print(sol)
-        ``` 
+        ```
         2.
         ```python linenums='1'
         for lettre in 'INFO':
@@ -57,6 +59,8 @@
                 sol = sol + lettre
             print(sol)
         ```
+        #}
+        
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Dans l'extrait de code suivant:
@@ -77,6 +81,7 @@
 
         Cette variable `chaine` est appelée un **accumulateur**.
     === "Correction"
+        {#
         ```python linenums='1'
         chaine = ""
         for lettre in ['b', 'r', 'a', 'v', 'o']:
@@ -84,7 +89,7 @@
 
         print(chaine)
         ```
-
+        #}
 
 
 !!! example "{{ exercice() }}"
@@ -92,7 +97,7 @@
         En Python, la fonction `ord` renvoie le code Unicode d'un caractère et la fonction `chr` le contraire: elle renvoie le caractère correspondant à un code Unicode.
 
         Par exemple:
-        ```python 
+        ```pycon 
         >>> ord('a')
         97
         >>> chr(97)
@@ -109,6 +114,7 @@
         ```
 
     === "Correction"
+        {#
         ```python linenums='1'
         mystere = [111, 107, 44, 32, 98, 105, 101, 110, 32, 106, 111, 117, 233]
         mot_secret = ""
@@ -119,7 +125,8 @@
 
         print(mot_secret)
         ```
-      
+        #}
+        
 !!! example "{{ exercice() }}"
     === "Énoncé"
         On souhaite calculer la somme des 1000 premiers nombres entiers naturels, c'est-à-dire:
@@ -129,27 +136,31 @@
         Écrire un programme avec une variable `somme` **accumulateur** (comme à l'exercice 3) qui contiendra la valeur souhaitée en fin de programme.
 
     === "Correction"
+        {#
         ```python linenums='1'
         somme = 0
         for k in range(1,1001):
             somme += k
         print(somme)  
         ```
-
+        #}
+        
 !!! example "{{ exercice() }}"
     === "Énoncé"
     
         Calculer $1\times 2 \times 3 \times \dots 99 \times 100$.
     === "Correction"
+        {#
         ```python linenums='1'
         produit = 1
         for k in range(1,100):
             produit = produit * k
         print(produit)  
         ```
+        #}
 
       
-!!! capytale "À faire sur Capytale : [activité 196e-660566](https://capytale2.ac-paris.fr/web/c/196e-660566/atr)"
+!!! capytale "À faire sur Capytale"
     !!! example "{{ exercice() }}"
         === "Énoncé"
             Proposer un code qui écrit la **table de multiplication** de 7, de 8 et de 9.
@@ -166,11 +177,14 @@
             9*9 = 81    
             ```
         === "Correction"
+            {#
             ```python linenums='1'
             for a in range(7, 10):
                 for b in range(1, 10):
                     print(a, '*', b, '=', a*b)
             ```
+            #}
+            
     !!! example "{{ exercice() }}"
         === "Énoncé"
             Sur un jeu d'échecs, les cases sont repérées par une lettre (de A jusqu'à H) et par un chiffre (de 1 jusqu'à 8).
@@ -179,10 +193,12 @@
 
             Proposer un code qui écrit **toutes** les cases possibles.
         === "Correction"
+            {#
             ```python linenums='1'
             for lettre in "ABCDEFGH":
                 for chiffre in range(1, 9):
                     case = lettre + str(chiffre)
                     print(case)
             ```
+            #}
   

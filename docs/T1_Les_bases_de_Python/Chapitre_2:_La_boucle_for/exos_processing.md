@@ -101,6 +101,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
             line(Ax,Ay,Bx,By)
         ```
     === "Correction en p5"
+{#
         ```python linenums='1'
         from p5 import *
 
@@ -120,7 +121,8 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
                 line(Ax,Ay,Bx,By)
 
         run()
-        ```   
+        ```  
+#} 
 
 
 
@@ -150,7 +152,9 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
             Ay = By
         ```
     === "Correction en p5"
-        ```python linenums='1'
+{#
+  
+#}      ```python linenums='1'
         from p5 import *
 
         def setup():
@@ -228,7 +232,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
         ```
 
 
-!!! capytale " {{ exercice() }} à faire sur Capytale : [activité 47c7-666996](https://capytale2.ac-paris.fr/web/c/47c7-666996/atr)"
+!!! capytale " {{ exercice() }} à faire sur Capytale"
     :warning: Lire **obligatoirement** au préalable la page [«Comment passer d'un code Processing à un code p5»](../../../T7_Divers/4_Processing_p5/cours/)
     === "Énoncé"
         Proposer un code réalisant la figure suivante. Votre code devra obligatoirement comporter une boucle ```for```. 
@@ -271,7 +275,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
 ## 4. Exercices sur la double boucle
 La structure de double boucle va permettre (par exemple) de parcourir l'intégralité des pixels d'une image.
 
-!!! capytale " Exercices à faire sur Capytale : [activité 38d9-68425](https://capytale2.ac-paris.fr/web/c-auth/list?returnto=/web/code/38d9-68425)"
+!!! capytale " Exercices à faire sur Capytale"
 
     !!! example "{{ exercice() }}"
         Construire une image où tous les points ont une couleur aléatoire.
