@@ -30,10 +30,18 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
+        La concaténation est une opération de « collage » de chaînes de caractères.
+        Par exemple, le code suivant
         ```pycon
-        a = "t" + "e" + "s" + "t"
-        a = a + " réussi"
+        >>> a = "t" + "e" + "s" + "t"
+        >>> a = a + " réussi"
+        >>> a
         ```
+        produit la sortie suivante
+        ```pycon
+        test réussi
+        ```
+
         1. À l'aide d'une boucle `for`, fabriquer la chaîne de caractères suivante (qui comporte 80 caractères) :
         ```pycon
         IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
