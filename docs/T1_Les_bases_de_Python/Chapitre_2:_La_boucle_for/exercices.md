@@ -30,6 +30,10 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
+        ```pycon
+        a = "t" + "e" + "s" + "t"
+        a = a + " réussi"
+        ```
         1. À l'aide d'une boucle `for`, fabriquer la chaîne de caractères suivante (qui comporte 80 caractères) :
         ```pycon
         IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
