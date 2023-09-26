@@ -129,8 +129,6 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
 
 !!! example "{{ exercice() }} :warning: *difficile*"
 
-
-
     === "Énoncé"
         Reprendre l'exercice précédent en faisant en sorte que chaque ligne commence là où une autre s'arrête (hormis la première)
         
@@ -152,9 +150,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
             Ay = By
         ```
     === "Correction en p5"
-{#
-  
-#}      ```python linenums='1'
+        ```python linenums='1'
         from p5 import *
 
         def setup():
