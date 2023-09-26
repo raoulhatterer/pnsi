@@ -13,5 +13,11 @@
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Déposer un fichier `boucle_for.ipynb` contenant les exercices du chapitre sur la boucle for dans le casier qui se trouve à l'emplacement Documents > Élèves > 2023-2024 > PNSI > Devoirs sur le site collaboratif.
-        - 
-
+        
+!!! done "séance 3 (mardi 26/09/22):"
+    - Processing et P5 
+    ??? note "Devoirs"
+        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
+        - Déposer une capture d'écran preuve qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
+        - Installer le programme Processing sur votre ordinateur et ajouter la gestion de python (https://github.com/jdf/processing.py#python-mode-for-processing)
+        - Exercices 7 et 8 à faire sur Capytale.
