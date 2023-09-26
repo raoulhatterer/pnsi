@@ -19,5 +19,5 @@
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Déposer une capture d'écran preuve qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
-        - Installer le programme Processing sur votre ordinateur et ajouter la gestion de python (https://github.com/jdf/processing.py#python-mode-for-processing)
+        - Installer le programme Processing sur votre ordinateur et ajouter la gestion de python. Lire [Quick Start](https://github.com/jdf/processing.py#python-mode-for-processing) qui explique l'installation de python.
         - Exercices 7 et 8 à faire sur Capytale.
