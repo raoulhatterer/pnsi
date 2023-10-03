@@ -26,7 +26,7 @@
     - Correction des exercices P5
     - La boucle while 
     ??? note "Devoirs"
-        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-        - Déposer une capture d'écran preuve qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
+        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter puis déposer une capture d'écran preuve qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
         - Déposer un fichier Jupyter NoteBook avec la correction de tous les exercices du cours sur la boucle while.
-        -
+        - Déposer l'exercice 3 avec et sans break sur Capytale
+        - Préparer le contrôle n°1  qui portera sur les 3 premiers chapitres (variables, boucle for et boucle while)
