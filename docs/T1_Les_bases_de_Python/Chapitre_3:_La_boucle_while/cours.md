@@ -1,4 +1,3 @@
-
 # Chapitre 3: La boucle `while`
 
 ## 1. Introduction
@@ -129,6 +128,9 @@ Voir le piège n°1 ...
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Trouver le plus petit nombre entier $n$ tel que $2^n$ soit supérieur à 1 milliard.
+        ??? info "Puissances" 
+            $2^n$ s'obtient avec `2**n`
+
     === "Correction"
         {#
         ```python linenums='1'
