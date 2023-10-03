@@ -248,7 +248,7 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
         On initialise une variable ```score``` à 100 et on l'augmente de 15.
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```pycon
         >>> score = 100
@@ -270,7 +270,7 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
         On initialise une variable ```cellule``` à 1 et on la multiplie par 2.
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```pycon
         >>> cellule = 1
@@ -292,7 +292,7 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
         On initialise une variable ```capital``` à 1000 et on lui enlève 5%.
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```pycon
         >>> capital = 1000
@@ -385,7 +385,7 @@ Vous pouvez vérifier maintenant que les valeurs de ```a``` et de ```b``` ont bi
         Corriger cette erreur, de deux manières différentes.
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```pycon
         >>> t = maisonHarry

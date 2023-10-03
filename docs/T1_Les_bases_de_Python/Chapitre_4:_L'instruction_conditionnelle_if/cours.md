@@ -1,14 +1,15 @@
-# Chapitre 4: L'instruction conditionnelle `if`
+# 1.4 Instruction conditionnelle if
 
 ![image](data/if_else_meme.jpeg){: .center width=50%}
 
 
 
-L'instruction conditionnelle ```#!python if``` permet de soumettre l'exécution d'instructions à une condition donnée.
-Cette condition sera une expression booléenne, comme pour la boucle ```#!python while```.
+L'instruction conditionnelle `if` permet de soumettre l'exécution d'instructions à une condition donnée.
+Cette condition sera une expression booléenne, comme pour la boucle `while`.
+
 
 ## 1. Exemples fondateurs
-Dans les exemples ci-dessous, changez la valeur affectée à la variable ```age``` et observer les modifications de comportement du programme.
+Dans les exemples ci-dessous, changez la valeur affectée à la variable ```age``` afin d'observer les modifications de comportement du programme.
 
 
 !!! note "Exemple fondateur n°1 :heart:"
@@ -21,7 +22,7 @@ Dans les exemples ci-dessous, changez la valeur affectée à la variable ```age`
 
 
 !!! note "Exemple fondateur n°2 :heart:"
-    La structure qu'on rencontrera le plus souvent est néanmoins la structure ```if ... else``` 
+    La structure qu'on rencontrera le plus souvent est la structure ```if ... else ...``` 
 
     ```python linenums="1"
     age = 20
@@ -32,11 +33,11 @@ Dans les exemples ci-dessous, changez la valeur affectée à la variable ```age`
     ```
 
 !!! abstract "**Syntaxe générale**"
-    ```python linenums="1"
-    if expression:
-        *instructions à effectuer si expression est vraie*
+    ```
+    if expression booléenne:
+        *instructions à effectuer si l'expression est vraie*
     else:
-        *instructions à effectuer sinon, c'est-à-dire si expression est fausse*
+        *instructions à effectuer si l'expression est fausse*
     ```
 
 ## 2. L'évaluation de la condition
@@ -47,7 +48,7 @@ Cette évaluation renvoie un booléen, ```True``` ou ```False```.
 
 Les symboles de comparaison (ou d'appartenance) permettant d'écrire une condition sont :
 
-!!! info inline  "Opérateurs de comparaison"
+!!! info inline  "Opérateurs de comparaison :heart: :heart: :heart:"
     |Opérateur|Signification|
     |:-:|:-:|
     |`==`| est égal à|
@@ -115,12 +116,18 @@ True
 !!! example "Exercice"
     === "Énoncé"
         Compter le nombre de voyelles de la phrase ```'cet exercice est prodigieusement ennuyeux'``` 
+
+        ```python linenums='1'
+        phrase = 'cet exercice est prodigieusement ennuyeux'
+        voyelles = 'aeiouy'
+
+
+        ```
     === "Correction"
         {{ correction(True,
         "
         ```python linenums='1'
         phrase = 'cet exercice est prodigieusement ennuyeux'
-
         voyelles = 'aeiouy'
 
         compteur = 0
@@ -133,9 +140,6 @@ True
         ```
         "
         ) }}
-
-
-
 
 
 ## 3. Un test très fréquent : le test de divisibilité
@@ -167,7 +171,14 @@ True
         "
         ) }}
 
+
+
+
+
 ## 4. Les cas multiples : utilisation de `elif` 
+
+
+
 
 Dans les situations où l'on veut effectuer des instructions différentes selon les différentes valeurs prises par une variable, on peut imbriquer les instructions `if` ... `else`.
 
@@ -220,8 +231,8 @@ else:
 ```
 
 
-## 5. Récréation : à vous d'obéir !
+## 4. Récréation : à vous d'obéir !
 
 ![image](data/compute.png){: .center width=30%}
 
-Le site [https://compute-it.toxicode.fr/](https://compute-it.toxicode.fr/) vous demande d'exécuter mentalement les instructions affichées, à l'aide des touches directionnelles de votre clavier. Attention, c'est très addictif !
+Le site [https://compute-it.toxicode.fr/](https://compute-it.toxicode.fr/) vous demande d'exécuter mentalement les instructions affichées, à l'aide des touches directionnelles de votre clavier. Attention, ce site est très addictif !

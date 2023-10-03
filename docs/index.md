@@ -2,15 +2,24 @@
 <!-- !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous ! -->
 
+
+{#
 !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous ! 
+#}
 
 
 
 
+## Thèmes en cours d'étude 
 
-## Thèmes en cours d'étude :
-- :arrow_right: [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)  
+- :arrow_right: [La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
+- :arrow_right: [La boucle ```#!python while```](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
+
+
+!!! info "*Anciens thèmes traités*"
+    - :arrow_right: [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)  
+
 <!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
 <!-- - Dans le thème3 Architecture matérielle: -->
 <!--     - chapitre 1: Microbit -->

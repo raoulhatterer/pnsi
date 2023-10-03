@@ -1,3 +1,4 @@
+
 # Chapitre 3: La boucle `while`
 
 ## 1. Introduction
@@ -81,13 +82,13 @@ False
 True
 ```
 
-Un cours sur les booléens aura lieu [ici](../../../T2_Representation_des_donnees/2.5_Booleens/cours/).
+Un cours sur les booléens aura lieu [ici](../../../T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/).
 
 ### 2.2 Les instructions
 
 Les instructions ```instruction1``` jusqu'à ```instructionN``` sont exécutées dans cet ordre à chaque tour de boucle. 
 
-:warning: **Attention :** ces instructions doivent obligatoirement avoir un impact sur la ```condition``` évaluée après le ```while```(dans le cours sur la [dichotomie](../../../T4_Algorithmique/4.5_Dichotomie/cours/), nous évoquerons la notion de _variant de boucle_).
+:warning: **Attention :** ces instructions doivent obligatoirement avoir un impact sur la ```condition``` évaluée après le ```while```(dans le cours sur la [dichotomie](../../../T4_Algorithmique/Chapitre_5:_Dichotomie/cours/), nous évoquerons la notion de _variant de boucle_).
 
 Voir le piège n°1 ...
 
@@ -129,6 +130,7 @@ Voir le piège n°1 ...
     === "Énoncé"
         Trouver le plus petit nombre entier $n$ tel que $2^n$ soit supérieur à 1 milliard.
     === "Correction"
+        {#
         ```python linenums='1'
         n = 1
         while 2**n < 10**9:
@@ -136,7 +138,7 @@ Voir le piège n°1 ...
             print("trop petit")
         print("trouvé : ",n)
         ```
-
+        #}
 
 
 
@@ -157,12 +159,14 @@ Mais nous pourrions nous en passer : toutes les boucles ```for``` peuvent en fai
         ``` 
         Ré-écrire ce code en utilisant une boucle ```while```. 
     === "Correction"
+        {#
         ```python linenums='1'
         k = 0
         while k < 5:
             print("scooby-doo")
             k = k + 1
         ```
+        #}
 
 
 
@@ -205,7 +209,7 @@ print("merci, j'étais bloqué dans une boucle infinie")
         a = randint(1,10)
         ```
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         from random import randint
