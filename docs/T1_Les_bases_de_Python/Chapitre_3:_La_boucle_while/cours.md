@@ -131,8 +131,7 @@ Voir le piège n°1 ...
         ??? info "Puissances" 
             $2^n$ s'obtient avec `2**n`
 
-    === "Correction"
-        {#
+    === "Correction" {#         #}
         ```python linenums='1'
         n = 1
         while 2**n < 10**9:
@@ -140,7 +139,7 @@ Voir le piège n°1 ...
             print("trop petit")
         print("trouvé : ",n)
         ```
-        #}
+
 
 
 
@@ -160,15 +159,14 @@ Mais nous pourrions nous en passer : toutes les boucles ```for``` peuvent en fai
             print("scooby-doo")
         ``` 
         Ré-écrire ce code en utilisant une boucle ```while```. 
-    === "Correction"
-        {#
+    === "Correction" {#         #}
         ```python linenums='1'
         k = 0
         while k < 5:
             print("scooby-doo")
             k = k + 1
         ```
-        #}
+
 
 
 
@@ -210,7 +208,23 @@ print("merci, j'étais bloqué dans une boucle infinie")
         from random import randint
         a = randint(1,10)
         ```
-    === "Correction"
+    === "Correction (avec break)"
+        {{ correction(False,
+        "
+        ```python linenums='1'
+        from random import randint
+
+        mystere = randint(1, 10)
+
+        while True:
+            reponse = int(input('quel est le nombre mystère ? '))
+            if reponse == mystere:
+                break
+        print('bravo !')
+        ```
+        "
+        ) }}
+    === "Correction (sans break)"
         {{ correction(False,
         "
         ```python linenums='1'
