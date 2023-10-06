@@ -235,4 +235,5 @@ else:
 
 ![image](data/compute.png){: .center width=30%}
 
-Le site [https://compute-it.toxicode.fr/](https://compute-it.toxicode.fr/) vous demande d'exécuter mentalement les instructions affichées, à l'aide des touches directionnelles de votre clavier. Attention, ce site est très addictif !
+{# 60 exercices de logique sur les boucles, les conditions et les fonctions. Prof: 55 min  #}
+Le site [https://compute-it.toxicode.fr/](https://compute-it.toxicode.fr/) vous demande d'exécuter mentalement les instructions affichées, à l'aide des touches directionnelles de votre clavier. Attention, ce site est très addictif ! 
