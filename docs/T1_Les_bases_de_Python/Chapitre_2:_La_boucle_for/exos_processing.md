@@ -100,8 +100,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
             stroke(random(0,255), random(0,255), random(0,255))
             line(Ax,Ay,Bx,By)
         ```
-    === "Correction en p5"
-{#
+    === "Correction en p5" {# #} 
         ```python linenums='1'
         from p5 import *
 
@@ -122,7 +121,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
 
         run()
         ```  
-#} 
+
 
 
 
@@ -134,7 +133,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
         
         ![image_lignes_difficile](data/exo2.png){: .center} 
 
-    === "Correction en Processing"
+    === "Correction en Processing" {# #} 
         ```python linenums='1'
         size(300,300)
         background(0)
@@ -149,7 +148,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
             Ax = Bx
             Ay = By
         ```
-    === "Correction en p5"
+    === "Correction en p5" {# #} 
         ```python linenums='1'
         from p5 import *
 
