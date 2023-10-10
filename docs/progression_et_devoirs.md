@@ -30,3 +30,11 @@
         - Déposer un fichier Jupyter NoteBook avec la correction de tous les exercices du cours sur la boucle while.
         - Déposer l'exercice 3 avec et sans break sur Capytale
         - Préparer le contrôle n°1  qui portera sur les 3 premiers chapitres (variables, boucle for et boucle while)
+
+
+!!! done "séance 5 (mardi 10/10/2022):"
+    - instruction conditionnelle If else elif
+    - test: https://compute-it.toxicode.fr/
+    - Contrôle n°1 sur les bases (variables, boucles)
+    ??? note "Devoirs"
+        - exercices de la page de cours sur l'instruction conditionnelle If else elif

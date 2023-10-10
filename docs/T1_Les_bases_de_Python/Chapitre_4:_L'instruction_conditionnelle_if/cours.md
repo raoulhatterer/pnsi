@@ -124,7 +124,7 @@ True
 
         ```
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         phrase = 'cet exercice est prodigieusement ennuyeux'
@@ -161,7 +161,7 @@ True
     === "Énoncé"
         Afficher la liste de tous les nombres entre 1 et 100 qui sont divisibles à la fois par 2 et par 7. 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         for n in range(1,101):
