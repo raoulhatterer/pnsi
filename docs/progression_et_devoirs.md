@@ -38,3 +38,17 @@
     - Contrôle n°1 sur les bases (variables, boucles)
     ??? note "Devoirs"
         - exercices de la page de cours sur l'instruction conditionnelle If else elif
+
+!!! done "séance 6 (mardi 10/10/2022):"
+    - instruction conditionnelle If else elif
+    - test: https://compute-it.toxicode.fr/
+    - Contrôle n°1 sur les bases (variables, boucles)
+    ??? note "Devoirs"
+        - exercices de la page de cours sur l'instruction conditionnelle If else elif
+
+!!! done "séance 7 (mardi 17/10/2022):"
+    - correction du contrôle 1
+    - if else elif
+    - Exercices
+    ??? note "Devoirs"
+        - exercices 1 et 2 sur la page d'exercices If else elif (code capytale f7a0-2109986)
