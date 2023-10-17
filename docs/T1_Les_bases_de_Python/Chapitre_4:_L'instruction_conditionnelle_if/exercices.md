@@ -27,7 +27,7 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Exercices utilisant le module ipythonblocks à réaliser sur Capytale à partir de ce [lien](https://capytale2.ac-paris.fr/web/c/25f2-734580/atr){. target="_blank"}.
+        Exercices utilisant le module ipythonblocks à réaliser sur Capytale.
         ![image](data/damier.png){: .center}
 
 
