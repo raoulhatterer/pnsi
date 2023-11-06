@@ -39,7 +39,15 @@
     ??? note "Devoirs"
         - exercices de la page de cours sur l'instruction conditionnelle If else elif
 
-!!! done "séance 6 (mardi 7/11/2022):"
+
+!!! done "séance 6 (mardi 17/10/2022):"
+    - correction du contrôle 1
+    - if else elif
+    - Exercices
+    ??? note "Devoirs"
+        - exercices 1 et 2 sur la page d'exercices If else elif (code capytale f7a0-2109986)
+
+!!! done "séance 7 (mardi 7/11/2022):"
     - Exercices sur l'instruction conditionnelle If else elif
     - Les fonctions (Thème 1 Chapitre 5) 
     ??? note "Devoirs"
