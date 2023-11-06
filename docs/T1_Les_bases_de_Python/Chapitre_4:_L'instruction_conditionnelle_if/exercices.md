@@ -27,7 +27,7 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Exercices utilisant le module ipythonblocks à réaliser sur Capytale.
+        Exercice utilisant le module [ipythonblocks](https://www.carnets.info/jupyter/ipythonblocks/) ou le module p5 à réaliser sur Capytale.
         ![image](data/damier.png){: .center}
 
 
