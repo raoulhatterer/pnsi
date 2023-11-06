@@ -3,7 +3,15 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Définissez une fonction `maxi(n1, n2)` qui renvoie le plus grand élément entre `n1` et `n2`.
+        Écrire une fonction `maxi` qui prend comme paramètres deux nombres ```n1``` et ```n2``` et qui renvoie le plus grand élément entre `n1` et `n2`.
+
+        *Exemple d'utilisation*
+
+        ```python
+        >>> maxi(3,1)
+        3
+        ```
+
 
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
@@ -16,7 +24,7 @@
         ```
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         def maxi(n1, n2):
@@ -28,10 +36,64 @@
         "
         ) }}
 
+!!! example "{{ exercice() }}"
+    === "Énoncé"
+        Écrire une fonction ```moyenne``` qui prend en paramètre trois nombres ```a```, ```b``` et ```c```   et qui renvoie la moyenne de ces trois nombres.
+    
+        *Exemple d'utilisation*
+
+        ```python
+        >>> moyenne(6, 15, 9)
+        10
+        ```
+    === "Correction"
+        {{ correction(False,
+        "
+        ```python linenums='1'
+        def moyenne(a, b, c):
+            return (a + b + c) / 3 
+        ```
+        "
+        ) }}
+
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Définissez une fonction `nb_voyelles(mot)` qui renvoie le nombre de voyelles de `mot`.
+        Écrire une fonction ```somme``` qui prend en paramètre un entier positif ```n``` et qui renvoie la somme de tous les entier de 1 à ```n```.
+        
+        $S = 1+2+3+4+5+ \dots +(n-1) + n$
+
+        *Exemple d'utilisation*
+
+        ```python
+        >>> somme(10)
+        55
+        ```
+    === "Correction"
+        {{ correction(False,
+        "
+        ```python linenums='1'
+        def somme(n):
+            s = 0
+            for k in range(1, n+1):
+                s += k
+            return s
+        ```
+        "
+        ) }}
+
+
+!!! example "{{ exercice() }}"
+    === "Énoncé"
+        Écrire une fonction `nb_voyelles` qui prend un paramètre la chaine de caractères ```mot```   renvoie le nombre de voyelles de `mot`.
+
+
+        *Exemple d'utilisation*
+
+        ```python
+        >>> nb_voyelles("bonjour")
+        3
+        ```
 
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
@@ -44,7 +106,7 @@
         ```
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         def nb_voyelles(mot):
@@ -67,7 +129,7 @@
     === "Énoncé"
         Définissez une **fonction** `decale(lettre)` qui décale de 3 rangs dans l'alphabet la lettre majuscule `lettre` passée en argument (après Z, on recommencera à A..)
 
-        Aide : 
+        *Aide* 
         ```python
         >>> ord('A')
         65
@@ -75,6 +137,12 @@
         'A'
         ```
 
+        *Exemple d'utilisation*
+
+        ```python
+        >>> decale('F')
+        'I'
+        ```
 
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
@@ -87,14 +155,27 @@
 
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
+        ```python linenums='1'
+        def decale(lettre):
+            rang_lettre = ord(lettre)
+            rang_nouvelle_lettre = rang_lettre + 3
+            if rang_nouvelle_lettre > ord('Z'):
+                rang_nouvelle_lettre -= 26
+            nouvelle_lettre = chr(rang_nouvelle_lettre)  
+
+            return nouvelle_lettre
+        ```
+        ou mieux, en utilisant le modulo ```%``` :
+
         ```python linenums='1'
         def decale(lettre):
             rang_ancienne_lettre = ord(lettre) - 65
             rang_nouvelle_lettre = (rang_ancienne_lettre + 3) % 26 + 65  
+            nouvelle_lettre = chr(rang_nouvelle_lettre)
             
-            return chr(rang_nouvelle_lettre)
+            return nouvelle_lettre
         ```
         "
         ) }}
@@ -103,6 +184,13 @@
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Rajoutez un paramètre `n` à la fonction précédente pour pouvoir décaler la lettre de `n` rangs.
+
+        *Exemple d'utilisation*
+
+        ```python
+        >>> decale('B', 5)
+        'G'
+        ```
 
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
@@ -118,14 +206,17 @@
 
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         def decale(lettre, n):
-            rang_ancienne_lettre = ord(lettre) - 65
-            rang_nouvelle_lettre = (rang_ancienne_lettre + n) % 26 + 65  
-            
-            return chr(rang_nouvelle_lettre)
+            rang_lettre = ord(lettre)
+            rang_nouvelle_lettre = rang_lettre + n
+            if rang_nouvelle_lettre > ord('Z'):
+                rang_nouvelle_lettre -= 26
+            nouvelle_lettre = chr(rang_nouvelle_lettre)  
+
+            return nouvelle_lettre
 
         ```
         "
@@ -135,10 +226,17 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Utilisez la fonction précédente pour créer la fonction `decale_phrase(p, n)` qui décale toutes les lettres d'une phrase `p` de `n` rangs.
+        Utilisez la fonction précédente pour créer la fonction `decale_phrase(p, n)` qui décale toutes les lettres d'une phrase `p` de `n` rangs. On laissera les espaces intacts.
+
+        *Exemple d'utilisation*
+
+        ```python
+        >>> decale_phrase("PAS MAL DU TOUT", 4)
+        'TEW QEP HY XSYX'
+        ```
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         def decale_phrase(p, n):
@@ -161,14 +259,17 @@
         Décodez la phrase `RT BTHHPVT CT RDCIXTCI GXTC S XCITGTHHPCI`.
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         def decale(lettre, n):
-            rang_ancienne_lettre = ord(lettre) - 65
-            rang_nouvelle_lettre = (rang_ancienne_lettre + n) % 26 + 65  
+            rang_lettre = ord(lettre)
+            rang_nouvelle_lettre = rang_lettre + n
+            if rang_nouvelle_lettre > ord('Z'):
+                rang_nouvelle_lettre -= 26
+            nouvelle_lettre = chr(rang_nouvelle_lettre)  
 
-            return chr(rang_nouvelle_lettre)
+            return nouvelle_lettre
 
         def decale_phrase(p, n):
             phrase_decalee = ''
@@ -223,7 +324,7 @@
         2. Écrire une fonction ```syracuse(n)``` qui affiche tous les termes de la suite de Syracuse jusqu'à (on l'espère !) 1.  
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         1.
         ```python linenums='1'
@@ -251,7 +352,7 @@
         3. Modifier cette fonction pour afficher aussi le nombre de départ donnant ce plus grand temps de vol.
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         1.
         ```python linenums='1'

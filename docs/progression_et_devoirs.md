@@ -38,3 +38,9 @@
     - Contrôle n°1 sur les bases (variables, boucles)
     ??? note "Devoirs"
         - exercices de la page de cours sur l'instruction conditionnelle If else elif
+
+!!! done "séance 6 (mardi 7/11/2022):"
+    - Exercices sur l'instruction conditionnelle If else elif
+    - Les fonctions (Thème 1 Chapitre 5) 
+    ??? note "Devoirs"
+        - exercices sur les fonctions
