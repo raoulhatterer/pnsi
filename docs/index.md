@@ -10,15 +10,23 @@
 
 
 
+!!! info "Exercices pratiques pour vous entraîner"
+    - Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entrainement à la pratique de la programmation en lien avec la spécialité NSI. 
+    - Pour chaque exercice, on trouve un énoncé, souvent pour créer une fonction, puis des exemples d'application de la fonction. Ensuite, une zone de saisie du code qui est accompagné des premiers tests. Il y a des tests secrets qui permettent ensuite d'accepter (ou valider) votre code.
 
-## Thèmes en cours d'étude 
+### :high_brightness: Thème(s) en cours d'étude 
 
-- :arrow_right: [La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
-- :arrow_right: [La boucle ```#!python while```](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
+- :arrow_right: [T1 > Les fonctions](T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours/)
 
 
-!!! info "*Anciens thèmes traités*"
-    - :arrow_right: [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)  
+### Anciens thèmes traités
+
+- :arrow_right: [T1 > Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)  
+- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
+- :arrow_right: [T1 > La boucle ```#!python while```](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
+- :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours/)
+
+
 
 <!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
 <!-- - Dans le thème3 Architecture matérielle: -->
@@ -26,13 +34,7 @@
 <!--     - chapitre 2: Architecture Von Neumann -->
 
 
-## Exercices pratiques pour vous entraîner
-
-- Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entrainement à la pratique de la programmation en lien avec la spécialité NSI. 
-
-- Pour chaque exercice, on trouve un énoncé, souvent pour créer une fonction, puis des exemples d'application de la fonction. Ensuite, une zone de saisie du code qui est accompagné des premiers tests. Il y a des tests secrets qui permettent ensuite d'accepter (ou valider) votre code.
-
-## Programme
+### Programme
 ??? abstract "Nous traiterons les différentes entrées du programme dans les chapitres suivants…"
     
 
