@@ -5,7 +5,7 @@
 
 {#
 !!! abstract ":star: Actualités :star:"
-    - Bonne rentrée à toutes et à tous ! 
+    - Bonne rentrée à toutes et à tous !   
 #}
 
 
