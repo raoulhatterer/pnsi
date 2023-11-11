@@ -52,4 +52,5 @@
     - Les fonctions (Thème 1 Chapitre 5) 
     - Exercices 1 et 2 sur les fonctions
     ??? note "Devoirs"
-        - exercices suivants sur les fonctions
+        - Exercices suivants sur les fonctions
+        - Commencer à réviser le contrôle du 21/11/2023 portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices déjà faits, car au minimum vous devez être capable de les refaire.
