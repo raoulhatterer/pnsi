@@ -24,7 +24,7 @@
         ```
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def maxi(n1, n2):
@@ -47,7 +47,7 @@
         10
         ```
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def moyenne(a, b, c):

@@ -50,5 +50,6 @@
 !!! done "séance 7 (mardi 7/11/2022):"
     - Exercices sur l'instruction conditionnelle If else elif
     - Les fonctions (Thème 1 Chapitre 5) 
+    - Exercices 1 et 2 sur les fonctions
     ??? note "Devoirs"
-        - exercices sur les fonctions
+        - exercices suivants sur les fonctions
