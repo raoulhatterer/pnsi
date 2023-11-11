@@ -18,15 +18,14 @@
         Alex a eu le César du meilleur acteur
         Roschdy a eu le César du meilleur acteur
         ```
-    === "Correction"
-        {#
+    === "Correction"   {# #}
         ```python linenums='1'
         liste_acteurs = ['Tahar', 'Omar', 'Guillaume', 'Swann', 'Alex', 'Roschdy']
 
         for acteur in liste_acteurs:
             print(acteur, "a eu le César du meilleur acteur")
         ```
-        #}
+
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -53,8 +52,7 @@
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
         ```
-    === "Correction"
-        {#
+    === "Correction" {# #}
         1.
         ```python linenums='1'
         sol = ""
@@ -71,7 +69,7 @@
                 sol = sol + lettre
             print(sol)
         ```
-        #}
+
         
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -92,8 +90,7 @@
         ```
 
         Cette variable `chaine` est appelée un **accumulateur**.
-    === "Correction"
-        {#
+    === "Correction"  {# #}
         ```python linenums='1'
         chaine = ""
         for lettre in ['b', 'r', 'a', 'v', 'o']:
@@ -101,7 +98,6 @@
 
         print(chaine)
         ```
-        #}
 
 
 !!! example "{{ exercice() }}"
@@ -125,8 +121,7 @@
         mot_secret = ""
         ```
 
-    === "Correction"
-        {#
+    === "Correction"  {# #}
         ```python linenums='1'
         mystere = [111, 107, 44, 32, 98, 105, 101, 110, 32, 106, 111, 117, 233]
         mot_secret = ""
@@ -137,7 +132,6 @@
 
         print(mot_secret)
         ```
-        #}
         
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -147,29 +141,25 @@
 
         Écrire un programme avec une variable `somme` **accumulateur** (comme à l'exercice 3) qui contiendra la valeur souhaitée en fin de programme.
 
-    === "Correction"
-        {#
+    === "Correction"  {# #}
         ```python linenums='1'
         somme = 0
         for k in range(1,1001):
             somme += k
         print(somme)  
         ```
-        #}
         
 !!! example "{{ exercice() }}"
     === "Énoncé"
     
         Calculer $1\times 2 \times 3 \times \dots 99 \times 100$.
-    === "Correction"
-        {#
+    === "Correction"  {# #}
         ```python linenums='1'
         produit = 1
         for k in range(1,100):
             produit = produit * k
         print(produit)  
         ```
-        #}
 
       
 !!! capytale "À faire sur Capytale"
@@ -188,14 +178,12 @@
 
             9*9 = 81    
             ```
-        === "Correction"
-            {#
+        === "Correction"  {# #}
             ```python linenums='1'
             for a in range(7, 10):
                 for b in range(1, 10):
                     print(a, '*', b, '=', a*b)
             ```
-            #}
             
     !!! example "{{ exercice() }}"
         === "Énoncé"
@@ -204,13 +192,11 @@
             Les cases sont donc A1, A2, A3, ..., H7, H8.
 
             Proposer un code qui écrit **toutes** les cases possibles.
-        === "Correction"
-            {#
+        === "Correction"  {# #}
             ```python linenums='1'
             for lettre in "ABCDEFGH":
                 for chiffre in range(1, 9):
                     case = lettre + str(chiffre)
                     print(case)
             ```
-            #}
   
