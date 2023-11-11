@@ -347,7 +347,7 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        1. Écrire une fonction ```temps_de_vol(n)``` qui renvoie le nombre d'étapes pour arriver à 1, en partant de ```n```
+        1. Pour la conjoncture de Syracuse, écrire une fonction ```temps_de_vol(n)``` qui renvoie le nombre d'étapes pour arriver à 1, en partant de ```n```
         2. Écrire une fonction ```temps_max(nmax)``` qui affiche le plus grand temps de vol pour un nombre entre 1 et ```nmax```.
         3. Modifier cette fonction pour afficher aussi le nombre de départ donnant ce plus grand temps de vol.
 
