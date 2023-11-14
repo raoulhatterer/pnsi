@@ -54,3 +54,8 @@
     ??? note "Devoirs"
         - Exercices suivants sur les fonctions
         - Commencer à réviser le contrôle du 21/11/2023 portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices déjà faits, car au minimum vous devez être capable de les refaire.
+
+!!! done "séance 8 (mardi 14/11/2022):"
+    - Exercices sur les fonctions
+    ??? note "Devoirs"
+        - Réviser le contrôle du 21/11/2023 portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices déjà faits, car au minimum vous devez être capable de les refaire.
