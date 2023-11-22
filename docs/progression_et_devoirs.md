@@ -59,3 +59,9 @@
     - Exercices sur les fonctions
     ??? note "Devoirs"
         - Réviser le contrôle du 21/11/2023 portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices déjà faits, car au minimum vous devez être capable de les refaire.
+
+!!! done "séance 9 (mardi 21/11/2022):"
+    - Révisions
+    - Contrôle sur le thème 1 (Les bases de Python)
+    ??? note "Devoirs"
+        - Exercice pratique: [Différentes distances (en ligne sur e-nsi)](https://e-nsi.gitlab.io/pratique/N0/440-distances/sujet/){:target="_blank"}
