@@ -1,4 +1,3 @@
-
 {{initexo(0)}}
 
 !!! example "{{ exercice() }}"
@@ -47,7 +46,7 @@
         - sur une même ligne, on affichera tous les symboles côte à côte, en rajoutant le paramètre ```end = ''``` à la fonction ```print```. (*exemple :* ```print('*', end = '')``` )
         - on ira à la ligne à la fin de chaque ligne, par l'instruction ```print()```     
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         m = [[17, 71, 75, 89, 45, 10, 54, 26, 59, 47, 57, 64, 44], \\
@@ -79,7 +78,7 @@
     === "Énoncé"
         Résolvez le pydéfi **Insaisissable matrice** proposé à [cette adresse](https://pydefis.callicode.fr/defis/AlgoMat/txt)        
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         M=[[17, 3, 4, 14, 5, 17], [8, 16, 3, 17, 14, 12], [13, 5, 15, 4, 16, 3], [14, 7, 3, 16, 3, 2], [6, 1, 16, 10, 5, 13], [11, 1, 9, 11, 18, 8]]
@@ -161,7 +160,7 @@
         4
         ```
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python
         data_str = open('input1.txt').read().splitlines()
