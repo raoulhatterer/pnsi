@@ -65,3 +65,15 @@
     - Contrôle sur le thème 1 (Les bases de Python)
     ??? note "Devoirs"
         - Exercice pratique: [Différentes distances (en ligne sur e-nsi)](https://e-nsi.gitlab.io/pratique/N0/440-distances/sujet/){:target="_blank"}
+
+!!! done "séance 10 (mardi 28/11/2022):"
+    - Correction du contrôle sur le thème 1 (Les bases de Python)
+    - Les listes
+    ??? note "Devoirs"
+        - Terminer les exercices 1, 2 et 3 du cours sur les listes.
+
+!!! done "séance 11 (mardi 5/12/2022):"
+    - Les listes
+    - Exercices sur les listes
+    ??? note "Devoirs"
+        - Terminer les exercices sur les listes.
