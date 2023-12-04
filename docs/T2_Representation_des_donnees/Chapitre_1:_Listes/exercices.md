@@ -272,7 +272,6 @@
 
 
     === "Correction"
-<<<<<<< HEAD
         Compléter les trous (...) dans le code suivant:
         ```python
         data_raw = open('input.txt').read().splitlines()
@@ -294,8 +293,7 @@
                                                         
         print(x*y)                                      
         ```
-=======
->>>>>>> origin/main
+
         {{ correction(False,
         "
         ```python
