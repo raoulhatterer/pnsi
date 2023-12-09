@@ -9,10 +9,10 @@
     
     === "Correction"
         {{
-        correction(False,
+        correction(True,
         """
         ```python linenums='1'
-        lst = [0, 50, 40, 100, 70, 90, 0]
+        lst = [0, 50, 40, 100, 70, 90, 0] # pour tester
 
         total = 0
         for i in range(len(lst)-1):
@@ -23,7 +23,7 @@
         print(total)
         ```
 
-        (à faire avec les valeurs de test) 
+        (à faire d'abord avec les valeurs de test) 
         """
         )
         }}
@@ -46,7 +46,7 @@
 
         **Q1.** Créer **en compréhension** une liste ```lst1``` contenant uniquement les jours comportant 5 lettres.
         {{
-        correction(True,
+        correction(False,
         """
         ??? success \"Correction\" 
             ```python
@@ -58,7 +58,7 @@
 
         **Q2.** Créer **en compréhension** une liste ```lst2``` contenant uniquement les jours comportant la lettre ```a``` dans leur nom.
         {{
-        correction(True,
+        correction(False,
         """
         ??? success \"Correction\" 
             ```python
@@ -70,7 +70,7 @@
 
         **Q3a.** Créer une fonction ```compte_e``` qui prend en paramètre une chaine de caractères et qui renvoie le nombre de ```e``` que contient cette chaine de caractères.
         {{
-        correction(True,
+        correction(False,
         """
         ??? success \"Correction\" 
             ```python linenums='1'
