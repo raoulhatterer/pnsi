@@ -78,3 +78,8 @@
     - [Exercice 1 : le sanglier d'Érymanthe](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
     ??? note "Devoirs"
         - [Exercices 2, 3 et 4 sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
+
+!!! done "séance 12 (mardi 12/12/2022):"
+    - [T2 > Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
+    ??? note "Devoirs"
+        - Préparer le contrôle sur les listes
