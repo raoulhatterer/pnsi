@@ -141,7 +141,7 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
 
 
 !!! example "{{ exercice() }}"
-    Reprenez votre page de l'exercice 1 et rajoutez une feuille de style.
+    Reprenez votre page de l'exercice 1 (la page contenant une image et un lien vers le site du lycée) et rajoutez une feuille de style.
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -159,11 +159,13 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
     === "Énoncé"
         - Apprenez à [ajouter des tableaux](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061455-ajoutez-des-tableaux){:target="_blank"} et à les mettre en forme en CSS.
         - Utiliser la balise `<code> </code>` pour représenter un court fragment de code machine.
-        - Créez un fichier `tableau.html`et un fichier `style.css ` afin de recréer la page suivante qui explique comment inclure des caractères spéciaux en HTML.
-        - Ne pas oublier de mettre en forme les bordures du tableau grâce à la feuille de style.
+        - Créez un fichier `tableau.html`et un fichier `style.css ` afin de recréer la page de l'onglet suivant qui explique comment inclure des caractères spéciaux en HTML. Ne pas oublier de mettre en forme les bordures du tableau grâce à la feuille de style.
+
+    === "Page à recréer"
+        __Voici une capture d'image de la page que vous devez recréer en HTML et CSS:__
         ![image](data/caracteres+speciaux.png)
     === "Correction"
-    {{ correction(True,
+    {{ correction(False,
     "
         ```html linenums='1'
             <h1>Références d'entités : inclure les caractères spéciaux en HTML</h1>
@@ -376,7 +378,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         <html>
           <head>
             <meta charset="utf-8">
-            <title>un peu d'action</title>
+            <title>Exercice</title>
           </head>
           <body>
             <script src="script.js"></script>
@@ -675,7 +677,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
                ![](data/Formulaire_eleve.png){: .center}
             3. Créer un fichier `dynserveur.py` et ajouter un patron au fichier `formulaire.html` pour remplir les cases du plan de classe au fur et à mesure que des places sont attribuées aux élèves. Le code affichera «place libre» dans les cases restant libres. Enregistrer le fichier html modifié sous un nouveau nom: `patron.html`.
         === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
             - fichier `formulaire.html`
             ```html
