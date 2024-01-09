@@ -83,3 +83,17 @@
     - [T2 > Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
     ??? note "Devoirs"
         - Préparer le contrôle sur les listes
+
+!!! done "séance 13 (mardi 19/12/2022):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - Contrôle 3 portant sur les listes
+    ??? note "Devoirs"
+        - Réviser HTML CSS
+
+!!! done "séance 14 (mardi 9/1/2023):"
+    - Correction du contrôle 3 portant sur les listes
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - Traitement d'une image et d'une autre page HTML présentes un dossier
+    - Exercices 3 et 4
+    ??? note "Devoirs"
+        - Exercice 5 (site personnel riche)
