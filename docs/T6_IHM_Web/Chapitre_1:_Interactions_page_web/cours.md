@@ -305,10 +305,9 @@ Inventé en 1995 par [Brendan Eich](https://fr.wikipedia.org/wiki/Brendan_Eich){
         <meta charset="utf-8">
         <title>un peu d'action</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="script.js" defer></script>
       </head>
       <body>
-        <script src="script.js"></script>
-
         <h1>Une page web extrêmement dynamique</h1>
 
         <div>
@@ -359,6 +358,24 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 
 
 
+
+!!! example "{{ exercice() }}"
+    === "Énoncé"
+        - Dans Chrome se rendre sur [le guide JavaScript de la fondation Mozilla](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide){:target="_blank"}
+        - Ouvrir les outils de développement dans Chrome
+        - Afficher l'onglet *Console*
+        - Afficher une alerte en utilisant la fonction ```alert()```: ```alert("NSI, ça déchire!");``` dans la console 
+        - D'après le guide, indiquer à quoi servent `let`, `const` et `console.log()`
+        - Quand doit-on utiliser un point-virgule en JS ?
+    === "Correction"
+        - Il faut déclarer une variable avec le mot-clé ```let``` en le faisant suivre de son nom: ```let myVariable;```
+        - Une fois une variable déclarée, on peut lui donner une valeur : ```myVariable = "Bob";```
+        - On peut aussi faire les deux opérations sur une même ligne si on le souhaite : ```let myVariable = "Bob";```
+        - Il faut déclarer une constante avec le mot-clé ```const```: ```const myConstante = "Marley";```
+        - Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. 
+
+        
+
 !!! example "{{ exercice() }}"
     === "Énoncé"
         - Créer:
@@ -380,10 +397,9 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
           <head>
             <meta charset="utf-8">
             <title>Exercice</title>
+            <script src="script.js" defer></script>
           </head>
           <body>
-            <script src="script.js"></script>
-        
             <h1>Majorité</h1>
             <div>
             <input type="range" id="age" name="age"
