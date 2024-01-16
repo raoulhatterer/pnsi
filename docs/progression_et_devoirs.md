@@ -90,7 +90,7 @@
     ??? note "Devoirs"
         - Réviser HTML CSS
 
-!!! done "séance 14 (mardi 9/1/2023):"
+!!! done "séance 14 (mardi 9/1/2024):"
     - Correction du contrôle 3 portant sur les listes
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
     - Traitement d'une image et d'une autre page HTML présentes un dossier
@@ -98,7 +98,7 @@
     ??? note "Devoirs"
         - Exercice 5 (site personnel riche)
 
-!!! done "séance 15 (mardi 16/1/2023):"
+!!! done "séance 15 (mardi 16/1/2024):"
 
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
     - Les bases de JavaScript
