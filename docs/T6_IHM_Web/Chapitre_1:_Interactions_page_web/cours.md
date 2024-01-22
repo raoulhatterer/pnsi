@@ -479,8 +479,199 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
     - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !
 
 
+!!! example "{{ exercice() }}: Calculatrice RPN"
+    === "Énoncé"
+        - La HP Prime est une calculatrice graphique programmable à écran tactile couleur du fabricant américain Hewlett-Packard (HP). La calculatrice prend en charge trois logiques d'entrée différentes : la notation algébrique sur une ligne, une notation similaire à la notation mathématique sur papier, appelée notation Textbook par HP, et la notation polonaise inversée (RPN).
+        - [La notation polonaise inverse](https://fr.wikipedia.org/wiki/Notation_polonaise_inverse){:target="_blank"} permet de faire des calculs arithmétiques sans utiliser de parenthèses et sans faire référence à une quelconque adresse mémoire, les données étant stockées dans une pile (les piles seront étudiées de façon détaillée en classe de terminale).
+        - Un émulateur de la HP Prime est officiellement disponible pour divers systèmes d’exploitation: Android (Google Play), iOS (Apple App Store) et MS Windows (Microsoft Store). Il existe également une version MacOS et une version Linux.
+        - Les [Flex Box CSS](https://www.w3schools.com/css/css3_flexbox.asp){:target="_blank"} sont un standard CSS3 de disposition des éléments dans une page web. Ce standard permet d'avoir un design adaptatif à l'écran. Les éléments peuvent être réagencés selon la taille de l'écran.
+        - Les onglets suivants contiennent  l'ébauche du code implémentant une calculatrice RPN. Compléter le code pour avoir une calculatrice entièrement fonctionnelle.
+    === "Aperçu"
+        ![](data/ebauche-calculatriceRPN.png){: .center}
+    === "index.html"
+         ``` html
+         <!DOCTYPE html>
+         <html lang="fr">
+         <head>
+           <meta charset="UTF-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="stylesheet" href="style.css">
+           <script src="calculatrice.js" defer> </script>
+           <title>Calculatrice RPN</title>
+         </head>
+         <body>
+           <h1>Calculatrice RPN en JavaScript</h1>
+           <h2>Pile</h2>
+           <div class="pile">  
+           3:<span id="pile3"></span>
+           </div> 
+           <div class="pile">  
+           2:<span id="pile2"></span>
+           </div> 
+           <div class="pile">  
+           1:<span id="pile1"></span>
+           </div> 
+           <h2>Saisie</h2>
+           <div class="centrer">
+           <p id="tampon">Ready</p>
+           </div>
+           <div class="centrer">
+           <div class="nombres">
+           <div class="ligne">
+             <button type="button" onclick="nombre(7)"   class="touche">7</button>
+             <button type="button" onclick="nombre(8)"   class="touche">8</button>
+             <button type="button" onclick="nombre(9)"   class="touche">9</button>
+             </div>
+           <div class="ligne">     
+             <button type="button" onclick="nombre(4)"  class="touche">4</button>
+             <button type="button" onclick="nombre(5)"  class="touche">5</button>
+             <button type="button" onclick="nombre(6)"  class="touche">6</button>
+           </div>
+             <div class="ligne">     
+             <button type="button" onclick="nombre(1)"  class="touche">1</button>
+             <button type="button" onclick="nombre(2)"  class="touche">2</button>
+             <button type="button" onclick="nombre(3)"  class="touche">3</button>
+           </div>
+           </div>
+           <div class="operations">
+             <button type="button" onclick="clearAll()" class="touche">Clear</button>
+             <button type="button" onclick="division()" class="touche">/</button>
+             <button type="button" onclick="soustraction()" class="touche">-</button>
+             <button type="button" onclick="addition()" class="touche">+</button>
+             <button type="button" onclick="enter()" class="touche">Enter</button>
+           </div>
+           </div>
+         </body>
+         </html>
+         ```
+    === "style.css"
+         ```css
+         h1 {
+           color: #008CBA;
+           text-align: center;
+         }
 
+         .pile {
+           display:flex;
+           justify-content:space-between;
+           margin:  2px 30px 2px 30px;
+           font-size: x-large;
+           padding: 4px 10px;
+           border: 0.1pt dashed;
+         }
 
+         .centrer {
+           display:flex;
+           justify-content: center;
+         }
+
+         #tampon {
+           font-size:xx-large;
+           border: 2px solid;
+           padding: 4px 10px;
+           margin: 2px 30px 0px 30px;
+           font-family: "Lucida Console";
+           width:550px;
+           min-height:40px;
+           text-align:right;
+         }
+
+         .touche {
+           font-size:x-large;
+           padding: 15px 32px;
+           font-size: 16px;
+           margin: 4px;
+           cursor: pointer;
+           background-color: white; 
+           color: black; 
+           border: 2px solid #008CBA; 
+           border-radius:10px;
+         }
+
+         .nombres {
+           border:solid;
+           border-radius: 15px;
+           border-color: white;
+           max-width:300px; /* largeur du clavier numérique */
+           padding:20px;
+           background-color: white;
+           margin: 20px; 
+         }
+
+         .ligne {
+           display: flex; /* pour positionner les touches */
+           justify-content: center; /* centrées sur la ligne */
+           background-color: white;
+           }
+
+         .operations {
+           display: flex; /* pour positionner les touches d'opérations */
+           flex-direction: column; /* en une colonne */
+           border:solid;
+           border-radius: 15px;
+           border-color: white;
+           max-width:200px;
+           padding:20px;
+           background-color: white;
+         }
+         ```
+    === "calculatrice.js"         
+         ```javascript
+         let pile3  = "";
+         let pile2  = "";
+         let pile1  = "";
+         let tampon = "";
+
+         function nombre(x) {
+           tampon = 10*tampon + x;
+           document.getElementById("tampon").innerHTML = tampon; 
+         };
+
+         function clearAll() { // attention clear() est un mot réservé 
+           pile3 = "";
+           pile2 = "";
+           pile1 = "";
+           tampon = "";
+           affichage();
+         };
+
+         function enter() {
+           pile3 = pile2;
+           pile2 = pile1;
+           if (tampon !="") {
+             pile1 = tampon;
+             tampon = ""
+           }
+           affichage();
+         };
+
+         function addition() {
+           if (tampon!="") {enter()};  
+           pile1 = Number(pile2) + Number(pile1);
+           pile2 = pile3;
+           pile3 = "";
+           tampon = "";
+           affichage();
+         };
+
+         function division() {
+           if (tampon!="") {enter()};  
+           pile1 = Number(pile2) / Number(pile1);
+           pile2 = pile3;
+           pile3 = "";
+           tampon = "";
+           affichage();
+         };
+
+         function affichage() {
+           document.getElementById("pile3").innerHTML = pile3;
+           document.getElementById("pile2").innerHTML = pile2;
+           document.getElementById("pile1").innerHTML = pile1;
+           document.getElementById("tampon").innerHTML = tampon;
+         };
+
+         ```
 
 ## 3. Quand la page est fabriquée à la demande pour le client 
 

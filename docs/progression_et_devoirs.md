@@ -99,9 +99,8 @@
         - Exercice 5 (site personnel riche)
 
 !!! done "séance 15 (mardi 16/1/2024):"
-
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
     - Les bases de JavaScript
     - Exercices 6, 7, 8.
     ??? note "Devoirs"
-        - Préparer contrôle sur HTML + CSS + JavaScript (les 2 aides mémoires sont autorisés si vous en avez une version imprimée)
+        - Préparer le contrôle (reporté au 30/01) portant sur HTML + CSS + JavaScript (les 2 aides mémoires sont autorisés si vous en avez une version imprimée)
