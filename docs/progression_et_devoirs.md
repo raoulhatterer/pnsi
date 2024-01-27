@@ -104,3 +104,10 @@
     - Exercices 6, 7, 8.
     ??? note "Devoirs"
         - Préparer le contrôle (reporté au 30/01) portant sur HTML + CSS + JavaScript (les 2 aides mémoires sont autorisés si vous en avez une version imprimée)
+
+!!! done "séance 16 (mardi 23/1/2024):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - Les bases de JavaScript
+    - Exercices 9 et 10.
+    ??? note "Devoirs"
+        - Préparer le contrôle du 30/01 portant sur HTML + CSS + JavaScript (les 2 aides mémoires sont autorisés si vous en avez une version imprimée)

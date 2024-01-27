@@ -476,7 +476,13 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         
 
 !!! example "{{ exercice() }}"
-    - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !
+    - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres d'utiliser des inputs de différents types:
+        - text (une chaîne de caractères) ;
+        - number (un nombre) ;
+        - range (une valeur numérique) ;
+        - checkbox (une case à cocher) ;
+        - radio (un bouton radio) ;
+        - button (un bouton)...
 
 
 !!! example "{{ exercice() }}: Calculatrice RPN"
@@ -672,6 +678,10 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
          };
 
          ```
+    === "Correction"
+        {{ correction(True,"- Capytale (code 9bcf-2789938)") }}
+    
+    
 
 ## 3. Quand la page est fabriquée à la demande pour le client 
 
