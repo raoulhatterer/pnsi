@@ -483,6 +483,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         - checkbox (une case à cocher) ;
         - radio (un bouton radio) ;
         - button (un bouton)...
+    - Rajoutez des [conditions](https://www.w3schools.com/js/js_if_else.asp){:target="_blank"} `if`, `else if`, `else` et utilisez [les opérateurs logiques](https://www.w3schools.com/js/js_comparisons.asp) AND (noté `&&` en JS) et OR (noté `||` en JS). 
 
 
 !!! example "{{ exercice() }}: Calculatrice RPN"
