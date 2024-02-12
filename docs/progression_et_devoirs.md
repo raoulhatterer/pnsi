@@ -111,3 +111,17 @@
     - Exercices 9 et 10.
     ??? note "Devoirs"
         - Préparer le contrôle du 30/01 portant sur HTML + CSS + JavaScript (les 2 aides mémoires sont autorisés si vous en avez une version imprimée)
+
+!!! done "séance 17 (mardi 30/1/2024):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - Exercice 11
+    - Contrôle portant sur HTML + CSS + JavaScript
+
+!!! done "séance 18 (mardi 6/2/2024):"
+    - Séance annulée (arrêt maladie)
+
+!!! done "séance 19 (mardi 13/2/2024):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_2:_Protocole_HTTP/cours.md)
+    ??? note "Devoirs"
+        - 

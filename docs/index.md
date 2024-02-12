@@ -18,8 +18,7 @@
 
 
 - :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
-
-
+- :arrow_right: [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_2:_Protocole_HTTP/cours/)
 
 ### Anciens thèmes traités
 
