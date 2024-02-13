@@ -106,7 +106,7 @@ Par exemple, l'appel au site ```www.lyceemauriac.fr``` génère 129 requêtes/r�
             - Comparer Request Headers et Response Headers aux données de la page 2 du cours d'Éduscol.
         9. Onglet Timing :
             - Combien de temps le seveur DNS a-t-il mis pour renvoyer l'adresse IP ?
-            - Combien de temps faut-il attendre entre l'envoie de la requette et l'envoie du premier bit (Time To First Bit) de la réponse.
+            - Combien de temps faut-il attendre entre l'envoi de la requête et l'envoie du premier bit (Time To First Bit) de la réponse.
             - Combien de temps a duré la communication ?
             - Combien de temps a nécessité  le téléchargement proporement dit des données ? Calculer le poucentage que cela représente par rapport à la durée totale de la communication client-serveur.
     === "Correction"
