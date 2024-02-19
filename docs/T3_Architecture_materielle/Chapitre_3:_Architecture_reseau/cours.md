@@ -34,7 +34,9 @@ Un site comme [https://www.macvendorlookup.com/](https://www.macvendorlookup.com
 
 ![](data/hub.png){: .center}
 
-- Au sein d'un **switch Ethernet** , une analyse est effectuée sur la trame qui est à distribuer (voir [ici](https://github.com/glassus/nsi/blob/master/Premiere/Theme04_Architecture_materielle/04_Protocoles_de_communication.md)). Lors d'un branchement d'un nouvel ordinateur sur le switch, celui-ci récupère son adresse MAC, ce qui lui permet de **trier** les messages et de ne les distribuer qu'au bon destinataire.
+- Au sein d'un **switch Ethernet** , une analyse est effectuée sur la trame qui est à distribuer (voir [ici](https://lyceemed.forge.aeif.fr/pnsi/T3_Architecture_materielle/Chapitre_4%3A_Protocoles_de_communication/cours/)). Lors d'un branchement d'un nouvel ordinateur sur le switch, celui-ci récupère son adresse MAC, ce qui lui permet de **trier** les messages et de ne les distribuer qu'au bon destinataire.
+
+
 
 ![](data/switch.png){: .center}
 
@@ -102,7 +104,7 @@ Quelle opération permet de distinguer cette appartenance à un même sous-rése
 
 Appelons ```IP_A``` et ```IP_B``` les adresses IP respectives des machines A et B.  
 Appelons ```M``` le masque de sous-réseau.  
-Nommons ```&``` l'opérateur de conjonction entre nombres binaires (voir [ici](https://github.com/glassus/nsi/blob/master/Premiere/Theme03_Representation_des_donnees/05_Operateurs_booleens.ipynb)): 
+Nommons ```&``` l'opérateur de conjonction entre nombres binaires (voir [ici](https://lyceemed.forge.aeif.fr/pnsi/T2_Representation_des_donnees/Chapitre_5%3A_Booleens/cours/)): 
 
 **Propriété :** A et B appartiennent au même sous-réseau ⇔ ```IP_A & M = IP_B & M```
 
