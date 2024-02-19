@@ -131,3 +131,11 @@
     ??? note "Devoirs"
         - Savoir refaire l'exercice 12 sans regarder la correction.
         - Rédiger l'exercice 1 sur les requêtes http sur Jupyter NoteBook au format Markdown avec une mise en forme riche (utilisation de listes et sous listes, mot en gras...) avec incorporation de captures d'écran pour permettre la vérification de vos réponses. 
+
+!!! done "séance 20 (mardi 20/2/2024):"
+    - [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
+    ??? note "Devoirs"
+        - 
+
+
+
