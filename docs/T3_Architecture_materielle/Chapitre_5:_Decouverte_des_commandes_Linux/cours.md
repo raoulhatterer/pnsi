@@ -1,4 +1,4 @@
-# 3.5 Découverte des commandes UNIX
+# Chapitre 5: Découverte des commandes UNIX
 
 ![image](data/BO.png){: .center}
 

@@ -133,9 +133,16 @@
         - Rédiger l'exercice 1 sur les requêtes http sur Jupyter NoteBook au format Markdown avec une mise en forme riche (utilisation de listes et sous listes, mot en gras...) avec incorporation de captures d'écran pour permettre la vérification de vos réponses. 
 
 !!! done "séance 20 (mardi 20/2/2024):"
-    - [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
+    - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
     ??? note "Devoirs"
         - 
+
+!!! done "séance 21 (mardi 12/3/2024):"
+    - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours.md)
+    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
+    
+    ??? note "Devoirs"
+        - Finir le jeu Terminus et établir la liste des commandes linux 
 
 
 

@@ -238,7 +238,7 @@ En suivant le même principe, la machine ```192.168.1.1 ``` pourra envoyer son _
 
 !!! note "Exercice de bac"
     === "Énoncé"
-        Parties 2 et 3 de l'exercice 2 du sujet [Nouvelle-Calédonie J1 2022](https://glassus.github.io/terminale_nsi/T6_Annales/data/2022/2022_Nouvelle-Caledonie_J1.pdf){. target="_blank"}.
+        Parties 2 et 3 de l'exercice 2 du sujet [Nouvelle-Calédonie J1 2022](https://raoulhatterer.github.io/tnsi/T6_Annales/data/2022/2022_Nouvelle-Caledonie_J1.pdf){. target="_blank"}.
     
     === "Correction"
         **Partie 2**
