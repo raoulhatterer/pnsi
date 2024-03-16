@@ -140,9 +140,16 @@
 !!! done "séance 21 (mardi 12/3/2024):"
     - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours.md)
     - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
-    
     ??? note "Devoirs"
         - Finir le jeu Terminus et établir la liste des commandes linux 
+        - Préparer le contrôle sur les réseaux
 
-
-
+!!! done "séance 22 (mardi 19/3/2024):"
+    - Annulée pour cause de bac blanc de français
+    ??? note "Devoirs"
+        - Finir le jeu Terminus et établir la liste des commandes linux 
+        - Préparer le contrôle sur les réseaux
+    
+    
+!!! done "séance 23 (mardi 26/3/2024):"
+    - Contrôle sur les réseaux
