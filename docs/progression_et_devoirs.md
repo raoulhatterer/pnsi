@@ -152,4 +152,10 @@
     
     
 !!! done "séance 23 (mardi 26/3/2024):"
+    - [T2 > Chapitre5: Les booléens](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
     - Contrôle sur les réseaux
+
+!!! done "séance 24 (mardi 2/4/2024):"
+    - [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
+    - [T4 > Algorithmique > chap1 (Extremums et moyennes)](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
+
