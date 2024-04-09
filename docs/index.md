@@ -1,4 +1,3 @@
-
 <!-- !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous ! -->
 
@@ -18,7 +17,7 @@
 
 
 - :arrow_right: [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
-- :arrow_right: [T4 > Algorithmique > chap1 (Extremums et moyennes)](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
+- :arrow_right: [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
 
 
 
