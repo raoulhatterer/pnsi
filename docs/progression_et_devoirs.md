@@ -157,5 +157,13 @@
 
 !!! done "séance 24 (mardi 2/4/2024):"
     - [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
-    - [T4 > Algorithmique > chap1 (Extremums et moyennes)](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
+
+
+!!! done "séance 25 (mardi 9/4/2024):"
+    - [T2 > Representation des donnees > chap5 (les booléens) > Image mystère](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
+    - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
+        - chap1: Maximum, moyenne, occurences
+        - chap2: Tri par insertion (méthode simple) 
+    ??? note "Devoirs"
+        - Réviser les booléens et les algorithmes déjà étudiés     
 
