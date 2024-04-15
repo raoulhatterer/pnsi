@@ -1,5 +1,7 @@
 # Chapitre 5: Dichotomie
 
+{{initexo(0)}}
+
 *ou comment rechercher efficacement dans une liste triée ?*
 
 ![image](data/BO.png){: .center}
@@ -46,7 +48,18 @@ Extrait de [Wikipedia](https://fr.wikipedia.org/wiki/Diviser_pour_r%C3%A9gner_(i
 -->
 ##  1. Introduction : recherche d'une valeur dans une liste
 
-### 1.1 Préambule : liste non triée
+### 1.1 Préambule
+
+!!! note "De l'importance de bien ranger ses affaires"
+    Les premiers algorithmes «célèbres» que nous avons découverts étaient des [algorithmes de tri](../Chapitre_3:_Tri_par_insertion/cours.md){. target="_blank"}. 
+
+    Quel est l'intérêt de trier ses données ?
+    
+    - l'intérêt immédiat est d'en tirer un classement : quelle est la plus grande (ou plus petite) valeur, la deuxième, la troisième... On s'en sert donc évidemment pour déterminer une valeur optimale, un gagnant dans une compétition, etc. Mais il y a une autre raison plus importante.
+
+    - **Trier ses données permet de rechercher plus rapidement une valeur précise parmi celles-ci.**
+
+
 
 **Exemple :** pouvez-vous deviner la couleur à laquelle je pense ?
 
@@ -55,7 +68,9 @@ Extrait de [Wikipedia](https://fr.wikipedia.org/wiki/Diviser_pour_r%C3%A9gner_(i
 coul = ["bleu", "jaune", "rouge", "vert", "violet", "marron"]
 ```
 
-Toutes les méthodes (proposition des valeurs dans l'ordre, au hasard, dans l'ordre inverse...) sont équivalentes car la liste n'est pas triée.
+Toutes les méthodes (proposition des valeurs dans l'ordre, au hasard, dans l'ordre inverse...) sont équivalentes : elles sont toutes aussi mauvaises, aucune stratégie n'est possible car les données ne sont pas triées. Si je suis à la recherche de la valeur "vert", le fait de piocher "rouge" ne me donnera aucune indication sur le fait que je devrais chercher plus à gauche à plus à droite que l'endroit où j'ai pioché.
+
+Il faudrait pour cela que la liste soit triée (et donc qu'elle soit «triable», ce qui n'est pas toujours le cas !). C'est donc le cas dans lequel nous allons nous placer dans toute la suite de ce cours :
 
 
 :star: :star: :star: Dans toute la suite, nous rechercherons un élément dans une liste d'entiers **triée** dans l'ordre croissant. :star: :star: :star: 
@@ -77,7 +92,7 @@ L'objectif est de définir un algorithme de recherche efficace d'une valeur arbi
 C'est la méthode la plus intuitive : on essaie toutes les valeurs (par exemple, dans l'ordre croissant) jusqu'à trouver la bonne.
 
 
-!!! abstract "Exercice 1"
+!!! abstract "{{ exercice() }}"
     === "Énoncé"
         Écrire un code permettant d'afficher l'indice de la valeur `14` dans la liste `lst = [2, 3, 6, 7, 11, 14, 18, 19, 24]`.
     === "Correction"
@@ -85,8 +100,7 @@ C'est la méthode la plus intuitive : on essaie toutes les valeurs (par exemple,
         lst = [2, 3, 6, 7, 11, 14, 18, 19, 24]
         for k in range(len(lst)):
             if lst[k] ==  14 :
-                return k
-        return "non trouvé"
+                print(k)
         ```
 
 
@@ -99,7 +113,7 @@ C'est la méthode la plus intuitive : on essaie toutes les valeurs (par exemple,
             for k in range(len(lst)) :
                 if lst[k] == val:
                     return k
-            return "non trouvé"
+            return None
 
         ```
 
@@ -194,7 +208,12 @@ Nous allons donc travailler avec trois variables :
 Nous allons faire *se rapprocher* les indices `indice_debut` et `indice_fin` **tant que** `indice_debut <= indice_fin`
 
 
+:arrow_right: [Codes à trous](../intro_cours/){. target="_blank"}
+
+
+
 !!! note "Recherche dichotomique dans une liste triée :heart: :heart: :heart:"
+    
     ```python
     def recherche_dichotomique(lst, val) :
         indice_debut = 0
@@ -222,22 +241,22 @@ Nous allons faire *se rapprocher* les indices `indice_debut` et `indice_fin` **t
 0
 >>> recherche_dichotomique(mylist, 24)
 8
->>> recherche_dichotomique(mylist, 2022)
+>>> recherche_dichotomique(mylist, 1789)
 >>> 
 ```
 
 ### 2.4 Visualisations avec PythonTutor
 
-!!! aide "Cas où la valeur est trouvée"
+??? aide "Cas où la valeur est trouvée"
     <iframe width="1000" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20recherche_dichotomique%28lst,%20val%29%20%3A%0A%20%20%20%20indice_debut%20%3D%200%0A%20%20%20%20indice_fin%20%3D%20len%28lst%29%20-%201%0A%20%20%20%20while%20indice_debut%20%3C%3D%20indice_fin%20%3A%0A%20%20%20%20%20%20%20%20indice_centre%20%3D%20%28indice_debut%20%2B%20indice_fin%29%20//%202%20%20%20%20%20%0A%20%20%20%20%20%20%20%20valeur_centrale%20%3D%20lst%5Bindice_centre%5D%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20if%20valeur_centrale%20%3D%3D%20val%20%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20indice_centre%0A%20%20%20%20%20%20%20%20if%20valeur_centrale%20%3C%20val%20%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20indice_debut%20%3D%20indice_centre%20%2B%201%0A%20%20%20%20%20%20%20%20else%20%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20indice_fin%20%3D%20indice_centre%20-%201%0A%20%20%20%20return%20None%0A%0Amylist%20%3D%20%5B2,%203,%206,%207,%2011,%2014,%2018,%2019,%2024%5D%0Aprint%28recherche_dichotomique%28mylist,%2014%29%29%0A&codeDivHeight=400&codeDivWidth=600&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 
-!!! aide "Cas où la valeur N'est PAS trouvée"
+??? aide "Cas où la valeur N'est PAS trouvée"
     <iframe width="1000" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20recherche_dichotomique%28lst,%20val%29%20%3A%0A%20%20%20%20indice_debut%20%3D%200%0A%20%20%20%20indice_fin%20%3D%20len%28lst%29%20-%201%0A%20%20%20%20while%20indice_debut%20%3C%3D%20indice_fin%20%3A%0A%20%20%20%20%20%20%20%20indice_centre%20%3D%20%28indice_debut%20%2B%20indice_fin%29%20//%202%20%20%20%20%20%0A%20%20%20%20%20%20%20%20valeur_centrale%20%3D%20lst%5Bindice_centre%5D%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20if%20valeur_centrale%20%3D%3D%20val%20%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20indice_centre%0A%20%20%20%20%20%20%20%20if%20valeur_centrale%20%3C%20val%20%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20indice_debut%20%3D%20indice_centre%20%2B%201%0A%20%20%20%20%20%20%20%20else%20%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20indice_fin%20%3D%20indice_centre%20-%201%0A%20%20%20%20return%20None%0A%0Amylist%20%3D%20%5B2,%203,%206,%207,%2011,%2014,%2018,%2019,%2024%5D%0Aprint%28recherche_dichotomique%28mylist,%205%29%29%0A&codeDivHeight=400&codeDivWidth=600&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 ### 2.5 Terminaison de l'algorithme
 Est-on sûr que l'algorithme va se terminer ?  
-La boucle `while` qui est utilisée doit nous inciter à la prudence (voir [cours](https://github.com/glassus/nsi/blob/master/Premiere/Theme01_Bases_de_Python/02_Boucle_while/boucles_while.ipynb) sur la boucle While).  
+La boucle `while` qui est utilisée doit nous inciter à la prudence (voir [cours](../../T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)  sur la boucle While).  
 Il y a en effet le risque de rentrer dans une boucle infinie.  
 Pourquoi n'est-ce pas le cas ?
 
@@ -257,9 +276,12 @@ Au démarrage de la boucle, on a :
 
 Ceci qui nous assure donc de bien rentrer dans la boucle. 
 
-Ensuite, à chaque étape, les deux variables `indice_debut` et `indice_fin` vont se **rapprocher** jusqu'à ce que le programme rencontre un `return` ou bien jusqu'à ce que `indice_fin` devienne inférieur à `indice_debut`.  
+Ensuite, à chaque étape :
 
-Ceci nous assure donc que le programme va bien se terminer.
+- soit `indice_debut` augmente strictement (grâce à ```#!python indice_debut = indice_centre + 1```)
+- soit  `indice_fin` diminue strictement (grâce à ```#!python indice_fin = indice_centre - 1```)
+
+Il va donc forcément arriver un moment où `indice_fin` sera inférieur à `indice_debut` : on sortira alors de la boucle et le programme va bien se terminer.
 
 **Variant de boucle**  
 On dit que la valeur `indice_fin - indice_debut ` représente le **variant de boucle** de cet algorithme. 
@@ -274,7 +296,7 @@ Puis 2 valeurs.
 Puis une seule valeur.  
 Il y a donc 3 étapes avant de trouver la valeur cherchée.
 
-!!! abstract "Exercice"
+!!! abstract "{{ exercice() }}"
     === "Énoncé"
         1. Remplissez le tableau ci-dessous :
 
@@ -285,7 +307,22 @@ Il y a donc 3 étapes avant de trouver la valeur cherchée.
         2. Pouvez-vous deviner le nombre d'étapes nécessaires pour une liste de 4096 termes ?
         3. Pour une liste de $2^n$ termes, quel est le nombre d'étapes ?
     === "Correction"
-         
+    {{
+    correction(False,
+    """
+    ??? success \"Correction\" 
+         Q1. 
+
+        | taille de la liste | 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 |
+        | :----------------- |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+        | nombre d'étapes    | 0 |1 |  2  |   3 |  4 | 5   | 6   | 7   | 8   |  9  |
+
+        Q2. $2^{12}=4096$ donc il faut 12 étapes.
+
+        Q3. Il faut $n$ étapes.
+        """
+    )
+    }}             
 
 **Conclusion :** 
 
@@ -300,6 +337,10 @@ Ce nombre s'appelle le *logarithme de base 2* et se note $\log_2(N)$.
 
 
 Cette complexité est bien meilleure qu'une complexité linéaire. Le nombre d'opérations à effectuer est très peu sensible à la taille des données d'entrée, ce qui en fait un algorithme très efficace.
+
+Par exemple, si on faisait une recherche dichotomomique sur les 8 milliards d'êtres humains de la planète (en admettant qu'on ait réussi à les classer...), il suffirait de 33 étapes pour trouver l'individu cherché !
+
+(car $2^{33}= 8589934592$)
 
 
 ## 3. Expériences et comparaison des vitesses d'exécution
