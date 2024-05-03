@@ -167,3 +167,10 @@
     ??? note "Devoirs"
         - Réviser les booléens (apprendre les tables de vérité du AND du OR et du XOR par coeur) et les algorithmes déjà étudiés (les apprendre par coeur). J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 
+!!! done "séance 26 (mardi 16/4/2024):"
+    - Correction du contrôle réseau
+    - Tri par insertion (version optimisée) à savoir par cœur
+    - Tri par sélection à savoir par cœur
+    ??? note "Devoirs"
+        - Réviser les algorithmes déjà étudiés (les apprendre par coeur). 
+    
