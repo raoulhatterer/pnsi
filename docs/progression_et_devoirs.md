@@ -172,5 +172,10 @@
     - Tri par insertion (version optimisée) à savoir par cœur
     - Tri par sélection à savoir par cœur
     ??? note "Devoirs"
-        - Réviser les algorithmes déjà étudiés (les apprendre par coeur). 
-    
+        - Réviser les algorithmes déjà étudiés (les apprendre par coeur).
+        
+
+!!! done "séance 27 (mardi 7/5/2024):"
+    - Programmation d'une carte à microcontrôleur (MicroBit)
+    ??? note "Devoirs"
+        - Réviser le contrôle sur les booléens et l'algorithmique
