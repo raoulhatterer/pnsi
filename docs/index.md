@@ -15,10 +15,7 @@
 
 ### :high_brightness: Thème(s) en cours d'étude 
 
-
-- :arrow_right: [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
-- :arrow_right: [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
-
+- :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
 
 
 ### Anciens thèmes traités
@@ -34,6 +31,9 @@
 - :arrow_right: [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
 - :arrow_right: [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
 - :arrow_right: [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
+- :arrow_right: [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
+- :arrow_right: [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
+
 
 
 
