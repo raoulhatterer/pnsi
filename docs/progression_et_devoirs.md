@@ -185,4 +185,5 @@
     - Algorithme de tri dichotomique
     - Contrôle sur les booléens et l'algorithmique
     ??? note "Devoirs"
+        - Travail noté: S'inscrire à la classe virtuelle wims PNSI (voir l'annonce sur la page d'accueil) et faire chaque exercice d'abord plusieurs fois avec la notation désactivée pour vous entraîner ; puis deux fois avec la notation activée. 
         - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
