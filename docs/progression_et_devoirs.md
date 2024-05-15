@@ -179,3 +179,10 @@
     - Programmation d'une carte à microcontrôleur (MicroBit)
     ??? note "Devoirs"
         - Réviser le contrôle sur les booléens et l'algorithmique
+
+
+!!! done "séance 28 (mardi 14/5/2024):"
+    - Algorithme de tri dichotomique
+    - Contrôle sur les booléens et l'algorithmique
+    ??? note "Devoirs"
+        - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
