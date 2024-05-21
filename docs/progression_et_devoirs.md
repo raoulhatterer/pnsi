@@ -185,5 +185,14 @@
     - Algorithme de tri dichotomique
     - Contrôle sur les booléens et l'algorithmique
     ??? note "Devoirs"
-        - Travail noté: S'inscrire à la classe virtuelle wims PNSI (voir l'annonce sur la page d'accueil) et faire chaque exercice d'abord plusieurs fois avec la notation désactivée pour vous entraîner ; puis deux fois avec la notation activée. 
+        - S'inscrire à la classe virtuelle wims PNSI (voir l'annonce sur la page d'accueil) et faire chaque exercice d'abord plusieurs fois avec la notation désactivée pour vous entraîner ; puis deux fois avec la notation activée. 
         - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
+
+!!! done "séance 29 (mardi 21/5/2024):"
+    - Travail sur Wims pendant rattrapage du contrôle
+    - Correction du Contrôle sur l'algorithmique
+    - Le codage des entiers
+    - Le codage des flottants
+    ??? note "Devoirs"
+        - Faire le dernier exercice du cours sur les flottants
+        - Réviser le codage des entiers et des flottants 
