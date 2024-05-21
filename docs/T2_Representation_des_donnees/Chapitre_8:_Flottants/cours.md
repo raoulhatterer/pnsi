@@ -162,6 +162,7 @@ a et b sont égaux
         L'équation $f(x)=1$ admet une solution unique dans l'intervalle $[0;1]$.  
         Trouver une valeur approchée de cette solution à $10^{-5}$ près. On prendra `e`$=0,001$.
     === "Correction"
+        {#
         ```python
         def f(x):
             return x**3 - 6 * x + 2
@@ -172,4 +173,5 @@ a et b sont égaux
             a += 10**(-5)
         print(a)
         ```
+        #}
 
