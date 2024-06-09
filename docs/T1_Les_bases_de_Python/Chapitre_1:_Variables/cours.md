@@ -1,4 +1,4 @@
-# Chapitre 1: Les variables
+# Chapitre 1: Variables & ES
 
 ## 1. Pourquoi des variables ?
 
@@ -550,3 +550,65 @@ Sans surprise, en Python, nous utiliserons donc le ```snake_case```:
 - ```JE_SUIS_UNE_CONSTANTE```.
 
 ![image](data/smart.jpg){: .center width=40%}
+
+
+## 5. Entrées/Sorties
+
+Les processus d'entrée et de sortie permettent l'échange d'information entre d'une part la machine et le programme qui tourne dessus, et d'autre part le monde extérieur, au sens large : utilisateur, fichiers, périphériques. Le point de vue adopté est celui de la machine : on parle d'entrée quand l'information circule de l'extérieur vers la machine (exemple : l'utilisateur saisit un mot à l'aide du clavier) et de sortie quand elle circule dans l'autre sens.
+
+Dans un premier temps nous nous limiterons aux échanges d'information entre le programme et l'utilisateur via la console d'entrée/sortie de l'environnement de développement intégré.
+
+### 5.1 Sortie
+
+L'instruction `print()`   permet d'afficher un résultat sur la console. Les parenthèses peuvent contenir une valeur (nombre ou texte), un nom de variable,une opération.... ou plusieurs de ces éléments, séparés par des virgules (ils apparaîtront alors les uns à la suite des autres, séparés par des espaces).
+
+Exemple :
+```python
+print("Bonjour tout le monde ! ")
+print(4*3)
+v = 50
+print("la valeur de la variable v est",v)
+```
+
+### 5.2 Entrée
+
+L'instruction   `input()`   permet de récupérer une valeur écrite par l'utilisateur sur la console. Les parenthèses peuvent contenir un message pour l'utilisateur (message facultatif mais fortement conseillé!).
+
+Lors de l'exécution de la commande  `input`  , le message pour l'utilisateur est affiché dans la console et le programme s'arrête jusqu'à ce que l'utilisateur ait donné sa réponse dans la console, en la validant à l'aide de la touche Entrée.
+
+Exemple à tester :
+
+```python
+reponse = input("Quel jour sommes-nous? ")
+print("Nous sommes",reponse)
+```
+
+!!! example "{{ exercice() }}"
+    Écrire un programme qui demande son prénom à l'utilisateur puis qui affiche sur la console "J'adore ton prénom" suivi du prénom donné par l'utilisateur.
+    
+    
+- Attention, la valeur renvoyée par  `input`   est toujours de type chaîne de caractère (str) même si l'utilisateur a écrit un nombre dans la console.
+- Si on souhaite obtenir une valeur numérique de l'utilisateur, il faudra convertir le résultat de  `input`  en utilisant soit `float()`  pour obtenir un nombre en virgule flottante, ou `int()`    pour obtenir un entier.
+
+Exemple:
+```python
+    reponse = input("Ecrire une valeur numérique :")
+    valeur = float(reponse)                            # (1)
+    print("reponse:", reponse," valeur:", valeur)      # (2)
+    print("type de reponse:", type(reponse))           # (3)
+    print("type de valeur:", type(valeur))             # (4)
+```
+
+1. Convertit la variable `reponse`en un nombre à virgule et l'affecte à la variable `valeur` 
+2. `reponse` et `valeur` s'affichent de la même façon                                        
+3. Mais `reponse`est une chaîne de caractères (str)                                          
+4. Tandis que `valeur` est un nombre à virgule (float)                                       
+
+Il est possible, et même recommandé, d'enchaîner les instructions :
+```python
+valeur = float(input("Ecrire une valeur numérique :")) # (1)
+```
+
+1. Pour obtenir une valeur numérique de type float
+
+On évite ainsi la création d'une variable intermédiaire de type str, souvent inutile.

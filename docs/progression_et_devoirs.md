@@ -196,3 +196,11 @@
     ??? note "Devoirs"
         - Faire le dernier exercice du cours sur les flottants
         - Réviser le codage des entiers et des flottants 
+
+
+!!! done "séance 30 (mardi 28/5/2024):"
+    - T5 > Traitement des données
+    - Manipulation de fichiers csv
+    ??? note "Devoirs"
+        - 
+

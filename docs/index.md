@@ -7,22 +7,23 @@
     - Bonne rentrée à toutes et à tous !   
 #}
 
-
+{#
 !!! info "Travail noté à faire sur Wims"
     - Wims propose des exercices à données aléatoires. Il permet de désactiver la prise en compte des notes le temps de maîtriser un exercice (n'oubliez pas de le faire c'est de votre responsabilité) puis d'activer la prise en compte des notes quand vous le souhaitez.
     - S'inscrire (une seule fois )sur le site [wims PNSI](https://wims.univ-cotedazur.fr/wims/wims.cgi?module=adm/class/classes&lang=fr&type=authparticipant&class=8170646&subclass=yes){:target="_blank"} en utilisant le code d'inscription "pnsimed" 
     - Attention SVP à ne pas confondre votre nom avec votre prénom
     - Utilisez un identifiant tout en minuscules composé de votre prénom et des 3 premières lettres de votre nom. Par exemple, si vous vous appelez Louis de Funès vous mettrez "louisdef".
     - Surtout ne pas utiliser le code d'inscription plus d'une fois (pour ne pas créer plusieurs comptes). Mais, si vous pensez que votre inscription n'a pas fonctionné (ou pour tout autre problème),  n’hésitez pas à me  contacter par messagerie Atrium.  
-    
+#}
+
 !!! info "Exercices pratiques pour vous entraîner"
     - Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entrainement à la pratique de la programmation en lien avec la spécialité NSI. 
     - Pour chaque exercice, on trouve un énoncé, souvent pour créer une fonction, puis des exemples d'application de la fonction. Ensuite, une zone de saisie du code qui est accompagné des premiers tests. Il y a des tests secrets qui permettent ensuite d'accepter (ou valider) votre code.
 
 ### :high_brightness: Thème(s) en cours d'étude 
 
-- :arrow_right: [T4 > Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
-
+- :arrow_right: [T5 > Manipulation de fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours/)
+- :arrow_right: [T5 > Trier des données](T5_Traitement_de_donnees/Chapitre_2:_Trier_des_donnees/cours/)
 
 ### Anciens thèmes traités
 
@@ -40,7 +41,7 @@
 - :arrow_right: [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
 - :arrow_right: [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
 - :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
-
+- :arrow_right: [T4 > Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
 
 
 <!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
