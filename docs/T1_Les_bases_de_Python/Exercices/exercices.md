@@ -2,7 +2,7 @@
 
 {{ initexo(0) }}
 
-
+Quelques exercices très simples pour vérifier que vous maîtrisez un minimum les bases du langage python.
 
 ## Variables et Entrées/Sorties
 

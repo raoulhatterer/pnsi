@@ -27,7 +27,7 @@
 
 ### Anciens thèmes traités
 
-- :arrow_right: [T1 > Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)  
+- :arrow_right: [T1 > Variables & ES](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)  
 - :arrow_right: [T1 > La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
 - :arrow_right: [T1 > La boucle ```#!python while```](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
 - :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours/)
@@ -57,7 +57,7 @@
     === "T1 Les bases de Python"
         **Thème 1 : Les bases de Python**
 
-        - Chapitre 1: [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)
+        - Chapitre 1: [Variables & ES](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)
         - Chapitre 2: [La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
         - Chapitre 3: [La boucle ```#!python while```](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
         - Chapitre 4: [L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours/)

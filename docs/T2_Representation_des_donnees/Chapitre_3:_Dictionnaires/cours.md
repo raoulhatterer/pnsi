@@ -170,7 +170,7 @@ Petit problème si on essaie d'acheter un vêtement pour la 1ère fois
     KeyError: 'chemises'
 ```
 
-Nous allons résoudre ce problème grâce à :
+Nous allons résoudre ce problème grâce aux tests d'appartenance.
 
 
 

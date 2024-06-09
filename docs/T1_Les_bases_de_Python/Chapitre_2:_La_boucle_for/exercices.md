@@ -168,7 +168,7 @@
             Proposer un code qui écrit la **table de multiplication** de 7, de 8 et de 9.
     
             La sortie doit ressembler à :
-            ```
+            ``` pycon
             7*1 = 7
 
             7*2 = 14
