@@ -1,5 +1,6 @@
 # Remerciements
 
+- à Nathalie Bonnin,
 - à Vincent Bouillot,
 - à Franck Chambon,
 - à Gilles Lassus, 
