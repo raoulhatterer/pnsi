@@ -16,13 +16,14 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Répondre aux questions suivantes à l'aide de l'interpréteur Python.
-        Quel est le type du résultat de chacune des opérations suivantes :
+        *Répondre aux questions à l'aide de l'interpréteur Python.*
         
-        - division d'un entier par un entier à l'aide de l'opérateur `/`
-        - division d'un entier par un entier à l'aide de l'opérateur `//`
-        - opérateur  `%` entre deux entiers
-        - opérateur  `%` entre un nombre à virgule (float) et un entier
+        Donner le type du résultat de chacune des opérations suivantes :
+        
+        - Division d'un entier par un entier à l'aide de l'opérateur `/`
+        - Division d'un entier par un entier à l'aide de l'opérateur `//`
+        - Opérateur  `%` entre deux entiers
+        - Opérateur  `%` entre un nombre à virgule (float) et un entier
     === "Correction"
         Exercice 2
 
@@ -61,15 +62,15 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
         
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Calculateur postfixé. 
+        **Calculateur postfixé.**
         Un calculateur postfixé reçoit les instructions de calcul dans l'ordre (opérande 1, opérande 2, opérateur).   
         Le programme ci-dessous est une ébauche de calculateur postfixé.
         ```python linenums="1"
-        v1=float(input("première valeur: "))  # (1)
-        v2=float(input("deuxième valeur: "))  # (2)
-        op=input("opérateur: ")               # (3)
-        if op=="+":                           # (4)
-            print(v1+v2)                      # (5)
+        v1 = float(input("première valeur: "))  # (1)
+        v2 = float(input("deuxième valeur: "))  # (2)
+        op = input("opérateur: ")               # (3)
+        if op == "+":                           # (4)
+            print(v1+v2)                        # (5)
         ```
         
         1. Saisie du premier opérande                               
@@ -88,14 +89,15 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
     === "Énoncé"
         Ce programme demande un mot à l'utilisateur, tant que la longueur du mot est inférieure à 5 :
         ```python linenums="1"
-        mot='' #initialisation avec un mot de longueur inférieure à 5, pour que la boucle démarre
-        while len(mot)<5:                                            # (1)
-            mot=input("Ecrire un mot d'au moins 5 lettres : ")
-        print("Enfin! Ce n'était pourtant pas si difficile ! "       # (2)
+        mot = ''                                                     # (1)
+        while len(mot)<5:                                            # (2)
+            mot = input("Écrire un mot d'au moins 5 lettres : ")
+        print("Enfin! Ce n'était pourtant pas si difficile !")       # (3)
         ```
 
-        1. Condition d'exécution de la boucle
-        2. Le programme est sorti de la boucle, cela montre que l'utilisateur a donné un mot de plus de 5 lettres
+        1. Initialisation avec un mot de longueur inférieure à 5, pour que la boucle démarre
+        2. Condition d'exécution de la boucle
+        3. Le programme est sorti de la boucle, cela montre que l'utilisateur a donné un mot de plus de 5 lettres
     
         a. Écrire une variante de l'exemple ci-dessus, qui demande un mot à l'utilisateur jusqu'à ce que la longueur du mot soit exactement 5.  
         b. Écrire une variante de l'exemple qui demande un mot à l'utilisateur jusqu'à ce que la longueur du mot soit inférieure à 5.
@@ -130,7 +132,7 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
         → Le nombre entier n à deviner peut être tiré au hasard en utilisant les instructions
         ```python linenums="1"
         import random
-        n=random.randint(100,200)
+        n = random.randint(100, 200)
         ```
         (il est conseillé de mettre d'abord le programme au point en utilisant un 'nombre à deviner' connu)
 
