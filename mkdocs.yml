@@ -2,7 +2,7 @@ site_name: "Première Spécialité NSI (Lycée de la méditerranée La Ciotat)"
 site_description: Cours et exercices de première en spécialité NSI
 site_author: R. Hatterer
 # site_url: https://lyceemed.forge.aeif.fr/pnsi/
-site_url: https://raoulhatterer.github.io/tnsi # mkdocs serve
+site_url: https://raoulhatterer.github.io/pnsi # mkdocs serve
 # repo_url: https://github.com/raoulhatterer/pnsi
 # repo_url: http://lyceemed.forge.aeif.fr/pnsi
 site_dir: public

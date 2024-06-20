@@ -1,5 +1,7 @@
 ># Progression et devoirs
 
+Lien vers la [dernière saisie](#a-suivre)
+
 !!! done "séance 1 (mardi 12/09/23):"
     - [Les conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours.md)
     - [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
@@ -204,3 +206,4 @@
     ??? note "Devoirs"
         - 
 
+### à suivre
