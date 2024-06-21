@@ -17,22 +17,22 @@ En Python, une fonction se crée avec le mot-clé `def`.
         print("bonjour")
         print("comment allez-vous ?")
     ```
-
-
-Lorsque l'interpréteur Python parcourt cette fonction, **rien** ne s'affiche : la fonction est maintenant prête à être appelée, mais n'est pas exécutée tant que l'utilisateur ne le demande pas explicitement.
-
-Ce sera le cas pour toutes les fonctions : elles doivent être **appelées** pour s'exécuter.
-
-
-```pycon
->>> accueil()
-bonjour
-comment allez-vous ?
-```
-
-Dans ce cas d'utilisation, la fonction ```accueil``` n'est qu'un raccourci, une factorisation d'un ensemble d'instructions.
-
-
+    
+    
+    Lorsque l'interpréteur Python parcourt cette fonction, **rien** ne s'affiche : la fonction est maintenant prête à être appelée, mais n'est pas exécutée tant que l'utilisateur ne le demande pas explicitement.
+    
+    Ce sera le cas pour toutes les fonctions : elles doivent être **appelées** pour s'exécuter.
+    
+    
+    ```pycon
+    >>> accueil()
+    bonjour
+    comment allez-vous ?
+    ```
+    
+    Dans ce cas d'utilisation, la fonction ```accueil``` n'est qu'un raccourci, une factorisation d'un ensemble d'instructions.
+    
+    
 
 ## 2. Fonction avec paramètre(s), sans valeur renvoyée
 
@@ -46,13 +46,13 @@ Dans ce cas d'utilisation, la fonction ```accueil``` n'est qu'un raccourci, une 
         for k in range(n):
             print("meoww")
     ```
-
-```pycon
->>> chat_penible(3)
-meoww
-meoww
-meoww
-```
+    
+    ```pycon
+    >>> chat_penible(3)
+    meoww
+    meoww
+    meoww
+    ```
 
 !!! voc "Vocabulaire :heart:"
     - La valeur `n` est appelée **paramètre** de la fonction `chat_penible`.
@@ -69,21 +69,23 @@ meoww
 
 Une fonction peut avoir de multiples paramètres :
 
-!!! note "Exemple fondateur n°2 :heart:"
+!!! note "Exemple fondateur n°3 :heart:"
     ```python linenums='1'
     def repete(mot, k):
         for i in range(k):
             print(mot)
     ```
-    
-```pycon
->>> repete("NSI", 3)
-NSI
-NSI
-NSI
-```
+        
+    ```pycon
+    >>> repete("NSI", 3)
+    NSI
+    NSI
+    NSI
+    ```
 
-L'ordre des paramètres passés est alors important ! Le code ci-dessous est incorrect.
+**Remarque :**
+
+- L'ordre des paramètres passés est alors important ! Le code ci-dessous est incorrect.
 
 
 ```pycon
@@ -115,23 +117,25 @@ TypeError: 'str' object cannot be interpreted as an integer
 
 ![image](data/f3.png){: .center}
 
+**Principe :**
 
-On retrouve ici la notion classique de fonction rencontrée en mathématiques : un procédé qui prend un nombre et en renvoie un autre. En informatique, l'objet renvoyé ne sera pas forcément un nombre (cela pourra être aussi une liste, un tableau, une image...).
-Le renvoi d'une valeur se fait grâce au mot-clé `return`.
+- On retrouve ici la notion classique de fonction rencontrée en mathématiques : un procédé qui prend un nombre et en renvoie un autre. 
+- En informatique, l'objet renvoyé ne sera pas forcément un nombre (cela pourra être aussi une liste, un tableau, une image...).
+- Le renvoi d'une valeur se fait grâce au mot-clé `return`.
 
 
 
-!!! note "Exemple fondateur n°3 :heart:"
+!!! note "Exemple fondateur n°4 :heart:"
     La fonction mathématique $f : x \longmapsto 2x+3$ se codera par :
     ```python linenums='1'
     def f(x):
         return 2*x + 3
     ```
-
-```pycon
->>> f(10)
-23
-```
+    
+    ```pycon
+    >>> f(10)
+    23
+    ```
 
 ## 4. Autour du ```return``` 
 
@@ -162,8 +166,8 @@ Le renvoi d'une valeur se fait grâce au mot-clé `return`.
     File "<pyshell>", line 1, in <module>
     TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
     ```
-    En résumé :
-    ![image](data/yoda.png){: .center width=40%}
+**En résumé :**
+![image](data/yoda.png){: .center width=40%}
     
 
 ### 4.2 Le ```return``` est un siège éjectable 
@@ -299,20 +303,22 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
 !!! danger "À propos de la règle n°3"
     _(toute la vérité, rien que la vérité)_
 
-    Pour certains types de variables (listes, dictionnaires...), la modification d'une variable globale à l'intérieur du corps d'une fonction est en fait possible (contrairement à ce qu'énonce la règle 3). Mais cela reste très fortement déconseillé.
+    - Pour certains types de variables (listes, dictionnaires...), la modification d'une variable globale à l'intérieur du corps d'une fonction est en fait possible (contrairement à ce qu'énonce la règle 3). Mais cela reste très fortement déconseillé.
 
-    Pour les autres types de variables,  on peut même *forcer* pour avoir cette possibilité en utilisant le mot ```global``` à l'intérieur de la fonction. 
+    - Pour les autres types de variables,  on peut même *forcer* pour avoir cette possibilité en utilisant le mot ```global``` à l'intérieur de la fonction. Mais il faut essayer d'éviter ceci. 
     
-    Mais il faut essayer d'éviter ceci. Une fonction ne **doit** (c'est un ordre, mais vous pouvez choisir de l'ignorer, tout comme vous pouvez choisir de passer au feu rouge) modifier que les variables qu'elle crée (ses variables locales) ou bien les variables qu'on lui a données en paramètre. 
+    - **Une fonction ne doit modifier que les variables qu'elle crée (ses variables locales) ou bien les variables qu'on lui a données en paramètre.** C'est un ordre, mais vous pouvez choisir de l'ignorer, tout comme vous pouvez choisir de passer au feu rouge.
+    
+    ![](data/global_meme.jpg){: .center  width=40%}
+    
+    - Une fonction qui ne respecte pas cette règle présente des _effets de bord_ : on peut peut-être arriver à les gérer sur un «petit» code, mais cela devient illusoire sur un code utilisant de multiples fonctions. 
 
-    Une fonction qui ne respecte pas cette règle présente des _effets de bord_ : on peut peut-être arriver à les gérer sur un «petit» code, mais cela devient illusoire sur un code utilisant de multiples fonctions. 
-
-    ![](data/global_meme.jpg){: .center  width=40%} .
 
 
-    **En résumé**
 
-    Ne pas faire cela :
+**En résumé**
+
+- Ne pas faire cela :
     ```python linenums='1'
     # PAS BIEN
     score = 0
@@ -328,9 +334,7 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
     >>> score
     20
     ```
-
-    Faire plutôt ceci :
-
+- Faire plutôt ceci :
     ```python linenums='1'
     # BIEN
     score = 0

@@ -167,7 +167,8 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
     
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Modifier la fonction `carre` de l'exercice précédent pour qu'au lieu d'*afficher* le carré du nombre passé en paramètre, elle *retourne* le carré du nombre.    
+        1. Modifier la fonction `carre` de l'exercice précédent pour qu'au lieu d'*afficher* le carré du nombre passé en paramètre, elle *retourne* le carré du nombre.    
+        2. Ajouter une docstring et les annotations de type. 
     === "Correction"
         Exercice 17
         
