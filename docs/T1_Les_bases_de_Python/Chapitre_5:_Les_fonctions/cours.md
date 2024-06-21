@@ -200,6 +200,10 @@ def h(x):
 11
 ```
 
+
+
+
+
 ### 4.3 Les fonctions sans ```return``` sont-elles des fonctions ?
 
 - Pour les puristes, une fonction sans valeur renvoyée sera plutôt appelée *procédure*. Le mot *fonction* est alors réservé aux fonctions qui ont effectivement un `return`.
@@ -395,7 +399,21 @@ Il est possible, voire souhaitable (dès qu'on créé un code comportant plusieu
         Affiche n fois la chaine de caractères "meoww"
     ```
 
-Plus de renseignements sur les docstrings [ici](https://glassus.github.io/terminale_nsi/T2_Programmation/2.4_Pratiques_de_programmation/cours/#22-le-cas-particulier-des-docstrings)
+Plus de renseignements sur les docstrings [ici](https://raoulhatterer.github.io/tnsi/T2_Programmation/2.4_Pratiques_de_programmation/cours/#22-le-cas-particulier-des-docstrings)
+
+
+### 6.3 Indiquer les types
+
+Il est recommandé, mais pas obligatoire, que les fonctions aient des annotations de **type** pour tous les **arguments** ainsi que pour le **retour**. 
+
+!!! note "Exemple"
+    ```python 
+    def greeting(name: str) -> str:
+        return 'Hello ' + name
+    ```
+
+    Dans cette exemple, on souhaite indiquer que la fonction `greeting()` prend un argument de type `string` et qu'elle renvoie également une chaîne de caractères (`str`). 
+
 
 ## 7. Jeux de tests pour une fonction
 

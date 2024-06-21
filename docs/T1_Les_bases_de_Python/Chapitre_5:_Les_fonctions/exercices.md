@@ -3,7 +3,7 @@
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Écrire une fonction `maxi` qui prend comme paramètres deux nombres ```n1``` et ```n2``` et qui renvoie le plus grand élément entre `n1` et `n2`.
+        Écrire une fonction `maxi` qui prend comme paramètres deux nombres ```n1``` et ```n2``` de type entier et qui renvoie le plus grand élément entre `n1` et `n2`. La fonction doit comporter une docstring et les annotations de typage.
 
         *Exemple d'utilisation*
 
@@ -27,7 +27,8 @@
         {{ correction(True,
         "
         ```python linenums='1'
-        def maxi(n1, n2):
+        def maxi(n1: int, n2:int) -> int:
+            '''Renvoie le plus grand élément entre n1 et n2'''
             if n1 < n2 :
                 return n2
             else :
