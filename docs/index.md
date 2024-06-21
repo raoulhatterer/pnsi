@@ -2,10 +2,10 @@
     - Bonne rentrée à toutes et à tous ! -->
 
 
-{#
+
 !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous !   
-#}
+
 
 {#
 !!! info "Travail noté à faire sur Wims"
@@ -22,8 +22,6 @@
 
 ### :high_brightness: Thème(s) en cours d'étude 
 
-- :arrow_right: [T5 > Manipulation de fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours/)
-- :arrow_right: [T5 > Trier des données](T5_Traitement_de_donnees/Chapitre_2:_Trier_des_donnees/cours/)
 
 ### Anciens thèmes traités
 
@@ -42,6 +40,8 @@
 - :arrow_right: [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
 - :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
 - :arrow_right: [T4 > Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
+- :arrow_right: [T5 > Manipulation de fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours/)
+- :arrow_right: [T5 > Trier des données](T5_Traitement_de_donnees/Chapitre_2:_Trier_des_donnees/cours/)
 
 
 <!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
