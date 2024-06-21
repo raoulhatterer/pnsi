@@ -27,7 +27,7 @@
         {{ correction(True,
         "
         ```python linenums='1'
-        def maxi(n1: int, n2:int) -> int:
+        def maxi(n1: int, n2: int) -> int:
             '''Renvoie le plus grand élément entre n1 et n2'''
             if n1 < n2 :
                 return n2

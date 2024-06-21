@@ -407,6 +407,14 @@ Plus de renseignements sur les docstrings [ici](https://raoulhatterer.github.io/
 Il est recommandé, mais pas obligatoire, que les fonctions aient des annotations de **type** pour tous les **arguments** ainsi que pour le **retour**. 
 
 !!! note "Exemple"
+
+    - Sans annotations de typage :
+    ```python 
+    def greeting(name):
+        return 'Hello ' + name
+    ```
+    
+    - Avec annotations de typage :
     ```python 
     def greeting(name: str) -> str:
         return 'Hello ' + name
