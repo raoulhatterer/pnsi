@@ -410,7 +410,7 @@ Plus de renseignements sur les docstrings [ici](https://raoulhatterer.github.io/
 
 Il est recommandé, mais pas obligatoire, que les fonctions aient des annotations de **type** pour tous les **arguments** ainsi que pour le **retour**. 
 
-!!! note "Exemple"
+!!! note "Exemple de typage de fonction"
 
     - Sans annotations de typage :
     ```python 
@@ -424,8 +424,21 @@ Il est recommandé, mais pas obligatoire, que les fonctions aient des annotation
         return 'Hello ' + name
     ```
 
-    Dans cette exemple, on souhaite indiquer que la fonction `greeting()` prend un argument de type `string` et qu'elle renvoie également une chaîne de caractères (`str`). 
+    Dans cet exemple, on souhaite indiquer que la fonction `greeting()` prend un argument de type `string` et qu'elle renvoie également une chaîne de caractères (`str`). 
 
+
+!!! note "Exemple de typage de procédure"
+
+    ```python 
+    def chat_penible(n: int) -> None:
+        """
+        Affiche n fois la chaine de caractères "meoww"
+        """
+        for k in range(n):
+            print("meoww")
+    ```
+
+    Dans cet exemple, on souhaite indiquer que `chat_penible()` est une procédure (c'est-à-dire une fonction qui ne retourne aucune valeur) qui prend un argument de type entier. 
 
 ## 7. Jeux de tests pour une fonction
 
