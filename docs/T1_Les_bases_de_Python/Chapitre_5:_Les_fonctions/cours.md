@@ -408,7 +408,7 @@ Plus de renseignements sur les docstrings [ici](https://raoulhatterer.github.io/
 
 ### 6.3 Indiquer les types
 
-Il est recommandé, mais pas obligatoire, que les fonctions aient des annotations de **type** pour tous les **arguments** ainsi que pour le **retour**. 
+Il est recommandé, mais pas obligatoire, que les fonctions aient des annotations de **type pour tous les arguments ainsi que pour le retour**. 
 
 !!! note "Exemple de typage de fonction"
 
