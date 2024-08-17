@@ -536,18 +536,18 @@ Mais comment former ces longs mots ?
 ### 4.3 Syntaxe des noms à rallonge
 
 !!! abstract "Comment accoler des mots"
-    - S'il est composé, le nom peut être de la forme:
-        - ```snake_case``` : les mots sont séparés par des underscores. 
+    - Suivant le langage, s'il est composé, le nom peut être de la forme:
+        - ```snake_case``` : les mots sont séparés par des underscores. Conseillé en Python. 
         - ```camelCase``` : les mots sont séparés par des majuscules mais la 1ère lettre est minuscule. Conseillé en Javascript.
-        - ```PascalCase``` : les mots sont séparés par des majuscules et la 1ère lettre est majuscule. Conseillé en 3.
+        - ```PascaleCase``` : les mots sont séparés par des majuscules et la 1ère lettre est majuscule.
         - ```kebab-case``` : les mots sont séparés par des tirets courts. Conseillé en HTML - CSS. 
 
-Sans surprise, en Python, nous utiliserons donc le ```snake_case```:
+À retenir, en Python, nous utiliserons le ```snake_case``` qui est la casse (terme de typographie) des serpents :smile: :
 
 - ```je_suis_une_variable```
 - ```je_suis_une_fonction```
 - ```je_suis_une_methode```
-- ```JE_SUIS_UNE_CONSTANTE```.
+- ```JE_SUIS_UNE_CONSTANTE``` (les constantes s'écrivent en majuscules).
 
 ![image](data/smart.jpg){: .center width=40%}
 
