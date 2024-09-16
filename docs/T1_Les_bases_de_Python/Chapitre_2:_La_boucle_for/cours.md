@@ -67,7 +67,7 @@ Ici, il y a simplement un ```print(k)```, donc chaque lettre de ```"NSI"``` s'af
             print("bonjour")
         ``` 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```pycon
         bonjour
@@ -258,7 +258,7 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
 
         A. ```0 1 2 3 4 5``` 
         ??? note "Correction"
-            {{ correction(True,
+            {{ correction(False,
             "
             ```python linenums='1'
             for k in range(6):
@@ -268,7 +268,7 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
             ) }}
         B. ```10 11 12 13 14 15 ``` 
         ??? note "Correction"
-            {{ correction(True,
+            {{ correction(False,
             "        
             ```python linenums='1'
             for k in range(10,16):
@@ -278,7 +278,7 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
             ) }}
         C. ```3 6 9 12 ``` 
         ??? note "Correction"
-            {{ correction(True,
+            {{ correction(False,
             "
             ```python linenums='1'
             for k in range(3,13,3):
@@ -288,7 +288,7 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
             ) }}
         D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
         ??? note "Correction"
-            {{ correction(True,
+            {{ correction(False,
             "        
             ```python linenums='1'
             for k in range(10,-1,-1):
@@ -315,7 +315,7 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
     === "Correction"
         Les deux méthodes proposées affichent la même chose à savoir une lettre après l'autre de la chaîne de caractère. 
         Pour éviter d'afficher la dernière lettre on peut faire:
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python
         for indice in range(len(chaine)-1):
@@ -376,7 +376,7 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
         Mamie dit : « et une cuillère pour Loulou ! »
         ```
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "    
         ```python linenums='1'
         for perso1 in ['Papa', 'Maman', 'Mamie']:
