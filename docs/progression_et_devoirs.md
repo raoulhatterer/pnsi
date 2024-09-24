@@ -20,16 +20,28 @@
         - Déposer un fichier `boucle_for.ipynb` contenant les exercices du chapitre sur la boucle for dans le casier qui se trouve à l'emplacement Documents > Élèves > P2024-2025> Répertoire personnel à votre nom.
 
 
-{#        
-!!! done "séance 3 (mardi 26/09/22):"
-    - Processing et P5 
+
+!!! done "séance 3 (mardi 24/09/24):"
+    - exercices Processing et P5 reportés à plus tard car non fonctionnels actuellement
+    - La boucle while
     ??? note "Devoirs"
+        - Déposer un fichier `chapitre3.ipynb` avec les exercices du chapitre 3 dans votre répertoire personnel.
+        - Faire la feuille 3 de wims sur la boucle `while`.
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-        - Déposer une capture d'écran preuve qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
+        - Comme expliqué en cours, ramener une photo qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
         - Installer le programme Processing sur votre ordinateur et ajouter la gestion de python. Lire [Quick Start](https://github.com/jdf/processing.py#python-mode-for-processing) qui explique l'installation de python.
-        - Exercices p5  47c7-666996 et 5a7d-1916764 à faire sur Capytale.
+        - Venir avec une tablette fonctionnelle (batterie chargée).
+        - Réviser pour un contrôle portant sur les 3 premiers chapitres.
+        
+    
+
+
+{#    
+
+
 
 !!! done "séance 4 (mardi 03/10/22):"
+    - Exercices p5  47c7-666996 et 5a7d-1916764 à faire sur Capytale.
     - Correction des exercices P5
     - La boucle while 
     ??? note "Devoirs"
