@@ -60,7 +60,7 @@ _Rappel :_
 - **accolades `{ }` -> dictionnaires**
 
 
-### 2.2 Méthodes ```.keys()``` ,   ```.values()``` et `.items()`
+### 2.2 Méthodes ```.keys()``` ,   ```.values()```
 
 !!! note "Exemples fondateurs n°2 :heart:"
     - Pour lister les clés d'un dictionnaire :
@@ -73,28 +73,50 @@ _Rappel :_
         >>> dressing.values()
         dict_values([3, 4, 8])
         ```
-    - Pour lister les clés et les valeurs d'un dictionnaire :
-        ```python
-        for k, v in dressing.items():
-            print(k, v)
-        ```
         
 
-Ces méthodes sont importantes (elles figurent explicitement au programme de NSI) mais sont en pratique peu utilisées. On leur préfèrera très largement la méthode de parcours suivante :
+Ces méthodes sont importantes (elles figurent explicitement au programme de NSI) mais sont en pratique peu utilisées. On leur préfèrera très largement la méthode de parcours qui suit.
 
 ### 2.3 Parcours d'un dictionnaire :star: :star: :star:
 !!! note "Exemple fondateur n°3 :heart:"
-    ```pycon
-    >>> for habit in dressing:
-            print(dressing[habit])
-    3
-    4
-    8
-    ```
+    - Parcours par clés :
+      ```python
+      for habit in dressing:
+          print(habit)
+      ```
+      ```pycon
+      pantalons
+      pulls
+      tee-shirts            
+      ```
+    - Parcours par valeurs :
+      ```python
+      for habit in dressing:
+          print(dressing[habit])
+      ```
+      ```pycon    
+      3
+      4
+      8
+      ```
+
 
 !!! aide "Observation grâce à PythonTutor"
     <iframe width="800" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=dressing%20%3D%20%7B%22pantalons%22%3A3,%20%22pulls%22%3A4,%20%22tee-shirts%22%3A8%7D%0Afor%20habit%20in%20dressing%3A%0A%20%20%20%20print%28dressing%5Bhabit%5D%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
+
+
+!!! note "Pour parcourir un dictionnaire par items avec la méthode `.items()`"
+    ```python
+    for k, v in dressing.items():
+        print(k, v)
+    ```
+    ```pycon
+    pantalons 3
+    pulls 4
+    tee-shirts 8
+    ```
+    Cela permet d'obtenir à la fois la clé et la valeur de chaque item du dictionnaire.
 
 
 ### 2.4 Création d'un dictionnaire vide
