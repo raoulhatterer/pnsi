@@ -60,7 +60,7 @@ _Rappel :_
 - **accolades `{ }` -> dictionnaires**
 
 
-### 2.2 Méthodes ```.keys()``` et   ```.values()```
+### 2.2 Méthodes ```.keys()``` ,   ```.values()``` et `.items()`
 
 !!! note "Exemples fondateurs n°2 :heart:"
     - Pour lister les clés d'un dictionnaire :
@@ -73,7 +73,12 @@ _Rappel :_
         >>> dressing.values()
         dict_values([3, 4, 8])
         ```
-
+    - Pour lister les clés et les valeurs d'un dictionnaire :
+        ```python
+        for k, v in dressing.items():
+            print(k, v)
+        ```
+        
 
 Ces méthodes sont importantes (elles figurent explicitement au programme de NSI) mais sont en pratique peu utilisées. On leur préfèrera très largement la méthode de parcours suivante :
 
