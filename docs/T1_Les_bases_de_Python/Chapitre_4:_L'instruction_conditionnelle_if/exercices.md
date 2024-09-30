@@ -1,4 +1,4 @@
-# Exercices
+# Exercices sur l'instruction conditionnelle `if` 
 
 {{ initexo(0) }}
 

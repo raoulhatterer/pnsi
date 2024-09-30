@@ -1,4 +1,4 @@
-# Chapitre 2: La boucle `for ... in ...`
+# Chapitre 2 : La boucle `for`
 
 {{ initexo(0) }}
 
