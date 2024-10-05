@@ -28,7 +28,7 @@
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Exercice utilisant le module [ipythonblocks](https://www.carnets.info/jupyter/ipythonblocks/) ou le module p5 à réaliser sur Capytale.
-        ![image](data/damier.png){: .center}
+        ![image](data/damier.png){: .center} {#
     === "Correction en p5"
         ```python linenums='1'
         from p5 import*
@@ -58,7 +58,7 @@
             if (cellule.row + cellule.col) % 2 == 1:
                 cellule.set_colors(0, 255, 255)
         grille_D 
-        ``` 
+        ``` #}
 
 
 !!! example "{{ exercice() }}"
