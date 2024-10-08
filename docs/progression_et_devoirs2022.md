@@ -1,4 +1,4 @@
-># Progression et devoirs
+# Progression et devoirs
 
 !!! done "séance 1 (mardi 6/09/22):"
     - [Les conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours.md)
