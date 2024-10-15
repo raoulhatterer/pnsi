@@ -83,7 +83,7 @@ True
 
 ### Les symboles de comparaison (ou d'appartenance) permettant d'écrire une condition sont :
 
-!!! info inline  "Opérateurs de comparaison :heart: :heart: :heart:"
+!!! info   "Opérateurs de comparaison :heart: :heart: :heart:"
     |Opérateur|Signification|
     |:-:|:-:|
     |`==`| est égal à|
