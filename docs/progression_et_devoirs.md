@@ -54,24 +54,19 @@
         - Réviser contrôle (tout ce qui a été fait depuis le début de l'année y compris wims et les dessins en p5)
 
 
-
-
-
-
-{#    
-
-
-
-!!! done "séance 6 (mardi 17/10/2022):"
+!!! done "séance 6 (mardi 15/10/2022):"
+    - Contrôle n°3 sur les bases (variables, boucles)
+    - correction du contrôle 3
     - instruction conditionnelle If else elif
-    - test: https://compute-it.toxicode.fr/
-    - Contrôle n°1 sur les bases (variables, boucles)
-    - correction du contrôle 1
-    - if else elif
+    - https://compute-it.toxicode.fr/
     - Exercices
     ??? note "Devoirs"
         - exercices de la page de cours sur l'instruction conditionnelle If else elif
-        - exercices 1 et 2 sur la page d'exercices If else elif (code capytale f7a0-2109986)
+        - mettre également les exercices sur la page d'exercices If else elif (code capytale 9fee-4323961)
+        - feuille wims 4
+
+
+{#    
 
 !!! done "séance 7 (mardi 7/11/2022):"
     - Exercices sur l'instruction conditionnelle If else elif
