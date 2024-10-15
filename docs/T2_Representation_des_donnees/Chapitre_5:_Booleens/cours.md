@@ -6,7 +6,6 @@
 ## Les opérateurs de comparaison ou d'appartenance
 
 
-!!! info inline  "Opérateurs de comparaison :heart: :heart: :heart:"
     |Opérateur|Signification|
     |:-:|:-:|
     |`==`| est égal à|
