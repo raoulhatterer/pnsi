@@ -467,3 +467,20 @@ Toutes ces lois sont aisément compréhensibles si on les transpose en mathémat
 - & équivaut à $\times$
 - $|$ équivaut à $+$
 - $\neg$ équivaut à $-$
+
+
+## Les opérateurs de comparaison
+
+Les symboles de comparaison (ou d'appartenance) permettent d'écrire une condition. Ils produisent un booléen :
+
+!!! info inline  "Opérateurs de comparaison :heart: :heart: :heart:"
+    |Opérateur|Signification|
+    |:-:|:-:|
+    |`==`| est égal à|
+    |`!=`|est différent de|
+    |`<`|inférieur à|
+    |`>`|supérieur à|
+    |`<=`|inférieur ou égal à|
+    |`>=`|supérieur ou égal à|
+    |`in`| appartient à|
+    |`not in`| n'appartient pas à|
