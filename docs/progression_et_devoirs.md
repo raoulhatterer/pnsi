@@ -62,7 +62,7 @@
     - Exercices
     ??? note "Devoirs"
         - exercices de la page de cours sur l'instruction conditionnelle If else elif
-        - mettre également les exercices sur la page d'exercices If else elif (code capytale 9fee-4323961)
+        - exercices de la page d'exercices If else elif (code capytale 9fee-4323961)
         - feuille wims 4
 
 
