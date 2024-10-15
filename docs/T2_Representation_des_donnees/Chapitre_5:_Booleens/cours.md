@@ -3,6 +3,23 @@
 ![image](data/BO.png){: .center}
 
 
+## Les opérateurs de comparaison ou d'appartenance
+
+
+!!! info inline  "Opérateurs de comparaison :heart: :heart: :heart:"
+    |Opérateur|Signification|
+    |:-:|:-:|
+    |`==`| est égal à|
+    |`!=`|est différent de|
+    |`<`|inférieur à|
+    |`>`|supérieur à|
+    |`<=`|inférieur ou égal à|
+    |`>=`|supérieur ou égal à|
+    |`in`| appartient à|
+    |`not in`| n'appartient pas à|
+
+Nous connaissons les symboles de comparaison ou d'appartenance qui permettent d'écrire une condition. 
+Ils produisent un booléen. Etudions de façon plus approfondie les propriétés des booléens. 
 
 
 ## 1. Repères historiques
@@ -469,18 +486,3 @@ Toutes ces lois sont aisément compréhensibles si on les transpose en mathémat
 - $\neg$ équivaut à $-$
 
 
-## Les opérateurs de comparaison
-
-Les symboles de comparaison (ou d'appartenance) permettent d'écrire une condition. Ils produisent un booléen :
-
-!!! info inline  "Opérateurs de comparaison :heart: :heart: :heart:"
-    |Opérateur|Signification|
-    |:-:|:-:|
-    |`==`| est égal à|
-    |`!=`|est différent de|
-    |`<`|inférieur à|
-    |`>`|supérieur à|
-    |`<=`|inférieur ou égal à|
-    |`>=`|supérieur ou égal à|
-    |`in`| appartient à|
-    |`not in`| n'appartient pas à|
