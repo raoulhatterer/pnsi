@@ -17,7 +17,7 @@
 |`in`| appartient à|
 |`not in`| n'appartient pas à|
 
-Nous connaissons les symboles de comparaison ou d'appartenance qui permettent d'écrire une condition. 
+Nous connaissons déjà les symboles de comparaison ou d'appartenance qui permettent d'écrire une condition. 
 Ils produisent un booléen. Etudions de façon plus approfondie les propriétés des booléens. 
 
 
