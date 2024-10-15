@@ -81,6 +81,22 @@ False
 True
 ```
 
+Les symboles de comparaison (ou d'appartenance) permettant d'écrire une condition sont :
+
+!!! info inline  "Opérateurs de comparaison :heart: :heart: :heart:"
+    |Opérateur|Signification|
+    |:-:|:-:|
+    |`==`| est égal à|
+    |`!=`|est différent de|
+    |`<`|inférieur à|
+    |`>`|supérieur à|
+    |`<=`|inférieur ou égal à|
+    |`>=`|supérieur ou égal à|
+    |`in`| appartient à|
+    |`not in`| n'appartient pas à|
+
+
+
 Un cours sur les booléens aura lieu [ici](../../../T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/).
 
 ### 2.2 Les instructions
