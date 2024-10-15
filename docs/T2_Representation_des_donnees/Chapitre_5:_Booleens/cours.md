@@ -6,16 +6,16 @@
 ## Les opérateurs de comparaison ou d'appartenance
 
 
-    |Opérateur|Signification|
-    |:-:|:-:|
-    |`==`| est égal à|
-    |`!=`|est différent de|
-    |`<`|inférieur à|
-    |`>`|supérieur à|
-    |`<=`|inférieur ou égal à|
-    |`>=`|supérieur ou égal à|
-    |`in`| appartient à|
-    |`not in`| n'appartient pas à|
+|Opérateur|Signification|
+|:-:|:-:|
+|`==`| est égal à|
+|`!=`|est différent de|
+|`<`|inférieur à|
+|`>`|supérieur à|
+|`<=`|inférieur ou égal à|
+|`>=`|supérieur ou égal à|
+|`in`| appartient à|
+|`not in`| n'appartient pas à|
 
 Nous connaissons les symboles de comparaison ou d'appartenance qui permettent d'écrire une condition. 
 Ils produisent un booléen. Etudions de façon plus approfondie les propriétés des booléens. 
