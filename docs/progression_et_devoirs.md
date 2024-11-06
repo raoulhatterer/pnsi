@@ -66,20 +66,24 @@
         - feuille wims 4
 
 
-{#    
 
-!!! done "séance 7 (mardi 7/11/2022):"
-    - Exercices sur l'instruction conditionnelle If else elif
+
+!!! done "séance 7 (mardi 5/11/2022):"
     - Les fonctions (Thème 1 Chapitre 5) 
     - Exercices 1 et 2 sur les fonctions
     ??? note "Devoirs"
-        - Exercices suivants sur les fonctions
-        - Commencer à réviser le contrôle du 21/11/2023 portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices déjà faits, car au minimum vous devez être capable de les refaire.
+        - feuille wims 5 sur les fonctions 
+        - Bien que la séance du 12/11 soit annulée, les exercices 3 et suivants sur les fonctions sont à mettre dans votre dossier personnel avant mardi 12/11. 
+        - Commencer  à réviser le contrôle de la prochaine séance (le 19/11) portant sur tout le thème 1. 
+        - Remarque: Pour vous aider dans vos révisions, la semaine prochaine je mettrai la correction des exercices sur les fonctions pour ceux qui auraient eu des difficultés à les faire.
+        
+{#    
 
-!!! done "séance 8 (mardi 14/11/2022):"
-    - Exercices sur les fonctions
+!!! done "séance 8 (mardi 12/11/2022):"
+    - Annulée pour cause de convocation
     ??? note "Devoirs"
-        - Réviser le contrôle du 21/11/2023 portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices déjà faits, car au minimum vous devez être capable de les refaire.
+        - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices, car au minimum vous devez être capable de les refaire.
+        
 
 !!! done "séance 9 (mardi 21/11/2022):"
     - Révisions
