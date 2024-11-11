@@ -186,6 +186,7 @@
     === "Énoncé"
         Rajoutez un paramètre `n` à la fonction précédente pour pouvoir décaler la lettre de `n` rangs.
 
+
         *Exemple d'utilisation*
 
         ```python
@@ -202,6 +203,18 @@
             assert decale('Z', 1) == 'A'
             print('tests ok !')
         ```
+
+    === "Bloqué ?"
+
+        *Aide (canevas du code à compléter) à ne regarder qu'en cas de blocage*
+        
+        ```python linenums='1'                           
+        def decale(lettre, n):                           
+            rang_lettre = ...            # à vous                    
+            rang_nouvelle_lettre = ...   # à vous    
+            if rang_nouvelle_lettre > ord('Z'):          
+                # à vous
+        ```                                              
 
 
 
@@ -235,6 +248,29 @@
         >>> decale_phrase("PAS MAL DU TOUT", 4)
         'TEW QEP HY XSYX'
         ```
+
+    === "Tester sa fonction"
+         Vous pouvez utiliser la fonction de tests ci-dessous :
+         ```python linenums='1'
+         def test_decale():
+             decale_phrase("PAS MAL DU TOUT", 4) == 'TEW QEP HY XSYX'
+             print('tests ok !')
+         ```
+
+    === "Bloqué ?"        
+        *Aide (canevas du code à compléter) à ne regarder qu'en cas de blocage*
+        ```python linenums='1'
+        def decale_phrase(p, n):
+            phrase_decalee = ''
+            for lettre in p:
+                if lettre == ' ':
+                    phrase_decalee += ...   # à vous
+                else:
+                    nouvelle_lettre = ...   # à vous
+                    phrase_decalee += ...   # à vous
+            return ...                      # à vous
+        ```
+
 
     === "Correction"
         {{ correction(False,
