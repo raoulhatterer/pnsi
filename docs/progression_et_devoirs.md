@@ -77,14 +77,14 @@
         - Commencer  à réviser le contrôle de la prochaine séance (le 19/11) portant sur tout le thème 1. 
         - Remarque: Pour vous aider dans vos révisions, la semaine prochaine je mettrai la correction des exercices sur les fonctions pour ceux qui auraient eu des difficultés à les faire.
         
-{#    
+
 
 !!! done "séance 8 (mardi 12/11/2022):"
     - Annulée pour cause de convocation
     ??? note "Devoirs"
-        - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices, car au minimum vous devez être capable de les refaire.
+        - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices. Au minimum, vous devez les étudier suffisamment pour être capable de les refaire.
         
-
+{#    
 !!! done "séance 9 (mardi 21/11/2022):"
     - Révisions
     - Contrôle sur le thème 1 (Les bases de Python)
