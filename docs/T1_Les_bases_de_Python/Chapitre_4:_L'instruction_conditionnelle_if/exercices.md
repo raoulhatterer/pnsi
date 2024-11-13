@@ -6,7 +6,7 @@
     === "Énoncé"
         Écrire un programme qui demande deux nombres et qui affiche le plus grand des deux.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         n1 = int(input('Premier nombre ?'))
@@ -28,7 +28,7 @@
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Exercice utilisant le module [ipythonblocks](https://www.carnets.info/jupyter/ipythonblocks/) ou le module p5 à réaliser sur Capytale.
-        ![image](data/damier.png){: .center} {#
+        ![image](data/damier.png){: .center} {# #}
     === "Correction en p5"
         ```python linenums='1'
         from p5 import*
@@ -58,7 +58,7 @@
             if (cellule.row + cellule.col) % 2 == 1:
                 cellule.set_colors(0, 255, 255)
         grille_D 
-        ``` #}
+        ``` 
 
 
 !!! example "{{ exercice() }}"
@@ -72,7 +72,7 @@
         Écrire un code qui joue au FizzBuzz jusqu'à 50.
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         for k in range(1,51):
@@ -101,7 +101,7 @@
         *Explication : la Terre faisant le tour du Soleil en [un peu plus que 365 jours](https://fr.vikidia.org/wiki/R%C3%A9volution_de_la_Terre_autour_du_Soleil), on s'est dit qu'on allait rajouter un jour tous les 4 ans, mais c'était trop, alors on a enlevé un jour tous les 100 ans, mais c'était plus assez, alors on a rajouté un jour tous les 400 ans, ce qui donne une approximation convenable.*
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         """
         ```python linenums='1'
         annee = 2021
