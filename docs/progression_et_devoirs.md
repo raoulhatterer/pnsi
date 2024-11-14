@@ -83,6 +83,7 @@
     - Annulée pour cause de convocation
     ??? note "Devoirs"
         - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices. Au minimum, vous devez les étudier suffisamment pour être capable de les refaire.
+        - Avoir trouvé un nom d'équipe pour le chalenge "Passe ton hack d'abord"
         
 {#    
 !!! done "séance 9 (mardi 21/11/2022):"
