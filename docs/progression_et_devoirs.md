@@ -85,13 +85,15 @@
         - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices. Au minimum, vous devez les étudier suffisamment pour être capable de les refaire.
         - Avoir trouvé un nom d'équipe pour le chalenge "Passe ton hack d'abord"
         
-{#    
-!!! done "séance 9 (mardi 21/11/2022):"
-    - Révisions
+ 
+!!! done "séance 9 (mardi 19/11/2022):"
     - Contrôle sur le thème 1 (Les bases de Python)
-    ??? note "Devoirs"
-        - Exercice pratique: [Différentes distances (en ligne sur e-nsi)](https://e-nsi.gitlab.io/pratique/N0/440-distances/sujet/){:target="_blank"}
+    - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
 
+    ??? note "Devoirs"
+        - Exercice 7 et suivants du cours sur les listes
+
+{#   
 !!! done "séance 10 (mardi 28/11/2022):"
     - Correction du contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
