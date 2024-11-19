@@ -438,6 +438,7 @@ L'instruction `del`  (qui n'est pas une fonction) permet de supprimer un éléme
         ```
 
     === "Correction"
+        {{ correction(False,
         ```python
         def recherche(caractere, mot):
             somme = 0
@@ -446,6 +447,7 @@ L'instruction `del`  (qui n'est pas une fonction) permet de supprimer un éléme
                     somme += 1
             return somme
         ```
+        ) }}
 
 
 ## 6. Construction d'une liste d'éléments identiques
