@@ -9,7 +9,7 @@
     
     === "Correction"
         {{
-        correction(True,
+        correction(False,
         """
         ```python linenums='1'
         lst = [0, 50, 40, 100, 70, 90, 0] # pour tester
@@ -46,7 +46,7 @@
 
         **Q1.** Créer **en compréhension** une liste ```lst1``` contenant uniquement les jours comportant 5 lettres.
         {{
-        correction(True,
+        correction(False,
         """
         ??? success \"Correction\" 
             ```python
@@ -58,7 +58,7 @@
 
         **Q2.** Créer **en compréhension** une liste ```lst2``` contenant uniquement les jours comportant la lettre ```a``` dans leur nom.
         {{
-        correction(True,
+        correction(False,
         """
         ??? success \"Correction\" 
             ```python
@@ -70,7 +70,7 @@
 
         **Q3a.** Créer une fonction ```compte_e``` qui prend en paramètre une chaine de caractères et qui renvoie le nombre de ```e``` que contient cette chaine de caractères.
         {{
-        correction(True,
+        correction(False,
         """
         ??? success \"Correction\" 
             ```python linenums='1'
@@ -88,7 +88,7 @@
         **Q3b.**  Créer **en compréhension** une liste ```lst4``` contenant uniquement les jours comportant deux fois la lettre ```e``` dans leur nom.
 
         {{
-        correction(True,
+        correction(False,
         """
         ??? success \"Correction\" 
             ```python
@@ -125,7 +125,7 @@
         - sur une même ligne, on affichera tous les symboles côte à côte, en rajoutant le paramètre ```end = ''``` à la fonction ```print```. (*exemple :* ```print('*', end = '')``` )
         - on ira à la ligne à la fin de chaque ligne, par l'instruction ```print()```     
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         m = [[17, 71, 75, 89, 45, 10, 54, 26, 59, 47, 57, 64, 44], \\
@@ -191,7 +191,7 @@
 
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         M = [[17, 3, 4, 14, 5, 17], [8, 16, 3, 17, 14, 12], [13, 5, 15, 4, 16, 3], [14, 7, 3, 16, 3, 2], [6, 1, 16, 10, 5, 13], [11, 1, 9, 11, 18, 8]]
@@ -294,7 +294,7 @@
         print(x*y)                                      
         ```
 
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python
         data_raw = open('input.txt').read().splitlines()
