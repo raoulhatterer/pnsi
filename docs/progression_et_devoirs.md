@@ -91,7 +91,7 @@
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
 
     ??? note "Devoirs"
-        - Exercice 7 et suivants du cours sur les listes
+        - Exercice 7 et 8 du cours sur les listes
 
 {#   
 !!! done "séance 10 (mardi 28/11/2022):"
