@@ -93,13 +93,13 @@
     ??? note "Devoirs"
         - Exercice 7 et 8 du cours sur les listes
 
-{#   
+
 !!! done "séance 10 (mardi 28/11/2022):"
     - Correction du contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
     ??? note "Devoirs"
-        - Terminer les exercices 1, 2 et 3 du cours sur les listes.
-
+        - Exercice 1 Le sanglier d'Erymanthe.
+{#   
 !!! done "séance 11 (mardi 5/12/2022):"
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
     - Exercices du cours sur les listes
