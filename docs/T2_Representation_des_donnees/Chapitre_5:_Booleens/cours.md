@@ -280,7 +280,7 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
 ### 3.3 Fonction Non Ou (NOR)
 
 
-`x ↓ y = ~(x & y)`
+`x ↓ y = ~(x | y)`
 
 !!! abstract "Table de vérité de NOR :heart:"
     |`x`| `y` | `x ↓ y`|
