@@ -137,7 +137,7 @@ def division(a, b):
         ```
 
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         def milieu(point1, point2):
