@@ -158,8 +158,9 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
 !!! example "{{ exercice() }}"
     === "Énoncé"
         - Apprenez à [ajouter des tableaux](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061455-ajoutez-des-tableaux){:target="_blank"} et à les mettre en forme en CSS.
-        - Utiliser la balise `<code> </code>` pour représenter un court fragment de code machine.
+        - Utilisez la balise `<code> </code>` pour représenter un court fragment de code machine.
         - Créez un fichier `tableau.html`et un fichier `style.css ` afin de recréer la page de l'onglet suivant qui explique comment inclure des caractères spéciaux en HTML. Ne pas oublier de mettre en forme les bordures du tableau grâce à la feuille de style.
+        - Publiez ce travail sur Capytale (Exercice4 HTML code 5dba-2681064)
 
     === "Page à recréer"
         __Voici une capture d'image de la page que vous devez recréer en HTML et CSS:__
@@ -279,7 +280,7 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
     === "Énoncé"
         - Pour la forme: pour le contenu, écrire un fichier 'html' (ou mieux plusieurs fichiers `html` liés entre eux) sans mettre d'accents pour le nom des fichiers)  et un fichier avec un nom du type `style_prenom.css` pour le style (remplacer `prenom` par votre prénom sans accents). __Utiliser un maximum des balises `html` et des propriétés `css` citées dans les deux aide-mémoires ci-dessus (aide-mémoires que je vous demanderai d'imprimer et d'amener en cours).__ 
         - Pour le fond: présentez-vous, présentez vos parents, les études que vous souhaitez faire et par la suite le métier que vous souhaitez exercer. Présentez aussi votre œuvre culturelle préférée  (livre, film, tableau, musique...), en expliquant pourquoi elle vous a marqué. Faites-nous part de votre animal totem (celui qui correspond le mieux à votre caractère ou à votre sensibilité) en expliquant votre choix. Ajoutez d'autres pages si vous le souhaitez (du moment qu'elles sont personnelles). Terminez par une page  où vous indiquerez, sous forme de tableau, les balises `html` que vous avez utilisées (vous en donnerez aussi l'utilité) et vous ferez de même pour les  styles `css` que vous avez utilisés.
-        - Publier ce travail sur Capytale (code 2808-2730306). 
+        - Publiez ce travail sur Capytale (Exercice5 HTML code 2808-2730306). 
 
 
 ## 2. Quand le client peut agir sur sa page : exemple avec JavaScript
@@ -367,13 +368,13 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         - Afficher une alerte en utilisant la fonction ```alert()```: ```alert("NSI, ça déchire!");``` dans la console 
         - D'après le guide, indiquer à quoi servent `let`, `const` et `console.log()`
         - Quand doit-on utiliser un point-virgule en JS ?
-    === "Correction"
+    === "Correction"    {#
         - Il faut déclarer une variable avec le mot-clé ```let``` en le faisant suivre de son nom: ```let myVariable;```
         - Une fois une variable déclarée, on peut lui donner une valeur : ```myVariable = "Bob";```
         - On peut aussi faire les deux opérations sur une même ligne si on le souhaite : ```let myVariable = "Bob";```
         - Il faut déclarer une constante avec le mot-clé ```const```: ```const myConstante = "Marley";```
         - Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. 
-
+#}
         
 
 !!! example "{{ exercice() }}"
@@ -390,7 +391,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         <p id="majorite"></p>
         - Placer le JavaScript dans un fichier annexe.
-    === "Correction"
+    === "Correction" {#
         ```html
         <!DOCTYPE html>
         <html>
@@ -432,7 +433,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         document.getElementById("majorite").innerHTML= message;
         }
         
-        ```
+        ``` #}
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -440,7 +441,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
             + un `<input>` de type `text` (le type par défaut) permettant de rentrer un nombre que l'on souhaite compris entre 7 et 100
             + un bouton permettant de tester si la donnée est correcte.
         - Inclure le JavaScript dans le fichier html
-    === "Correction"
+    === "Correction"{#
         ```html
         <!DOCTYPE html>
         <html>
@@ -470,8 +471,8 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         </script>
         
         </body>
-        </html>         
-        ```
+        </html> 
+        ```  #}
         
         
 
@@ -680,7 +681,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 
          ```
     === "Correction"
-        {{ correction(True,"- Capytale (code 9bcf-2789938)") }}
+        {{ correction(False,"- Capytale (code 9bcf-2789938)") }}
     
     
 
@@ -780,7 +781,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
             - Dans le fichier `secret.py` rechercher le nom des clés utilisées par le dictionnaire `secrets` pour déterminer l'attribut `name` des différentes zones de saisie.
             - Dans ce même fichier html, rajouter le code jinja2 pour permettre d'afficher l'ancien message secret envoyé par le serveur. 
         === "Correction `secret.html`"
-        {{ correction(True,
+        {{ correction(False,
         "
         
             ```html
@@ -807,7 +808,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
                 ) }}
             
         === "Correction `secret.py`"
-        {{ correction(True,
+        {{ correction(False,
         "
             ```python 
             from serveur import get_template, render, OK, pageDynamique, lancerServeur
