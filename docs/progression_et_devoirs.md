@@ -46,7 +46,7 @@
 
 
 
-!!! done "séance 5 (mardi 8/10/2022):"
+!!! done "séance 5 (mardi 8/10/2024):"
     - Contrôle n°2 sur les boucles (45 min)
     - Correction du contrôle dans la foulée
     - Exercices sur les dessins en p5
@@ -54,7 +54,7 @@
         - Réviser contrôle (tout ce qui a été fait depuis le début de l'année y compris wims et les dessins en p5)
 
 
-!!! done "séance 6 (mardi 15/10/2022):"
+!!! done "séance 6 (mardi 15/10/2024):"
     - Contrôle n°3 sur les bases (variables, boucles)
     - correction du contrôle 3
     - instruction conditionnelle If else elif
@@ -68,7 +68,7 @@
 
 
 
-!!! done "séance 7 (mardi 5/11/2022):"
+!!! done "séance 7 (mardi 5/11/2024):"
     - Les fonctions (Thème 1 Chapitre 5) 
     - Exercices 1 et 2 sur les fonctions
     ??? note "Devoirs"
@@ -79,14 +79,14 @@
         
 
 
-!!! done "séance 8 (mardi 12/11/2022):"
+!!! done "séance 8 (mardi 12/11/2024):"
     - Annulée pour cause de convocation
     ??? note "Devoirs"
         - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices. Au minimum, vous devez les étudier suffisamment pour être capable de les refaire.
         - Avoir trouvé un nom d'équipe pour le chalenge "Passe ton hack d'abord"
         
  
-!!! done "séance 9 (mardi 19/11/2022):"
+!!! done "séance 9 (mardi 19/11/2024):"
     - Contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
 
@@ -94,18 +94,19 @@
         - Exercice 7 et 8 du cours sur les listes
 
 
-!!! done "séance 10 (mardi 28/11/2022):"
+!!! done "séance 10 (mardi 28/11/2024):"
     - Correction du contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
     ??? note "Devoirs"
         - Exercice 1 Le sanglier d'Erymanthe.
-{#   
-!!! done "séance 11 (mardi 5/12/2022):"
-    - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
-    - Exercices du cours sur les listes
-    - [Exercice 1 : le sanglier d'Érymanthe](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
+
+!!! done "séance 11 (mardi 3/12/2024):"
+    - [Exercices sur les liste](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
     ??? note "Devoirs"
-        - [Exercices 2, 3 et 4 sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
+        - [Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
+        - Préparer le contrôle de mardi prochain (sur les listes et tout ce qui précède).
+ 
+{#   
 
 !!! done "séance 12 (mardi 12/12/2022):"
     - [T2 > Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
