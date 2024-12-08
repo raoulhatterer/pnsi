@@ -69,12 +69,17 @@ Donc $243_{10}=11110011_2$
     === "Énoncé"
         Quelle est la valeur maximale d'un octet (un octet = 8 chiffres binaires) ?
     === "Correction"
+        {{ correction(False,
+        "
         $11111111_2=255$. On retrouve ce nombre comme étant la valeur maximale d'une composante de couleur dans le codage RGB, ce qui signifie que chaque composante est codée sur un octet.
-
+        ")}}
+        
 !!! example "Exercice 2"
     === "Énoncé"
         Créer une fonction `binaire(n)` qui renvoie l'écriture binaire de `n`, en utilisant les divisions successives.
     === "Correction"
+        {{ correction(False,
+        "
         ```python linenums='1'
         def restes_successifs(n):
             ''' renvoie la liste des restes successifs lors des divisions de n par 2'''
@@ -93,7 +98,7 @@ Donc $243_{10}=11110011_2$
                 mot += str(k)
             return mot
         ```
-
+        ")}}
 
 ## 2. Le système hexadécimal 
 L'inconvénient essentiel du système binaire est la longueur de l'écriture des nombres qu'il génère. Pour cette raison, le **système hexadécimal**, ou système de **base 16** est très souvent employé.
@@ -138,10 +143,13 @@ On a donc la correspondance :
         2. Expliquer pourquoi la couleur RGB (138,255,51) a pour code html `#8AFF33`.
         3. Quelle est la couleur `html` du blanc ?
     === "Correction"
+        {{ correction(False,
+        "
         1. FF = 255 ; 3A = 58 ; B2 = 178
         2. 138 a pour code hexa 8A, 255 a pour code hexa 255, 51 a pour code hexa 33.
         3. \#FFFFFF
-
+        ")}}
+        
 ###  2.2 En python :
  
 #### 2.2.1 Pour passer du décimal à l'hexadécimal :  
