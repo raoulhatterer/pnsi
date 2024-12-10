@@ -57,7 +57,7 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
 {{ initexo(0)}}
 !!! example "{{ exercice() }}"
     === "Énoncé"
-      - Lire et réaliser les exercices de [la page d'introduction à HTML de mozilla] (https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+      - Lire et réaliser les exercices de [la page d'introduction à HTML de mozilla](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started){:target="_blank"}
       - Puis créer un dossier contenant un fichier ```mapage.html```.
       - Créer une page contenant une image et un lien vers le site du lycée.
       - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel.
