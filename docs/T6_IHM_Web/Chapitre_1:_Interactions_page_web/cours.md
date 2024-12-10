@@ -66,16 +66,16 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
          - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
     === "Correction"
         ```html
- 	   <!DOCTYPE html>
-  	  <html lang='fr'>
- 	     <head>
+ 	<!DOCTYPE html>
+  	<html lang='fr'>
+ 		<head>
 	        <meta charset="utf-8">
- 	       <title>Ma première page</title>
-    	     </head>
+ 	       	<title>Ma première page</title>
+    	     	</head>
     	
- 	     <body>
+ 	     	<body>
         	
-      	     </body>
+      	     	</body>
     	</html>    
         ```
        
