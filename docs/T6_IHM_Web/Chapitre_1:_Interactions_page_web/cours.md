@@ -65,7 +65,8 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
             - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel.
             - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
     === "Correction"
-	```html
+{#
+ ```html
  	<!DOCTYPE html>
   	<html lang='fr'>
  	  <head>
@@ -78,7 +79,8 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
       	  </body>
     	</html>    
         ```
-       
+ #}
+      
 #### Pour conclure
 
 !!! done "À retenir"
