@@ -59,11 +59,11 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
     === "Énoncé"
         1. Lire [la page d'introduction à HTML de mozilla](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started){:target="_blank"} et réaliser les exercices d'apprentissage actif qui s'y trouvent.
         2. Création d'une page personnelle
-         - Puis créer un dossier contenant un fichier ```mapage.html```.
-         - Créer une page contenant une image et un lien vers le site du lycée.
+           - Puis créer un dossier contenant un fichier ```mapage.html```.
+           - Créer une page contenant une image et un lien vers le site du lycée.
         3. Indications:
-         - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel.
-         - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
+           - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel.
+           - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
     === "Correction"
         ```html
  	<!DOCTYPE html>
