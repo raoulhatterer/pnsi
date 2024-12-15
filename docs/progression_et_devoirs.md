@@ -106,15 +106,19 @@
         - [Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
         - Préparer le contrôle de mardi prochain (sur les listes et tout ce qui précède).
  
+
+
+!!! done "séance 12 (mardi 10/12/2024):"
+    - Contrôle portant sur les listes
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    ??? note "Devoirs"
+        - Apprendre le début du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) (jusqu'au premier Quiz).
+
 {#   
 
-!!! done "séance 12 (mardi 12/12/2022):"
-    - [T2 > Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
-    ??? note "Devoirs"
-        - Préparer le contrôle sur les listes
 
 !!! done "séance 13 (mardi 19/12/2022):"
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+
     - Contrôle 3 portant sur les listes
     ??? note "Devoirs"
         - Réviser HTML CSS
