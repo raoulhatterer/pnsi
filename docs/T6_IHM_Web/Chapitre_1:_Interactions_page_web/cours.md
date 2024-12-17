@@ -178,7 +178,7 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
     === "Énoncé"
         - Apprenez à [ajouter des tableaux](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061455-ajoutez-des-tableaux){:target="_blank"} et à les mettre en forme en CSS.
         - Utilisez la balise `<code> </code>` pour représenter un court fragment de code machine.
-	- Utilisez `Alt+0151` pour un tiret long sous Windows.  
+	    - Utilisez `Alt+0151` pour un tiret long sous Windows.  
         - Créez un fichier `tableau.html`et un fichier `style.css ` afin de recréer la page de l'onglet suivant qui explique comment inclure des caractères spéciaux en HTML. Ne pas oublier de mettre en forme les bordures du tableau grâce à la feuille de style.
         - Publiez ce travail sur Capytale (Exercice4 HTML code 5dba-2681064)
 
