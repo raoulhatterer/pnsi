@@ -280,7 +280,7 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
     ```
     - Il existe plusieurs façons de sélectionner la portion de page que l'on veut mettre en forme. Par exemple, on peut viser :
         - toutes les balises d'un même type, en écrivant simplement leur nom (`h1`par exemple) ;
-        - certaines balises spécifiques, auxquelles on a donné des noms à l'aide des attributs `class` ou `id`(`.nom-classe` ou `#nom-id`) ;
+        - certaines balises spécifiques, auxquelles on a donné des noms à l'aide des attributs `class` (css: `.nom-classe{}`) ou `id`(css: `#nom-id{}`) ;
         - uniquement les balises qui se trouvent à l'intérieur d'autres balises (`h3`,`em`).
 
 ###  Aide mémoire CSS
