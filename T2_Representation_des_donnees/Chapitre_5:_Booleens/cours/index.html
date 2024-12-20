@@ -1,0 +1,2327 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cours et exercices de première en spécialité NSI">
+      
+      
+        <meta name="author" content="R. Hatterer">
+      
+      
+        <link rel="canonical" href="https://raoulhatterer.github.io/pnsi/T2_Representation_des_donnees/Chapitre_5%3A_Booleens/cours/">
+      
+      <link rel="icon" href="../../../xtra/favPNSI.png">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.3">
+    
+    
+      
+        <title>Cours - Première Spécialité NSI (Lycée de la méditerranée La Ciotat)</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.js"></script>
+<script src="https://raoulhatterer.github.io/pnsi//js/sqlite_ide.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/sql/sql.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.css"><link rel="stylesheet" href="https://raoulhatterer.github.io/pnsi//css/sqlite_ide.css"><script>path="https://raoulhatterer.github.io/pnsi/"</script>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7a952b86.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+    <!-- Load CDNs : Pyodide (Python in WASM), Ace (Editor) and JQuery (Terminal) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.asm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-md5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/js/jquery.terminal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/css/jquery.terminal.min.css" rel="stylesheet">
+
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../xtra/pyoditeur.css">
+    
+      <link rel="stylesheet" href="../../../xtra/ajustements.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapitre-5-les-operateurs-booleens" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../.." title="Première Spécialité NSI (Lycée de la méditerranée La Ciotat)" class="md-header__button md-logo" aria-label="Première Spécialité NSI (Lycée de la méditerranée La Ciotat)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9l-1.6.6m5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18v3Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Première Spécialité NSI (Lycée de la méditerranée La Ciotat)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cours
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Passer au mode nuit"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Passer au mode nuit" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Passer au mode jour"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Passer au mode jour" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../progression_et_devoirs/" class="md-tabs__link">
+      Progression et devoirs
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_1%3A_Variables/cours/" class="md-tabs__link">
+        T1: Les bases de Python
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sommaire/" class="md-tabs__link md-tabs__link--active">
+        T2: Rep. des données
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../T3_Architecture_materielle/sommaire/" class="md-tabs__link">
+        T3: Arch. matérielle
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../T4_Algorithmique/sommaire/" class="md-tabs__link">
+        T4: Algorithmique
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../T5_Traitement_de_donnees/sommaire/" class="md-tabs__link">
+        T5 Trait. des données
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../T6_IHM_Web/sommaire/" class="md-tabs__link">
+        T6: IHM sur le web
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../T7_Divers/1_Conseils_generaux/cours/" class="md-tabs__link">
+        Divers
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../T8_Projets" class="md-tabs__link">
+      Projets
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../remerciements/" class="md-tabs__link">
+      Remerciements
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Première Spécialité NSI (Lycée de la méditerranée La Ciotat)" class="md-nav__button md-logo" aria-label="Première Spécialité NSI (Lycée de la méditerranée La Ciotat)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9l-1.6.6m5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18v3Z"/></svg>
+
+    </a>
+    Première Spécialité NSI (Lycée de la méditerranée La Ciotat)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../progression_et_devoirs/" class="md-nav__link">
+        Progression et devoirs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          T1: Les bases de Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="T1: Les bases de Python" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          T1: Les bases de Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_1%3A_Variables/cours/" class="md-nav__link">
+        Chapitre 1: Variables & ES
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Chapitre 2: La boucle for
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Chapitre 2: La boucle for" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Chapitre 2: La boucle for
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_2%3A_La_boucle_for/cours/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_2%3A_La_boucle_for/exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_2%3A_La_boucle_for/exos_processing/" class="md-nav__link">
+        Exercices sous Processing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          Chapitre 3: La boucle while
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Chapitre 3: La boucle while" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Chapitre 3: La boucle while
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_3%3A_La_boucle_while/cours/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_3%3A_La_boucle_while/exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Chapitre 4: L'instruction conditionnelle if
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Chapitre 4: L'instruction conditionnelle if" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Chapitre 4: L'instruction conditionnelle if
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_4%3A_L%27instruction_conditionnelle_if/cours/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_4%3A_L%27instruction_conditionnelle_if/exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Chapitre 5: Les fonctions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Chapitre 5: Les fonctions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Chapitre 5: Les fonctions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_5%3A_Les_fonctions/cours/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_5%3A_Les_fonctions/exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Exercices/exercices/" class="md-nav__link">
+        Je me teste
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          T2: Rep. des données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="T2: Rep. des données" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          T2: Rep. des données
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sommaire/" class="md-nav__link">
+        Sommaire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          Chapitre 1: Listes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Chapitre 1: Listes" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Chapitre 1: Listes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_1%3A_Listes/cours/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_1%3A_Listes/exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_2%3A_Tuples/cours/" class="md-nav__link">
+        Chapitre 2• Les Tuples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_3%3A_Dictionnaires/cours/" class="md-nav__link">
+        Chapitre 3• Les dictionaires
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_4%3A_Bases/cours/" class="md-nav__link">
+        Chapitre 4• Les bases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Chapitre 5: Booleens
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Chapitre 5: Booleens" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Chapitre 5: Booleens
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Cours
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Cours
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-operateurs-de-comparaison-ou-dappartenance" class="md-nav__link">
+    Les opérateurs de comparaison ou d'appartenance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-reperes-historiques" class="md-nav__link">
+    1. Repères historiques
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-algebre-de-boole" class="md-nav__link">
+    2. Algèbre de Boole
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Algèbre de Boole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-conjonction-and" class="md-nav__link">
+    2.1 Conjonction (AND)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-disjonction-or" class="md-nav__link">
+    2.2 Disjonction (OR)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-negation-not" class="md-nav__link">
+    2.3  Négation (NOT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-exercice-1" class="md-nav__link">
+    2.4 Exercice 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-exercice-2" class="md-nav__link">
+    2.5 Exercice 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fonctions-composees" class="md-nav__link">
+    3. Fonctions composées
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Fonctions composées">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-disjonction-exclusive-xor" class="md-nav__link">
+    3.1 Disjonction exclusive XOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-fonction-non-et-nand" class="md-nav__link">
+    3.2 Fonction Non Et (NAND)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-fonction-non-ou-nor" class="md-nav__link">
+    3.3 Fonction Non Ou (NOR)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remarque" class="md-nav__link">
+    Remarque :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-exercice-4" class="md-nav__link">
+    3.4 Exercice 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-calculs-en-python" class="md-nav__link">
+    3.5 Calculs en Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercice-5-cryptographie" class="md-nav__link">
+    Exercice 5 : Cryptographie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complement-mathematique-proprietes-des-operateurs-logiques" class="md-nav__link">
+    Complément mathématique: propriétés des opérateurs logiques
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enonce/" class="md-nav__link">
+        Énigme
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_6%3A_Codage_caracteres/cours/" class="md-nav__link">
+        Chapitre 6• Les caractères
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_7%3A_Codage_entiers/cours/" class="md-nav__link">
+        Chapitre 7• Les entiers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_8%3A_Flottants/cours/" class="md-nav__link">
+        Chapitre 8• Les flottants
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          T3: Arch. matérielle
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="T3: Arch. matérielle" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          T3: Arch. matérielle
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/sommaire/" class="md-nav__link">
+        Sommaire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_1%3A_Microbit/cours/" class="md-nav__link">
+        Chapitre 1: Microbit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_2%3A_Architecture_Von_Neumann/cours/" class="md-nav__link">
+        Chapitre 2.Architecture Von Neumann
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_3%3A_Architecture_reseau/cours/" class="md-nav__link">
+        Chapitre 3: Architecture d'un réseau
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_4%3A_Protocoles_de_communication/cours/" class="md-nav__link">
+        Chapitre 4: Protocoles de communication dans un réseau
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_5%3A_Decouverte_des_commandes_Linux/cours/" class="md-nav__link">
+        Chapitre 5: Découverte des commandes UNIX
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          T4: Algorithmique
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="T4: Algorithmique" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          T4: Algorithmique
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/sommaire/" class="md-nav__link">
+        Sommaire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_1%3A_Extremums_et_moyennes/cours/" class="md-nav__link">
+        Chapitre 1 Extremums et moyennes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_2%3A_Complexite/cours/" class="md-nav__link">
+        Chapitre 2 Complexité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_3%3A_Tri_par_insertion/cours/" class="md-nav__link">
+        Chapitre 3 Tri par insertion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_4%3A_Tri_par_selection/cours/" class="md-nav__link">
+        Chapitre 4 Tri par sélection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_5%3A_Dichotomie/cours/" class="md-nav__link">
+        Chapitre 5 Dichotomie
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_6%3A_Algorithmes_gloutons/cours/" class="md-nav__link">
+        Chapitre 6 Algorithmes gloutons
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_7%3A_Algorithme_KNN/cours/" class="md-nav__link">
+        Chapitre 7 Algorithme des KNN
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          T5 Trait. des données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="T5 Trait. des données" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          T5 Trait. des données
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T5_Traitement_de_donnees/sommaire/" class="md-nav__link">
+        Sommaire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T5_Traitement_de_donnees/Chapitre_1%3A_Manipulation_csv/cours/" class="md-nav__link">
+        Manipulation csv
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T5_Traitement_de_donnees/Chapitre_2%3A_Trier_des_donnees/cours/" class="md-nav__link">
+        Trier des données
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T5_Traitement_de_donnees/Chapitre_3%3A_Pandas/cours/" class="md-nav__link">
+        Pandas
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          T6: IHM sur le web
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="T6: IHM sur le web" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          T6: IHM sur le web
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T6_IHM_Web/sommaire/" class="md-nav__link">
+        Thème 6 : IHM sur le web
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T6_IHM_Web/Chapitre_1%3A_Interactions_page_web/cours/" class="md-nav__link">
+        Chapitre 1: Pages web et interactions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T6_IHM_Web/Chapitre_2%3A_Protocole_HTTP/cours/" class="md-nav__link">
+        Chapitre 2: Protocole HTTP  étude du chargement d'une page web
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T6_IHM_Web/Chapitre_3%3A_Get_Post_Formulaires/cours/" class="md-nav__link">
+        Chapitre 3: Requêtes GET, POST et formulaires
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Divers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Divers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Divers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T7_Divers/1_Conseils_generaux/cours/" class="md-nav__link">
+        Conseils de travail
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T7_Divers/3_IDE/cours/" class="md-nav__link">
+        IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T7_Divers/4_Processing/cours/" class="md-nav__link">
+        Processing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T7_Divers/4_Processing_p5/cours/" class="md-nav__link">
+        Processing au lycée ⇔ p5 sur Capytale
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T8_Projets" class="md-nav__link">
+        Projets
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../remerciements/" class="md-nav__link">
+        Remerciements
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+    
+                  
+
+  <a href="tree/main/docs/T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md" title="Editer cette page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="chapitre-5-les-operateurs-booleens">Chapitre 5 Les opérateurs booléens<a class="headerlink" href="#chapitre-5-les-operateurs-booleens" title="Permanent link">⚓︎</a></h1>
+<p><img alt="image" class="center" src="../data/BO.png" /></p>
+<h2 id="les-operateurs-de-comparaison-ou-dappartenance">Les opérateurs de comparaison ou d'appartenance<a class="headerlink" href="#les-operateurs-de-comparaison-ou-dappartenance" title="Permanent link">⚓︎</a></h2>
+<p>Nous connaissons déjà les symboles de comparaison ou d'appartenance qui permettent d'écrire une condition. 
+Ces opérateurs produisent un booléen.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Opérateur</th>
+<th align="center">Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>==</code></td>
+<td align="center">est égal à</td>
+</tr>
+<tr>
+<td align="center"><code>!=</code></td>
+<td align="center">est différent de</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;</code></td>
+<td align="center">inférieur à</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;</code></td>
+<td align="center">supérieur à</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;=</code></td>
+<td align="center">inférieur ou égal à</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;=</code></td>
+<td align="center">supérieur ou égal à</td>
+</tr>
+<tr>
+<td align="center"><code>in</code></td>
+<td align="center">appartient à</td>
+</tr>
+<tr>
+<td align="center"><code>not in</code></td>
+<td align="center">n'appartient pas à</td>
+</tr>
+</tbody>
+</table>
+<p>Nous allons maintenant étudier les booléens de façon plus approfondie. </p>
+<h2 id="1-reperes-historiques">1. Repères historiques<a class="headerlink" href="#1-reperes-historiques" title="Permanent link">⚓︎</a></h2>
+<p><img alt="" class="center" src="../data/portrait_boole.jpg" /></p>
+<p>En 1847, le  britannique  <em>George BOOLE</em>  inventa un formalisme permettant d'écrire des raisonnements logiques : l'algèbre de Boole. La notion même d'informatique n'existait pas à l'époque, même si les calculs étaient déjà automatisés (penser à la Pascaline de 1642).</p>
+<p>Bien plus tard, en  1938, les travaux de l'américain <em>Claude  SHANNON</em>  prouva  que des  circuits  électriques
+peuvent  résoudre tous  les  problèmes  que l'algèbre  de  Boole peut  elle-même résoudre.  Pendant la deuxième guerre mondiale, les travaux  d'<em>Alan  TURING</em>  puis de <em>John VON NEUMANN</em> poseront définitivement les bases de l'informatique moderne.</p>
+<h2 id="2-algebre-de-boole">2. Algèbre de Boole<a class="headerlink" href="#2-algebre-de-boole" title="Permanent link">⚓︎</a></h2>
+<p>L'algèbre de Boole définit des opérations dans un ensemble
+qui ne contient que <strong>deux éléments</strong> notés <strong>0 et 1</strong>, ou bien <strong>FAUX et VRAI</strong> ,ou encore <strong>False</strong> et <strong>True</strong> (en Python)</p>
+<p>Les opérations fondamentales sont :</p>
+<ul>
+<li>la <em>conjonction</em> ("ET") </li>
+<li>la <em>disjonction</em> ("OU") </li>
+<li>la <em>négation</em> ("NON").</li>
+</ul>
+<p>Dans  toute la  suite,  <code>x</code> et  <code>y</code> désigneront  des  <em>Booléens</em> (éléments  d'une
+algèbre de Boole) quelconques, <code>F</code> désignera FAUX et <code>V</code> désignera VRAI.</p>
+<hr />
+<h3 id="21-conjonction-and">2.1 Conjonction (AND)<a class="headerlink" href="#21-conjonction-and" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>symbole usuel : &amp; (appelé <em>esperluette</em> en français et <em>ampersand</em> en anglais)</li>
+<li>français : ET</li>
+<li>anglais (et Python) : <code>and</code></li>
+<li>notation logique : <span class="arithmatex">\(\wedge\)</span></li>
+<li>notation mathématique :  <code>.</code></li>
+</ul>
+<p>C'est l'opération définie par:</p>
+<ul>
+<li><code>x &amp; F = F</code></li>
+<li><code>x &amp; V = x</code></li>
+</ul>
+<p>Puisque l'algèbre de  Boole ne contient que deux éléments,  on peut étudier tous
+les cas possibles et les regrouper dans un tableau appelé <strong>table de vérité</strong>:</p>
+<div class="admonition abstract">
+<p class="admonition-title">Table de vérité de AND <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg" title=":heart:" /></p>
+<table>
+<thead>
+<tr>
+<th align="center"><code>x</code></th>
+<th align="center"><code>y</code></th>
+<th align="center"><code>x &amp; y</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center">V</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">V</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>On représente souvent les opérateurs booléens à l'aide de portes logiques:</p>
+<p><img alt="" class="center" src="../data/porte_et.png" /></p>
+<p>Notation usuelle en électronique : <span class="arithmatex">\(Q=A \wedge B\)</span></p>
+<p><img alt="" class="center" src="../data/and.png" /></p>
+<h4 id="exemples-en-python">Exemples en Python<a class="headerlink" href="#exemples-en-python" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">7</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kc">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kc">True</span>
+</code></pre></div>
+<h4 id="levaluation-paresseuse">L'évaluation paresseuse<a class="headerlink" href="#levaluation-paresseuse" title="Permanent link">⚓︎</a></h4>
+<p>Pouvez-vous prévoir le résultat du code ci-dessous ?</p>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">0</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="o">---------------------------------------------------------------------------</span>
+
+    <span class="ne">ZeroDivisionError</span>                         <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+
+    <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">d8a98dcba9be</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="o">----&gt;</span> <span class="mi">1</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">0</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+
+
+    <span class="ne">ZeroDivisionError</span><span class="p">:</span> <span class="n">integer</span> <span class="n">division</span> <span class="ow">or</span> <span class="n">modulo</span> <span class="n">by</span> <span class="n">zero</span>
+</code></pre></div>
+<p>Évidemment, la division par 0 provoque une erreur.<br />
+Mais observez maintenant ce code :</p>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">7</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">0</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kc">False</span>
+</code></pre></div>
+<p>On appelle <strong>évaluation paresseuse</strong> le fait que l'interpréteur Python s'arrête dès que sa décision est prise : comme le premier booléen vaut False et que la conjonction <code>and</code> est appelée, il n'est pas nécessaire d'évaluer le deuxième booléen. </p>
+<h3 id="22-disjonction-or">2.2 Disjonction (OR)<a class="headerlink" href="#22-disjonction-or" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>symbole usuel : | appelé <em>pipe</em> en anglais</li>
+<li>français : OU</li>
+<li>anglais (et Python) : <code>or</code></li>
+<li>notation logique : <span class="arithmatex">\(\vee\)</span></li>
+<li>notation mathématique :  <span class="arithmatex">\(+\)</span></li>
+</ul>
+<p>C'est l'opération définie par:</p>
+<p>C'est l'opération définie par:</p>
+<ul>
+<li><code>x | V = V</code></li>
+<li><code>x | F = x</code></li>
+</ul>
+<p>On en déduit la table suivante:</p>
+<div class="admonition abstract">
+<p class="admonition-title">Table de vérité de OR <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg" title=":heart:" /></p>
+<table>
+<thead>
+<tr>
+<th align="center"><code>x</code></th>
+<th align="center"><code>y</code></th>
+<th align="center"><code>x or y</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center">V</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">V</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" class="center" src="../data/porte_ou.png" /></p>
+<p>Notation usuelle en électronique : <span class="arithmatex">\(Q=A \vee B\)</span></p>
+<p><img alt="" class="center" src="../data/or.png" /></p>
+<h4 id="exemples-en-python_1">Exemples en Python<a class="headerlink" href="#exemples-en-python_1" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">7</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">7</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kc">False</span>
+</code></pre></div>
+<h4 id="levaluation-paresseuse-retour">L'évaluation paresseuse (retour)<a class="headerlink" href="#levaluation-paresseuse-retour" title="Permanent link">⚓︎</a></h4>
+<p>Pouvez-vous prévoir le résultat du code ci-dessous ?</p>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">0</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="23-negation-not">2.3  Négation (NOT)<a class="headerlink" href="#23-negation-not" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>symbole usuel : ~</li>
+<li>français : NON</li>
+<li>anglais (et Python) : <code>not</code></li>
+<li>notation logique :  <span class="arithmatex">\(\neg\)</span></li>
+<li>notation mathématique :  <span class="arithmatex">\(\overline{x}\)</span></li>
+</ul>
+<p>C'est l'opération définie par:</p>
+<ul>
+<li><code>~V = F</code></li>
+<li><code>~F = V</code></li>
+</ul>
+<p>On en déduit la table suivante:</p>
+<div class="admonition abstract">
+<p class="admonition-title">Table de vérité de NOT <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg" title=":heart:" /></p>
+<table>
+<thead>
+<tr>
+<th align="center"><code>x</code></th>
+<th align="center"><code>~x</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">F</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" class="center" src="../data/porte_non.png" /></p>
+<p>Notation usuelle en électronique : <span class="arithmatex">\(Q=\neg A\)</span></p>
+<p><img alt="" class="center" src="../data/no.png" /></p>
+<h4 id="exemples-en-python_2">Exemples en Python<a class="headerlink" href="#exemples-en-python_2" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="ow">not</span><span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="kc">False</span>
+</code></pre></div>
+<h3 id="24-exercice-1">2.4 Exercice 1<a class="headerlink" href="#24-exercice-1" title="Permanent link">⚓︎</a></h3>
+<p>Comprendre ce mème :
+<img alt="image" class="center" src="../data/drake.webp" width="50%" /></p>
+<h3 id="25-exercice-2">2.5 Exercice 2<a class="headerlink" href="#25-exercice-2" title="Permanent link">⚓︎</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">Exercice 2</p>
+<p>Ouvrir le <a class="" href="http://dept-info.labri.fr/ENSEIGNEMENT/archi/circuits/blank-teacher.html" target="_blank">simulateur de circuits</a> et créer pour chaque opération AND, OR, NOT un circuit électrique illustrant ses propriétés.</p>
+<p>Exemple (inintéressant) de circuit :
+<img alt="" class="center" src="../data/ex_circuit.png" /></p>
+</div>
+<h2 id="3-fonctions-composees">3. Fonctions composées<a class="headerlink" href="#3-fonctions-composees" title="Permanent link">⚓︎</a></h2>
+<h3 id="31-disjonction-exclusive-xor">3.1 Disjonction exclusive XOR<a class="headerlink" href="#31-disjonction-exclusive-xor" title="Permanent link">⚓︎</a></h3>
+<p>(en français OU EXCLUSIF)</p>
+<p><code>x ^ y = (x &amp; ~y) | (~x &amp; y)</code></p>
+<div class="admonition abstract">
+<p class="admonition-title">Table de vérité de XOR <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg" title=":heart:" /></p>
+<table>
+<thead>
+<tr>
+<th align="center"><code>x</code></th>
+<th align="center"><code>y</code></th>
+<th align="center"><code>x ^ y</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center">V</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" class="center" src="../data/porte_xor.png" /></p>
+<p><img alt="" class="center" src="../data/xor.png" /></p>
+<p>Le XOR joue un rôle fondamental en cryptographie car il possède une propriété très intéressante : 
+<span class="arithmatex">\((x\wedge y)\wedge y=x\)</span></p>
+<p>Si <span class="arithmatex">\(x\)</span> est un message et <span class="arithmatex">\(y\)</span> une clé de chiffrage, alors <span class="arithmatex">\(x\wedge y\)</span> est le message chiffré. 
+Mais en refaisant un XOR du message chiffré avec la clé <span class="arithmatex">\(y\)</span>, on retrouve donc le message <span class="arithmatex">\(x\)</span> initial.</p>
+<h3 id="32-fonction-non-et-nand">3.2 Fonction Non Et (NAND)<a class="headerlink" href="#32-fonction-non-et-nand" title="Permanent link">⚓︎</a></h3>
+<p><code>x ↑ y = ~(x &amp; y)</code></p>
+<div class="admonition abstract">
+<p class="admonition-title">Table de vérité de NAND <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg" title=":heart:" /></p>
+<table>
+<thead>
+<tr>
+<th align="center"><code>x</code></th>
+<th align="center"><code>y</code></th>
+<th align="center"><code>x ↑ y</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center">V</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" class="center" src="../data/porte_nand.png" /></p>
+<h3 id="33-fonction-non-ou-nor">3.3 Fonction Non Ou (NOR)<a class="headerlink" href="#33-fonction-non-ou-nor" title="Permanent link">⚓︎</a></h3>
+<p><code>x ↓ y = ~(x | y)</code></p>
+<div class="admonition abstract">
+<p class="admonition-title">Table de vérité de NOR <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg" title=":heart:" /></p>
+<table>
+<thead>
+<tr>
+<th align="center"><code>x</code></th>
+<th align="center"><code>y</code></th>
+<th align="center"><code>x ↓ y</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center">V</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" class="center" src="../data/porte_nor.png" /></p>
+<p>Il est temps de se reposer un peu et d'admirer cette vidéo :</p>
+<p><center>
+<gif-player src="https://glassus.github.io/premiere_nsi/T2_Representation_des_donnees/2.5_Booleens/data/watergates.gif" speed="1" play></gif-player>
+</center></p>
+<h3 id="remarque">Remarque :<a class="headerlink" href="#remarque" title="Permanent link">⚓︎</a></h3>
+<p>Les fonctions NAND ET NOR sont dites <strong>universelles</strong> : chacune d'entre elles peut générer l'intégralité des autres portes logiques. Il est donc possible de coder toutes les opérations uniquement avec des NAND (ou uniquement avec des NOR).
+Voir <a href="https://fr.wikipedia.org/wiki/Fonction_NON-ET">Wikipedia</a></p>
+<h3 id="34-exercice-4">3.4 Exercice 4<a class="headerlink" href="#34-exercice-4" title="Permanent link">⚓︎</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">Exercice 4</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Énoncé</label><label for="__tabbed_1_2">Correction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Effectuer les opérations suivantes.
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code>   <span class="mi">1011011</span>
+<span class="o">&amp;</span>  <span class="mi">1010101</span>
+<span class="o">----------</span>
+
+
+   <span class="mi">1011011</span>
+<span class="o">|</span>  <span class="mi">1010101</span>
+<span class="o">----------</span>
+
+
+   <span class="mi">1011011</span>
+<span class="o">^</span>  <span class="mi">1010101</span>
+<span class="o">----------</span>
+</code></pre></div></p>
+</div>
+<div class="tabbed-block"></div>
+</div>
+</div>
+</div>
+<h3 id="35-calculs-en-python">3.5 Calculs en Python<a class="headerlink" href="#35-calculs-en-python" title="Permanent link">⚓︎</a></h3>
+<p>les opérateurs <code>&amp;</code>, <code>|</code> et <code>^</code> sont utilisables directement en Python</p>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="c1"># calcul A</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">12</span> <span class="o">&amp;</span> <span class="mi">7</span>
+<span class="mi">4</span>
+</code></pre></div>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="c1"># calcul B</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">12</span> <span class="o">|</span> <span class="mi">7</span>
+<span class="mi">15</span>
+</code></pre></div>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="c1"># calcul C</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">12</span> <span class="o">^</span> <span class="mi">5</span>
+<span class="mi">9</span>
+</code></pre></div>
+<p>Pour comprendre ces résultats, il faut travailler en binaire. Voici les mêmes calculs :</p>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="c1"># calcul A</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bin</span><span class="p">(</span><span class="mb">0b1100</span> <span class="o">&amp;</span> <span class="mb">0b111</span><span class="p">)</span>
+    <span class="s1">&#39;0b100&#39;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="c1"># calcul B</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bin</span><span class="p">(</span><span class="mb">0b1100</span> <span class="o">|</span> <span class="mb">0b111</span><span class="p">)</span>
+   <span class="s1">&#39;0b1111&#39;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="c1"># calcul C</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bin</span><span class="p">(</span><span class="mb">0b1100</span> <span class="o">^</span> <span class="mb">0b111</span><span class="p">)</span>
+    <span class="s1">&#39;0b1011&#39;</span>
+</code></pre></div>
+<h3 id="exercice-5-cryptographie">Exercice 5 : Cryptographie<a class="headerlink" href="#exercice-5-cryptographie" title="Permanent link">⚓︎</a></h3>
+<div class="admonition abstract">
+<p class="admonition-title">Exercice 5</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Énoncé</label><label for="__tabbed_2_2">Correction Q1</label><label for="__tabbed_2_3">Correction Q2</label><label for="__tabbed_2_4">Correction Q3</label><label for="__tabbed_2_5">Correction Q4</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>On souhaite chiffrer (<em>chiffrer</em> est le mot utilisé en cryptographie pour <em>crypter</em>) le mot <code>"BONJOUR"</code> avec la clé <code>"MAURIAC"</code>. Le chiffrement retenu est un chiffrement par XOR, ce qui signifie qu'on va effectuer un XOR entre les deux nombres associés aux lettres.</p>
+<p>Exemple :</p>
+<ul>
+<li>la lettre <code>'B'</code> va être chiffrée grâce au <code>'M'</code>.</li>
+<li>Le code ASCII de <code>'B'</code> est 66. (on le sait car <code>ord('B')</code> renvoie 66 )</li>
+<li>Le code ASCII de <code>'M'</code> est 77. (on le sait car <code>ord('M')</code> renvoie 77 )</li>
+<li>66 ^ 77 vaut 15.</li>
+<li>Le «caractère» associé à 15 est <code>'\x0f'</code> (on le sait car <code>chr(15)</code> renvoie <code>'\x0f'</code> )</li>
+</ul>
+<p>Le premier caractère du mot chiffré sera donc <code>'\x0f'</code></p>
+<p><strong>Q1.</strong> Écrire une fonction <code>chiffre</code> qui prendra en paramètre un mot <code>mot_clair</code> et un mot de passe <code>cle</code> <strong>de même taille</strong> que <code>mot_clair</code> et qui renvoie la chaîne de caractères obtenue en XORant <code>mot_clair</code> avec <code>cle</code>.</p>
+<p><strong>Q2.</strong> Chiffrer le mot <code>"BONJOUR"</code> avec la clé <code>"MAURIAC"</code>.</p>
+<p><strong>Q3.</strong> Reprendre la chaîne de caractères précédemment obtenue et la rechiffrer à nouveau avec la clé <code>"MAURIAC"</code>. Que constate-t-on ? Etait-ce prévisible ?</p>
+<p><strong>Q4.</strong> <img alt="💀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f480.svg" title=":skull:" /> Résoudre le Pydéfi <a class="" href="https://pydefis.callicode.fr/defis/MasqueJetable/txt" target="_blank">La clé endommagée</a></p>
+</div>
+<div class="tabbed-block"></div>
+<div class="tabbed-block"></div>
+<div class="tabbed-block"></div>
+<div class="tabbed-block"></div>
+</div>
+</div>
+</div>
+<h3 id="complement-mathematique-proprietes-des-operateurs-logiques">Complément mathématique: propriétés des opérateurs logiques<a class="headerlink" href="#complement-mathematique-proprietes-des-operateurs-logiques" title="Permanent link">⚓︎</a></h3>
+<p>Les propriétés suivantes sont facilement démontrables à l'aide de tables de vérités: <em>(source : G.Connan)</em></p>
+<p><img alt="" class="center" src="../data/lois.png" /></p>
+<p>Toutes ces lois sont aisément compréhensibles si on les transpose en mathématiques : </p>
+<ul>
+<li>&amp; équivaut à <span class="arithmatex">\(\times\)</span></li>
+<li><span class="arithmatex">\(|\)</span> équivaut à <span class="arithmatex">\(+\)</span></li>
+<li><span class="arithmatex">\(\neg\)</span> équivaut à <span class="arithmatex">\(-\)</span></li>
+</ul>
+
+
+
+
+
+                
+    <script src="../../../js/ide.js"></script> 
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+      
+        
+        <a href="../../Chapitre_4%3A_Bases/cours/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Chapitre 4• Les bases" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Chapitre 4• Les bases
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../enonce/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Énigme" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Énigme
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "toc.integrate", "header.autohide", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.37e9125f.min.js"></script>
+      
+        <script src="../../../xtra/config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../xtra/interpreter.js"></script>
+      
+    
+  </body>
+</html>
