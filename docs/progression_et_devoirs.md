@@ -105,8 +105,6 @@
     ??? note "Devoirs"
         - [Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
         - Préparer le contrôle de mardi prochain (sur les listes et tout ce qui précède).
- 
-
 
 !!! done "séance 12 (mardi 10/12/2024):"
     - Contrôle portant sur les listes
@@ -114,15 +112,18 @@
     ??? note "Devoirs"
         - Apprendre le début du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) (jusqu'au premier Quiz).
 
-{#   
-
-
-!!! done "séance 13 (mardi 19/12/2022):"
-
-    - Contrôle 3 portant sur les listes
+!!! done "séance 13 (mardi 17/12/2024):"
+    - HTML et CSS
+    - Apprendre la suite du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) portant sur le CSS (donc jusqu'au second Quiz).
+    - Exercices 2 à 4 du cours
     ??? note "Devoirs"
-        - Réviser HTML CSS
+        - S'ils n'ont pas été finis en cours, finir exercices 2 à 4. 
+        - Faire l'exercice 5 et publier ce travail sur Capytale (Exercice5 HTML code 2808-2730306).
+        - Réviser HTML CSS pour un contrôle à la rentrée
 
+
+
+{#   
 !!! done "séance 14 (mardi 9/1/2024):"
     - Correction du contrôle 3 portant sur les listes
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)

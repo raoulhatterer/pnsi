@@ -16,8 +16,8 @@
     - Surtout ne pas utiliser le code d'inscription plus d'une fois (pour ne pas créer plusieurs comptes). Mais, si vous pensez que votre inscription n'a pas fonctionné (ou pour tout autre problème),  n’hésitez pas à me  contacter par messagerie Atrium.  
 #}
 
-!!! info "Exercices pratiques pour vous entraîner"
-    - Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entrainement à la pratique de la programmation en lien avec la spécialité NSI. 
+!!! info "Pour progresser (entraînement autonome à la programmation)"
+    - Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entraînement à la pratique de la programmation en lien avec la spécialité NSI. 
     - Pour chaque exercice, on trouve un énoncé, souvent pour créer une fonction, puis des exemples d'application de la fonction. Ensuite, une zone de saisie du code qui est accompagné des premiers tests. Il y a des tests secrets qui permettent ensuite d'accepter (ou valider) votre code.
 
 ### :high_brightness: Thème(s) en cours d'étude 
