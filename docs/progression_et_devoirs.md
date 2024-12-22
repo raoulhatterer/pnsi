@@ -108,7 +108,7 @@
 
 !!! done "séance 12 (mardi 10/12/2024):"
     - Contrôle portant sur les listes
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     ??? note "Devoirs"
         - Apprendre le début du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) (jusqu'au premier Quiz).
 

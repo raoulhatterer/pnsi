@@ -23,13 +23,13 @@
 ### :high_brightness: Thème(s) en cours d'étude 
 
 
-- :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
+- :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours/)
 
 
 {#
 
 
-
+- :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Dynamiques/cours/)
 - :arrow_right: [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_2:_Protocole_HTTP/cours/)
 - :arrow_right: [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
 - :arrow_right: [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)

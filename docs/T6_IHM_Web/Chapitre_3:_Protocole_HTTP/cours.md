@@ -1,4 +1,4 @@
-# Chapitre 2: Protocole HTTP  étude du chargement d'une page web
+# Chapitre 3: Protocole HTTP  étude du chargement d'une page web
 
 ![image](data/BO.png){: .center}
 
@@ -10,7 +10,7 @@ Le serveur offre ici un service au client. On parle souvent d'un service pour d�
 
 Par extension, le client désigne souvent l'ordinateur sur lequel est exécuté le logiciel client, et le serveur, l'ordinateur sur lequel est exécuté le logiciel serveur. Parfois le client et le serveur peuvent être sur la même machine. En effet un ordinateur unique peut exécuter à la fois un programme serveur et un programme client.
 
-### Exemples d'architecture client-serveur
+### 1. Exemples d'architecture client-serveur
 
 La consultation de pages sur un site Web fonctionne sur une architecture client–serveur. Un internaute connecté au réseau via son ordinateur et un navigateur Web est le client, le serveur est constitué par le ou les ordinateurs contenant les applications qui fournissent les pages demandées. C'est le protocole de communication HTTP ou XML socket qui est utilisé. Les courriels sont envoyés et reçus par des clients et gérés par un serveur de messagerie. C'est le protocole de communication SMTP, POP ou IMAP qui est utilisé.
 
@@ -25,7 +25,7 @@ La consultation de pages sur un site Web fonctionne sur une architecture client�
     ![image](data/requete2.png){: .center}
 
 
-### Déroulé d'une requête
+### 2. Déroulé d'une requête
 Prenons pour exemple la requête d'un navigateur vers la page ```http://glassus1.free.fr/interesting.html``` 
 
 - le navigateur analyse l'url : la demande concerne la page ```interesting.html```, stockée sur le serveur ```glassus1.free.fr```.
@@ -34,7 +34,7 @@ Prenons pour exemple la requête d'un navigateur vers la page ```http://glassus1
 - la réponse est envoyée au navigateur, qui en extrait la charge utile et procède à l'affichage de la page.
 
 
-### Analyse à l'aide d'un navigateur
+### 3. Analyse à l'aide d'un navigateur
 
 Observons à partir de l'Inspecteur d'élément d'un navigateur (ici Firefox) les informations qui transitent lors de la requête et de la réponse.
 

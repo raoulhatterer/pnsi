@@ -1,8 +1,8 @@
-# Chapitre 3: Requêtes GET, POST et formulaires
+# Chapitre 4: Requêtes GET, POST et formulaires
 
 ![image](data/BO.png){: .center}
 
-## 1. Les deux principales requêtes HTTP
+## Introduction
 
 
 
@@ -16,7 +16,7 @@ Pour la transmission de ces informations au serveur, le protocole HTTP prévoit 
 
 
 
-## 2. La méthode GET
+## 1. La méthode GET
 
 Considérons le formulaire suivant, inclus dans une page html ouverte dans le navigateur du client :
 
@@ -81,7 +81,7 @@ Les paramètres passés au serveur par la méthode GET sont transmis **dans l'ur
 
 
 
-## 3. La méthode POST
+## 2. La méthode POST
 
 Dans notre code de formulaire du 1.1, modifions l'attribut ```method```, auparavant égal à ```"get"```. Passons-le égal à ```"post"```  :
 
