@@ -62,9 +62,18 @@ Les éléments échangés avec la couche inférieure sont des **segments**.
 </br>
 
 - **couche 3 — couche réseau :**  
-C'est la couche où chaque segment numéroté est encapsulé dans un paquet qui, suivant le protocole IP, va contenir son adresse source et son adresse de destination. C'est à ce niveau que se décide si le message doit rester dans le réseau local ou être envoyé sur un autre réseau via la passerelle du routeur.  
+Cette couche est la seule à être directement concernée par la topologie du réseau. La couche réseau construit une voie de communication de bout à bout. C'est la couche où chaque segment numéroté est encapsulé dans un paquet qui, suivant le protocole IP, va contenir son adresse source et son adresse de destination. C'est à ce niveau que se décide si le message doit rester dans le réseau local ou être envoyé sur un autre réseau via la passerelle du routeur. C'est aussi la dernière couche supportée par toutes les machines du réseau pour le transport des données utilisateur : les couches supérieures sont réalisées uniquement dans les machines d'extrémité.  
 Les éléments échangés avec la couche inférieure sont des **paquets**.
 </br>
+
+!!! info "Internet Protocol (protocole internet), ou IP" 
+    - Les protocoles IP assurent l'acheminement des paquets. Ils ne se préoccupent pas du contenu des paquets, mais fournissent une méthode pour les mener à destination. Lorsque deux terminaux communiquent entre eux via ce protocole, aucun chemin pour le transfert des données n'est établi à l'avance : il est dit que le protocole est « non orienté connexion ».
+    - En matière de fiabilité, le seul service offert par un protocole IP est de s'assurer que les en-têtes de paquets transmis ne comportent pas d'erreurs grâce à l'utilisation de somme de contrôle (checksum). Si l'en-tête d'un paquet comprend une erreur, sa somme de contrôle ne sera pas valide et le paquet sera détruit sans être transmis. 
+    - Les garanties non offertes par un protocole IP (corruption de données, ordre d'arrivée des paquets, perte ou destruction de paquets, duplication des paquets) sont déléguées aux protocoles de niveau supérieur. La raison principale de cette absence de gestion de la fiabilité est la volonté de réduire le niveau de complexité des routeurs et ainsi de leur permettre de disposer d'une plus grande rapidité. L'intelligence est alors déportée vers les points d'extrémité du réseau.
+
+
+!!! info "Internet Control Message Protocol (Protocole de message de contrôle sur Internet), ou ICMP"
+    - L’un des protocoles fondamentaux constituant la suite des protocoles Internet. C'est un protocole de couche réseau (couche n° 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission. ICMP permet de transporter des messages de contrôle et d’erreur pour qu'une machine émettrice sache qu'il y a eu un incident de réseau, par exemple lorsqu’un service ou un hôte est inaccessible. La commande `Ping` est un exemple d'application utilisant des messages de contrôle ICMP.
 
 - **couche 2 — couche liaison :**  
 C'est l'encapsulation finale du message. Suivant le protocole Ethernet, les informations sont transmises d'une carte réseau à une autre, grâce à leur adresse MAC (Media Access Controler).  
