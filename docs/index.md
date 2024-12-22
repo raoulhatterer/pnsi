@@ -114,9 +114,10 @@
     === "T6 IHM sur le web"
         **Thème 6 : IHM sur le web**
 
-        - Chapitre 1 [Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours/)
-        - Chapitre 2 [Protocole HTTP : étude du chargement d'une page web](./T6_IHM_Web/Chapitre_2:_Protocole_HTTP/cours/)
-        - Chapitre 3 [Requêtes GET, POST et formulaires](./T6_IHM_Web/Chapitre_3:_Get_Post_Formulaires/cours/)
+        - Chapitre 1 [Pages web statiques](./T6_IHM_Web/Chapitre_1:_pages_web_statiques/cours/)
+        - Chapitre 2 [Pages web dynamiques](./T6_IHM_Web/Chapitre_2:_pages_web_dynamiques/cours/)        
+        - Chapitre 3 [Protocole HTTP : étude du chargement d'une page web](./T6_IHM_Web/Chapitre_3:_Protocole_HTTP/cours/)
+        - Chapitre 4 [Requêtes GET, POST et formulaires](./T6_IHM_Web/Chapitre_4:_Get_Post_Formulaires/cours/)
 
 
 <!-- 
