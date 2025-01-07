@@ -74,9 +74,6 @@ Le résultat de cette page peut être consulté sur Capytale (code: 41af-1072993
 
 - Au sein du bouton déclaré par la balise ```button```, l'attribut  ```onclick``` reçoit le nom d'une fonction déclarée à l'intérieur du fichier ```script.js```, ici la fonction ```choix()```.
 - Cette fonction nous permet de modifier à la fois l'aspect esthétique de la page (changement de la couleur de background) mais aussi le contenu de cette page, en faisant afficher le nom de la couleur.
-
-La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilisateurs très complexes au sein d'un navigateur, équivalentes à celles produites par des logiciels externes (pensez à Discord, par ex.). Bien sûr, dans ces cas complexes, le serveur est aussi sollicité pour modifier la page, comme nous le verrons en partie 3.
-
 - En JS, `getElementById` se réfère à  `id=`, sinon il existe aussi `getElementByName` qui utilise `name=`.
 - Dans `label`, si l'on souhaite capturer le focus, on utilise `for=` pour faire une référence à `id` (qui est toujours unique).
 - Pour regrouper plusieurs boutons radio on utilise `name`.
@@ -88,6 +85,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
     ```
       
 
+La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilisateurs très complexes au sein d'un navigateur, équivalentes à celles produites par des logiciels externes (pensez à Discord, par ex.). Bien sûr, dans ces cas complexes, le serveur est aussi sollicité pour modifier la page, comme nous le verrons en partie 3.
 
 **En savoir plus**
 
