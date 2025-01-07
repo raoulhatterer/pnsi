@@ -81,7 +81,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 **En savoir plus**
 
 - [le guide JavaScript de la fondation Mozilla](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide){:target="_blank"}
-- [le cours d'OpenClassrooms sur le JavaScript](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript){:target="_blank"}
+- [le cours d'OpenClassrooms sur le JavaScript](https://openclassrooms.com/fr/courses/7696886-apprenez-a-programmer-avec-javascript){:target="_blank"}
 - [le site W3 sur le JavaScript](https://www.w3schools.com/js/){:target="_blank"}
 
 
