@@ -102,33 +102,31 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
  	    - Le mot-clé ```let``` permet de définir des variables au sein d'un bloc et des blocs qu'il contient. ```var``` permet quant à lui de définir une variable dont la portée est celle de la fonction englobante.
   	    - Il faut déclarer une constante avec le mot-clé ```const```: ```const myConstante = "Marley";```
    	    - Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. 
-{#
-    === "exemple avec `let` et  `var`"
+	=== "exemple avec `let` et  `var`"
 	``` javascript
         if (x > y) {
-           let gamma = 12.7 + y;
-           i = gamma * x;
-        }
+        	let gamma = 12.7 + y;
+          	i = gamma * x;
+	}
         
-        function varTest() {
-          var x = 1;
-          if (true) {
-              var x = 2; // c'est la même variable !
-              console.log(x); // 2
-           }
-         console.log(x); // 2
+	function varTest() {
+        	var x = 1;
+          	if (true) {
+              		var x = 2; // c'est la même variable !
+              		console.log(x); // 2
+           	}
+        	console.log(x); // 2
         } 
         
-        function letTest() {
-           let x = 1;
-           if (true) {
-              let x = 2; // c'est une variable différente
-              console.log(x); // 2
-           }
-          console.log(x); // 1
-        }
-        ```
-#}
+	function letTest() {
+        	let x = 1;
+        	if (true) {
+        		let x = 2; // c'est une variable différente
+        		console.log(x); // 2
+        	}
+        	console.log(x); // 1
+	}
+        ```{# fin exemple #}
         
 
 !!! example "{{ exercice() }}"
