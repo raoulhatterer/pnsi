@@ -97,11 +97,11 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         - Quand doit-on utiliser un point-virgule en JS ?
     === "Correction"    {# exo1 #}
         - Il faut déclarer une variable avec le mot-clé ```let``` en le faisant suivre de son nom: ```let myVariable;```
-	- Une fois une variable déclarée, on peut lui donner une valeur : ```myVariable = "Bob";```
-	- On peut aussi faire les deux opérations sur une même ligne si on le souhaite : ```let myVariable = "Bob";```
- 	- Le mot-clé ```let``` permet de définir des variables au sein d'un bloc et des blocs qu'il contient. ```var``` permet quant à lui de définir une variable dont la portée est celle de la fonction englobante.
-  	- Il faut déclarer une constante avec le mot-clé ```const```: ```const myConstante = "Marley";```
-   	- Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. 
+	    - Une fois une variable déclarée, on peut lui donner une valeur : ```myVariable = "Bob";```
+	    - On peut aussi faire les deux opérations sur une même ligne si on le souhaite : ```let myVariable = "Bob";```
+ 	    - Le mot-clé ```let``` permet de définir des variables au sein d'un bloc et des blocs qu'il contient. ```var``` permet quant à lui de définir une variable dont la portée est celle de la fonction englobante.
+  	    - Il faut déclarer une constante avec le mot-clé ```const```: ```const myConstante = "Marley";```
+   	    - Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. 
 {#
     === "exemple avec `let` et  `var`"
 	``` javascript
