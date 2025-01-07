@@ -103,14 +103,14 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
   	    - Il faut déclarer une constante avec le mot-clé ```const```: ```const myConstante = "Marley";```
    	    - Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. 
 	=== "Exemple avec `let` et  `var`"
-	```javascript
+	    ```javascript
         if (x > y) {
-        	let gamma = 12.7 + y;
-          	i = gamma * x;
-	}
+        let gamma = 12.7 + y;
+        i = gamma * x;
+	    }
         
-	function varTest() {
-        	var x = 1;
+	    function varTest() {
+            var x = 1;
           	if (true) {
               		var x = 2; // c'est la même variable !
               		console.log(x); // 2
@@ -118,14 +118,14 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         	console.log(x); // 2
         } 
         
-	function letTest() {
+	    function letTest() {
         	let x = 1;
         	if (true) {
         		let x = 2; // c'est une variable différente
         		console.log(x); // 2
         	}
         	console.log(x); // 1
-	}
+	    }
         ```{# fin exemple #}
         
 
