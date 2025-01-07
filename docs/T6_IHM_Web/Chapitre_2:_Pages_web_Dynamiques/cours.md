@@ -77,6 +77,17 @@ Le résultat de cette page peut être consulté sur Capytale (code: 41af-1072993
 
 La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilisateurs très complexes au sein d'un navigateur, équivalentes à celles produites par des logiciels externes (pensez à Discord, par ex.). Bien sûr, dans ces cas complexes, le serveur est aussi sollicité pour modifier la page, comme nous le verrons en partie 3.
 
+- En JS, `getElementById` se réfère à  `id=`, sinon il existe aussi `getElementByName` qui utilise `name=`.
+- Dans `label`, si l'on souhaite capturer le focus, on utilise `for=` pour faire une référence à `id` (qui est toujours unique).
+- Pour regrouper plusieurs boutons radio on utilise `name`.
+
+!!! abstract "Exemple d'utilisation conjointe de `id` et de `name` en JS"
+    ```javascript
+    <input id="button_1" type="radio" name="option" /><label for="button_1">Text for button 1</label>
+    <input id="button_2" type="radio" name="option" /><label for="button_2">Text for button 2</label>
+    ```
+      
+
 
 **En savoir plus**
 
@@ -127,7 +138,11 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
  	    - Le mot-clé ```let``` permet de définir des variables au sein d'un bloc et des blocs qu'il contient. ```var``` permet quant à lui de définir une variable dont la portée est celle de la fonction englobante.
   	    - Il faut déclarer une constante avec le mot-clé ```const```: ```const myConstante = "Marley";```
    	    - Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. 
-        
+
+
+
+
+
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
