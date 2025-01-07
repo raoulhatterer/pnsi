@@ -123,15 +123,16 @@
 
 
 
-{#   
-!!! done "séance 14 (mardi 9/1/2024):"
-    - Correction du contrôle 3 portant sur les listes
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
-    - Traitement d'une image et d'une autre page HTML présentes un dossier
-    - Exercices 3 et 4
-    ??? note "Devoirs"
-        - Exercice 5 (site personnel riche)
 
+!!! done "séance 14 (mardi 7/1/2025):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - Les bases de JavaScript
+    - Exercices 1 à  3
+    ??? note "Devoirs"
+        - Exercice 4 sur le javascript
+        - Préparer contrôle sur le HTML CSS
+        
+{#   
 !!! done "séance 15 (mardi 16/1/2024):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
     - Les bases de JavaScript
