@@ -145,7 +145,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         <p id="majorite"></p>
         - Placer le JavaScript dans un fichier annexe.
-    === "Correction" {#  
+    === "Correction" {# exo2 #}
         ```html
         <!DOCTYPE html>
         <html>
@@ -187,7 +187,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         document.getElementById("majorite").innerHTML= message;
         }
         
-        ``` #}
+        ```{# fin exo2 #}
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
