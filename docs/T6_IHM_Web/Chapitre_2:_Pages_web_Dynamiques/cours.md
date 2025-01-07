@@ -93,7 +93,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         - Ouvrir les outils de développement dans Chrome
         - Afficher l'onglet *Console*
         - Afficher une alerte en utilisant la fonction ```alert()```: ```alert("NSI, ça déchire!");``` dans la console 
-        - D'après le guide, indiquer à quoi servent `let`, `const` et `console.log()`
+        - D'après le guide, indiquer à quoi servent `let`, `var`, `const` et `console.log()`
         - Quand doit-on utiliser un point-virgule en JS ?
     === "Correction"    {#
         - Il faut déclarer une variable avec le mot-clé ```let``` en le faisant suivre de son nom: ```let myVariable;```
