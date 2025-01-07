@@ -95,7 +95,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         - Afficher une alerte en utilisant la fonction ```alert()```: ```alert("NSI, ça déchire!");``` dans la console 
         - D'après le guide, indiquer à quoi servent `let`, `var`, `const` et `console.log()`
         - Quand doit-on utiliser un point-virgule en JS ?
-    === "Correction"    {#
+    === "Correction"    {# exo1 #}
         - Il faut déclarer une variable avec le mot-clé ```let``` en le faisant suivre de son nom: ```let myVariable;```
 	- Une fois une variable déclarée, on peut lui donner une valeur : ```myVariable = "Bob";```
         - On peut aussi faire les deux opérations sur une même ligne si on le souhaite : ```let myVariable = "Bob";```
@@ -128,7 +128,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 
         - Il faut déclarer une constante avec le mot-clé ```const```: ```const myConstante = "Marley";```
         - Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. 
-#}
+
         
 
 !!! example "{{ exercice() }}"
@@ -145,7 +145,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         <p id="majorite"></p>
         - Placer le JavaScript dans un fichier annexe.
-    === "Correction" {#  #}
+    === "Correction" {#  
         ```html
         <!DOCTYPE html>
         <html>
@@ -187,7 +187,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         document.getElementById("majorite").innerHTML= message;
         }
         
-        ```
+        ``` #}
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
