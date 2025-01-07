@@ -195,7 +195,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
             + un `<input>` de type `text` (le type par défaut) permettant de rentrer un nombre que l'on souhaite compris entre 7 et 100
             + un bouton permettant de tester si la donnée est correcte.
         - Inclure le JavaScript dans le fichier html
-    === "Correction"{#
+    === "Correction"{#  #}
         ```html
         <!DOCTYPE html>
         <html>
@@ -226,7 +226,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         
         </body>
         </html> 
-        ```  #}
+        ``` 
         
         
 
