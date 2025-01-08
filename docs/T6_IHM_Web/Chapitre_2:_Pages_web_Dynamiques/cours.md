@@ -80,8 +80,12 @@ Le résultat de cette page peut être consulté sur Capytale (code: 41af-1072993
 
 !!! abstract "Exemple d'utilisation conjointe de `id` et de `name` en JS"
     ```javascript
-    <input id="button_1" type="radio" name="option" /><label for="button_1">Text for button 1</label>
-    <input id="button_2" type="radio" name="option" /><label for="button_2">Text for button 2</label>
+    <input id="button_1" type="radio" name="regroupement1" /><label for="button_1">Text for button 1</label><br>
+    <input id="button_2" type="radio" name="regroupement1" /><label for="button_2">Text for button 2</label><br>
+    <input id="button_3" type="radio" name="regroupement1" /><label for="button_3">Text for button 3</label><br>
+    <input id="button_4" type="radio" name="regroupement2" /><label for="button_4">Text for button 4</label><br>
+    <input id="button_5" type="radio" name="regroupement2" /><label for="button_5">Text for button 5</label><br>
+    <input id="button_6" type="radio" name="regroupement2" /><label for="button_6">Text for button 6</label><br>    
     ```
       
 
