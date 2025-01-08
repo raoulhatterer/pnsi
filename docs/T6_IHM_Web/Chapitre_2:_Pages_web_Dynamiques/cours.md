@@ -160,7 +160,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         <p id="majorite"></p>
         - Placer le JavaScript dans un fichier annexe.
-	    - Remarque 
+	    - Remarque: le bouton utilisera un évènement `onclick` pour transmettre une valeur à la fonction:  ```javascript <button type="button" onclick="majorite(age.value);">Majeur ?</button>```
     === "Correction" {# exo2 #}
         ```html
         <!DOCTYPE html>
