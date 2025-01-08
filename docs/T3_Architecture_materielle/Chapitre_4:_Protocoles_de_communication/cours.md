@@ -42,7 +42,7 @@ Ces couches (réunies dans le modèle Internet en une couche unique «applicatio
 
 
 !!! info "L'Hypertext Transfer Protocol (HTTP) (Protocole de transfert hypertexte)"
-    - Protocole de base qui autorise le transfert de fichiers sur le web, typiquement entre un navigateur web et un serveur afin que des utilisateurs puissent les consulter. 
+    - Protocole de base qui autorise le transfert de fichiers sur le web, typiquement entre un navigateur web et un serveur HTTP afin que des utilisateurs puissent les consulter. 
     - Le web a été inventé en 1989 par le physicien britannique Tim Berners-Lee, qui travaillait alors au CERN (Organisation européenne pour la recherche nucléaire) en Suisse. Berners-Lee a développé le langage HTML (Hypertext Markup Language) pour créer des pages web et le protocole HTTP (Hypertext Transfer Protocol) pour permettre la transmission de ces pages sur Internet.
 
 
