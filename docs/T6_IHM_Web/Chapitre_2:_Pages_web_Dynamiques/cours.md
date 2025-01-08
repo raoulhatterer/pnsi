@@ -177,7 +177,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
                  min="7" max="100">
             <label for="age">Age</label>
              </div>
-            // ici la fonction transmet la valeur 
+            // ici la fonction transmet la valeur (référencée par id) 
             <button type="button" onclick="majorite(age.value);">Majeur ?</button>
         
             <p id="majorite"></p>
@@ -247,7 +247,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         
 
 !!! example "{{ exercice() }}"
-    - Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres d'utiliser des inputs de différents types:
+    - Reprenez votre page personnelle créée au dernier exercice du chapitre précédent et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres d'utiliser des inputs de différents types:
         - text (une chaîne de caractères) ;
         - number (un nombre) ;
         - range (une valeur numérique) ;
@@ -255,6 +255,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         - radio (un bouton radio) ;
         - button (un bouton)...
     - Rajoutez des [conditions](https://www.w3schools.com/js/js_if_else.asp){:target="_blank"} `if`, `else if`, `else` et utilisez [les opérateurs logiques](https://www.w3schools.com/js/js_comparisons.asp) AND (noté `&&` en JS) et OR (noté `||` en JS). 
+    - Publier la version incluant le JS sur Capytale (code 1895-5198726)
 
 
 !!! example "{{ exercice() }}: Calculatrice RPN"
