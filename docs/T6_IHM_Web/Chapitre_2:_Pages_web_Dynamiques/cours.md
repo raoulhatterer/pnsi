@@ -266,7 +266,10 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         - Les [Flex Box CSS](https://www.w3schools.com/css/css3_flexbox.asp){:target="_blank"} sont un standard CSS3 de disposition des éléments dans une page web. Ce standard permet d'avoir un design adaptatif à l'écran. Les éléments peuvent être réagencés selon la taille de l'écran.
         - Les onglets suivants contiennent  l'ébauche du code implémentant une calculatrice RPN. Compléter le code pour avoir une calculatrice entièrement fonctionnelle.
     === "Aperçu"
+        Ebauche:
         ![](data/ebauche-calculatriceRPN.png){: .center}
+        A réaliser:
+        ![](data/calculatriceRPN.png){: .center}
     === "index.html"
          ``` html
          <!DOCTYPE html>
