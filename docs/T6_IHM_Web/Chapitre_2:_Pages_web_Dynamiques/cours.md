@@ -269,7 +269,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
         Ebauche:
         ![](data/ebauche-calculatriceRPN.png){: .center}
         A réaliser:
-        ![](data/calculatriceRPN.png){: .center}
+        ![](data/calculatriceRPN.PNG){: .center}
     === "index.html"
          ``` html
          <!DOCTYPE html>
