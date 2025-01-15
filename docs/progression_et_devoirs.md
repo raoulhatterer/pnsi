@@ -65,9 +65,6 @@
         - exercices de la page d'exercices If else elif (code capytale 9fee-4323961)
         - feuille wims 4
 
-
-
-
 !!! done "séance 7 (mardi 5/11/2024):"
     - Les fonctions (Thème 1 Chapitre 5) 
     - Exercices 1 et 2 sur les fonctions
@@ -132,13 +129,14 @@
         - Exercice 4 sur le javascript
         - Préparer contrôle sur le HTML CSS
         
-{#   
-!!! done "séance 15 (mardi 16/1/2024):"
+
+!!! done "séance 15 (mardi 14/1/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
-    - Les bases de JavaScript
-    - Exercices 6, 7, 8.
+    - Contrôle sur le HTML et le JS
+    - Exercice: calculatrice en JS
     ??? note "Devoirs"
-        - Préparer le contrôle (reporté au 30/01) portant sur HTML + CSS + JavaScript (les 2 aides mémoires sont autorisés si vous en avez une version imprimée)
+        - Terminer l'exercice calculatrice en JS
+{#   
 
 !!! done "séance 16 (mardi 23/1/2024):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
