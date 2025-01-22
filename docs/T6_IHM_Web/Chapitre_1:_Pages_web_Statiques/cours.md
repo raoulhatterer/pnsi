@@ -1,4 +1,5 @@
 # Chapitre 1: Pages web statiques
+{{ initexo(0)}}
 
 ![image](data/BO.png){: .center}
 
@@ -54,32 +55,33 @@ Il a été inventé en 1992 par [Tim Berners-Lee](https://fr.wikipedia.org/wiki/
 
 Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette magnifique page et **suivez le lien qui s'y trouve pour apprendre le fonctionnement des balises html**.
 
-{{ initexo(0)}}
+
 !!! example "{{ exercice() }}"
     === "Énoncé"
         1. Lire [la page d'introduction à HTML de mozilla](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started){:target="_blank"} et réaliser les exercices d'apprentissage actif qui s'y trouvent.
         2. Création d'une page personnelle
-            - Puis créer un dossier contenant un fichier ```mapage.html```.
-            - Créer une page contenant une image et un lien vers le site du lycée.
+            - Puis créer un dossier contenant un fichier ```mapage.html``` ainsi qu'un fichier `page2.html`.
+            - Créer une page contenant **une image** et un **lien vers le site du lycée** et **un lien vers une autre page**.
         3. Indications:
             - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel.
             - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
-    === "Correction"
-{#
- ```html
- 	<!DOCTYPE html>
-  	<html lang='fr'>
- 	  <head>
-	    <meta charset="utf-8">
- 	    <title>Ma première page</title>
-    	  </head>
-    	
- 	  <body>
-        	
-      	  </body>
-    	</html>    
+    === "Canevas"{# #}
+        ```html
+        	<!DOCTYPE html>
+         	<html lang='fr'>
+               <head>
+       	        <meta charset="utf-8">
+        	        <title>Ma première page</title>
+               </head>
+           	
+               <body>
+               	
+               </body>
+           </html>    
         ```
- #}
+    === "Correction"{# #}  
+        - Capytale: 087b-5379747
+ 
       
 ### Premières conclusions sur l'utilisation du ```html```
 
@@ -302,3 +304,10 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
         - Pour le fond: présentez-vous, présentez vos parents, les études que vous souhaitez faire et par la suite le métier que vous souhaitez exercer. Présentez aussi votre œuvre culturelle préférée  (livre, film, tableau, musique...), en expliquant pourquoi elle vous a marqué. Faites-nous part de votre animal totem (celui qui correspond le mieux à votre caractère ou à votre sensibilité) en expliquant votre choix. Ajoutez d'autres pages si vous le souhaitez (du moment qu'elles sont personnelles). Terminez par une page  où vous indiquerez, sous forme de tableau, les balises `html` que vous avez utilisées (vous en donnerez aussi l'utilité) et vous ferez de même pour les  styles `css` que vous avez utilisés.
         - Publiez ce travail sur Capytale (Exercice5 HTML code 2808-2730306). 
 
+!!! example "{{ exercice() }}"
+    Histoire de l'informatique
+    === "Énoncé"
+        - Réaliser un mini-site web composé de plusieurs pages interconnectées, utilisant un fichier CSS unique pour leur mise en forme. Vous devrez également structurer et styliser des fichiers préexistants afin de leur donner une mise en page harmonieuse.
+    === "Correction"
+        - 
+        

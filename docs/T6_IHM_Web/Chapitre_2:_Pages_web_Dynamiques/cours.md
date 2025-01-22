@@ -455,7 +455,7 @@ La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilis
 
          ```
     === "Correction"
-        {{ correction(False,"- Capytale (code 9bcf-2789938)") }}
+        {{ correction(True,"- Capytale (code 9bcf-2789938)") }}
     
     
 

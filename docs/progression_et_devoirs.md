@@ -121,7 +121,7 @@
 
 
 
-!!! done "séance 14 (mardi 7/1/2025):"
+!!! done "séance 14 (mardi 7/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
     - Les bases de JavaScript
     - Exercices 1 à  3
@@ -130,20 +130,25 @@
         - Préparer contrôle sur le HTML CSS
         
 
-!!! done "séance 15 (mardi 14/1/2025):"
+!!! done "séance 15 (mardi 14/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
     - Contrôle sur le HTML et le JS
     - Exercice: calculatrice en JS
     ??? note "Devoirs"
         - Terminer l'exercice calculatrice en JS
-{#   
 
-!!! done "séance 16 (mardi 23/1/2024):"
+
+!!! done "séance 16 (mardi 21/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
-    - Les bases de JavaScript
-    - Exercices 9 et 10.
+    - Quand la page est fabriquée à la demande par le serveur
+    - Exercices 6 et 7
+    - Distribution des codes du chalenge passe ton hack d'abord
     ??? note "Devoirs"
-        - Préparer le contrôle du 30/01 portant sur HTML + CSS + JavaScript (les 2 aides mémoires sont autorisés si vous en avez une version imprimée)
+        - Finir l'exercice 7
+        - Contrôle html + css: j'ai mis les productions d'Arno et d'Adrien dans la partie  `Documents` du site collaboratif pour ceux qui souhaitent voir comment ils ont fait.
+
+
+{#   
 
 !!! done "séance 17 (mardi 30/1/2024):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
