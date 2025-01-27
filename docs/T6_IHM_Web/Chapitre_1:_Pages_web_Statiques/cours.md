@@ -188,7 +188,7 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
         __Voici une capture d'image de la page que vous devez recréer en HTML et CSS:__
         ![image](data/caracteres+speciaux.png)
     === "Correction"
-    {{ correction(False,
+    {{ correction(True,
     "
         ```html linenums='1'
             <h1>Références d'entités : inclure les caractères spéciaux en HTML</h1>
