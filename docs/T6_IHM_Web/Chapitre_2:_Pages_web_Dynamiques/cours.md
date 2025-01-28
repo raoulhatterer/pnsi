@@ -555,7 +555,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
             - Dans le fichier `secret.py` rechercher le nom des clés utilisées par le dictionnaire `secrets` pour déterminer l'attribut `name` des différentes zones de saisie.
             - Dans ce même fichier html, rajouter le code jinja2 pour permettre d'afficher l'ancien message secret envoyé par le serveur. 
         === "Correction `secret.html`"
-        {{ correction(False,
+        {{ correction(True,
         "
         
             ```html
@@ -582,7 +582,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
                 ) }}
             
         === "Correction `secret.py`"
-        {{ correction(False,
+        {{ correction(True,
         "
             ```python 
             from serveur import get_template, render, OK, pageDynamique, lancerServeur
@@ -670,6 +670,34 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
             2. Rajouter le code nécessaire pour obtenir le formulaire suivant:
                ![](data/Formulaire_eleve.png){: .center}
             3. Créer un fichier `dynserveur.py` et ajouter un patron au fichier `formulaire.html` pour remplir les cases du plan de classe au fur et à mesure que des places sont attribuées aux élèves. Le code affichera «place libre» dans les cases restant libres. Enregistrer le fichier html modifié sous un nouveau nom: `patron.html`.
+        === "Indications"
+            - Créer 4 listes nommées `rang1`, `rang2`, `rang3`, et  `rang4` dans  le script `dynserveur.py`
+            ```python
+            pl = "place libre"
+            rang1 = [pl, pl, pl, pl, pl]  
+            ```
+            - Écrire la fonction `traitement1` qui terminera par:
+            ```python
+               return OK(render(template, {'rang1': rang1,
+                                           'rang2': rang2,
+                                           'rang3': rang3,
+                                           'rang4': rang4}))
+            ```
+            - Utiliser les 4 listes pour stocker le nom des élèves à l'endroit le plus logique au fur et à mesure de leur réception par le serveur. Prévoir une alerte si un emplacement était déjà occupé.
+            - Utiliser la fonction suivante pour tester dans la console que votre code traite bien les données envoyées par le formulaire.
+            ```python
+            def affiche_plan_dans_console():
+                """
+                Affiche le plan de classe dans la console
+                """
+                print("rang1:", rang1)
+                print("rang2:", rang2)
+                print("rang3:", rang3)
+                print("rang4:", rang4)
+            ```
+            - Comme dans l'activité pages 196-197 du manuel utiliser des boucles dans le patron pour afficher chacun des rangs. 
+
+        
         === "Correction"
         {{ correction(False,
         "

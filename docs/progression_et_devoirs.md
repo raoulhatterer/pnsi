@@ -148,12 +148,16 @@
         - Contrôle html + css: j'ai mis les productions d'Arno et d'Adrien dans la partie  `Documents` du site collaboratif pour ceux qui souhaitent voir comment ils ont fait.
 
 
-{#   
 
-!!! done "séance 17 (mardi 30/1/2024):"
+
+!!! done "séance 17 (mardi 28/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
-    - Exercice 11
-    - Contrôle portant sur HTML + CSS + JavaScript
+    - (chap2) Exercice 7: Boîte à secrets
+    - (chap2) Exercice 8: Plan de classe
+    ??? Devoirs
+        - Faire l'exercice 8 en tenant compte des indications que j'ai rajoutées. 
+
+{#   
 
 !!! done "séance 18 (mardi 6/2/2024):"
     - Séance annulée (arrêt maladie)
