@@ -122,7 +122,7 @@
 
 
 !!! done "séance 14 (mardi 7/01/2025):"
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Les bases de JavaScript
     - Exercices 1 à  3
     ??? note "Devoirs"
@@ -131,7 +131,7 @@
         
 
 !!! done "séance 15 (mardi 14/01/2025):"
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Contrôle sur le HTML et le JS
     - Exercice: calculatrice en JS
     ??? note "Devoirs"
@@ -139,7 +139,7 @@
 
 
 !!! done "séance 16 (mardi 21/01/2025):"
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Quand la page est fabriquée à la demande par le serveur
     - Exercices 6 et 7
     - Distribution des codes du chalenge passe ton hack d'abord
@@ -151,7 +151,7 @@
 
 
 !!! done "séance 17 (mardi 28/01/2025):"
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - (chap2) Exercice 7: Boîte à secrets
     - (chap2) Exercice 8: Plan de classe
     ??? Devoirs
@@ -164,10 +164,10 @@
 
 !!! done "séance 19 (mardi 13/2/2024):"
     - Correction du contrôle html css JS
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Interactions_page_web/cours.md)
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
         - Utiliser un template pour générer une page HTML
         - Exercice 12
-    - [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_2:_Protocole_HTTP/cours.md)
+    - [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_3:_Protocole_HTTP/cours.md)
         - Requêtes http
         - Exercice 1
     ??? note "Devoirs"
@@ -175,13 +175,13 @@
         - Rédiger l'exercice 1 sur les requêtes http sur Jupyter NoteBook au format Markdown avec une mise en forme riche (utilisation de listes et sous listes, mot en gras...) avec incorporation de captures d'écran pour permettre la vérification de vos réponses. 
 
 !!! done "séance 20 (mardi 20/2/2024):"
-    - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
+    - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_4:_Architecture_reseau/cours.md)
     ??? note "Devoirs"
         - 
 
 !!! done "séance 21 (mardi 12/3/2024):"
-    - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours.md)
-    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
+    - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_5:_Protocoles_de_communication/cours.md)
+    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
     ??? note "Devoirs"
         - Finir le jeu Terminus et établir la liste des commandes linux 
         - Préparer le contrôle sur les réseaux
