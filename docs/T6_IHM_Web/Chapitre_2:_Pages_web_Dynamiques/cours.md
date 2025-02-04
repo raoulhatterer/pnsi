@@ -699,7 +699,7 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
 
         
         === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
             - fichier `formulaire.html`
             ```html
@@ -954,3 +954,12 @@ Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs
             - Tous ces fichiers doivent être dans un même dossier qui doit également contenir le fichier `serveur.py`.
             "
             ) }}
+
+
+
+
+!!! example "{{ exercice() }}"
+    ??? "Résolutions d'équations du second degré"
+        === "Énoncé"
+            - Réaliser un serveur permettant la résolution d'équations du second degré. 
+        

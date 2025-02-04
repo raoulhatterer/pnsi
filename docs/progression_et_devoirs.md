@@ -157,19 +157,17 @@
     ??? Devoirs
         - Faire l'exercice 8 en tenant compte des indications que j'ai rajoutées. 
 
-{#   
 
-!!! done "séance 18 (mardi 6/2/2024):"
-    - Séance annulée (arrêt maladie)
 
-!!! done "séance 19 (mardi 13/2/2024):"
-    - Correction du contrôle html css JS
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
-        - Utiliser un template pour générer une page HTML
-        - Exercice 12
+!!! done "séance 18 (mardi 4/02/2025):"
     - [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_3:_Protocole_HTTP/cours.md)
         - Requêtes http
         - Exercice 1
+    - Exercice 9 chap2 : réalisation d'un serveur qui traite la résolution des équations du second degré 
+
+{#   
+
+!!! done "séance 19 (mardi 13/2/2024):"
     ??? note "Devoirs"
         - Savoir refaire l'exercice 12 sans regarder la correction.
         - Rédiger l'exercice 1 sur les requêtes http sur Jupyter NoteBook au format Markdown avec une mise en forme riche (utilisation de listes et sous listes, mot en gras...) avec incorporation de captures d'écran pour permettre la vérification de vos réponses. 
