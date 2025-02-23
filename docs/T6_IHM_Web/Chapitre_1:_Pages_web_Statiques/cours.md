@@ -289,7 +289,7 @@ Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendr
 ###  Aide mémoire CSS
 
 ??? done "Si vous avez besoin de retrouver facilement  une propriété css"
-    Vous pouvez télécharger et consulter [la liste des propriétés css](./data/Glossaire+des+propriétés+CSS.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
+    Vous pouvez télécharger et consulter [la liste des propriétés css](./data/Glossaire+des+proprietes+CSS.pdf){:target="_blank"} de [Mathieu Nebra](https://fr.wikipedia.org/wiki/Mathieu_Nebra){:target="_blank"}.
 
 ### En savoir plus
 
