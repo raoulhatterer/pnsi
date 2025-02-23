@@ -21,20 +21,20 @@ Testons le ```ping``` de la machine ```192.168.0.1```  vers la machine ```192.16
 
 
 ### 1.1. La carte réseau et son adresse MAC
-Chaque ordinateur sur le réseau dispose d'une adresse MAC, qui une valeur **unique** attribuée à sa carte réseau (Ethernet, Wifi, 4G, 5G, ...) lors de sa fabrication en usine.
+- Chaque ordinateur sur le réseau dispose d'une adresse MAC, qui une **valeur unique attribuée à sa carte réseau** (Ethernet, Wifi, 4G, 5G, ...) lors de sa fabrication en usine.
 
-Cette adresse est codée sur 48 bits, présentés sous la forme de 6 octets en hexadécimal. Exemple : ```fc:aa:14:75:45:a5```
+- Cette adresse est codée sur 48 bits, présentés sous la forme de 6 octets en hexadécimal séparés par la caractère « : » comme dans cet exemple d'adresse MAC : ```fc:aa:14:75:45:a5```
 
-Les trois premiers octets correspondent au code du fabricant.
+- Les trois premiers octets correspondent au code du fabricant.
 Un site comme [https://www.macvendorlookup.com/](https://www.macvendorlookup.com/){. target="_blank"} vous permet de retrouver le fabricant d'une adresse MAC quelconque.
 
-### 1.2. Switch, hub, quelle différence ?
+### 1.2. Commutateurs: Switch, hub, quelle différence ?
 
 - Au sein d'un **hub Ethernet** (de moins en moins vendus), il n'y a **aucune analyse** des données qui transitent : il s'agit simplement d'un dédoublement des fils de cuivre (tout comme une multiprise électrique). L'intégralité des messages est donc envoyée à l'intégralité des ordinateurs du réseau, même s'ils ne sont pas concernés.
 
 ![](data/hub.png){: .center}
 
-- Au sein d'un **switch Ethernet** , une analyse est effectuée sur la trame qui est à distribuer (voir [ici](https://lyceemed.forge.aeif.fr/pnsi/T3_Architecture_materielle/Chapitre_4%3A_Protocoles_de_communication/cours/)). Lors d'un branchement d'un nouvel ordinateur sur le switch, celui-ci récupère son adresse MAC, ce qui lui permet de **trier** les messages et de ne les distribuer qu'au bon destinataire.
+- Au sein d'un **switch Ethernet** , une analyse est effectuée sur la trame qui est à distribuer (voir [ici](../../Chapitre_4:_Protocoles_de_communication/cours/)).  Le commutateur tient à jour sa table SAT (Source Adress Table) qui fait la relation entre les adresse MAC et ses ports. Lors d'un branchement d'un nouvel ordinateur sur le switch, celui-ci récupère son adresse MAC, ce qui lui permet de **trier** les messages et de ne les distribuer qu'au bon destinataire.
 
 
 
@@ -139,13 +139,17 @@ De la même manière, le suffixe ```/ 16``` donnera un masque de ```11111111.111
 Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111000.00000000``` , soit ```255.255.248.0```. 
 
 
-### 2.3 Adresses IP et masques : ce qu'il faut retenir
+### 2.3 Adresses IP et masques
 
-!!! note ":heart: Définition :heart:"
+!!! note ":heart:  Ce qu'il faut retenir :heart:"
     - Les ordinateurs s'identifient sur les réseaux à l'aide d'une adresse IP (Internet Protocol). 
     - Suivant la norme **IPv4**, les adresses IP sont encodées sur 4 octets : on parle d'**IPv4**.
     - Chaque octet pouvant varier de la valeur (décimale) 0 à 255, cela signifie que les adresses IP théoriquement possibles vont de ```0.0.0.0``` à ```255.255.255.255```.
     - Il y a donc $256^4=4 294 967 296$ adresses possibles.  On a longtemps cru que ce nombre serait suffisant. Ce n'est plus le cas, on est donc en train de passer sur des adresses à 6 octets (en hexadécimal) : voir la [norme IPv6](https://fr.wikipedia.org/wiki/Adresse_IPv6){. target="_blank"}.
+    - L’adresse IP est composée de deux informations : L’adresse du réseau (net-id) et l’adresse de la machine (host-id). Pour distinguer l’adresse du réseau de l’adresse de la machine, on utilise le **masque de sous-réseau** comme dans l'exemple qui suit.
+    - Il y a **2 adresses machine a ne pas attribuer** :
+        -  La première (adresse du réseau) comme dans l'exemple qui suit.
+        -  La dernière (adresse de diffusion ou broadcast) comme dans l'exemple qui suit.
 
 
 !!! aide "Exemple"
