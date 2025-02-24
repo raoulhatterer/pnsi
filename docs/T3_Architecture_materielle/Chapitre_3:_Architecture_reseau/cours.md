@@ -1,5 +1,7 @@
 # Chapitre 3: Architecture d'un réseau
 
+{{ initexo(0) }}
+
 ![image](data/BO.png){: .center}
 
 Ce cours a pour but de présenter la constitution classique d'un réseau, et les équipements associés. La partie relative aux protocoles utilisés lors des échanges entre deux machines est détaillée dans le cours sur les protocoles de communication.
@@ -139,6 +141,16 @@ De la même manière, le suffixe ```/ 16``` donnera un masque de ```11111111.111
 Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111000.00000000``` , soit ```255.255.248.0```. 
 
 
+!!! example "{{ exercice() }}" {#Exercice 1#}
+    === "Énoncé"
+        - Indiquer en notation décimale pointé, les masques de sous-réseau des adresses IP suivantes :
+            - 192.168.2.99/16
+            - 172.28.234.10/20
+    === "Correction" {#
+        - Masques de sous-réseau:
+            - 192.168.2.99/16 : 255.255.0.0
+            - 172.28.234.10/20 : 255.255.240.0 #}
+
 ### 2.3 Adresses IP et masques
 
 !!! note ":heart:  Ce qu'il faut retenir :heart:"
@@ -155,6 +167,31 @@ Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111
 !!! aide "Exemple"
     ![image](data/ex_reseau.png){: .center}
     
+
+
+
+!!! example "{{ exercice() }}" {#Exercice 2#}
+    === "Énoncé"
+        - Expliquer pourquoi l’adresse IP 165.438.0.2 n’est pas valide. 
+        - Indiquer l’adresse réseau et l’adresse de diffusion du réseau de la machine dont l’adresse IP est 192.168.2.99/24.
+        - Indiquer la plage d’adresses utilisables du réseau de la machine dont l’adresse IP est 192.168.2.99/24.
+        - Calculer le nombre de machines qu’il est possible de connecter sur le réseau 192.168.2.0/24.
+        - Indiquer en notation décimale pointé, les masques de sous-réseau des adresses IP suivantes :
+            - 192.168.2.99/16
+            - 172.28.234.10/20 
+    === "Correction" {#
+        - adresse IP 165.438.0.2 non valide car 438 dépasse la valeur maximale d'un octet qui est de 255
+        - adresse réseau : 192.168.2.0
+        - adresse de diffusion : 192.168.2.255
+        - 1re adresse utilisable : 192.168.2.1
+        - Dernière adresse utilisable : 192.168.2.254
+        - 192.168.2.99/16 de masque 255.255.0.0 car (11111111.11111111.00000000.00000000)
+        - 172.28.234.10/20 de masque 255.255.240.0 car (11111111.11111111.11110000.00000000)
+    #}
+
+
+
+
 
 ## 3. Un vrai réseau contenant deux sous-réseaux distincts : la nécessité d'un routeur
 
@@ -219,6 +256,24 @@ Chez vous, la box de votre opérateur joue simultanément le rôle de switch et 
 
 L'image ci-dessous présente le résultat de la commande ```ipconfig``` sous Windows. On y retrouve l'adresse IP locale ```192.168.9.103```, le masque de sous-réseau ```255.255.255.0``` et l'adresse de la passerelle ```192.168.9.1```.  
 ![](data/imgpasserelle.jpg){: .center}
+
+
+
+
+!!! example "{{ exercice() }}" {#Exercice 3#}
+    === "Énoncé"
+        - Soit le réseau suivant :
+        
+        ![](data/bidulebox.jpg){: .center}
+        
+        - Indiquer les adresses IP de la « BiduleBox » dans le réseau local et dans le réseau du FAI.
+        - Proposer un masque de sous-réseau pour que toutes les machines de ce réseau local puissent communiquer entre elles.
+    === "Correction" {#
+        - Adresse IP de la « BiduleBox » dans le réseau local : 192.168.1.1
+        - Adresse IP de la « BiduleBox » dans le réseau du FAI : 83.12.45.25
+        - Masque de sous-réseau: 255.255.0.0
+    #}
+
 
 ### 3.3 Annexe : rajout d'un serveur DNS
 
