@@ -23,15 +23,14 @@
 ### :high_brightness: Thème(s) en cours d'étude 
 
 
-- :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours/)
 
+- :arrow_right: [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
 
 {#
 
 
-- :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Dynamiques/cours/)
-- :arrow_right: [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_2:_Protocole_HTTP/cours/)
-- :arrow_right: [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
+
+
 - :arrow_right: [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
 - :arrow_right: [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
 - :arrow_right: [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
@@ -56,7 +55,9 @@
 - :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours/)
 - :arrow_right: [T1 > Les fonctions](T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours/)
 - :arrow_right: [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
- 
+- :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours/)
+
+
 ### Programme
 !!! abstract "Nous traiterons les différentes entrées du programme dans les chapitres suivants…"
     

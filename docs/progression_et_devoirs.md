@@ -165,12 +165,15 @@
         - Exercice 1
     - Exercice 9 chap2 : réalisation d'un serveur qui traite la résolution des équations du second degré 
 
-{#   
 
-!!! done "séance 19 (mardi 13/2/2024):"
+
+!!! done "séance 19 (mardi 25/02/2025):"
+    - T3 C3
     ??? note "Devoirs"
-        - Savoir refaire l'exercice 12 sans regarder la correction.
-        - Rédiger l'exercice 1 sur les requêtes http sur Jupyter NoteBook au format Markdown avec une mise en forme riche (utilisation de listes et sous listes, mot en gras...) avec incorporation de captures d'écran pour permettre la vérification de vos réponses. 
+        - Réviser le contrôle portant sur le thème 6 (sauf javascript)
+
+
+{#   
 
 !!! done "séance 20 (mardi 20/2/2024):"
     - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_4:_Architecture_reseau/cours.md)
