@@ -177,16 +177,16 @@ Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111
         - Indiquer la plage d’adresses utilisables du réseau de la machine dont l’adresse IP est 192.168.2.99/24.
         - Calculer le nombre de machines qu’il est possible de connecter sur le réseau 192.168.2.0/24.
         - Indiquer en notation décimale pointé, les masques de sous-réseau des adresses IP suivantes :
-            - 192.168.2.99/16
-            - 172.28.234.10/20 
+            - 192.168.2.99/17
+            - 172.28.234.10/21 
     === "Correction" {#
         - adresse IP 165.438.0.2 non valide car 438 dépasse la valeur maximale d'un octet qui est de 255
         - adresse réseau : 192.168.2.0
         - adresse de diffusion : 192.168.2.255
         - 1re adresse utilisable : 192.168.2.1
         - Dernière adresse utilisable : 192.168.2.254
-        - 192.168.2.99/16 de masque 255.255.0.0 car (11111111.11111111.00000000.00000000)
-        - 172.28.234.10/20 de masque 255.255.240.0 car (11111111.11111111.11110000.00000000)
+        - 192.168.2.99/17 de masque 255.255.128.0 car (11111111.11111111.10000000.00000000)
+        - 172.28.234.10/21 de masque 255.255.248.0 car (11111111.11111111.11111000.00000000)
     #}
 
 
