@@ -110,3 +110,6 @@ Par exemple, l'appel au site ```www.lyceemauriac.fr``` génère 129 requêtes/r�
             - Combien de temps a duré la communication ?
             - Combien de temps a nécessité  le téléchargement proporement dit des données ? Calculer le poucentage que cela représente par rapport à la durée totale de la communication client-serveur.
     === "Correction"
+        Téléchargez le document suivant :
+        
+        ![](./data/requette http.pdf)
