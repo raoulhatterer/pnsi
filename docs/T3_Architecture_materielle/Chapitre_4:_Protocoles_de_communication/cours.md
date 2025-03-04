@@ -253,10 +253,10 @@ En suivant le même principe, la machine ```192.168.1.1 ``` pourra envoyer son _
     === "Correction"
         **Partie 2**
         ??? tip "Correction Q1."
-            Le réseau services a pour adresse IP ```195.168.254.0```.
+            Le réseau services a pour adresse IP ```192.168.254.0```.
 
         ??? tip "Correction Q2."
-            Le réseau services a pour adresse ```195.168.254.0```. Comme le masque de sous-réseau utilisé est ```255.255.255.0```, 254 adresses sont initialement disponibles (```195.168.254.1```  à ```195.168.254.254```, puisque l'adresse ```195.168.254.255``` est réservée pour le *broadcast* sur le réseau). Comme deux adresses sont déjà prises par le routeur 1 et le routeur 2, il en reste 252.
+            Le réseau services a pour adresse ```192.168.254.0```. Comme le masque de sous-réseau utilisé est ```255.255.255.0```, 254 adresses sont initialement disponibles (```192.168.254.1```  à ```192.168.254.254```, puisque l'adresse ```192.168.254.255``` est réservée pour le *broadcast* sur le réseau). Comme deux adresses sont déjà prises par le routeur 1 et le routeur 2, il en reste 252.
 
         ??? tip "Correction Q3."
             Le serveur web accède à internet via le routeur 2, dont l'adresse sur le réseau services est ```192.168.254.2```. C'est donc cette adresse qui joue est l'adresse de passerelle pour le serveur web.
