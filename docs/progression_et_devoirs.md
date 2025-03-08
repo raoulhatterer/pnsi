@@ -168,17 +168,21 @@
 
 
 !!! done "séance 19 (mardi 25/02/2025):"
-    - T3 C3
+    - [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
     ??? note "Devoirs"
         - Réviser le contrôle portant sur le thème 6 (sauf javascript)
 
 
-{#   
 
-!!! done "séance 20 (mardi 20/2/2024):"
-    - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_4:_Architecture_reseau/cours.md)
+
+!!! done "séance 20 (mardi 04/03/2025):"
+    - Contrôle sur le thème 6
+    - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours.md)
     ??? note "Devoirs"
-        - 
+        - Réviser le protocole du bit alterné
+
+
+{#   
 
 !!! done "séance 21 (mardi 12/3/2024):"
     - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_5:_Protocoles_de_communication/cours.md)
