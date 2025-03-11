@@ -238,7 +238,7 @@ False
 
 ## 3. Fonctions composées
 
-### 3.1 Disjonction exclusive XOR
+### 3.1 Disjonction exclusive (XOR)
 (en français OU EXCLUSIF)
 
 
@@ -256,12 +256,6 @@ False
 ![](data/porte_xor.png){: .center}
 
 ![](data/xor.png){: .center}
-
-Le XOR joue un rôle fondamental en cryptographie car il possède une propriété très intéressante : 
-$(x\wedge y)\wedge y=x$
-
-Si $x$ est un message et $y$ une clé de chiffrage, alors $x\wedge y$ est le message chiffré. 
-Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc le message $x$ initial.
 
 
 !!! example "{{ exercice() }}"
@@ -316,7 +310,8 @@ Il est temps de se reposer un peu et d'admirer cette vidéo :
 ![](data/watergates.gif){: .center}
 
 
-### Remarque :
+### 3.4 Fonctions universelles
+
 Les fonctions NAND ET NOR sont dites **universelles** : chacune d'entre elles peut générer l'intégralité des autres portes logiques. Il est donc possible de coder toutes les opérations uniquement avec des NAND (ou uniquement avec des NOR).
 Voir [Wikipedia](https://fr.wikipedia.org/wiki/Fonction_NON-ET)
 
@@ -352,12 +347,12 @@ Voir [Wikipedia](https://fr.wikipedia.org/wiki/Fonction_NON-ET)
          
 
 
-
+### 3.5 Calculs en Python
 
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Effectuer les opérations suivantes.
+        Effectuer à la main les opérations suivantes:
         ```python
            1011011
         &  1010101
@@ -396,8 +391,8 @@ Voir [Wikipedia](https://fr.wikipedia.org/wiki/Fonction_NON-ET)
         ```
         ")}}         
 
-### 3.5 Calculs en Python
-les opérateurs ET (`&`), OU (`|`) et OU EXCLUSIF (`^`) sont utilisables directement en Python
+
+Les opérateurs ET (`&`), OU (`|`) et OU EXCLUSIF (`^`) sont utilisables directement en Python
 
 
 ```python
@@ -445,6 +440,15 @@ Pour comprendre ces résultats, il faut travailler en binaire. Voici les mêmes 
 
 
 ### 4. Cryptographie
+
+
+
+Le XOR joue un rôle fondamental en cryptographie car il possède une propriété très intéressante : 
+$(x\wedge y)\wedge y=x$
+
+Si $x$ est un message et $y$ une clé de chiffrage, alors $x\wedge y$ est le message chiffré. 
+Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc le message $x$ initial.
+
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
