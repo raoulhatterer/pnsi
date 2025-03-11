@@ -282,7 +282,7 @@ False
 
 
 !!! example "{{ exercice() }}"
-    `x ↑ y = ~(x & y)`
+    Justifier à l'aide de tables de vérité que `x ↑ y = ~(x & y)`
     Il s'agit d'une des lois de De Morgan formulée par le mathématicien britannique Augustus De Morgan (1806-1871).
 
 
