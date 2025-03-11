@@ -223,7 +223,7 @@ False
 
 
 !!! example "{{ exercice() }}"
-    Comprendre ce mème :
+    Comprendre ce meme :
     ![image](data/drake.webp){: .center width=50%}
 
 
@@ -261,12 +261,12 @@ False
 !!! example "{{ exercice() }}"
     Deux formules sont équivalentes si et seulement si elles ont la même table de vérité. Justifier à l'aide de tables de vérité que `x ^ y = (x & ~y) | (~x & y)`.
     
-    Il s'agit d'une des lois de De Morgan formulée par le mathématicien britannique Augustus De Morgan (1806-1871).
+
 
 
 ### 3.2 Fonction Non Et (NAND)
 
-`x ↑ y = ~(x & y)`
+
 
 !!! abstract "Table de vérité de NAND :heart:"
     |`x`| `y` | `x ↑ y`|
@@ -279,6 +279,12 @@ False
 
 
 ![](data/porte_nand.png){: .center}
+
+
+!!! example "{{ exercice() }}"
+    `x ↑ y = ~(x & y)`
+    Il s'agit d'une des lois de De Morgan formulée par le mathématicien britannique Augustus De Morgan (1806-1871).
+
 
 ### 3.3 Fonction Non Ou (NOR)
 
