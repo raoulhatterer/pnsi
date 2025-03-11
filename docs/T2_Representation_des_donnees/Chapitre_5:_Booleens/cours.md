@@ -450,7 +450,7 @@ Pour comprendre ces résultats, il faut travailler en binaire. Voici les mêmes 
 
 
 Le XOR joue un rôle fondamental en cryptographie car il possède une propriété très intéressante : 
-`(x ^ y) ^ y=x`
+`(x ^ y) ^ y = x`
 
 Si $x$ est un message et $y$ une clé de chiffrage, alors $x\wedge y$ est le message chiffré. 
 Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc le message $x$ initial.
