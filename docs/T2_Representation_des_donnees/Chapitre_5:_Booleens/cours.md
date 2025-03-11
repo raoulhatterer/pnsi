@@ -282,7 +282,8 @@ False
 
 
 !!! example "{{ exercice() }}"
-    Justifier à l'aide de tables de vérité que `x ↑ y = ~(x & y)`
+    1. Écrire la table de vérité de `x ↑ y = ~(x & y)`
+    2. Compléter la table de vérité pour montrer que `~(x & y) = ~x | ~y` soit en français: « non(x et y) » est identique à « (non x) ou (non y) ».
     Il s'agit d'une des lois de De Morgan formulée par le mathématicien britannique Augustus De Morgan (1806-1871).
 
 
@@ -305,8 +306,8 @@ False
 
 
 !!! example "{{ exercice() }}"
-    - Justifier que `x ↓ y = ~(x | y)`
-    - À qui doit-on cette loi ?
+    1. Écrire la table de vérité de `x ↓ y = ~(x | y)`
+    2. Compléter la table de vérité pour montrer que `~ (x | y) = ~x & ~y` soit en français: « non(x ou y) » est identique à « (non x) et (non y) ». Il s'agit d'une des lois de De Morgan.
 
 
 Il est temps de se reposer un peu et d'admirer cette vidéo :
@@ -452,7 +453,7 @@ Pour comprendre ces résultats, il faut travailler en binaire. Voici les mêmes 
 Le XOR joue un rôle fondamental en cryptographie car il possède une propriété très intéressante : 
 `(x ^ y) ^ y = x`
 
-Si $x$ est un message et $y$ une clé de chiffrage, alors $x\wedge y$ est le message chiffré. 
+Si $x$ est un message et $y$ une clé de chiffrage, alors `x ^ y` est le message chiffré. 
 Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc le message $x$ initial.
 
 

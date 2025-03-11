@@ -182,14 +182,17 @@
         - Réviser le protocole du bit alterné
 
 
-{#   
 
-!!! done "séance 21 (mardi 12/3/2024):"
-    - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_5:_Protocoles_de_communication/cours.md)
-    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
+
+!!! done "séance 21 (mardi 11/3/2025):"
+    - [T2 > Chapitre5: Les booléens](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
+    - Exercices 1 à 7
     ??? note "Devoirs"
-        - Finir le jeu Terminus et établir la liste des commandes linux 
-        - Préparer le contrôle sur les réseaux
+        - Apprendre par coeur les tables de vérité des fonctions logiques AND, OR, XOR, NOT, NAND, NOR.
+        - Réviser les calculs à la main avec les opérateurs logiques.
+
+
+{#   
 
 !!! done "séance 22 (mardi 19/3/2024):"
     - Annulée pour cause de bac blanc de français
@@ -199,9 +202,9 @@
     
     
 !!! done "séance 23 (mardi 26/3/2024):"
-    - [T2 > Chapitre5: Les booléens](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
-    - Contrôle sur les réseaux
 
+    - Contrôle sur les réseaux
+    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
 !!! done "séance 24 (mardi 2/4/2024):"
     - [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
 
