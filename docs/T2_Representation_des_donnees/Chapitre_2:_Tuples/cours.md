@@ -1,5 +1,5 @@
 # Chapitre 2: les Tuples
-
+{{initexo(0)}}
 ![image](data/BO.png){: .center}
 
 ![image](data/meme.jpg){: .center width=30%}
@@ -95,7 +95,42 @@ On retrouve bien évidemment les deux méthodes utilisables pour les listes :
 ```
 
 
-## 5. Construction d'une fonction renvoyant un tuple
+## 5. Parcours d'une liste de tuples
+
+
+Il existe deux manières de parcourir une liste de tuples.
+
+### 5.1 Par tuple
+
+Exemple : 
+```python
+for c in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+    print("Point de coordonnées", c)
+```
+On récupère ainsi un tuple après l'autre :
+
+```pycon
+Point de coordonnées (-1, 0)
+Point de coordonnées (1, 0)
+Point de coordonnées (0, -1)
+Point de coordonnées (0, 1)
+```
+
+### 5.2 Par contenu
+Exemple : 
+```python
+for x, y in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+    print("Point d'abscice", x, "et d'ordonnée", y)
+```
+On récupère ainsi les contenus successifs des tuples :
+```pycon
+Point d'abscice -1 et d'ordonnée 0
+Point d'abscice 1 et d'ordonnée 0
+Point d'abscice 0 et d'ordonnée -1
+Point d'abscice 0 et d'ordonnée 1
+```
+
+## 6. Construction d'une fonction renvoyant un tuple
 
 
 ```python linenums='1'
@@ -113,9 +148,9 @@ def division(a, b):
 (4,1)
 ```
 
-### 6. Exercice 
 
-!!! abstract "Exercice"
+
+!!! example "{{exercice()}}"
     === "Énoncé"
         On considère deux points A et B d'un repère quelconque. Leurs coordonnées sont des tuples à deux éléments.
         Écrire une fonction qui prend en argument les coordonnées de deux points et qui renvoie le milieu de ces deux points.
