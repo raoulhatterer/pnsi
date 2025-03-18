@@ -500,7 +500,7 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
         "
         ```python
         >>> chiffre('BONJOUR', 'MAURIAC')
-        \x0f\x0e\x1b\x18\x06\x14\x11
+        '\\x0f\\x0e\\x1b\\x18\\x06\\x14\\x11'
         ```
         ")}}
     
@@ -508,7 +508,8 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
         {{ correction(True,
         "
         ```python
-        >>> chiffre(\x0f\x0e\x1b\x18\x06\x14\x11, 'MAURIAC')
+        >>> c = chiffre('BONJOUR', 'MAURIAC')
+        >>> chiffre(c, 'MAURIAC')
         'BONJOUR'
         ```
         C'était prévisible car c'est une propriété remarquable du XOR : ```(a^b)^b = a```
