@@ -515,7 +515,15 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
         C'était prévisible car c'est une propriété remarquable du XOR : ```(a^b)^b = a```
         ")}}
     
-    
+    === "Aide Q4"
+        ```python
+           def decrypt(dec):
+            l = ""
+            for i in range(len(cle)):
+                c = msg[i + dec] ^ cle[i]
+                l = l + chr(c)
+            return l     
+        ```
     === "Correction Q4"
         {{ correction(False,
         "
