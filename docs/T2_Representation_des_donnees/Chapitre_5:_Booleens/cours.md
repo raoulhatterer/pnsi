@@ -487,7 +487,7 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
         
         ```python linenums='1'
         def chiffre(mot_clair, cle):
-            mot_chiffre = ""
+            mot_chiffre = ''
             for i in range(len(mot_clair)):
                 code = ord(mot_clair[i]) ^ ord(cle[i])
                 mot_chiffre += chr(code)
