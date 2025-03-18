@@ -378,7 +378,7 @@ Voir [Wikipedia](https://fr.wikipedia.org/wiki/Fonction_NON-ET)
         ```
         
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python
          1011011
@@ -482,7 +482,7 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
         **Q4.** :skull: Résoudre le Pydéfi [La clé endommagée](https://pydefis.callicode.fr/defis/MasqueJetable/txt){. target="_blank"}
         
     === "Correction Q1"
-        {{ correction(False,
+        {{ correction(True,
         "
         
         ```python linenums='1'
@@ -496,7 +496,7 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
         ")}}
     
     === "Correction Q2"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python
         >>> chiffre('BONJOUR', 'MAURIAC')
@@ -505,7 +505,7 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
         ")}}
     
     === "Correction Q3"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python
         >>> chiffre('\x0f\x0e\x1b\x18\x06\x14\x11', 'MAURIAC')
