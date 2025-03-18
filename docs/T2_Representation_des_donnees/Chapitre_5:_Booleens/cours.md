@@ -223,7 +223,7 @@ False
 
 
 !!! example "{{ exercice() }}"
-    Comprendre ce meme :
+    Comprendre ce mème :
     ![image](data/drake.webp){: .center width=50%}
 
 
