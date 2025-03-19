@@ -54,7 +54,7 @@
 - :arrow_right: [T1 > Les fonctions](T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours/)
 - :arrow_right: [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
 - :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours/)
-- :arrow_right: [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
+- :arrow_right: [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
 - :arrow_right: [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
 
 

@@ -146,10 +146,10 @@ Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111
         - Indiquer en notation décimale pointé, les masques de sous-réseau des adresses IP suivantes :
             - 192.168.2.99/16
             - 172.28.234.10/20
-    === "Correction" {#
+    === "Correction" {# #}
         - Masques de sous-réseau:
             - 192.168.2.99/16 : 255.255.0.0
-            - 172.28.234.10/20 : 255.255.240.0 #}
+            - 172.28.234.10/20 : 255.255.240.0 
 
 ### 2.3 Adresses IP et masques
 
@@ -179,7 +179,7 @@ Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111
         - Indiquer en notation décimale pointé, les masques de sous-réseau des adresses IP suivantes :
             - 192.168.2.99/17
             - 172.28.234.10/21 
-    === "Correction" {#
+    === "Correction" {#     #}
         - adresse IP 165.438.0.2 non valide car 438 dépasse la valeur maximale d'un octet qui est de 255
         - adresse réseau : 192.168.2.0
         - adresse de diffusion : 192.168.2.255
@@ -187,7 +187,7 @@ Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111
         - Dernière adresse utilisable : 192.168.2.254
         - 192.168.2.99/17 de masque 255.255.128.0 car (11111111.11111111.10000000.00000000)
         - 172.28.234.10/21 de masque 255.255.248.0 car (11111111.11111111.11111000.00000000)
-    #}
+
 
 
 
@@ -268,11 +268,11 @@ L'image ci-dessous présente le résultat de la commande ```ipconfig``` sous Win
         
         - Indiquer les adresses IP de la « BiduleBox » dans le réseau local et dans le réseau du FAI.
         - Proposer un masque de sous-réseau pour que toutes les machines de ce réseau local puissent communiquer entre elles.
-    === "Correction" {#
+    === "Correction" {#     #}
         - Adresse IP de la « BiduleBox » dans le réseau local : 192.168.1.1
         - Adresse IP de la « BiduleBox » dans le réseau du FAI : 83.12.45.25
         - Masque de sous-réseau: 255.255.0.0
-    #}
+
 
 
 ### 3.3 Annexe : rajout d'un serveur DNS

@@ -168,7 +168,7 @@
 
 
 !!! done "séance 19 (mardi 25/02/2025):"
-    - [T3 > Architecture réseau](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
+    - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
     ??? note "Devoirs"
         - Réviser le contrôle portant sur le thème 6 (sauf javascript)
 
@@ -184,7 +184,7 @@
 
 
 
-!!! done "séance 21 (mardi 11/3/2025):"
+!!! done "séance 21 (mardi 11/03/2025):"
     - [T2 > Chapitre5: Les booléens](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
     - Exercices 1 à 7
     ??? note "Devoirs"
@@ -192,19 +192,23 @@
         - Réviser les calculs à la main avec les opérateurs logiques.
 
 
-{#   
 
-!!! done "séance 22 (mardi 19/3/2024):"
-    - Annulée pour cause de bac blanc de français
+
+!!! done "séance 22 (mardi 18/03/2025):"
+    - Correction du contrôle sur le thème 6
+    - Exercice 8 (cryptographie)
     ??? note "Devoirs"
-        - Finir le jeu Terminus et établir la liste des commandes linux 
-        - Préparer le contrôle sur les réseaux
-    
+        - Finir l'exercice 8 (Q4)
+        - Préparer le contrôle sur le Thème 3 (chapitres 3 et 4)
+
+{#       
     
 !!! done "séance 23 (mardi 26/3/2024):"
-
+    - Finir le jeu Terminus et établir la liste des commandes linux 
     - Contrôle sur les réseaux
     - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
+
+
 !!! done "séance 24 (mardi 2/4/2024):"
     - [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
 
