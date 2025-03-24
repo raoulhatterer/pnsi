@@ -1,5 +1,5 @@
 # Chapitre 6: Codage des caractères
-Tout pour comprendre et Ã©viter les erreurs d'encodage
+Tout pour comprendre et Ã©viter :smile: les erreurs d'encodage
 
 ![image](data/BO.png){: .center}
 
@@ -19,10 +19,21 @@ En ASCII, 127 *«points de code»* (nombres associés aux caractères) sont disp
         `1101100 1100101 1110011 100000 1001110 1010011 1001001 100000 1100011 100111 1100101 1110011 1110100 100000 1101100 1100101 1110011 100000 1101101 1100101 1101001 1101100 1101100 1100101 1110101 1110010 1110011`
 
     === "Aide"
-        - la fonction `split(" ")` permet de décomposer une chaine de caractères en une liste, en se servant de l'espace `" "` comme caractère séparateur.
+        - la méthode `split(" ")` permet de décomposer une chaine de caractères en une liste, en se servant de l'espace `" "` comme caractère séparateur.
         - `int("1101100",2)` permet de récupérer facilement la valeur en base 10 du nombre binaire `1101100`.
+        - la fonction `chr()` prend un entier et renvoie le caractère correspondant à cet entier dans le standard Unicode.
 
-    === "Correction"
+    === "En cas de blocage"
+        En cas de blocage, complétez le code à trous suivant: 
+        ```python
+        msg = "1101100 1100101 1110011 100000 1001110 1010011 1001001 100000 1100011 100111 1100101 1110011 1110100 100000 1101100 1100101 1110011 100000 1101101 1100101 1101001 1101100 1101100 1100101 1110101 1110010 1110011"
+        msg = msg.split(' ')
+        s = ""
+        for k in msg :
+            ...................
+        print(s)
+        ```
+    === "Correction"{#
         ```python
         msg = "1101100 1100101 1110011 100000 1001110 1010011 1001001 100000 1100011 100111 1100101 1110011 1110100 100000 1101100 1100101 1110011 100000 1101101 1100101 1101001 1101100 1101100 1100101 1110101 1110010 1110011"
         msg = msg.split(' ')
@@ -30,7 +41,7 @@ En ASCII, 127 *«points de code»* (nombres associés aux caractères) sont disp
         for k in msg :
             s += chr(int(k,2))
         print(s)
-        ```
+        ```   #}
 
 
 ## 2. Et le reste du monde ?

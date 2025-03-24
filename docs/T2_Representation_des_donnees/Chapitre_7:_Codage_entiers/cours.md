@@ -3,7 +3,7 @@
 ![image](data/BO.png){: .center}
 
 ![image](data/meme.webp){: .center width=40%}
-
+{{ initexo(0) }}
 
 !!! abstract ":warning: Attention :warning:"
     La manière dont les nombres (entiers, non-entiers, positifs, négatifs...) sont traités par un langage de programmation est **spécifique** à ce langage.
@@ -18,7 +18,7 @@
 Sur un octet, le nombre minimal qu'on puisse coder est `00000000`. C'est l'entier naturel 0.  
 Le nombre maximal qu'on puisse coder est `11111111`. C'est l'entier naturel 255.
 
-!!! abstract "Exercice"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         1. Quel est le plus grand entier non signé codable sur 16 bits ?
         2. ... sur 32 bits ?
@@ -37,7 +37,7 @@ Le nombre maximal qu'on puisse coder est `11111111`. C'est l'entier naturel 255.
     Ceci implique que la taille nécessaire au codage de l'entier est allouée dynamiquement par Python (avec pour seule limite celle de la mémoire disponible). 
 
 
-!!! abstract "Exercice"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         1. Effectuer la somme des deux nombres binaires `00001101` et `00001011`.
         2. Vérifier que le résultat est cohérent en base 10.
@@ -145,7 +145,7 @@ Considérons que ce nombre positif s'écrit sur 7 bits, donc qu'il est de la for
     - On prend le complément à 2 de chacun des 8 bits du nombre de départ
     - On ajoute 1 au nombre obtenu.
 
-!!! abstract "Exercice"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         Donner l'écriture binaire sur un octet du nombre $-13$.
     === "Correction"
@@ -171,7 +171,7 @@ Considérons le nombre `11101101`, codé en binaire signé. À quel nombre relat
 4. On convertit en base 10 le nombre obtenu, qui était donc 19.
 5. Le nombre initial était donc $-19$.
 
-!!! abstract "Exercice"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         1. En binaire signé, à quel nombre correspond `11110001`?
         2. En binaire signé, quel est le plus grand nombre que l'on puisse écrire sur un octet ? 

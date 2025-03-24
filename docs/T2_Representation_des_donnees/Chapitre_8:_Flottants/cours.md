@@ -2,7 +2,7 @@
 
 ![image](data/BO.png){: .center}
 
-
+{{ initexo(0) }}
 
 Le principe est l'extension du système déjà rencontré pour les nombres entiers. La partie décimale (à droite de la virgule) correspondra aux puissances négatives de 2.  
 
@@ -40,23 +40,23 @@ On prend ensuite le chiffre des unités de tous les nombres obtenus : 1011
 Donc $3,6875=11,1011_2$
 
 
-!!! abstract "Exercice 1"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         Donner l'écriture binaire de 20,875.
-    === "Correction"
+    === "Correction"{#
         - partie entière : $20 = 10100_2$
         - partie décimale :
             - $0,875 \times 2 = \textbf{1},75$  
             - $0,75 \times 2 = \textbf{1},5$
             - $0,5 \times 2  = \textbf{1}$
  
-        Donc $20,875=10100,111_2$
+        Donc $20,875=10100,111_2$  #}
 
 
 
-!!! abstract "Exercice 2"
+!!! example "{{ exercice() }}"
     === "Énoncé"
-        Donner l'écriture binaire de 0,2.
+        Donner l'écriture binaire de 0,2. En déduire que le nombre 0,2 n'admet pas d'écriture binaire **finie**.
     === "Correction"
         - partie entière : $0 = 0_2$
         - partie décimale :
@@ -67,7 +67,7 @@ Donc $3,6875=11,1011_2$
             - $0,2 \times 2 = \textbf{0},4$ 
             - *et cela continue...*
  
-        Le nombre 0,2 n'admet pas d'écriture binaire **finie**.
+        Conclusion: Le nombre 0,2 n'admet pas d'écriture binaire **finie**.
 
 
 ### Conclusion 
@@ -156,7 +156,7 @@ renverra
 a et b sont égaux
 ``` 
 
-!!! abstract "Exercice"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         On considère la fonction $f(x)=x^3-6x+2$.   
         L'équation $f(x)=1$ admet une solution unique dans l'intervalle $[0;1]$.  
