@@ -69,7 +69,7 @@ Donc $243_{10}=11110011_2$
     === "Énoncé"
         Quelle est la valeur maximale d'un octet (un octet = 8 chiffres binaires) ?
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         $11111111_2=255$. On retrouve ce nombre comme étant la valeur maximale d'une composante de couleur dans le codage RGB, ce qui signifie que chaque composante est codée sur un octet.
         ")}}
@@ -78,7 +78,7 @@ Donc $243_{10}=11110011_2$
     === "Énoncé"
         Créer une fonction `binaire(n)` qui renvoie l'écriture binaire de `n`, en utilisant les divisions successives.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def restes_successifs(n):
@@ -96,6 +96,7 @@ Donc $243_{10}=11110011_2$
             mot = ""
             for k in liste :
                 mot += str(k)
+            mot = '0b'+ mot
             return mot
         ```
         ")}}
@@ -143,7 +144,7 @@ On a donc la correspondance :
         2. Expliquer pourquoi la couleur RGB (138,255,51) a pour code html `#8AFF33`.
         3. Quelle est la couleur `html` du blanc ?
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         1. FF = 255 ; 3A = 58 ; B2 = 178
         2. 138 a pour code hexa 8A, 255 a pour code hexa 255, 51 a pour code hexa 33.
