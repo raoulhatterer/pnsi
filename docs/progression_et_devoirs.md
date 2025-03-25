@@ -207,6 +207,8 @@
     - Exercice 8 (cryptographie)
     - [T2 > Representation des donnees > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours.md)
     - Contrôle sur les réseaux (le Thème 3 (chapitres 3 et 4))
+    ??? note "Devoirs"
+    - Résoudre l'énigme "À la recherche du personnage mystère" qui suit le cours sur les booléens
   
 
 {#   
