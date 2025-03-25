@@ -207,10 +207,11 @@
     - Exercice 8 (cryptographie)
     - [T2 > Representation des donnees > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours.md)
     - Contrôle sur les réseaux (le Thème 3 (chapitres 3 et 4))
-    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
+  
 
 {#   
 !!! done "séance 24 (mardi 2/4/2024):"
+    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
     - [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
     ??? note "Devoirs"
     - Finir le jeu Terminus et établir la liste des commandes linux 
