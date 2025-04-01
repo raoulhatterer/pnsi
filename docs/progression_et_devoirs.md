@@ -211,21 +211,24 @@
         - Résoudre l'énigme "À la recherche du personnage mystère" qui suit le cours sur les booléens
   
 
-{#   
-!!! done "séance 24 (mardi 2/4/2024):"
-    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
-    - [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
+ 
+!!! done "séance 24 (mardi 01/04/2025):"
+    - [T2 > Representation des donnees > chap5 (les booléens) > Image mystère](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
+    - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
     ??? note "Devoirs"
-    - Finir le jeu Terminus et établir la liste des commandes linux 
 
+{#  
 
 
 !!! done "séance 25 (mardi 9/4/2024):"
-    - [T2 > Representation des donnees > chap5 (les booléens) > Image mystère](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
-    - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
+    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
+    - [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
+
+
         - chap1: Maximum, moyenne, occurrences
         - chap2: Tri par insertion (méthode simple) 
     ??? note "Devoirs"
+        - Finir le jeu Terminus et établir la liste des commandes linux 
         - Réviser les booléens (apprendre les tables de vérité du AND du OR et du XOR par coeur) et les algorithmes déjà étudiés (les apprendre par coeur). J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 
 !!! done "séance 26 (mardi 16/4/2024):"
