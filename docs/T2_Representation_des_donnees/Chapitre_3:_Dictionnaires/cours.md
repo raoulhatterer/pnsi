@@ -160,7 +160,7 @@ Ces méthodes sont importantes (elles figurent explicitement au programme de NSI
     del dressing["chaussettes"]
     ```
 
-!!! example "{{ exercice() }}"
+!!! example "{{ exercice() }}" {# exercice 1 #}
     === "Énoncé"
         Reprenons notre dictionnaire ```dressing``` :
         ```python
@@ -168,7 +168,7 @@ Ces méthodes sont importantes (elles figurent explicitement au programme de NSI
         ```
         Créer une fonction `achat(habit)` qui augmente de 1 le nombre d'habits (pantalon, pull ou tee-shirt) de mon dressing.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         dressing = {'pantalons':3, 'pulls':4, 'tee-shirts':8}
