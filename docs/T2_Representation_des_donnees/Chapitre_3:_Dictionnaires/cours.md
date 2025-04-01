@@ -216,11 +216,11 @@ Nous allons résoudre ce problème grâce aux tests d'appartenance.
 
 ## 3. Exercices
 
-!!! example "{{ exercice() }}"
+!!! example "{{ exercice() }}"  {# exercice 2 #}
     === "Énoncé"
         Améliorer la fonction `achat(habit)` en y incluant un test pour prendre en compte les nouveaux habits.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def achat(habit):
