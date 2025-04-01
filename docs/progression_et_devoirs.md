@@ -216,6 +216,7 @@
     - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
     - T2 > Chapitre 3 : les dictionaires
     ??? note "Devoirs"
+        - Exercices 3 et 4 sur les dictionaires + donner la complexité de chacun des algorithmes utilisés 
         - Apprendre par coeur les algorithmes `extremum`, `moyenne` et `recherche_occurence`.
         - Réviser les booléens (apprendre les tables de vérité du AND du OR et du XOR par coeur) et les algorithmes déjà étudiés (les apprendre par coeur). J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 {#  
