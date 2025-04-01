@@ -120,7 +120,6 @@
 
 
 
-
 !!! done "séance 14 (mardi 7/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Les bases de JavaScript
@@ -217,7 +216,8 @@
     - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
     - T2 > Chapitre 3 : les dictionaires
     ??? note "Devoirs"
-
+        - Apprendre par coeur les algorithmes `extremum`, `moyenne` et `recherche_occurence`.
+        - Réviser les booléens (apprendre les tables de vérité du AND du OR et du XOR par coeur) et les algorithmes déjà étudiés (les apprendre par coeur). J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 {#  
 
 
@@ -230,7 +230,7 @@
         - chap2: Tri par insertion (méthode simple) 
     ??? note "Devoirs"
         - Finir le jeu Terminus et établir la liste des commandes linux 
-        - Réviser les booléens (apprendre les tables de vérité du AND du OR et du XOR par coeur) et les algorithmes déjà étudiés (les apprendre par coeur). J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
+        - 
 
 !!! done "séance 26 (mardi 16/4/2024):"
     - Correction du contrôle réseau
