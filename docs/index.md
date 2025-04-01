@@ -23,7 +23,7 @@
 ### :high_brightness: Thème(s) en cours d'étude 
 
 - :arrow_right: [T4 > Algorithmique > chapitres 1 & 2](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
-- :arrow_right: [T2 > Dictionnaires](./T2_Representation_des_donnees/2.3_Dictionnaires/cours/)
+- :arrow_right: [T2 > Dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
 
 
 
