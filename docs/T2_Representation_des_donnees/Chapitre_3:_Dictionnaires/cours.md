@@ -1,4 +1,5 @@
 # Chapitre 3: les Dictionnaires
+{{ initexo(0)}}
 
 ![image](data/BO.png){: .center}
 
@@ -159,7 +160,6 @@ Ces méthodes sont importantes (elles figurent explicitement au programme de NSI
     del dressing["chaussettes"]
     ```
 
-{{ initexo(0)}}
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Reprenons notre dictionnaire ```dressing``` :
