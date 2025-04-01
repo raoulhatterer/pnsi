@@ -215,6 +215,7 @@
 !!! done "séance 24 (mardi 01/04/2025):"
     - [T2 > Representation des donnees > chap5 (les booléens) > Image mystère](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
     - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
+    - T2 > Chapitre 3 : les dictionaires
     ??? note "Devoirs"
 
 {#  
