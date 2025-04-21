@@ -1,6 +1,8 @@
 # Chapitre 8 Codage des flottants
 
 ![image](data/BO.png){: .center}
+![image](data/meme.jpg){: .center width=40%}
+
 
 {{ initexo(0) }}
 
@@ -57,7 +59,7 @@ Donc $3,6875=11,1011_2$
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Donner l'écriture binaire de 0,2. En déduire que le nombre 0,2 n'admet pas d'écriture binaire **finie**.
-    === "Correction"
+    === "Correction" {#
         - partie entière : $0 = 0_2$
         - partie décimale :
             - $0,2 \times 2 = \textbf{0},4$  
@@ -67,7 +69,7 @@ Donc $3,6875=11,1011_2$
             - $0,2 \times 2 = \textbf{0},4$ 
             - *et cela continue...*
  
-        Conclusion: Le nombre 0,2 n'admet pas d'écriture binaire **finie**.
+        Conclusion: Le nombre 0,2 n'admet pas d'écriture binaire **finie**. #}
 
 
 ### Conclusion 

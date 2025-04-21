@@ -10,8 +10,6 @@
         - Déposer un fichier `variable.ipynb` contenant les exercices du chapitre sur les variables dans le casier qui se trouve à l'emplacement Documents > Élèves > P2024-2025 > Répertoire personnel à votre nom.
         - Feuille Wims1 sur les variables
 
-
-
 !!! done "séance 2 (mardi 17/09/24):"
     - [La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)    
     - [Exercices sur la boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/exercices.md)    
@@ -19,8 +17,6 @@
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Feuille Wims2 sur la boucle for        
         - Déposer un fichier `boucle_for.ipynb` contenant les exercices du chapitre sur la boucle for dans le casier qui se trouve à l'emplacement Documents > Élèves > P2024-2025> Répertoire personnel à votre nom.
-
-
 
 !!! done "séance 3 (mardi 24/09/24):"
     - exercices Processing et P5 reportés à plus tard car non fonctionnels actuellement
@@ -34,7 +30,6 @@
         - Venir avec une tablette fonctionnelle (batterie chargée).
         - Réviser pour un contrôle portant sur les 2 premiers chapitres.
 
-
 !!! done "séance 4 (mardi 01/10/24):"
     - Contrôle n°1 sur la boucle `for` (30 min)
     - Correction du contrôle sur la boucle `for` dans la foulée
@@ -44,15 +39,12 @@
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter puis prendre une preuve en photo.
         - Préparer le contrôle n°2  qui portera sur les 3 premiers chapitres (variables, boucle `for` et boucle `while`)
 
-
-
 !!! done "séance 5 (mardi 8/10/2024):"
     - Contrôle n°2 sur les boucles (45 min)
     - Correction du contrôle dans la foulée
     - Exercices sur les dessins en p5
     ??? note "Devoirs"
         - Réviser contrôle (tout ce qui a été fait depuis le début de l'année y compris wims et les dessins en p5)
-
 
 !!! done "séance 6 (mardi 15/10/2024):"
     - Contrôle n°3 sur les bases (variables, boucles)
@@ -74,22 +66,18 @@
         - Commencer  à réviser le contrôle de la prochaine séance (le 19/11) portant sur tout le thème 1. 
         - Remarque: Pour vous aider dans vos révisions, la semaine prochaine je mettrai la correction des exercices sur les fonctions pour ceux qui auraient eu des difficultés à les faire.
         
-
-
 !!! done "séance 8 (mardi 12/11/2024):"
     - Annulée pour cause de convocation
     ??? note "Devoirs"
         - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices. Au minimum, vous devez les étudier suffisamment pour être capable de les refaire.
         - Avoir trouvé un nom d'équipe pour le chalenge "Passe ton hack d'abord"
         
- 
 !!! done "séance 9 (mardi 19/11/2024):"
     - Contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
 
     ??? note "Devoirs"
         - Exercice 7 et 8 du cours sur les listes
-
 
 !!! done "séance 10 (mardi 28/11/2024):"
     - Correction du contrôle sur le thème 1 (Les bases de Python)
@@ -118,8 +106,6 @@
         - Faire l'exercice 5 et publier ce travail sur Capytale (Exercice5 HTML code 2808-2730306).
         - Réviser HTML CSS pour un contrôle à la rentrée
 
-
-
 !!! done "séance 14 (mardi 7/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Les bases de JavaScript
@@ -128,14 +114,12 @@
         - Exercice 4 sur le javascript
         - Préparer contrôle sur le HTML CSS
         
-
 !!! done "séance 15 (mardi 14/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Contrôle sur le HTML et le JS
     - Exercice: calculatrice en JS
     ??? note "Devoirs"
         - Terminer l'exercice calculatrice en JS
-
 
 !!! done "séance 16 (mardi 21/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
@@ -146,9 +130,6 @@
         - Finir l'exercice 7
         - Contrôle html + css: j'ai mis les productions d'Arno et d'Adrien dans la partie  `Documents` du site collaboratif pour ceux qui souhaitent voir comment ils ont fait.
 
-
-
-
 !!! done "séance 17 (mardi 28/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - (chap2) Exercice 7: Boîte à secrets
@@ -156,32 +137,21 @@
     ??? Devoirs
         - Faire l'exercice 8 en tenant compte des indications que j'ai rajoutées. 
 
-
-
 !!! done "séance 18 (mardi 4/02/2025):"
     - [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_3:_Protocole_HTTP/cours.md)
         - Requêtes http
         - Exercice 1
     - Exercice 9 chap2 : réalisation d'un serveur qui traite la résolution des équations du second degré 
 
-
-
 !!! done "séance 19 (mardi 25/02/2025):"
     - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
     ??? note "Devoirs"
         - Réviser le contrôle portant sur le thème 6 (sauf javascript)
-
-
-
-
 !!! done "séance 20 (mardi 04/03/2025):"
     - Contrôle sur le thème 6
     - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours.md)
     ??? note "Devoirs"
         - Réviser le protocole du bit alterné
-
-
-
 
 !!! done "séance 21 (mardi 11/03/2025):"
     - [T2 > Chapitre5: Les booléens](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
@@ -190,9 +160,6 @@
         - Apprendre par coeur les tables de vérité des fonctions logiques AND, OR, XOR, NOT, NAND, NOR.
         - Réviser les calculs à la main avec les opérateurs logiques.
 
-
-
-
 !!! done "séance 22 (mardi 18/03/2025):"
     - Correction du contrôle sur le thème 6
     - Exercice 8 (cryptographie)
@@ -200,8 +167,6 @@
         - Finir l'exercice 8 (Q4)
         - Préparer le contrôle sur le Thème 3 (chapitres 3 et 4)
 
-    
-    
 !!! done "séance 23 (mardi 25/03/2025):"
     - Exercice 8 (cryptographie)
     - [T2 > Representation des donnees > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours.md)
@@ -209,8 +174,6 @@
     ??? note "Devoirs"
         - Résoudre l'énigme "À la recherche du personnage mystère" qui suit le cours sur les booléens
   
-
- 
 !!! done "séance 24 (mardi 01/04/2025):"
     - [T2 > Representation des donnees > chap5 (les booléens) > Image mystère](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
     - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
@@ -219,22 +182,27 @@
         - Exercices 3 et 4 sur les dictionaires + donner la complexité de chacun des algorithmes utilisés 
         - Apprendre par coeur les algorithmes `extremum`, `moyenne` et `recherche_occurence`.
         - Réviser les booléens (apprendre les tables de vérité du AND du OR et du XOR par coeur) et les algorithmes déjà étudiés (les apprendre par coeur). J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
+
+
 {#  
 
-
-!!! done "séance 25 (mardi 9/4/2024):"
-    - [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_6:_Decouverte_des_commandes_Linux/cours.md)
-    - [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
-
-
-        - chap1: Maximum, moyenne, occurrences
-        - chap2: Tri par insertion (méthode simple) 
+!!! done "séance 25 (mardi 22/04/2025):"
+    - test : portes logique et algorithmes simples (maximum, moyenne, occurrences)
+    - Correction du contrôle réseau
+    - [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
+    - [T2 > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
+    - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
     ??? note "Devoirs"
-        - Finir le jeu Terminus et établir la liste des commandes linux 
-        - 
+        - Finir le jeu Terminus 
+
+
+
+
+
+
 
 !!! done "séance 26 (mardi 16/4/2024):"
-    - Correction du contrôle réseau
+    - chap2: Tri par insertion (méthode simple) 
     - Tri par insertion (version optimisée) à savoir par cœur
     - Tri par sélection à savoir par cœur
     ??? note "Devoirs"
@@ -257,11 +225,6 @@
 !!! done "séance 29 (mardi 21/5/2024):"
     - Travail sur Wims pendant rattrapage du contrôle
     - Correction du Contrôle sur l'algorithmique
-    - Le codage des entiers
-    - Le codage des flottants
-    ??? note "Devoirs"
-        - Faire le dernier exercice du cours sur les flottants
-        - Réviser le codage des entiers et des flottants 
 
 
 !!! done "séance 30 (mardi 28/5/2024):"
@@ -270,4 +233,4 @@
     ??? note "Devoirs"
         - 
 #}
-### à suivre
+### À suivre
