@@ -192,7 +192,7 @@
     - [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
     - [T2 > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
     ??? note "Devoirs"
-        - Réviser le codage des entiers en binaire signé et le codage des réels. J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
+        - Réviser le codage des entiers en binaire signé et le codage des réels et par quoi on remplace les tests d'égalité pour les réels. J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 
 
 {# 
