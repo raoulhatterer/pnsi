@@ -45,21 +45,21 @@ Donc $3,6875=11,1011_2$
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Donner l'écriture binaire de 20,875.
-    === "Correction"{#
+    === "Correction"{# exo1 #}
         - partie entière : $20 = 10100_2$
         - partie décimale :
             - $0,875 \times 2 = \textbf{1},75$  
             - $0,75 \times 2 = \textbf{1},5$
             - $0,5 \times 2  = \textbf{1}$
  
-        Donc $20,875=10100,111_2$  #}
+        Donc $20,875=10100,111_2$ 
 
 
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Donner l'écriture binaire de 0,2. En déduire que le nombre 0,2 n'admet pas d'écriture binaire **finie**.
-    === "Correction" {#
+    === "Correction" {# exo2 #}
         - partie entière : $0 = 0_2$
         - partie décimale :
             - $0,2 \times 2 = \textbf{0},4$  
@@ -69,7 +69,7 @@ Donc $3,6875=11,1011_2$
             - $0,2 \times 2 = \textbf{0},4$ 
             - *et cela continue...*
  
-        Conclusion: Le nombre 0,2 n'admet pas d'écriture binaire **finie**. #}
+        Conclusion: Le nombre 0,2 n'admet pas d'écriture binaire **finie**. 
 
 
 ### Conclusion 
@@ -164,7 +164,7 @@ a et b sont égaux
         L'équation $f(x)=1$ admet une solution unique dans l'intervalle $[0;1]$.  
         Trouver une valeur approchée de cette solution à $10^{-5}$ près. On prendra `e`$=0,001$.
     === "Correction"
-        {#
+        {# exo3 #}
         ```python
         def f(x):
             return x**3 - 6 * x + 2
@@ -175,5 +175,5 @@ a et b sont égaux
             a += 10**(-5)
         print(a)
         ```
-        #}
+        
 

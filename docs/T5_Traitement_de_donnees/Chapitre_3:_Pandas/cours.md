@@ -1,4 +1,4 @@
-# 5.3 Utilisation du module Pandas
+# Chapitre 3: Utilisation du module Pandas
 
 Les manipulations de ce cours pourront être effectuées sur un Notebook de Capytale
 

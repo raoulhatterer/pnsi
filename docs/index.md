@@ -22,8 +22,8 @@
 
 ### :high_brightness: Thème(s) en cours d'étude 
 
-- :arrow_right: [T4 > Algorithmique > chapitres 1 & 2](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
-- :arrow_right: [T2 > Dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
+- :arrow_right: [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
+- :arrow_right: [T2 > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
 
 
 
@@ -60,6 +60,8 @@
 - :arrow_right: [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
 - :arrow_right: [T2 > Representation des donnees > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
 - :arrow_right: [T2 > Representation des donnees > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours/)
+- :arrow_right: [T4 > Algorithmique > chapitres 1 & 2](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
+- :arrow_right: [T2 > Dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
 
 
 
@@ -84,11 +86,11 @@
         - Chapitre 1: [Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
         - Chapitre 2: [Les tuples](./T2_Representation_des_donnees/Chapitre_2:_Tuples/cours/)
         - Chapitre 3: [Les dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
-        - Chapitre 4: [Les bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
-        - Chapitre 5: [Les booléens](./T2_Representation_des_donnees/2.5_Booleens/cours/)
-        - Chapitre 6: [Le codage des caractères](./T2_Representation_des_donnees/2.6_Codage_caracteres/cours/)
-        - Chapitre 7: [Le codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
-        - Chapitre 8: [Le codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
+        - Chapitre 4: [Les bases](./T2_Representation_des_donnees/Chapitre_4:_Bases/cours/)
+        - Chapitre 5: [Les booléens](./T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
+        - Chapitre 6: [Le codage des caractères](./T2_Representation_des_donnees/Chapitre_6:_Codage_caracteres/cours/)
+        - Chapitre 7: [Le codage des entiers](./T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours/)
+        - Chapitre 8: [Le codage des non-entiers](./T2_Representation_des_donnees/Chapitre_8:_Flottants/cours/)
         - Chapitre 9: [Les chaînes de caractères](./T2_Representation_des_donnees/2.9_Chaines_caracteres/cours/)
 
     === "T3 Architecture matérielle"
@@ -98,7 +100,7 @@
         - Chapitre 2: [Architecture Von Neumann](./T3_Architecture_materielle/Chapitre_2:_Architecture_Von_Neumann/cours/)
         - Chapitre 3: [Architecture réseau](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
         - Chapitre 4: [Protocoles de communication dans un réseau](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
-        - Chapitre 5: [Découverte des commandes Linux](./T3_Architecture_materielle/3.5_Decouverte_des_commandes_Linux/cours/)
+        - Chapitre 5: [Découverte des commandes Linux](./T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
 
     === "T4 Algorithmique"
         **Thème 4 : Algorithmique**
@@ -114,9 +116,9 @@
     === "T5 Traitement de données"
         **Thème 5 : Traitement de données**
 
-        - Chapitre 1 [Manipulation de fichiers csv](./T5_Traitement_de_donnees/5.1_Manipulation_csv/cours/)
-        - Chapitre 2 [Trier des données](./T5_Traitement_de_donnees/5.2_Trier_des_donnees/cours/)
-        - Chapitre 3 [Utilisation du module Pandas](./T5_Traitement_de_donnees/5.3_Pandas/cours/)
+        - Chapitre 1 [Manipulation de fichiers csv](./T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours/)
+        - Chapitre 2 [Trier des données](./T5_Traitement_de_donnees/Chapitre_2:_Trier_des_donnees/cours/)
+        - Chapitre 3 [Utilisation du module Pandas](./T5_Traitement_de_donnees/Chapitre_3:_Pandas/cours/)
 
     === "T6 IHM sur le web"
         **Thème 6 : IHM sur le web**

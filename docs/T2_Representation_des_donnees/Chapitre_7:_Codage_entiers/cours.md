@@ -25,10 +25,10 @@ Le nombre maximal qu'on puisse coder est `11111111`. C'est l'entier naturel 255.
         3. ... $n$ bits ?
 
         
-    === "Correction" {#
+    === "Correction" {# exo1 #}
         1. $N=1+2+2^2+2^3+\dots+2^{15}= 65535$
         2. $N=1+2+2^2+2^3+\dots+2^{31}= 4294967295$
-        3. Pour tout $n \in \mathbb{N}$, $1+2+2^2+2^3+\dots+2^{n-1}=2^{n}-1$ (formule de la somme des termes d'une suite géométrique de raison 2). #}
+        3. Pour tout $n \in \mathbb{N}$, $1+2+2^2+2^3+\dots+2^{n-1}=2^{n}-1$ (formule de la somme des termes d'une suite géométrique de raison 2). 
     
 
 !!! note "Python et les entiers :heart:"
@@ -41,9 +41,9 @@ Le nombre maximal qu'on puisse coder est `11111111`. C'est l'entier naturel 255.
     === "Énoncé"
         1. Effectuer la somme des deux nombres binaires `00001101` et `00001011`.
         2. Vérifier que le résultat est cohérent en base 10.
-    === "Correction"{#
+    === "Correction"{# exo2 #}
         1. ![](data/add1.png)
-        2. Cette addition correspond à $13+11=24$ #}
+        2. Cette addition correspond à $13+11=24$ 
 
 
 
@@ -149,13 +149,13 @@ Considérons que ce nombre positif s'écrit sur 7 bits, donc qu'il est de la for
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Donner l'écriture binaire sur un octet du nombre $-13$.
-    === "Correction" {#
+    === "Correction" {# exo3  #}
         Commençons par écrire le nombre 13 en binaire. Il s'écrit  `00001101`.
 
         - en prenant le complément à 2 de chaque bit, on obtient `11110010`.
         - en ajoutant 1 à ce dernier nombre, on obtient `11110011`. 
 
-        Le nombre $-13$ s'écrit donc `11110011`. #}
+        Le nombre $-13$ s'écrit donc `11110011`.
 
 
 :arrow_right: **Remarque**  
@@ -179,11 +179,11 @@ Considérons le nombre `11101101`, codé en binaire signé. À quel nombre relat
         3. Quel est le plus petit nombre ?
         4. Au total, combien de nombres différents peuvent être écrits en binaire signé ?
 
-    === "Correction" {#
+    === "Correction" {# exo4 #}
         1. `11110001` - `1` = `11110000`. En prenant le complément à 2, on trouve `00001111`, qui vaut 15. Le nombre `11110001` représente donc $-15$.
         2. Le plus grand nombre est `01111111`, soit $+127$.
         3. Le plus petit nombre est `10000000`. `10000000` - `1` = `01111111`. Le complément est `10000000`, qui est égal à 128. Donc le nombre minimal est $-128$.
-        4. Il y a 128 nombres négatifs (de $-128$ à $-1$), le nombre 0, puis 127 nombres positifs (de 1 à 127). Il y a donc 256 nombres au total, comme en binaire non signé. #}
+        4. Il y a 128 nombres négatifs (de $-128$ à $-1$), le nombre 0, puis 127 nombres positifs (de 1 à 127). Il y a donc 256 nombres au total, comme en binaire non signé. 
 
 
 ## 4. Le codage des entiers, une source intarissable d'erreurs...
