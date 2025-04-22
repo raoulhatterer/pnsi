@@ -184,28 +184,28 @@
         - Réviser les booléens (apprendre les tables de vérité du AND du OR et du XOR par coeur) et les algorithmes déjà étudiés (les apprendre par coeur). J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 
 
-{#  
+ 
 
 !!! done "séance 25 (mardi 22/04/2025):"
     - test : portes logique et algorithmes simples (maximum, moyenne, occurrences)
     - Correction du contrôle réseau
     - [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
     - [T2 > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
-    - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
     ??? note "Devoirs"
-        - Finir le jeu Terminus 
+        - Réviser le codage des entiers en binaire signé et le codage des réels. J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 
 
-
-
+{# 
 
 
 
 !!! done "séance 26 (mardi 16/4/2024):"
+    - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
     - chap2: Tri par insertion (méthode simple) 
     - Tri par insertion (version optimisée) à savoir par cœur
     - Tri par sélection à savoir par cœur
     ??? note "Devoirs"
+        - Finir le jeu Terminus 
         - Réviser les algorithmes déjà étudiés (les apprendre par coeur).
         
 
