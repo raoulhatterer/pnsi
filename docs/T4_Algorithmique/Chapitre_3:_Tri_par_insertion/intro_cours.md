@@ -1,5 +1,12 @@
 # Vers le tri par insertion
 
+![image](data/insertion1.gif){: .center}
+
+
+**Explications :**
+
+- On traite successivement toutes les valeurs à trier, en commençant par celle en deuxième position.
+- Traitement : tant que la valeur à traiter est inférieure à celle située à sa gauche, on échange ces deux valeurs.
 
 
 
