@@ -45,7 +45,7 @@ Pour toutes les valeurs, en commençant par la deuxième :
                 k = k - 1                            #(5)   
     ```
 
-    1. On commence à 1 et non pas à 0.
+    1. On commence à l'indice 1 et non pas à 0.
     2. On «duplique» la variable `i` en une variable `k`.  
     On se positionne sur l'élément d'indice ```k```. On va faire «reculer» cet élément tant que c'est possible. On ne touche pas à ```i```. 
     3. Tant qu'on n'est pas revenu au début de la liste et qu'il y a une valeur plus grande à gauche.

@@ -1,5 +1,15 @@
 # Vers le tri par sélection
 
+![image](data/selection.gif){: .center}
+
+
+Comme dans tous les autres algorithmes de tri que nous allons étudier, nous allons travailler **en place**. Cela signifie que nous ne travaillons que sur la liste initiale, sans en créer de nouvelles. Le tri sera fait en permutant des éléments.
+
+
+
+- on cherche le minimum de toute la liste, et on le place au tout début de la liste.
+- on cherche maintenant le minimum de toute la liste SAUF le 1er terme, et on le place en 2ème position.
+- on continue ainsi jusqu'à la fin.
 
 
 
