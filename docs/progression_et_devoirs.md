@@ -185,7 +185,6 @@
 
 
  
-
 !!! done "séance 25 (mardi 22/04/2025):"
     - test : portes logique et algorithmes simples (maximum, moyenne, occurrences)
     - Correction du contrôle réseau
@@ -195,23 +194,21 @@
         - Réviser le codage des entiers en binaire signé et le codage des réels et par quoi on remplace les tests d'égalité pour les réels. J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 
 
-{# 
-
-
-
-!!! done "séance 26 (mardi 16/4/2024):"
+!!! done "séance 26 (mardi 29/04/2025):"
+    - T4 > chap3: Tri par permutation  
+    - T4 > chap3: Tri par insertion à savoir par cœur
     - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
-    - chap2: Tri par insertion (méthode simple) 
-    - Tri par insertion (version optimisée) à savoir par cœur
-    - Tri par sélection à savoir par cœur
+
     ??? note "Devoirs"
-        - Finir le jeu Terminus 
-        - Réviser les algorithmes déjà étudiés (les apprendre par coeur).
+        - Réviser les algorithmes déjà étudiés (les apprendre par coeur): maximum, moyenne, occurrences, Tri par permutation, Tri par insertion 
         
+{# 
 
 !!! done "séance 27 (mardi 7/5/2024):"
     - Programmation d'une carte à microcontrôleur (MicroBit)
     ??? note "Devoirs"
+        - Finir le jeu Terminus 
+        - Tri par sélection à savoir par cœur
         - Réviser le contrôle sur les booléens et l'algorithmique
 
 
