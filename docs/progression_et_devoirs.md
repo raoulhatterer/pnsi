@@ -200,7 +200,7 @@
     - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
 
     ??? note "Devoirs"
-        - Préparer un contrôle sur les chapitres étudiées depuis le dernier contrôle (sauf les commandes linux): les booléens, les bases, les dictionaires, le codage des entiers et des réels, les algorithmes (maximum, moyenne, occurrences, Tri par permutation, Tri par insertion).
+        - Préparer un contrôle sur les derniers chapitres (sauf commandes linux): les booléens, les bases, les dictionaires, le codage des entiers et des réels, les algorithmes (maximum, moyenne, occurrences, Tri par permutation, Tri par insertion).
         
 {# 
 
