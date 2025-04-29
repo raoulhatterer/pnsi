@@ -186,7 +186,7 @@
 
  
 !!! done "séance 25 (mardi 22/04/2025):"
-    - test : portes logique et algorithmes simples (maximum, moyenne, occurrences)
+    - Test : portes logique et algorithmes simples (maximum, moyenne, occurrences)
     - Correction du contrôle réseau
     - [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
     - [T2 > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
@@ -195,6 +195,7 @@
 
 
 !!! done "séance 26 (mardi 29/04/2025):"
+    - Test: le codage des entiers en binaire signé et le codage des réels
     - [T4 > chap3: Tri par permutation (introduction au tri par insertion)](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours.md)
     - [T4 > chap3: Tri par insertion](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours.md)
     - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
