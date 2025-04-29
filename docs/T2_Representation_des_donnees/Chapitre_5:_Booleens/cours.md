@@ -286,6 +286,9 @@ False
 ![](data/porte_nand.png){: .center}
 
 
+On retiendra la propriété générale concernant tous les symboles européens: un triangle en sortie d'une porte logique indique une inversion :heart: 
+
+
 !!! example "{{ exercice() }}"
     1. Écrire la table de vérité de `x ↑ y = ~(x & y)`
     2. Compléter la table de vérité pour montrer que `~(x & y) = ~x | ~y` soit en français: « non(x et y) » est identique à « (non x) ou (non y) ».
