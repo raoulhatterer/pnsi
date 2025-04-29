@@ -3,11 +3,11 @@
 ![image](data/BO.png){: .center}
 
 ## Introduction
-:arrow_right: [Activité d'introduction](../intro_cours/){. target="_blank"}
+:arrow_right: [Activité d'introduction](./intro_cours.md){. target="_blank"}
 
 
 
-## 1. Tri par insertion (version la plus intuitive)
+## 1. Tri par insertion (version la plus intuitive avec permutations)
 
 ### 1.1  Principe et algorithme
 Considérons la liste `[7, 5, 2, 8, 1, 4]`  
@@ -63,7 +63,7 @@ Pour toutes les valeurs, en commençant par la deuxième :
 [1, 2, 4, 5, 7, 8]
 ```
 
-## 2. Tri par insertion (version optimisée)
+## 2. Tri par insertion (version optimisée avec décalages)
 
 ### 2.1 Principe et algorithme
 Observez l'animation ci-dessous et comparer avec la version initiale.  

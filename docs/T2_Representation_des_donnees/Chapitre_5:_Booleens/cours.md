@@ -75,14 +75,13 @@ les cas possibles et les regrouper dans un tableau appelé **table de vérité**
 
 On représente souvent les opérateurs booléens à l'aide de portes logiques:
 
-![](data/porte_et.png){: .center}
+- Symbole européen
+  ![](data/porte_et.png){: .center}
 
+- Symbole américain
+  ![](data/and.png){: .center}
 
-Notation usuelle en électronique : $Q=A \wedge B$
-
-![](data/and.png){: .center}
-
-
+Notation en logique : $Q=A \wedge B$
 
 #### Exemples en Python
 
@@ -144,7 +143,7 @@ On en déduit la table suivante:
 
 
 !!! abstract "Table de vérité de OR :heart:"
-    |`x`| `y` | `x or y`|
+    |`x`| `y` | `x | y`|
     |:--:|:----:|:--:|
     |F|F| F|
     |F|V|V|
@@ -152,13 +151,15 @@ On en déduit la table suivante:
     |V|V|V|
 
 
+- Symbole européen
+  ![](data/porte_ou.png){: .center}
 
-![](data/porte_ou.png){: .center}
 
-Notation usuelle en électronique : $Q=A \vee B$
+- Symbole américain
+  ![](data/or.png){: .center}
 
-![](data/or.png){: .center}
 
+Notation en logique : $Q=A \vee B$
 
 #### Exemples en Python
 
@@ -203,11 +204,15 @@ On en déduit la table suivante:
     |F|V|
     |V|F|
 
-![](data/porte_non.png){: .center}
+- Symbole européen
+  ![](data/porte_non.png){: .center}
 
-Notation usuelle en électronique : $Q=\neg A$
+- Symbole américain
 
 ![](data/no.png){: .center}
+
+Notation en logique : $Q=\neg A$
+
 
 #### Exemples en Python
 
@@ -223,9 +228,9 @@ False
 
 
 !!! example "{{ exercice() }}"
-    Comprendre ce mème :
+    1. Comprendre ce mème qui utilise les symboles américains:
     ![image](data/drake.webp){: .center width=50%}
-
+    2. Remplacer chaque [symbole américain par le symbole rectangulaire européen](https://fr.wikipedia.org/wiki/Fonction_logique)
 
 
 

@@ -4,23 +4,23 @@
 
 {#
 !!! abstract ":star: Actualités :star:"
-    - Bonne rentrée à toutes et à tous !   
+    - Bonne rentrée à toutes et à tous !
 
 
 
 !!! info "Travail noté à faire sur Wims"
     - Wims propose des exercices à données aléatoires. Il permet de désactiver la prise en compte des notes le temps de maîtriser un exercice (n'oubliez pas de le faire c'est de votre responsabilité) puis d'activer la prise en compte des notes quand vous le souhaitez.
-    - S'inscrire (une seule fois )sur le site [wims PNSI](https://wims.univ-cotedazur.fr/wims/wims.cgi?module=adm/class/classes&lang=fr&type=authparticipant&class=8170646&subclass=yes){:target="_blank"} en utilisant le code d'inscription "pnsimed" 
+    - S'inscrire (une seule fois )sur le site [wims PNSI](https://wims.univ-cotedazur.fr/wims/wims.cgi?module=adm/class/classes&lang=fr&type=authparticipant&class=8170646&subclass=yes){:target="_blank"} en utilisant le code d'inscription "pnsimed"
     - Attention SVP à ne pas confondre votre nom avec votre prénom
     - Utilisez un identifiant tout en minuscules composé de votre prénom et des 3 premières lettres de votre nom. Par exemple, si vous vous appelez Louis de Funès vous mettrez "louisdef".
-    - Surtout ne pas utiliser le code d'inscription plus d'une fois (pour ne pas créer plusieurs comptes). Mais, si vous pensez que votre inscription n'a pas fonctionné (ou pour tout autre problème),  n’hésitez pas à me  contacter par messagerie Atrium.  
+    - Surtout ne pas utiliser le code d'inscription plus d'une fois (pour ne pas créer plusieurs comptes). Mais, si vous pensez que votre inscription n'a pas fonctionné (ou pour tout autre problème),  n’hésitez pas à me  contacter par messagerie Atrium.
 #}
 
 !!! info "Pour progresser (entraînement autonome à la programmation)"
-    - Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entraînement à la pratique de la programmation en lien avec la spécialité NSI. 
+    - Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entraînement à la pratique de la programmation en lien avec la spécialité NSI.
     - Pour chaque exercice, on trouve un énoncé, souvent pour créer une fonction, puis des exemples d'application de la fonction. Ensuite, une zone de saisie du code qui est accompagné des premiers tests. Il y a des tests secrets qui permettent ensuite d'accepter (ou valider) votre code.
 
-### :high_brightness: Thème(s) en cours d'étude 
+### :high_brightness: Thème(s) en cours d'étude
 
 
 - :arrow_right: [T4 > Algoritmique > Tri par insertion ](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
@@ -48,21 +48,21 @@
 #}
 
 ### Anciens thèmes traités
-- :arrow_right: [T1 > Variables & ES](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours/)  
-- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
-- :arrow_right: [T1 > La boucle ```#!python while```](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
-- :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours/)
-- :arrow_right: [T1 > Les fonctions](T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours/)
-- :arrow_right: [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours/)
-- :arrow_right: [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours/)
-- :arrow_right: [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours/)
-- :arrow_right: [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours/)
-- :arrow_right: [T2 > Representation des données > chap5 (les booléens)](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours/)
-- :arrow_right: [T2 > Representation des données > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours/)
-- :arrow_right: [T4 > Algorithmique > chapitres 1 & 2](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
-- :arrow_right: [T2 > Dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
-- :arrow_right: [T2 > Representation des données > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
-- :arrow_right: [T2 > Representation des données > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
+- :arrow_right: [T1 > Variables & ES](./T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
+- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.m.md)
+- :arrow_right: [T1 > La boucle ```#!python while```](./T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.m.md)
+- :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](./T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours.md)
+- :arrow_right: [T1 > Les fonctions](./T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours.md)
+- :arrow_right: [T2 > Les listes](./T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
+- :arrow_right: [T6 > Interactions sur une page web](./T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+- :arrow_right: [T3 > Architecture réseau > chap3](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
+- :arrow_right: [T3 > Architecture réseau > chap4](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours.md)
+- :arrow_right: [T2 > Representation des données > chap5 (les booléens)](./T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
+- :arrow_right: [T2 > Representation des données > chap4 (les bases)](./T2_Representation_des_donnees/Chapitre_4:_Bases/cours.md)
+- :arrow_right: [T4 > Algorithmique > chapitres 1 & 2](./T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
+- :arrow_right: [T2 > Dictionnaires](././T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours.md)
+- :arrow_right: [T2 > Representation des données > Le codage des entiers](./T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
+- :arrow_right: [T2 > Representation des données > Le codage des flottants](./T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
 
 
 
@@ -70,7 +70,7 @@
 
 ### Programme
 !!! abstract "Nous traiterons les différentes entrées du programme dans les chapitres suivants…"
-    
+
 
     === "T1 Les bases de Python"
         **Thème 1 : Les bases de Python**
@@ -81,7 +81,7 @@
         - Chapitre 4: [L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours/)
         - Chapitre 5: [Les fonctions](T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours)
 
-    
+
     === "T2 Représentation des données"
         **Thème 2 :  Représentation des données**
 
@@ -126,12 +126,12 @@
         **Thème 6 : IHM sur le web**
 
         - Chapitre 1 [Pages web statiques](./T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours/)
-        - Chapitre 2 [Pages web dynamiques](./T6_IHM_Web/Chapitre_2:_Pages_web_Dynamiques/cours/)        
+        - Chapitre 2 [Pages web dynamiques](./T6_IHM_Web/Chapitre_2:_Pages_web_Dynamiques/cours/)
         - Chapitre 3 [Protocole HTTP : étude du chargement d'une page web](./T6_IHM_Web/Chapitre_3:_Protocole_HTTP/cours/)
         - Chapitre 4 [Requêtes GET, POST et formulaires](./T6_IHM_Web/Chapitre_4:_Get_Post_Formulaires/cours/)
 
 
-<!-- 
+<!--
 
 ---------------------------STOCK--------------------------------
 
@@ -147,23 +147,23 @@
     - [Différentes bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
     - [Booléens](./T2_Representation_des_donnees/2.5_Booleens/cours/)
     - [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
-    - [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/) 
+    - [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
     - [Découverte de micro:bit](./T3_Architecture_materielle/3.1_Microbit/cours/)
     - [Mise en place de GitHub](./T6_Mini-projets/Github/)
     - [Projet Pygame](./T6_Mini-projets/05_Initiation_Pygame/)
-    - [GET / POST / Formulaires](./T6_IHM_Web/6.3_Get_Post_Formulaires/cours/) 
-    - [Protocole HTTP](./T6_IHM_Web/6.2_Protocole_HTTP/cours/) 
-    - [html-css-js](./T6_IHM_Web/6.1_Interactions_page_web/cours/) 
-    - [Protocoles réseau](./T3_Architecture_materielle/3.4_Protocoles_de_communication/cours/)  
-    - [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)  
+    - [GET / POST / Formulaires](./T6_IHM_Web/6.3_Get_Post_Formulaires/cours/)
+    - [Protocole HTTP](./T6_IHM_Web/6.2_Protocole_HTTP/cours/)
+    - [html-css-js](./T6_IHM_Web/6.1_Interactions_page_web/cours/)
+    - [Protocoles réseau](./T3_Architecture_materielle/3.4_Protocoles_de_communication/cours/)
+    - [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)
     - [Complexité](./T4_Algorithmique/4.2_Complexite/cours/)
-    - [Recherche dans un tableau](T4_Algorithmique/4.1_Extremums_et_moyennes/cours/)  
+    - [Recherche dans un tableau](T4_Algorithmique/4.1_Extremums_et_moyennes/cours/)
     - [Listes](T2_Representation_des_donnees/2.1_Listes/cours/)
     - [Fonctions](T1_Demarrer_en_Python/1.5_Fonctions/cours/)
-    -  [Instruction conditionnelle ```if```](T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/)  
+    -  [Instruction conditionnelle ```if```](T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/)
     -  [Boucle ```while```](T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
-    -  [Boucle ```for```](T1_Demarrer_en_Python/1.2_Boucle_for/cours/)  
-    -  [Variables](T1_Demarrer_en_Python/1.1_Variables/cours/)  
+    -  [Boucle ```for```](T1_Demarrer_en_Python/1.2_Boucle_for/cours/)
+    -  [Variables](T1_Demarrer_en_Python/1.1_Variables/cours/)
 
 
   - Les Décodeuses du Numériques : [liste des présentations](./T6_Mini-projets/Décodeuses/){. target="_blank"}

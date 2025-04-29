@@ -195,12 +195,12 @@
 
 
 !!! done "séance 26 (mardi 29/04/2025):"
-    - T4 > chap3: Tri par permutation  
-    - T4 > chap3: Tri par insertion à savoir par cœur
+    - [T4 > chap3: Tri par permutation (introduction au tri par insertion)](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours.md)
+    - [T4 > chap3: Tri par insertion](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours.md)
     - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
 
     ??? note "Devoirs"
-        - Préparer un contrôle sur les derniers chapitres (sauf commandes linux): les booléens, les bases, les dictionaires, le codage des entiers et des réels, les algorithmes (maximum, moyenne, occurrences, Tri par permutation, Tri par insertion).
+        - Préparer un contrôle sur les derniers chapitres (sauf commandes linux): les booléens, les bases, les dictionaires, le codage des entiers et des réels, les algorithmes (maximum, moyenne, occurrences, tri par permutation, tri par insertion).
         
 {# 
 

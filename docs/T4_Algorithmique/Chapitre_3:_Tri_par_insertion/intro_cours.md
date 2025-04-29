@@ -3,10 +3,10 @@
 ![image](data/insertion1.gif){: .center}
 
 
-**Explications :**
+Comme dans tous les autres algorithmes de tri que nous allons étudier, nous allons travailler **en place**. Cela signifie que nous ne travaillons que sur la liste initiale, sans en créer de nouvelles. Le tri sera fait en permutant des éléments.
 
 - On traite successivement toutes les valeurs à trier, en commençant par celle en deuxième position.
-- Traitement : tant que la valeur à traiter est inférieure à celle située à sa gauche, on échange ces deux valeurs.
+- Traitement : tant que la valeur à traiter est inférieure à celle située à sa gauche, on échange ces deux valeurs. On procède par permutations.
 
 
 
