@@ -50,9 +50,9 @@ algèbre de Boole) quelconques, `F` désignera FAUX et `V` désignera VRAI.
 ____________
 
 ### 2.1 Conjonction (AND)
-- symbole usuel : & (appelé _esperluette_ en français et _ampersand_ en anglais)
-- français : ET
-- anglais (et Python) : `and`
+- symbole usuel : & (appelé _esperluette_ en français et _ampersand_ en anglais) :heart:
+- français : ET :heart:
+- anglais (et Python) : `and` :heart:
 - notation logique : $\wedge$
 - notation mathématique :  `.`
 
@@ -75,7 +75,7 @@ les cas possibles et les regrouper dans un tableau appelé **table de vérité**
 
 On représente souvent les opérateurs booléens à l'aide de portes logiques:
 
-- Symbole européen
+- Symbole européen :heart:
   ![](data/porte_et.png){: .center}
 
 - Symbole américain
@@ -125,9 +125,9 @@ On appelle **évaluation paresseuse** le fait que l'interpréteur Python s'arrê
 
 ### 2.2 Disjonction (OR)
 
-- symbole usuel : | appelé _pipe_ en anglais
-- français : OU
-- anglais (et Python) : `or`
+- symbole usuel : | appelé _pipe_ en anglais :heart:
+- français : OU :heart:
+- anglais (et Python) : `or` :heart:
 - notation logique : $\vee$
 - notation mathématique :  $+$
 
@@ -151,7 +151,7 @@ On en déduit la table suivante:
     |V|V|V|
 
 
-- Symbole européen
+- Symbole européen :heart:
   ![](data/porte_ou.png){: .center}
 
 
@@ -185,9 +185,9 @@ Pouvez-vous prévoir le résultat du code ci-dessous ?
 
 ### 2.3  Négation (NOT)
 
-- symbole usuel : ~
-- français : NON
-- anglais (et Python) : `not`
+- symbole usuel : ~ :heart:
+- français : NON :heart:
+- anglais (et Python) : `not` :heart:
 - notation logique :  $\neg$
 - notation mathématique :  $\overline{x}$
 
@@ -204,12 +204,11 @@ On en déduit la table suivante:
     |F|V|
     |V|F|
 
-- Symbole européen
+- Symbole européen :heart:
   ![](data/porte_non.png){: .center}
 
 - Symbole américain
-
-![](data/no.png){: .center}
+  ![](data/no.png){: .center}
 
 Notation en logique : $Q=\neg A$
 
@@ -257,10 +256,11 @@ False
     |V|V|F|
 
 
+- Symbole européen :heart:
+  ![](data/porte_xor.png){: .center}
 
-![](data/porte_xor.png){: .center}
-
-![](data/xor.png){: .center}
+- Symbole américain
+  ![](data/xor.png){: .center}
 
 
 !!! example "{{ exercice() }}"
