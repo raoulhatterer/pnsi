@@ -22,9 +22,9 @@
 
 ### :high_brightness: Thème(s) en cours d'étude 
 
-- :arrow_right: [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
-- :arrow_right: [T2 > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
 
+- :arrow_right: [T4 > Algoritmique > Tri par insertion ](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
+- :arrow_right: [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
 
 
 {#
@@ -33,7 +33,6 @@
 
 
 
-- :arrow_right: [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
 
 - :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
 - :arrow_right: [T4 > Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
@@ -62,6 +61,9 @@
 - :arrow_right: [T2 > Representation des donnees > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours/)
 - :arrow_right: [T4 > Algorithmique > chapitres 1 & 2](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours/)
 - :arrow_right: [T2 > Dictionnaires](./T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours/)
+- :arrow_right: [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
+- :arrow_right: [T2 > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
+
 
 
 
