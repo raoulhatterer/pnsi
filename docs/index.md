@@ -24,7 +24,7 @@
 
 
 - :arrow_right: [T4 > Algoritmique > Tri par insertion ](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
-- :arrow_right: [T3 > Architecture réseau > chap5](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
+- :arrow_right: [T3 > Architecture matérielle > Commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
 
 
 {#
