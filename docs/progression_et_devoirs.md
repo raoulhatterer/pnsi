@@ -170,7 +170,7 @@
 !!! done "séance 23 (mardi 25/03/2025):"
     - Exercice 8 (cryptographie)
     - [T2 > Representation des donnees > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours.md)
-    - Contrôle sur les réseaux (le Thème 3 (chapitres 3 et 4))
+    - Contrôle n°8 portant sur les réseaux (le Thème 3 (chapitres 3 et 4))
     ??? note "Devoirs"
         - Résoudre l'énigme "À la recherche du personnage mystère" qui suit le cours sur les booléens
   
@@ -201,28 +201,32 @@
     - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
 
     ??? note "Devoirs"
-        - Préparer un contrôle sur les derniers chapitres (sauf commandes linux): les booléens (les symboles américains et logiques ne sont pas à connaitre par cœur), les bases, les dictionaires, le codage des entiers et des réels et les algorithmes déjà étudiés (maximum, moyenne, occurrences, tri par permutation, tri par insertion).
-        
+        - Préparer un contrôle sur les derniers chapitres (sauf commandes linux): les booléens (les symboles américains et logiques ne sont pas à connaître par cœur), les bases, les dictionaires, le codage des entiers et des réels et les algorithmes déjà étudiés (maximum, moyenne, occurrences, tri par permutation, tri par insertion).
+
+!!! done "séance 27 (mardi 06/05/2025):"
+    - Fin du jeu Terminus (les commandes Linux)
+    - Contrôle n°9
+    ??? note "Devoirs"
+        - Apprendre les commandes Linux que vous avez relevées lors du jeu Terminus
+        - Pas de cours la semaine prochaine à cause des épreuves du bac professionnel 
+
+!!! done "séance 28 (mardi 13/05/2025):"
+    - Annulée à cause du bac professionnel
+    ??? note "Devoirs"
+        - Apprendre les commandes Linux que vous avez relevées lors du jeu Terminus    
+
+
 {# 
-
-!!! done "séance 27 (mardi 7/5/2024):"
-    - Programmation d'une carte à microcontrôleur (MicroBit)
-    ??? note "Devoirs"
-        - Finir le jeu Terminus 
-        - Tri par sélection à savoir par cœur
-        - Réviser le contrôle sur les booléens et l'algorithmique
-
-
-!!! done "séance 28 (mardi 14/5/2024):"
-    - Algorithme de tri dichotomique
-    - Contrôle sur les booléens et l'algorithmique
-    ??? note "Devoirs"
-        - S'inscrire à la classe virtuelle wims PNSI (voir l'annonce sur la page d'accueil) et faire chaque exercice d'abord plusieurs fois avec la notation désactivée pour vous entraîner ; puis deux fois avec la notation activée. 
-        - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
 
 !!! done "séance 29 (mardi 21/5/2024):"
     - Travail sur Wims pendant rattrapage du contrôle
     - Correction du Contrôle sur l'algorithmique
+    - Programmation d'une carte à microcontrôleur (MicroBit)
+    - Algorithme de tri dichotomique
+    - Contrôle sur les booléens et l'algorithmique
+    ??? note "Devoirs"    
+        - S'inscrire à la classe virtuelle wims PNSI (voir l'annonce sur la page d'accueil) et faire chaque exercice d'abord plusieurs fois avec la notation désactivée pour vous entraîner ; puis deux fois avec la notation activée. 
+        - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
 
 
 !!! done "séance 30 (mardi 28/5/2024):"
