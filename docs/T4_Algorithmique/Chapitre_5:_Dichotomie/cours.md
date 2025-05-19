@@ -95,19 +95,19 @@ C'est la méthode la plus intuitive : on essaie toutes les valeurs (par exemple,
 !!! abstract "{{ exercice() }}"
     === "Énoncé"
         Écrire un code permettant d'afficher l'indice de la valeur `14` dans la liste `lst = [2, 3, 6, 7, 11, 14, 18, 19, 24]`.
-    === "Correction"
+    === "Correction"{#
         ```python linenums='1'
         lst = [2, 3, 6, 7, 11, 14, 18, 19, 24]
         for k in range(len(lst)):
             if lst[k] ==  14 :
                 print(k)
-        ```
+        ```#}
 
 
 !!! abstract "Exercice 2"
     === "Énoncé"
         Écrire une fonction `trouve(lst, val)` qui renvoie l'indice d'une valeur `val` dans une liste `lst `. Si la valeur `val` n'est pas trouvée, on renverra `"non trouvé"`.
-    === "Correction"
+    === "Correction"{#
         ```python linenums='1'
         def trouve(val, lst) :
             for k in range(len(lst)) :
@@ -115,7 +115,7 @@ C'est la méthode la plus intuitive : on essaie toutes les valeurs (par exemple,
                     return k
             return None
 
-        ```
+        ```#}
 
 
 ### 1.3 Complexité de la méthode naïve
