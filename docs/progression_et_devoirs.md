@@ -215,24 +215,24 @@
     ??? note "Devoirs"
         - Apprendre les commandes Linux que vous avez relevées lors du jeu Terminus    
 
+!!! done "séance 29 (mardi 20/05/2025):"
+    - [T4 > chap5: Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours.md)
+    - [T4 > chap5: Algorithmes gloutons](T4_Algorithmique/Chapitre_6:_Algorithmes_gloutons/cours.md)    
+    ??? note "Devoirs"    
+        - Apprendre l'algorithme de recherche dichotomique dans une liste triée (possiblement j'interrogerai quelques élèves).
+        - Faire l'exercice 3 (Remplir le sac à dos `butin` en utilisant la stratégie gloutonne.)
+
+
 
 {# 
 
-!!! done "séance 29 (mardi 21/5/2024):"
-    - Travail sur Wims pendant rattrapage du contrôle
+!!! done "séance 30 (mardi 28/5/2024):"
     - Correction du Contrôle sur l'algorithmique
     - Programmation d'une carte à microcontrôleur (MicroBit)
-    - Algorithme de tri dichotomique
-    - Contrôle sur les booléens et l'algorithmique
-    ??? note "Devoirs"    
-        - S'inscrire à la classe virtuelle wims PNSI (voir l'annonce sur la page d'accueil) et faire chaque exercice d'abord plusieurs fois avec la notation désactivée pour vous entraîner ; puis deux fois avec la notation activée. 
-        - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
-
-
-!!! done "séance 30 (mardi 28/5/2024):"
     - T5 > Traitement des données
     - Manipulation de fichiers csv
     ??? note "Devoirs"
+        - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
         - 
 #}
 ### À suivre

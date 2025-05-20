@@ -221,7 +221,7 @@ Quels objets faut-il prendre ?
 
 !!! abstract "{{ exercice() }}"
     === "Énoncé"
-        - Classer les objets dans l'ordre décroissant de leur taux de valeur (taux de valeur = valeur / masse).
+        - Utiliser la fonction `sorted()` pour classer les objets dans l'ordre décroissant de leur taux de valeur (taux de valeur = valeur / masse).
         ``` python
         objets = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
         poids_max = 40
@@ -244,39 +244,66 @@ Quels objets faut-il prendre ?
              ['E', 14, 600],
              ['B', 12, 500],
              ['D', 10, 300],
-         ['C', 8, 200]]
+             ['C', 8, 200]]
         ```
 
 
 **Calcul de la solution, par méthode gloutonne**
 
 
-```python linenums='1'
-objets  = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
 
-def ratio(objet):
-    # renvoie le rapport prix/poids d'un objet
-    return objet[2] / objet[1]
 
-objets_tries = sorted(objets, key = ratio, reverse = True)
+!!! abstract "{{ exercice() }}"
+    === "Énoncé"
+        Remplir le sac à dos `butin` en utilisant la stratégie gloutonne.
+        ```python linenums='1'
+        objets  = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
+        
+        def ratio(objet):
+            # renvoie le rapport prix/poids d'un objet
+            return objet[2] / objet[1]
+        
+        objets_tries = sorted(objets, key = ratio, reverse = True)
+        
+        poids_max = 40
+        poids_sac = 0
+        
+        butin = []
+        
+        for objet in objets_tries:
+            poids_objet = ...
+            if ...
+                butin ...
+                poids_sac ...
+        
+        ```
+    === "Correction"{#
+        ```python linenums='1'
+        objets  = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
+        
+        def ratio(objet):
+            # renvoie le rapport prix/poids d'un objet
+            return objet[2] / objet[1]
+        
+        objets_tries = sorted(objets, key = ratio, reverse = True)
+        
+        poids_max = 40
+        poids_sac = 0
+        
+        butin = []
+        
+        for objet in objets_tries:
+            poids_objet = objet[1]
+            if poids_objet + poids_sac < poids_max :
+                butin.append(objet[0])
+                poids_sac += poids_objet
+        
+        ```
 
-poids_max = 40
-poids_sac = 0
-
-butin = []
-
-for objet in objets_tries:
-    poids_objet = objet[1]
-    if poids_objet + poids_sac < poids_max :
-        butin.append(objet[0])
-        poids_sac += poids_objet
-
-```
-
-```python
->>> butin
-    ['A', 'F', 'C']
-```
+        ```python
+        >>> butin
+            ['A', 'F', 'C']
+        ```#}
 
 
 
