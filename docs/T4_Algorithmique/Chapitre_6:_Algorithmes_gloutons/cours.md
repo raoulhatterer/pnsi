@@ -1,6 +1,10 @@
 # Chapitre 6: Algorithmes gloutons
 en anglais : _greedy algorithms_
 
+
+{{initexo(0)}}
+
+
 ![image](data/BO.png){: .center}
 
 
