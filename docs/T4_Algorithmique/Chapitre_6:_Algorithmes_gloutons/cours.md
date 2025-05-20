@@ -83,9 +83,17 @@ Un algorithme glouton est une méthode rapide et souvent efficace, mais qui ne g
 !!! abstract "{{ exercice() }}"
     === "Énoncé"
         - Nous allons travailler avec des pièces (ou billets) de 1, 2, 5, 10, 20, 50, 100, 200 euros.
-        - L'objectif est de créer un programme renvoyant, pour une somme ```somme_a_rendre``` entrée en paramètre, la combinaison utilisant un **minimum** de pièces ou de billets pour fabriquer la somme ```somme_a_rendre```. 
+        - L'objectif est d'écrire une fonction `rendu(somme_a_rendre)` renvoyant, pour une somme ```somme_a_rendre``` entrée en paramètre, la combinaison utilisant un **minimum** de pièces ou de billets pour fabriquer la somme ```somme_a_rendre```. 
         - Par exemple, lorsque vous payez avec 20 € un objet coûtant 11 €, vous préférez qu'on vous rende vos 9 € de monnaie par $$ 9 = 5 + 2+2$$ plutôt que par $$ 9=2+2+2+1+1+1$$
         - La résolution de ce problème peut se faire de manière gloutonne : à chaque étape, vous allez essayer de rendre la plus grosse pièce (ou billet) possible.
+        
+        Utilisation : `rendu(13)` doit renvoyer `[10, 2, 1]`
+        ```python
+        >>> rendu(13)
+            [10, 2, 1]
+        >>> rendu(58)
+            [50, 5, 2, 1]
+        ```
 
 ### 2.1 Solution du problème
 
@@ -112,15 +120,6 @@ Un algorithme glouton est une méthode rapide et souvent efficace, mais qui ne g
 
 
 
-Utilisation : `rendu(13)` doit renvoyer `[10, 2, 1]`
-
-
-```python
->>> rendu(13)
-    [10, 2, 1]
->>> rendu(58)
-    [50, 5, 2, 1]
-```
 
 
 
