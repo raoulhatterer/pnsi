@@ -106,7 +106,7 @@ C'est la méthode la plus intuitive : on essaie toutes les valeurs (par exemple,
 
 !!! abstract "{{ exercice() }}"
     === "Énoncé"
-        Écrire une fonction `trouve(lst, val)` qui renvoie l'indice d'une valeur `val` dans une liste `lst `. Si la valeur `val` n'est pas trouvée, on renverra `"non trouvé"`.
+        Écrire une fonction `trouve(lst, val)` qui renvoie l'indice d'une valeur `val` dans une liste `lst `. Si la valeur `val` n'est pas trouvée, on renverra `None`.
     === "Correction"{#
         ```python linenums='1'
         def trouve(val, lst) :
