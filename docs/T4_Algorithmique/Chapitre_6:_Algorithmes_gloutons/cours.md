@@ -219,23 +219,33 @@ Quels objets faut-il prendre ?
 - on prend le premier élément de la liste, puis le deuxième, etc., tant que le sac peut encore les contenir.
 
 
+!!! abstract "{{ exercice() }}"
+    === "Énoncé"
+        - Classer les objets dans l'ordre décroissant de leur taux de valeur (taux de valeur = valeur / masse).
+        ``` python
+        objets = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
+        poids_max = 40
+        def ratio(objet):
+            """renvoie le rapport prix/poids d'un objet"""
+            return ...
+        ```
+    === "Correction"
+        ```pycon
+        >>> objets = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
+        >>> poids_max = 40
+        >>> def ratio(objet):
+                """renvoie le rapport prix/poids d'un objet"""
+                return objet[2] / objet[1]
 
-```python
->>> objets = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
->>> poids_max = 40
->>> def ratio(objet):
-        # renvoie le rapport prix/poids d'un objet
-        return objet[2] / objet[1]
-
->>> objets_tries = sorted(objets, key = ratio, reverse = True)
->>> objets_tries
-     [['A', 13, 700],
-     ['F', 18, 800],
-     ['E', 14, 600],
-     ['B', 12, 500],
-     ['D', 10, 300],
-     ['C', 8, 200]]
-```
+        >>> objets_tries = sorted(objets, key = ratio, reverse = True)
+        >>> objets_tries
+             [['A', 13, 700],
+             ['F', 18, 800],
+             ['E', 14, 600],
+             ['B', 12, 500],
+             ['D', 10, 300],
+         ['C', 8, 200]]
+        ```
 
 
 **Calcul de la solution, par méthode gloutonne**
