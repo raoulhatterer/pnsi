@@ -441,7 +441,7 @@ Il suffit dans la console d'utiliser la fonction `type`.
 
 Comment connaître le type de toutes les variables ?
 Dans *Spyder* on peut consulter l'*Explorateur de variables* ou bien il suffit d'utiliser  `whos` qui est une commande magique (magic command), spécifique aux environnements interactifs comme IPython et Jupyter Notebook. Ne fonctionne pas dans une console python standard.
-```pycon
+```pycon title="🐍 Console IPython (pas Python)"
 In[1]: a = 1
 In[2]: b = "Lycée de la Méditerranée"
 In[3]: whos
