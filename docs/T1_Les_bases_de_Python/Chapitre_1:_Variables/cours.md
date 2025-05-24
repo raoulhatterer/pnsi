@@ -439,6 +439,18 @@ Il suffit dans la console d'utiliser la fonction `type`.
 <class 'int'>
 ```
 
+Comment connaître le type de toutes les variables ?
+Dans *Spyder* on peut consulter l'*Explorateur de variables* ou bien il suffit d'utiliser  `whos` qui est une commande magique (magic command), spécifique aux environnements interactifs comme IPython et Jupyter Notebook. Ne fonctionne pas dans une console python standard.
+```pycon
+In[1]: a = 1
+In[2]: b = "Lycée de la Méditerranée"
+In[3]: whos
+Variable   Type    Data/Info
+----------------------------
+a          int     1
+b          str     Lycée de la Méditerranée
+```
+
 ### 3.2 Typage dynamique
 
 Jusqu'à présent, nous ne nous sommes pas occupés de préciser à Python le type de notre variable.
