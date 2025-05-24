@@ -430,26 +430,27 @@ En voici quelques uns, que nous découvrirons au fil de l'année :
     |`function`|fonction| `print`|
 
 
-Comment connaître le type d'une variable ?
-Il suffit dans la console d'utiliser la fonction `type`.
+!!! tip "Comment connaître le type d'une variable ?"
+    Il suffit dans la console d'utiliser la fonction `type`.
+    
+    ```pycon
+    >>> a = 1
+    >>> type(a)
+    <class 'int'>
+    ```
 
-```pycon
->>> a = 1
->>> type(a)
-<class 'int'>
-```
-
-Comment connaître le type de toutes les variables ?
-Dans *Spyder* on peut consulter l'*Explorateur de variables* ou bien il suffit d'utiliser  `whos` qui est une commande magique (magic command), spécifique aux environnements interactifs comme IPython et Jupyter Notebook. Ne fonctionne pas dans une console python standard.
-```pycon title="🐍 Console IPython (pas Python)"
-In[1]: a = 1
-In[2]: b = "Lycée de la Méditerranée"
-In[3]: whos
-Variable   Type    Data/Info
-----------------------------
-a          int     1
-b          str     Lycée de la Méditerranée
-```
+!!! tip "Comment connaître le type de toutes les variables ?"
+    Il suffit d'utiliser  `whos` qui est une commande magique (magic command), spécifique aux environnements interactifs comme IPython et Jupyter Notebook. Ne fonctionne malheureusement pas dans une console python standard.
+    ```pycon title="🐍 Console IPython (pas Python)"
+    In[1]: a = 1
+    In[2]: b = "Lycée de la Méditerranée"
+    In[3]: whos
+    Variable   Type    Data/Info
+    ----------------------------
+    a          int     1
+    b          str     Lycée de la Méditerranée
+    ```
+    Dans *Spyder* on peut également consulter l'*Explorateur de variables*. :smile:
 
 ### 3.2 Typage dynamique
 
