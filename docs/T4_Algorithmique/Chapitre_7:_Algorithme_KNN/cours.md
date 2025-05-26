@@ -15,10 +15,7 @@ La méthode du KNN va trouver quels sont, dans une base de données déjà bien 
 ![](data/picKNN.png)
 
 **Notre objectif :** 
-Nous allons reprendre le jeu de données sur les joueurs du top14 utilisé ici 
-
-https://forge.aeif.fr/lyceemed/pnsi/-/blob/main/docs/T4_Algorithmique/Chapitre_7:_Algorithme_KNN/data/03_Pandas_eleves.ipynb
-
+Nous allons reprendre le jeu de données sur les joueurs du top14 utilisé [ici](./data/03_Pandas_eleves.ipynb)
 qui utilise le fichier [top14.csv](data/top14.csv)
 
 
