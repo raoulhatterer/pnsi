@@ -23,8 +23,9 @@
 ### :high_brightness: Thème(s) en cours d'étude
 
 
-- :arrow_right: [T4 > Algoritmique > Tri par insertion ](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
-- :arrow_right: [T3 > Architecture matérielle > Commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
+- :arrow_right: [T4 > Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
+- :arrow_right: [T5 > Manipulation de fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours/)
+
 
 
 {#
@@ -35,8 +36,6 @@
 
 
 - :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
-- :arrow_right: [T4 > Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
-- :arrow_right: [T5 > Manipulation de fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours/)
 - :arrow_right: [T5 > Trier des données](T5_Traitement_de_donnees/Chapitre_2:_Trier_des_donnees/cours/)
 
 
@@ -63,6 +62,9 @@
 - :arrow_right: [T2 > Dictionnaires](././T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours.md)
 - :arrow_right: [T2 > Representation des données > Le codage des entiers](./T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
 - :arrow_right: [T2 > Representation des données > Le codage des flottants](./T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
+- :arrow_right: [T4 > Algoritmique > Tri par insertion ](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
+- :arrow_right: [T3 > Architecture matérielle > Commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
+
 
 
 

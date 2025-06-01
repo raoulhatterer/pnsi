@@ -222,17 +222,18 @@
         - Apprendre l'algorithme de recherche dichotomique dans une liste triée (possiblement j'interrogerai quelques élèves).
         - Faire l'exercice 3 (Remplir le sac à dos `butin` en utilisant la stratégie gloutonne.)
 
-
-
+!!! done "séance 30 (mardi 27/05/2025):"
+    - [T5 Traitement des données > fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours.md)
+    ??? note "Devoirs"
 {# 
 
-!!! done "séance 30 (mardi 28/5/2024):"
-    - Correction du Contrôle sur l'algorithmique
+!!! done "séance 31 (mardi 28/5/2024):"
     - Programmation d'une carte à microcontrôleur (MicroBit)
-    - T5 > Traitement des données
-    - Manipulation de fichiers csv
     ??? note "Devoirs"
         - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
         - 
+
+
+
 #}
 ### À suivre
