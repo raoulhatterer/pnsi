@@ -225,15 +225,26 @@
 !!! done "séance 30 (mardi 27/05/2025):"
     - [T5 Traitement des données > fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours.md)
     ??? note "Devoirs"
+
+!!! done "séance 31 (mardi 03/06/2025):"
+    - T3 > Programmation d'une carte à microcontrôleur (MicroBit)
+    - T3 > Architecture Von Neumann
+
+!!! done "séance 32 (mardi 10/06/2025):"
+    - Annulée pour cause de conseils de classes
+
+
+
+
 {# 
 
-!!! done "séance 31 (mardi 28/5/2024):"
-    - Programmation d'une carte à microcontrôleur (MicroBit)
+
+!!! done "séance 31 (mardi 03/06/2025):"
+    - T3 > Programmation d'une carte à microcontrôleur (MicroBit)
+    - T3 > Architecture Von Neumann
     ??? note "Devoirs"
         - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
         - 
-
-
 
 #}
 ### À suivre
