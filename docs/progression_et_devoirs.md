@@ -2,7 +2,7 @@
 
 [2025-2026](#a-suivre)
 
-!!! done "séance 1 (jeudi 03/09/25):"
+!!! done "séance 1 (jeudi 04/09/25):"
     - [Les conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours.md)
     - [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
