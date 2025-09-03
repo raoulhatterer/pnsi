@@ -1,17 +1,14 @@
 # Progression et devoirs
 
-[2025-2026](#a-suivre)
+[2024-2025](#a-suivre)
 
-!!! done "séance 1 (jeudi 03/09/25):"
+!!! done "séance 1 (mardi 10/09/24):"
     - [Les conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours.md)
     - [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
         - Installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-        - Déposer un fichier `variable.ipynb` contenant les exercices du chapitre sur les variables dans les devoirs
+        - Déposer un fichier `variable.ipynb` contenant les exercices du chapitre sur les variables dans le casier qui se trouve à l'emplacement Documents > Élèves > P2024-2025 > Répertoire personnel à votre nom.
         - Feuille Wims1 sur les variables
-
-
-{# 
 
 !!! done "séance 2 (mardi 17/09/24):"
     - [La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)    
@@ -239,7 +236,7 @@
 
 
 
-
+{# 
 
 
 !!! done "séance 31 (mardi 03/06/2025):"

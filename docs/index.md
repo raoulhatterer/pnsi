@@ -2,7 +2,7 @@
     - Bonne rentrée à toutes et à tous ! -->
 
 
-{#
+{##}
 !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous !
 
@@ -10,11 +10,11 @@
 
 !!! info "Travail noté à faire sur Wims"
     - Wims propose des exercices à données aléatoires. Il permet de désactiver la prise en compte des notes le temps de maîtriser un exercice (n'oubliez pas de le faire c'est de votre responsabilité) puis d'activer la prise en compte des notes quand vous le souhaitez.
-    - S'inscrire (une seule fois )sur le site [wims PNSI](https://wims.univ-cotedazur.fr/wims/wims.cgi?module=adm/class/classes&lang=fr&type=authparticipant&class=8170646&subclass=yes){:target="_blank"} en utilisant le code d'inscription "pnsimed"
+    - S'inscrire (une seule fois )sur le site [wims PNSI](https://wims.univ-cotedazur.fr/wims/wims.cgi?module=adm/class/classes&lang=fr&type=authparticipant&class=4490141&subclass=yes){:target="_blank"} en utilisant le code d'inscription "pnsimed"
     - Attention SVP à ne pas confondre votre nom avec votre prénom
     - Utilisez un identifiant tout en minuscules composé de votre prénom et des 3 premières lettres de votre nom. Par exemple, si vous vous appelez Louis de Funès vous mettrez "louisdef".
     - Surtout ne pas utiliser le code d'inscription plus d'une fois (pour ne pas créer plusieurs comptes). Mais, si vous pensez que votre inscription n'a pas fonctionné (ou pour tout autre problème),  n’hésitez pas à me  contacter par messagerie Atrium.
-#}
+
 
 !!! info "Pour progresser (entraînement autonome à la programmation)"
     - Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entraînement à la pratique de la programmation en lien avec la spécialité NSI.
@@ -23,8 +23,7 @@
 ### :high_brightness: Thème(s) en cours d'étude
 
 
-- :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
-- :arrow_right: [T3 > Von Neuman](T3_Architecture_materielle/Chapitre_2:_Architecture_Von_Neumann/cours/)
+- :arrow_right: [T1 > Variables & ES](./T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
 
 
 {#
@@ -33,20 +32,6 @@
 
 
 
-
-
-- :arrow_right: [T5 > Trier des données](T5_Traitement_de_donnees/Chapitre_2:_Trier_des_donnees/cours/)
-
-
-<!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
-<!-- - Dans le thème3 Architecture matérielle: -->
-<!--     - chapitre 1: Microbit -->
-<!--     - chapitre 2: Architecture Von Neumann -->
-
-#}
-
-### Anciens thèmes traités
-- :arrow_right: [T1 > Variables & ES](./T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
 - :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.m.md)
 - :arrow_right: [T1 > La boucle ```#!python while```](./T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.m.md)
 - :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](./T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours.md)
@@ -65,8 +50,19 @@
 - :arrow_right: [T3 > Architecture matérielle > Commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
 - :arrow_right: [T4 > Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
 - :arrow_right: [T5 > Manipulation de fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours/)
+- :arrow_right: [T5 > Trier des données](T5_Traitement_de_donnees/Chapitre_2:_Trier_des_donnees/cours/)
+- :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
+- :arrow_right: [T3 > Von Neuman](T3_Architecture_materielle/Chapitre_2:_Architecture_Von_Neumann/cours/)
 
 
+<!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
+<!-- - Dans le thème3 Architecture matérielle: -->
+<!--     - chapitre 1: Microbit -->
+<!--     - chapitre 2: Architecture Von Neumann -->
+
+#}
+
+### Anciens thèmes traités
 
 
 
