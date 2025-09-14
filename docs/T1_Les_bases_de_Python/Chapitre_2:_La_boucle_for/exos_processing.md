@@ -87,7 +87,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
         *Aide*
 
         - la fonction ```random(a,b)``` permet d'obtenir un entier pseudo aléatoire entre ```a``` et ```b```.
-    === "Correction en Processing"
+    === "Correction en Processing" 
         ```python linenums='1'
         size(300,300)
         background(0)
@@ -100,7 +100,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
             stroke(random(0,255), random(0,255), random(0,255))
             line(Ax,Ay,Bx,By)
         ```
-    === "Correction en p5" {# #} 
+    === "Correction en p5" {# exo1 #} 
         ```python linenums='1'
         from p5 import *
 
@@ -133,7 +133,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
         
         ![image_lignes_difficile](data/exo2.png){: .center} 
 
-    === "Correction en Processing" {# #} 
+    === "Correction en Processing" {# exo2 #} 
         ```python linenums='1'
         size(300,300)
         background(0)
@@ -183,7 +183,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
         - la transparence s'obtient en rajoutant un 4ème paramètre (entre 0 et 255) à la suite de RGB. On appelle ce paramètre le canal Alpha.
         Ex : (255,0,0,200) est un rouge très transparent.
 
-    === "Correction en Processing" {# #}
+    === "Correction en Processing" {# exo3 #}
         ```python linenums='1'
         size(300,300)
         background(0)
@@ -201,7 +201,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
 
         ``` 
 
-    === "Correction en p5" {# #}
+    === "Correction en p5" {# exo3 #}
         ```python linenums='1'
         from p5 import *
 
@@ -234,7 +234,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
         
         ![image](data/exo_cap.png){: .center width=30%}
 
-    === "Correction en Processing"  {# #}
+    === "Correction en Processing"  {# exo4 
         ```python linenums='1'
         size(300,300)
         background(0)
@@ -243,9 +243,9 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
         for k in range(10):
             ellipse(x,150,20,20)
             x = x + 30
-        ``` 
+        ``` #}
 
-    === "Correction en p5" {# #}
+    === "Correction en p5" {# exo4
         ```python linenums='1'
         from p5 import *
 
@@ -262,7 +262,7 @@ Tous les exercices sont à faire dans une fenêtre de 300 pixels sur 300 pixels.
                 x = x + 30
 
         run()
-        ``` 
+        ``` #}
 
 
 ## 4. Exercices sur la double boucle
@@ -275,7 +275,7 @@ La structure de double boucle va permettre (par exemple) de parcourir l'intégra
             Construire une image où tous les points ont une couleur aléatoire.
         
             ![](data/exo4.png){: .center} 
-        === "Correction en Processing" {# #}
+        === "Correction en Processing" {# exo5 
             ```python linenums='1'
             size(300,300)
             background(0)
@@ -287,7 +287,7 @@ La structure de double boucle va permettre (par exemple) de parcourir l'intégra
                     b = random(0,255)
                     stroke(r,g,b)
                     point(x,y)
-            ```
+            ``` #}
 
         
 
@@ -297,7 +297,7 @@ La structure de double boucle va permettre (par exemple) de parcourir l'intégra
             Construire une image constituée de carrés de 20 pixels de coté, de couleur aléatoire. L'image est toujours un carré de côté 300 pixels.
         
             ![](data/exo5.png){: .center} 
-        === "Correction en Processing" {# #}
+        === "Correction en Processing" {# exo6 
             ```python linenums='1'
             size(300,300)
             background(0)
@@ -310,5 +310,5 @@ La structure de double boucle va permettre (par exemple) de parcourir l'intégra
                     b = random(0,255)
                     fill(r,g,b)
                     rect(xk*20,yk*20,20,20)
-            ``` 
+            ``` #}
 

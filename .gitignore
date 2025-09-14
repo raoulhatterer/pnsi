@@ -4,6 +4,7 @@
 /old.gitlab-ci.yml
 **/*.*#
 **/*.*~
+**/hidden/**
 
 /docs/.progression_et_devoirs2022.md
 /docs/.progression_et_devoirs2023.md

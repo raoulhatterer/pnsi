@@ -21,8 +21,8 @@
 ### :high_brightness: Thème(s) en cours d'étude
 
 
-- :arrow_right: [T1 > Variables & ES](./T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
 
+- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.m.md)
 
 {#
 
@@ -30,7 +30,7 @@
 
 
 
-- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.m.md)
+
 - :arrow_right: [T1 > La boucle ```#!python while```](./T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.m.md)
 - :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](./T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours.md)
 - :arrow_right: [T1 > Les fonctions](./T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours.md)
@@ -63,7 +63,7 @@
 ### Anciens thèmes traités
 
 
-
+- :arrow_right: [T1 > Variables & ES](./T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
 
 
 ### Programme
