@@ -1,10 +1,20 @@
-# Je me teste
+# Exercices basiques
+
+## Jeu de programmation python
+
+Apprends les bases de Python en t'amusant avec [Execubot](https://execubot.fr) !
+
+[![image](../../images/robot.png){: width="200"}](https://execubot.fr) 
+
+
+
+## Je me teste
 
 {{ initexo(0) }}
 
 Quelques exercices très simples pour vérifier que vous maîtrisez un minimum les bases du langage python.
 
-## Variables et Entrées/Sorties
+### Variables et Entrées/Sorties
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -12,7 +22,7 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
     === "Correction"
         Exercice 1
         
-## Opérateurs arithmétiques
+### Opérateurs arithmétiques
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -27,7 +37,7 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
     === "Correction"
         Exercice 2
 
-## Branchements conditionnels
+### Branchements conditionnels
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -83,7 +93,7 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
     === "Correction"
         Exercice 8
 
-## Boucle `while`
+### Boucle `while`
 `
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -140,7 +150,7 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
     === "Correction"
         Exercice 13
         
-## Boucle `for`
+### Boucle `for`
         
         
 !!! example "{{ exercice() }}"
@@ -156,7 +166,7 @@ Quelques exercices très simples pour vérifier que vous maîtrisez un minimum l
     === "Correction"
         Exercice 15
 
-## Fonctions
+### Fonctions
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
