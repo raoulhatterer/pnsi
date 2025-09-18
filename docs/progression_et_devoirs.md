@@ -31,7 +31,21 @@
         - Réviser régulièrement les notions déjà étudiées
 
 
+!!! done "séance 4 (mardi 16/09/25):"
+    - [La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
+    - Utilisation du debugger dans Spyder
 
+
+!!! done "séance 5 (jeudi 18/09/2024):"
+    - [La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
+    - Exercice 1 et 2 sur la boucle for
+    ??? note "Devoirs"
+        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
+        - Réviser régulièrement les notions déjà étudiées
+        - Feuille Wims2 sur la boucle for  
+        - Exercice 3 et 4 sur la boucle for
+    
+    
 
 
 {# 
@@ -52,7 +66,7 @@
         - Venir avec une tablette fonctionnelle (batterie chargée).
         - Réviser pour un contrôle portant sur les 2 premiers chapitres.
 
-!!! done "séance 4 (mardi 01/10/24):"
+
     - Contrôle n°1 sur la boucle `for` (30 min)
     - Correction du contrôle sur la boucle `for` dans la foulée
     - Correction des exercices sur la boucle `while`
@@ -61,7 +75,6 @@
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter puis prendre une preuve en photo.
         - Préparer le contrôle n°2  qui portera sur les 3 premiers chapitres (variables, boucle `for` et boucle `while`)
 
-!!! done "séance 5 (mardi 8/10/2024):"
     - Contrôle n°2 sur les boucles (45 min)
     - Correction du contrôle dans la foulée
     - Exercices sur les dessins en p5
