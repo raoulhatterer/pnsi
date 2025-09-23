@@ -45,24 +45,23 @@
         - Feuille Wims2 sur la boucle for  
         - Exercice 3 et 4 sur la boucle for
     
+!!! done "séance 6 (mardi 15/10/2024):"
+    - [Exercices 3 à 8 sur la boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/exercices.md)    
+    - Présentation de Processing
+    ??? note "Devoirs"
+        - Installer le programme Processing sur votre ordinateur et ajouter la gestion de python. Lire [Quick Start](https://github.com/jdf/processing.py#python-mode-for-processing) qui explique l'installation de python.
     
-
-
+    
 {# 
-
-    - [Exercices sur la boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/exercices.md)    
-        - Feuille Wims2 sur la boucle for        
-        - Déposer un fichier `boucle_for.ipynb` contenant les exercices du chapitre sur la boucle for dans le casier qui se trouve à l'emplacement Documents > Élèves > P2024-2025> Répertoire personnel à votre nom.
 
 
     - exercices Processing et P5 reportés à plus tard car non fonctionnels actuellement
     - La boucle while
-    ??? note "Devoirs"
+
         - Déposer un fichier `chapitre3.ipynb` avec les exercices du chapitre 3 dans votre répertoire personnel.
         - Faire la feuille 3 de wims sur la boucle `while`.
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Comme expliqué en cours, ramener une photo qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
-        - Installer le programme Processing sur votre ordinateur et ajouter la gestion de python. Lire [Quick Start](https://github.com/jdf/processing.py#python-mode-for-processing) qui explique l'installation de python.
         - Venir avec une tablette fonctionnelle (batterie chargée).
         - Réviser pour un contrôle portant sur les 2 premiers chapitres.
 
@@ -81,7 +80,7 @@
     ??? note "Devoirs"
         - Réviser contrôle (tout ce qui a été fait depuis le début de l'année y compris wims et les dessins en p5)
 
-!!! done "séance 6 (mardi 15/10/2024):"
+
     - Contrôle n°3 sur les bases (variables, boucles)
     - correction du contrôle 3
     - instruction conditionnelle If else elif
