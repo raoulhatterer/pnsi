@@ -2,9 +2,11 @@
     - Bonne rentrée à toutes et à tous ! -->
 
 
-{##}
+{#
 !!! abstract ":star: Actualités :star:"
     - Bonne rentrée à toutes et à tous !
+#}
+
 
 !!! info "Travail noté à faire sur Wims"
     - Wims propose des exercices à données aléatoires. Il permet de désactiver la prise en compte des notes le temps de maîtriser un exercice (n'oubliez pas de le faire c'est de votre responsabilité) puis d'activer la prise en compte des notes quand vous le souhaitez.
@@ -22,7 +24,7 @@
 
 
 
-- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.m.md)
+- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
 
 {#
 

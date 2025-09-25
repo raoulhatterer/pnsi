@@ -64,4 +64,4 @@ Par contre, pour faire un code statique en p5, il faudra quand même que les fon
 
 ![image](data/diff.png){: .center width=100%}
 
-Vous pouvez aussi comparer des codes statiques Processing avec leur équivalent en p5 dans la [feuille d'exercices sur Processing](../../../T1_Les_bases_de_Python/1.2_La_boucle_for/exos_processing/).
+Vous pouvez aussi comparer des codes statiques Processing avec leur équivalent en p5 dans la [feuille d'exercices sur Processing](../../../T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/exos_processing/).

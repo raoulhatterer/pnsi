@@ -45,13 +45,20 @@
         - Feuille Wims2 sur la boucle for  
         - Exercice 3 et 4 sur la boucle for
     
-!!! done "séance 6 (mardi 15/10/2024):"
+!!! done "séance 6 (mardi 23/09/2024):"
     - [Exercices 3 à 8 sur la boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/exercices.md)    
     - Présentation de Processing
     ??? note "Devoirs"
         - Installer le programme Processing sur votre ordinateur et ajouter la gestion de python. Lire [Quick Start](https://github.com/jdf/processing.py#python-mode-for-processing) qui explique l'installation de python.
     
+
+!!! done "séance 7 (jeudi 25/09/2025):"
+    - Exercices Processing et P5
+    ??? note "Devoirs"
+        - Finir les exercices Processing et P5
+        - Préparer le contrôle n°2  qui portera sur les 2 premiers chapitres (variables, boucle `for`)
     
+
 {# 
 
 
@@ -70,15 +77,13 @@
     - Correction du contrôle sur la boucle `for` dans la foulée
     - Correction des exercices sur la boucle `while`
     - Exercices Processing (ou P5)
-    ??? note "Devoirs"
-        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter puis prendre une preuve en photo.
-        - Préparer le contrôle n°2  qui portera sur les 3 premiers chapitres (variables, boucle `for` et boucle `while`)
 
     - Contrôle n°2 sur les boucles (45 min)
     - Correction du contrôle dans la foulée
     - Exercices sur les dessins en p5
     ??? note "Devoirs"
         - Réviser contrôle (tout ce qui a été fait depuis le début de l'année y compris wims et les dessins en p5)
+        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter puis prendre une preuve en photo.
 
 
     - Contrôle n°3 sur les bases (variables, boucles)
@@ -91,7 +96,7 @@
         - exercices de la page d'exercices If else elif (code capytale 9fee-4323961)
         - feuille wims 4
 
-!!! done "séance 7 (mardi 5/11/2024):"
+
     - Les fonctions (Thème 1 Chapitre 5) 
     - Exercices 1 et 2 sur les fonctions
     ??? note "Devoirs"
