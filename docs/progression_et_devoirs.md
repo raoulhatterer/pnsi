@@ -55,7 +55,7 @@
 !!! done "séance 7 (jeudi 25/09/2025):"
     - Exercices Processing et P5
     ??? note "Devoirs"
-        - Finir les exercices Processing et P5
+        - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
         - Préparer le contrôle n°2  qui portera sur les 2 premiers chapitres (variables, boucle `for`)
     
 
