@@ -63,7 +63,7 @@
     - Correction des exercices Processing 
     ??? note "Devoirs"
         - Terminer le dessin de la maison et rendre votre travail sur Capytale
-        - Réviser pour un contrôle portant sur les 2 premiers chapitres.
+        - Réviser pour un contrôle portant sur les 2 premiers chapitres (j'ai mis la correction des exercices sur la boucle `for`).
         - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
 
 {# 
