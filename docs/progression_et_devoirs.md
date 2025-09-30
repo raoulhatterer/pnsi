@@ -4,7 +4,7 @@
 
 !!! done "séance 1 (jeudi 04/09/25):"
     - [Les conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours.md)
-    - [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
+    - [T1 > chap1 : Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
         - Installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Enregistrer un fichier `variable.py` contenant les exercices du chapitre sur les variables sur clé USB
@@ -14,7 +14,7 @@
 
 
 !!! done "séance 2 (mardi 09/09/25):"
-    - [Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
+    - [T1 > chap1 : Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
         - Si ce n'est pas encore fait: Installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Enregistrer un fichier `variable.py` contenant les exercices du chapitre sur les variables sur clé USB et le déposer dans vos devoirs
@@ -25,19 +25,19 @@
     - Test1 sur les variables
     - Correction du test1
     - Les entrés sorties
-    - [La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
+    - [T1 > chap2 : La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Réviser régulièrement les notions déjà étudiées
 
 
 !!! done "séance 4 (mardi 16/09/25):"
-    - [La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
+    - [T1 > chap2 : boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
     - Utilisation du debugger dans Spyder
 
 
 !!! done "séance 5 (jeudi 18/09/2024):"
-    - [La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
+    - [T1 > chap2 : boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
     - Exercice 1 et 2 sur la boucle for
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
@@ -53,24 +53,27 @@
     
 
 !!! done "séance 7 (jeudi 25/09/2025):"
-    - Exercices Processing et P5
+    - [Exercices Processing et P5](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/exos_processing.md)
     ??? note "Devoirs"
         - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
         - Préparer le contrôle n°2  qui portera sur les 2 premiers chapitres (variables, boucle `for`)
     
+!!! done "séance 8 (mardi 30/09/2025):"
+    - [T1 > chap3 : La boucle while](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
+    - Correction des exercices Processing 
+    ??? note "Devoirs"
+        - Terminer le dessin de la maison et rendre votre travail sur Capytale
+        - Réviser pour un contrôle portant sur les 2 premiers chapitres.
+        - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
 
 {# 
 
 
-    - exercices Processing et P5 reportés à plus tard car non fonctionnels actuellement
-    - La boucle while
 
-        - Déposer un fichier `chapitre3.ipynb` avec les exercices du chapitre 3 dans votre répertoire personnel.
-        - Faire la feuille 3 de wims sur la boucle `while`.
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Comme expliqué en cours, ramener une photo qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
         - Venir avec une tablette fonctionnelle (batterie chargée).
-        - Réviser pour un contrôle portant sur les 2 premiers chapitres.
+
 
 
     - Contrôle n°1 sur la boucle `for` (30 min)
@@ -81,7 +84,7 @@
     - Contrôle n°2 sur les boucles (45 min)
     - Correction du contrôle dans la foulée
     - Exercices sur les dessins en p5
-    ??? note "Devoirs"
+
         - Réviser contrôle (tout ce qui a été fait depuis le début de l'année y compris wims et les dessins en p5)
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter puis prendre une preuve en photo.
 
@@ -105,7 +108,7 @@
         - Commencer  à réviser le contrôle de la prochaine séance (le 19/11) portant sur tout le thème 1. 
         - Remarque: Pour vous aider dans vos révisions, la semaine prochaine je mettrai la correction des exercices sur les fonctions pour ceux qui auraient eu des difficultés à les faire.
         
-!!! done "séance 8 (mardi 12/11/2024):"
+
     - Annulée pour cause de convocation
     ??? note "Devoirs"
         - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices. Au minimum, vous devez les étudier suffisamment pour être capable de les refaire.
