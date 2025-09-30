@@ -245,13 +245,10 @@ print("merci, j'étais bloqué dans une boucle infinie")
         "
         ```python linenums='1'
         from random import randint
-
         mystere = randint(1, 10)
-
-        while True:
+        reponse = None
+        while reponse != mystere:
             reponse = int(input('quel est le nombre mystère ? '))
-            if reponse == mystere:
-                break
         print('bravo !')
         ```
         "
