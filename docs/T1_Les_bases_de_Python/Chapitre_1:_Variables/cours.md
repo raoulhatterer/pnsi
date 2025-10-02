@@ -573,7 +573,7 @@ Dans un premier temps nous nous limiterons aux échanges d'information entre le 
 
 ### 5.1 Sortie
 
-**L'instruction `print()`   permet d'afficher un résultat sur la console.** Les parenthèses peuvent contenir une valeur (nombre ou texte), un nom de variable,une opération.... ou plusieurs de ces éléments, séparés par des virgules (ils apparaîtront alors les uns à la suite des autres, séparés par des espaces). Autre méthode : utiliser une **f-string** (chaîne de caractères formatée) qui permet d'insérer des variables ou des expressions entre accolades {}.
+**L'instruction `print()`   permet d'afficher un résultat sur la console.** Les parenthèses peuvent contenir une valeur (nombre ou texte), un nom de variable,une opération.... ou plusieurs de ces éléments, séparés par des virgules (ils apparaîtront alors les uns à la suite des autres, séparés par des espaces). 
 
 Exemple :
 ```python
@@ -583,6 +583,16 @@ v = 50
 print("la valeur de la variable v est",v)
 print(f"la valeur de la variable v est {v} c'est absolument certain") # ceci est une f-string
 ```
+
+Autre méthode : utiliser une **f-string** (chaîne de caractères formatée) qui permet d'insérer des variables ou des expressions entre accolades `{}`.
+
+Exemple :
+```python
+v = 50
+print(f"la valeur de la variable v est {v}, son double est {2*v}") # ceci est une f-string
+```
+
+
 
 ### 5.2 Entrée
 
