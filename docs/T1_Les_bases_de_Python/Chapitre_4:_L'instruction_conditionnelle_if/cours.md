@@ -124,7 +124,7 @@ True
 
         ```
     === "Correction"
-        {{ correction(True,
+        {{ correction(False,
         "
         ```python linenums='1'
         phrase = 'cet exercice est prodigieusement ennuyeux'
