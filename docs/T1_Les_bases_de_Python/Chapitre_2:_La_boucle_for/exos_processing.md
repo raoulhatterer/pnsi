@@ -37,6 +37,8 @@ Chaque pixel de cette zone est repérée par des coordonnées dans le repère su
     - `line`: permet de tracer une ligne entre deux points. En paramètres, les coordonnées des deux points.
     - `rect`: permet de tracer un rectangle. En paramètres, les coordonnées du sommet haut-gauche, puis la largeur et la hauteur du rectangle.
     - `ellipse`: permet de tracer une ellipse. En paramètres, les coordonnées du centre, puis la largeur et la hauteur (mettre la même valeur pour un cercle).
+    - `triangle`: permet de tracer un triangle. En paramètres, les coordonnées des sommets.
+
 
 ??? note "Exemples"
     Copier-coller le code suivant et faire varier les paramètres pour bien les comprendre.
@@ -47,6 +49,7 @@ Chaque pixel de cette zone est repérée par des coordonnées dans le repère su
     line(10, 10, 100, 150)
     rect(80, 10, 20, 50)
     ellipse(150, 100, 80, 40)
+    triangle(120, 300, 232, 80, 344, 300)
     ```
 
 ### 2.3 Couleurs
