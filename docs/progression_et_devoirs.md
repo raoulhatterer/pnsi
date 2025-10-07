@@ -69,6 +69,8 @@
 !!! done "séance 9 (jeudi 2/10/2025):"
     - Contrôle chap 1 et 2
     - Chap 3 : if else
+    ??? note "Devoirs"
+        - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
 
 {# 
 
