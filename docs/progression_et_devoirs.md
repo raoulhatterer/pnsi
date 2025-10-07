@@ -66,6 +66,10 @@
         - Réviser pour un contrôle portant sur les 2 premiers chapitres (j'ai mis la correction des exercices sur la boucle `for`).
         - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
 
+!!! done "séance 9 (jeudi 2/10/2025):"
+    - Contrôle chap 1 et 2
+    - Chap 3 : if else
+
 {# 
 
 
@@ -114,7 +118,7 @@
         - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices. Au minimum, vous devez les étudier suffisamment pour être capable de les refaire.
         - Avoir trouvé un nom d'équipe pour le chalenge "Passe ton hack d'abord"
         
-!!! done "séance 9 (mardi 19/11/2024):"
+
     - Contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
 
