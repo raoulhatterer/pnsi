@@ -72,6 +72,14 @@
     ??? note "Devoirs"
         - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
 
+
+
+!!! done "séance 10 (mardi 7/10/2025):"
+    - Correction du contrôle chap 1 et 2
+    - Chap 3 : if else elif
+    ??? note "Devoirs"
+        - Faire la feuille 4 de wims sur `if` 
+
 {# 
 
 
