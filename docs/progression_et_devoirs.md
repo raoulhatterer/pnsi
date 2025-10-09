@@ -76,10 +76,19 @@
 
 !!! done "séance 10 (mardi 7/10/2025):"
     - Correction du contrôle chap 1 et 2
+    - https://compute-it.toxicode.fr/    
     - Chap 3 : if else elif
+    - exercices de la page de cours sur l'instruction conditionnelle If else elif
     ??? note "Devoirs"
         - Faire la feuille 4 de wims sur `if` 
 
+
+!!! done "séance 10 (jeudi 9/10/2025):"
+    - Correction des exercices sur la boucle `while`
+    - exercices de la page d'exercices If else elif (code capytale 9fee-4323961)
+    ??? note "Devoirs"
+        - exercices finir de la page d'exercices If else elif (code capytale 9fee-4323961)    
+    
 {# 
 
 
@@ -92,7 +101,7 @@
 
     - Contrôle n°1 sur la boucle `for` (30 min)
     - Correction du contrôle sur la boucle `for` dans la foulée
-    - Correction des exercices sur la boucle `while`
+
     - Exercices Processing (ou P5)
 
     - Contrôle n°2 sur les boucles (45 min)
@@ -106,9 +115,8 @@
     - Contrôle n°3 sur les bases (variables, boucles)
     - correction du contrôle 3
     - instruction conditionnelle If else elif
-    - https://compute-it.toxicode.fr/
     - Exercices
-    ??? note "Devoirs"
+
         - exercices de la page de cours sur l'instruction conditionnelle If else elif
         - exercices de la page d'exercices If else elif (code capytale 9fee-4323961)
         - feuille wims 4
@@ -135,7 +143,7 @@
     ??? note "Devoirs"
         - Exercice 7 et 8 du cours sur les listes
 
-!!! done "séance 10 (mardi 28/11/2024):"
+
     - Correction du contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
     ??? note "Devoirs"
