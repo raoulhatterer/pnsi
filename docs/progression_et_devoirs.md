@@ -88,7 +88,16 @@
     - exercices de la page d'exercices If else elif (code capytale 9fee-4323961)
     ??? note "Devoirs"
         - exercices finir de la page d'exercices If else elif (code capytale 9fee-4323961)    
-    
+   
+   
+!!! done "séance 11 (mardi 14/1/2024):"
+    - correction des exercices finir de la page d'exercices If else elif (code capytale 9fee-4323961)    
+    - Les fonctions (Thème 1 Chapitre 5) 
+    ??? note "Devoirs"
+        - feuille wims 5 sur les fonctions 
+
+
+   
 {# 
 
 
@@ -149,7 +158,7 @@
     ??? note "Devoirs"
         - Exercice 1 Le sanglier d'Erymanthe.
 
-!!! done "séance 11 (mardi 3/12/2024):"
+
     - [Exercices sur les liste](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
     ??? note "Devoirs"
         - [Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
@@ -311,4 +320,5 @@
         - 
 
 #}
-### À suivre
+### À sui
+
