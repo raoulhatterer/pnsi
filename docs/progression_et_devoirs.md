@@ -96,7 +96,11 @@
     ??? note "Devoirs"
         - feuille wims 5 sur les fonctions 
 
-
+!!! done "séance 12 (mardi 10/12/2024):"
+    - Les fonctions (Thème 1 Chapitre 5) 
+    ??? note "Devoirs"
+        - Exercices sur les fonctions pour le mardi de la rentrée
+        - Réviser le contrôle portant sur tout le thème 1 programmé le jeudi de la rentrée. 
    
 {# 
 
@@ -136,7 +140,7 @@
     ??? note "Devoirs"
         - feuille wims 5 sur les fonctions 
         - Bien que la séance du 12/11 soit annulée, les exercices 3 et suivants sur les fonctions sont à mettre dans votre dossier personnel avant mardi 12/11. 
-        - Commencer  à réviser le contrôle de la prochaine séance (le 19/11) portant sur tout le thème 1. 
+
         - Remarque: Pour vous aider dans vos révisions, la semaine prochaine je mettrai la correction des exercices sur les fonctions pour ceux qui auraient eu des difficultés à les faire.
         
 
@@ -164,7 +168,7 @@
         - [Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
         - Préparer le contrôle de mardi prochain (sur les listes et tout ce qui précède).
 
-!!! done "séance 12 (mardi 10/12/2024):"
+
     - Contrôle portant sur les listes
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     ??? note "Devoirs"
@@ -320,5 +324,5 @@
         - 
 
 #}
-### À sui
+### À suivre
 
