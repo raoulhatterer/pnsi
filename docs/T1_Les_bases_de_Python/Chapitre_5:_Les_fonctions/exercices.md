@@ -24,7 +24,7 @@
         ```
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def maxi(n1: int, n2: int) -> int:
@@ -48,7 +48,7 @@
         10
         ```
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def moyenne(a, b, c):
@@ -71,7 +71,7 @@
         55
         ```
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def somme(n):
@@ -107,7 +107,7 @@
         ```
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def nb_voyelles(mot):
@@ -156,7 +156,7 @@
 
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def decale(lettre):
@@ -220,7 +220,7 @@
 
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def decale(lettre, n):
@@ -273,7 +273,7 @@
 
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def decale_phrase(p, n):
@@ -296,7 +296,7 @@
         Décodez la phrase `RT BTHHPVT CT RDCIXTCI GXTC S XCITGTHHPCI`.
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def decale(lettre, n):
@@ -361,7 +361,7 @@
         2. Écrire une fonction ```syracuse(n)``` qui affiche tous les termes de la suite de Syracuse jusqu'à (on l'espère !) 1.  
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         1.
         ```python linenums='1'
@@ -386,10 +386,10 @@
     === "Énoncé"
         1. Pour la conjoncture de Syracuse, écrire une fonction ```temps_de_vol(n)``` qui renvoie le nombre d'étapes pour arriver à 1, en partant de ```n```
         2. Écrire une fonction ```temps_max(nmax)``` qui affiche le plus grand temps de vol pour un nombre entre 1 et ```nmax```.
-        3. Modifier cette fonction pour afficher aussi le nombre de départ donnant ce plus grand temps de vol.
+        3. Modifier cette fonction pour affiche aussi le nombre de départ donnant ce plus grand temps de vol.
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         1.
         ```python linenums='1'
@@ -410,7 +410,18 @@
                 if duree > maximum:
                     maximum = duree
             print('le plus grand temps de vol vaut :', maximum)
-        ``` 
+        ```
+        3.
+        ```python linenums='1'
+        def temps_max(nmax): 
+            t_vol_maxi = 0
+            for n in range(1, nmax+1):
+                t_vol = temps_de_vol(n)
+                if t_vol > t_vol_maxi:
+                    t_vol_maxi = t_vol
+                    n_t_max = n
+        print(f"Le temps de vol maximum est de {t_vol_maxi} obtenu pour n = {n_t_max}")
+        ```
         "
         ) }}        
        
