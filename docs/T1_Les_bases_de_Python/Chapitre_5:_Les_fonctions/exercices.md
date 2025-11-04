@@ -420,7 +420,7 @@
                 if t_vol > t_vol_maxi:
                     t_vol_maxi = t_vol
                     n_t_max = n
-        print(f"Le temps de vol maximum est de {t_vol_maxi} obtenu pour n = {n_t_max}")
+        print(f'Le temps de vol maximum est de {t_vol_maxi} obtenu pour n = {n_t_max}')
         ```
         "
         ) }}        
