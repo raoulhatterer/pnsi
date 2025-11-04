@@ -101,6 +101,13 @@
     ??? note "Devoirs"
         - Exercices sur les fonctions pour le mardi de la rentrée
         - Réviser le contrôle portant sur tout le thème 1 programmé le jeudi de la rentrée. 
+
+
+!!! done "séance 13 (mardi 17/12/2024):"
+    - Correction des exercices sur les fonctions
+     ??? note "Devoirs"
+        - Réviser le contrôle portant sur tout le thème 1 programmé le jeudi de la rentrée.    
+
    
 {# 
 
@@ -174,7 +181,6 @@
     ??? note "Devoirs"
         - Apprendre le début du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) (jusqu'au premier Quiz).
 
-!!! done "séance 13 (mardi 17/12/2024):"
     - HTML et CSS
     - Apprendre la suite du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) portant sur le CSS (donc jusqu'au second Quiz).
     - Exercices 2 à 4 du cours
