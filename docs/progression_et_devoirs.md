@@ -90,24 +90,26 @@
         - exercices finir de la page d'exercices If else elif (code capytale 9fee-4323961)    
    
    
-!!! done "séance 11 (mardi 14/1/2024):"
+!!! done "séance 11 (mardi 14/10/2025):"
     - correction des exercices finir de la page d'exercices If else elif (code capytale 9fee-4323961)    
     - Les fonctions (Thème 1 Chapitre 5) 
     ??? note "Devoirs"
         - feuille wims 5 sur les fonctions 
 
-!!! done "séance 12 (mardi 10/12/2024):"
+!!! done "séance 12 (jeudi 16/10/2025):"
     - Les fonctions (Thème 1 Chapitre 5) 
     ??? note "Devoirs"
         - Exercices sur les fonctions pour le mardi de la rentrée
         - Réviser le contrôle portant sur tout le thème 1 programmé le jeudi de la rentrée. 
 
 
-!!! done "séance 13 (mardi 17/12/2024):"
+!!! done "séance 13 (mardi 4/11/2025):"
     - Correction des exercices sur les fonctions
      ??? note "Devoirs"
         - Réviser le contrôle portant sur tout le thème 1 programmé le jeudi de la rentrée.    
 
+!!! done "séance 14 (jeudi 6/11/2025):"
+    -  Contrôle portant sur tout le thème 1
    
 {# 
 
@@ -189,7 +191,7 @@
         - Faire l'exercice 5 et publier ce travail sur Capytale (Exercice5 HTML code 2808-2730306).
         - Réviser HTML CSS pour un contrôle à la rentrée
 
-!!! done "séance 14 (mardi 7/01/2025):"
+
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Les bases de JavaScript
     - Exercices 1 à  3
