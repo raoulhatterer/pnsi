@@ -111,7 +111,8 @@
 !!! done "séance 14 (jeudi 6/11/2025):"
     - Contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
-
+     ??? note "Devoirs"
+        - Etudier tout le cours sur les listes    
     
 {# 
 
