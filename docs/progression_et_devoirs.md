@@ -113,6 +113,17 @@
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
     ??? note "Devoirs"
         - Étudier tout le cours sur les listes    
+
+!!! done "séance 15 (mardi 11/11/2025):"
+    - Férié
+
+
+!!! done "séance 16 (jeudi 13/11/2025):"
+    - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
+    ??? note "Devoirs"
+        - Exercices 5 à 8 du cours sur les listes    
+
+
     
 {# 
 
@@ -201,14 +212,12 @@
         - Exercice 4 sur le javascript
         - Préparer contrôle sur le HTML CSS
         
-!!! done "séance 15 (mardi 14/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Contrôle sur le HTML et le JS
     - Exercice: calculatrice en JS
     ??? note "Devoirs"
         - Terminer l'exercice calculatrice en JS
 
-!!! done "séance 16 (mardi 21/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Quand la page est fabriquée à la demande par le serveur
     - Exercices 6 et 7
