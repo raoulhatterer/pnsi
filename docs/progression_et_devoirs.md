@@ -133,6 +133,7 @@
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
     - listes en compréhension
     ??? note "Devoirs"
+    - Feuille Wims sur les listes
 
 
     
