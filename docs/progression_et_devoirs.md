@@ -123,6 +123,17 @@
     ??? note "Devoirs"
         - Exercices 5 à 8 du cours sur les listes    
 
+!!! done "séance 17 (mardi 18/11/2025):"
+    - Correction des exercices 5 à 8
+    - Correction du contrôle sur le thème 1
+
+
+
+!!! done "séance 18 (jeudi 20/11/2025):"
+    - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
+    - listes en compréhension
+    ??? note "Devoirs"
+
 
     
 {# 
@@ -226,14 +237,12 @@
         - Finir l'exercice 7
         - Contrôle html + css: j'ai mis les productions d'Arno et d'Adrien dans la partie  `Documents` du site collaboratif pour ceux qui souhaitent voir comment ils ont fait.
 
-!!! done "séance 17 (mardi 28/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - (chap2) Exercice 7: Boîte à secrets
     - (chap2) Exercice 8: Plan de classe
     ??? Devoirs
         - Faire l'exercice 8 en tenant compte des indications que j'ai rajoutées. 
 
-!!! done "séance 18 (mardi 4/02/2025):"
     - [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_3:_Protocole_HTTP/cours.md)
         - Requêtes http
         - Exercice 1
