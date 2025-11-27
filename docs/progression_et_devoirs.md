@@ -142,8 +142,9 @@
 
 !!! done "séance 20 (jeudi 27/02/2025):"
     - [T2 > Les listes> 9](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
+    - Exercice 1 Le sanglier d'Erymanthe.
     ??? note "Devoirs"
-        - Exercice 7 et 8 du cours sur les listes
+        - Exercice 2 et 3 des exercices sur les listes
 
     
 {# 
@@ -157,8 +158,7 @@
     
 
     ??? note "Devoirs"
-        - Exercice 1 Le sanglier d'Erymanthe.
-
+        
 
     - [Exercices sur les liste](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
     ??? note "Devoirs"
