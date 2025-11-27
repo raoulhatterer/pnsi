@@ -133,8 +133,10 @@
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
     - listes en compréhension
     ??? note "Devoirs"
-    - Feuille Wims sur les listes
+        - Feuille Wims sur les listes
 
+!!! done "séance 19 (jeudi 27/02/2025):"
+    - [T2 > Les listes> 9](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
 
     
 {# 
@@ -192,7 +194,6 @@
 
 
     - Correction du contrôle sur le thème 1 (Les bases de Python)
-    - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
     ??? note "Devoirs"
         - Exercice 1 Le sanglier d'Erymanthe.
 
@@ -249,7 +250,6 @@
         - Exercice 1
     - Exercice 9 chap2 : réalisation d'un serveur qui traite la résolution des équations du second degré 
 
-!!! done "séance 19 (mardi 25/02/2025):"
     - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
     ??? note "Devoirs"
         - Réviser le contrôle portant sur le thème 6 (sauf javascript)
