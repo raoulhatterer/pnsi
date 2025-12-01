@@ -113,66 +113,52 @@
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
     ??? note "Devoirs"
         - Étudier tout le cours sur les listes    
+
+!!! done "séance 15 (mardi 11/11/2025):"
+    - Férié
+
+
+!!! done "séance 16 (jeudi 13/11/2025):"
+    - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
+    ??? note "Devoirs"
+        - Exercices 5 à 8 du cours sur les listes    
+
+!!! done "séance 17 (mardi 18/11/2025):"
+    - Correction des exercices 5 à 8
+    - Correction du contrôle sur le thème 1
+
+
+
+!!! done "séance 18 (jeudi 20/11/2025):"
+    - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
+    - listes en compréhension
+    ??? note "Devoirs"
+        - Feuille Wims sur les listes
+
+
+!!! done "séance 29 (mardi 25/02/2025):"
+    - Annulée pour raison de santé
+
+
+!!! done "séance 20 (jeudi 27/02/2025):"
+    - [T2 > Les listes> 9](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
+    - Exercice 1 Le sanglier d'Erymanthe.
+    ??? note "Devoirs"
+        - Exercice 2 et 3 des exercices sur les listes
+
     
 {# 
+     
 
-
-
-        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-        - Comme expliqué en cours, ramener une photo qui montre qu'Anaconda Navigator est bien installé sur vortre ordinateur.
-        - Venir avec une tablette fonctionnelle (batterie chargée).
-
-
-
-    - Contrôle n°1 sur la boucle `for` (30 min)
-    - Correction du contrôle sur la boucle `for` dans la foulée
-
-    - Exercices Processing (ou P5)
-
-    - Contrôle n°2 sur les boucles (45 min)
-    - Correction du contrôle dans la foulée
-    - Exercices sur les dessins en p5
-
-        - Réviser contrôle (tout ce qui a été fait depuis le début de l'année y compris wims et les dessins en p5)
-        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter puis prendre une preuve en photo.
-
-
-    - Contrôle n°3 sur les bases (variables, boucles)
-    - correction du contrôle 3
-    - instruction conditionnelle If else elif
-    - Exercices
-
-        - exercices de la page de cours sur l'instruction conditionnelle If else elif
-        - exercices de la page d'exercices If else elif (code capytale 9fee-4323961)
-        - feuille wims 4
-
-
-    - Les fonctions (Thème 1 Chapitre 5) 
-    - Exercices 1 et 2 sur les fonctions
-    ??? note "Devoirs"
-        - feuille wims 5 sur les fonctions 
-        - Bien que la séance du 12/11 soit annulée, les exercices 3 et suivants sur les fonctions sont à mettre dans votre dossier personnel avant mardi 12/11. 
-
-        - Remarque: Pour vous aider dans vos révisions, la semaine prochaine je mettrai la correction des exercices sur les fonctions pour ceux qui auraient eu des difficultés à les faire.
-        
-
-    - Annulée pour cause de convocation
-    ??? note "Devoirs"
-        - Réviser le contrôle de la semaine prochaine portant sur tout le thème 1. Pour vous aider dans vos révisions, j'ai mis la correction des exercices. Au minimum, vous devez les étudier suffisamment pour être capable de les refaire.
         - Avoir trouvé un nom d'équipe pour le chalenge "Passe ton hack d'abord"
         
 
 
 
+    
+
     ??? note "Devoirs"
-        - Exercice 7 et 8 du cours sur les listes
-
-
-    - Correction du contrôle sur le thème 1 (Les bases de Python)
-    - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
-    ??? note "Devoirs"
-        - Exercice 1 Le sanglier d'Erymanthe.
-
+        
 
     - [Exercices sur les liste](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
     ??? note "Devoirs"
@@ -201,14 +187,12 @@
         - Exercice 4 sur le javascript
         - Préparer contrôle sur le HTML CSS
         
-!!! done "séance 15 (mardi 14/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Contrôle sur le HTML et le JS
     - Exercice: calculatrice en JS
     ??? note "Devoirs"
         - Terminer l'exercice calculatrice en JS
 
-!!! done "séance 16 (mardi 21/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Quand la page est fabriquée à la demande par le serveur
     - Exercices 6 et 7
@@ -217,20 +201,17 @@
         - Finir l'exercice 7
         - Contrôle html + css: j'ai mis les productions d'Arno et d'Adrien dans la partie  `Documents` du site collaboratif pour ceux qui souhaitent voir comment ils ont fait.
 
-!!! done "séance 17 (mardi 28/01/2025):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - (chap2) Exercice 7: Boîte à secrets
     - (chap2) Exercice 8: Plan de classe
     ??? Devoirs
         - Faire l'exercice 8 en tenant compte des indications que j'ai rajoutées. 
 
-!!! done "séance 18 (mardi 4/02/2025):"
     - [T6 > étude du chargement d'une page web](T6_IHM_Web/Chapitre_3:_Protocole_HTTP/cours.md)
         - Requêtes http
         - Exercice 1
     - Exercice 9 chap2 : réalisation d'un serveur qui traite la résolution des équations du second degré 
 
-!!! done "séance 19 (mardi 25/02/2025):"
     - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
     ??? note "Devoirs"
         - Réviser le contrôle portant sur le thème 6 (sauf javascript)
