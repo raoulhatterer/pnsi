@@ -112,7 +112,7 @@
     - Contrôle sur le thème 1 (Les bases de Python)
     - [T2 > Les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)   
     ??? note "Devoirs"
-        - Étudier tout le cours sur les listes    
+        - Étudier Tout le cours sur les listes    
 
 !!! done "séance 15 (mardi 11/11/2025):"
     - Férié
@@ -142,11 +142,19 @@
 
 !!! done "séance 20 (jeudi 27/02/2025):"
     - [T2 > Les listes> 9](T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
+    - [Exercices sur les liste](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)    
     - Exercice 1 Le sanglier d'Erymanthe.
     ??? note "Devoirs"
         - Exercice 2 et 3 des exercices sur les listes
 
-    
+
+!!! done "séance 21 (mardi 2/12/2025):"
+    - [Exercices sur les liste](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
+    - Exercices 2, 3 et 4
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés
+
+
 {# 
      
 
@@ -160,7 +168,7 @@
     ??? note "Devoirs"
         
 
-    - [Exercices sur les liste](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
+
     ??? note "Devoirs"
         - [Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
         - Préparer le contrôle de mardi prochain (sur les listes et tout ce qui précède).
@@ -221,7 +229,7 @@
     ??? note "Devoirs"
         - Réviser le protocole du bit alterné
 
-!!! done "séance 21 (mardi 11/03/2025):"
+
     - [T2 > Chapitre5: Les booléens](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
     - Exercices 1 à 7
     ??? note "Devoirs"

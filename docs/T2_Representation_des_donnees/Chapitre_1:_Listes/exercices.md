@@ -9,7 +9,7 @@
     
     === "Correction"
         {{
-        correction(False,
+        correction(True,
         """
         ```python linenums='1'
         lst = [0, 50, 40, 100, 70, 90, 0] # pour tester
@@ -46,7 +46,7 @@
 
         **Q1.** Créer **en compréhension** une liste ```lst1``` contenant uniquement les jours comportant 5 lettres.
         {{
-        correction(False,
+        correction(True,
         """
         ??? success \"Correction\" 
             ```python
@@ -58,7 +58,7 @@
 
         **Q2.** Créer **en compréhension** une liste ```lst2``` contenant uniquement les jours comportant la lettre ```a``` dans leur nom.
         {{
-        correction(False,
+        correction(True,
         """
         ??? success \"Correction\" 
             ```python
@@ -70,7 +70,7 @@
 
         **Q3a.** Créer une fonction ```compte_e``` qui prend en paramètre une chaine de caractères et qui renvoie le nombre de ```e``` que contient cette chaine de caractères.
         {{
-        correction(False,
+        correction(True,
         """
         ??? success \"Correction\" 
             ```python linenums='1'
@@ -88,7 +88,7 @@
         **Q3b.**  Créer **en compréhension** une liste ```lst4``` contenant uniquement les jours comportant deux fois la lettre ```e``` dans leur nom.
 
         {{
-        correction(False,
+        correction(True,
         """
         ??? success \"Correction\" 
             ```python
@@ -125,7 +125,7 @@
         - sur une même ligne, on affichera tous les symboles côte à côte, en rajoutant le paramètre ```end = ''``` à la fonction ```print```. (*exemple :* ```print('*', end = '')``` )
         - on ira à la ligne à la fin de chaque ligne, par l'instruction ```print()```     
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         m = [[17, 71, 75, 89, 45, 10, 54, 26, 59, 47, 57, 64, 44], \\
@@ -181,17 +181,36 @@
         ```python
         M = [[17, 3, 4, 14, 5, 17], [8, 16, 3, 17, 14, 12], [13, 5, 15, 4, 16, 3], [14, 7, 3, 16, 3, 2], [6, 1, 16, 10, 5, 13], [11, 1, 9, 11, 18, 8]]
         ```
-
-        Cette matrice va évoluer au cours du temps, et le contenu `k` d'une case est transformé, à chaque étape en `(9*k + 3) % 19`.
-
-        Rappelons que  `a % b` donne le reste de la division entière de `a` par `b`.
-
+        a. Écrire la fonction `affiche(matrice)` qui permet d'afficher la matrice 
+        
+        b. Cette matrice va évoluer au cours du temps, et le contenu `k` d'une case est transformé, à chaque étape en `(9*k + 3) % 19`. Rappelons que  `a % b` donne le reste de la division entière de `a` par `b`.
+         
         À chaque étape de calcul, tous les nombres de la matrice sont simultanément modifiés. L'entrée du problème est le nombre d'étapes à appliquer (ici : **39**). Vous devez répondre en donnant la somme des valeurs contenues dans la matrice après application de toutes les étapes.
 
 
 
-    === "Correction"
-        {{ correction(False,
+
+    === "Correction Qa"
+        {{ correction(True,
+        "
+        ```python linenums='1'
+        def affiche(matrice):
+            print('-'*43)
+            for ligne in matrice:
+                print(end='|  ')
+                for nombre in ligne:
+                    if nombre < 10:
+                        print(end=' ')
+                    print(nombre, end='  |  ')
+                print()
+                print('-'*43)
+        ```
+        "
+        ) }}
+
+
+    === "Correction Qb"
+        {{ correction(True,
         "
         ```python linenums='1'
         M = [[17, 3, 4, 14, 5, 17], [8, 16, 3, 17, 14, 12], [13, 5, 15, 4, 16, 3], [14, 7, 3, 16, 3, 2], [6, 1, 16, 10, 5, 13], [11, 1, 9, 11, 18, 8]]
