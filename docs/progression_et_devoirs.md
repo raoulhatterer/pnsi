@@ -160,8 +160,8 @@
     - Exercice 5 (sous-marin)
     - Exercices de révision des bases: exos 1 et 2 sur [e-nsi](https://e-nsi.gitlab.io/pratique/N0/)
     ??? note "Devoirs"
-        - [Exercice 3 : indices valeurs](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
-        - [Exercice 4 : nombre de bits](https://e-nsi.gitlab.io/pratique/N0/100-nb_bits/sujet/)
+        - [Exercice 3 e-nsi : indices valeurs](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
+        - [Exercice 4 e-nsi : nombre de bits](https://e-nsi.gitlab.io/pratique/N0/100-nb_bits/sujet/)
         - Réviser régulièrement les cours et les exercices déjà étudiés (commencer à réviser les listes et notamment les listes en compréhension pour le prochain DS).
         
 
