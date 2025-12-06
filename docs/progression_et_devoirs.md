@@ -155,6 +155,16 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés
 
 
+!!! done "séance 22 (jeudi 4/12/2025):"
+    - [Exercices sur les liste](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md)
+    - Exercice 5 (sous-marin)
+    - Exercices de révision des bases: exos 1 et 2 sur [e-nsi](https://e-nsi.gitlab.io/pratique/N0/)
+    ??? note "Devoirs"
+        - [Exercice 3 : indices valeurs](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
+        - [Exercice 4 : nombre de bits](https://e-nsi.gitlab.io/pratique/N0/100-nb_bits/sujet/)
+        - Réviser régulièrement les cours et les exercices déjà étudiés (commencer à réviser les listes et notamment les listes en compréhension pour le prochain DS).
+        
+
 {# 
      
 
@@ -236,7 +246,7 @@
         - Apprendre par coeur les tables de vérité des fonctions logiques AND, OR, XOR, NOT, NAND, NOR.
         - Réviser les calculs à la main avec les opérateurs logiques.
 
-!!! done "séance 22 (mardi 18/03/2025):"
+
     - Correction du contrôle sur le thème 6
     - Exercice 8 (cryptographie)
     ??? note "Devoirs"
