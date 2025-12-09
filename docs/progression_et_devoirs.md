@@ -165,8 +165,8 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés (commencer à réviser les listes et notamment les listes en compréhension pour le prochain DS).
 
 !!! done "séance 23 (mardi 08/12/2025):"
-        - Correction [exercice 3 et 4 e-nsi ](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
-        - Autres  [exercices e-nsi](https://e-nsi.gitlab.io/pratique/N0/)
+    - Correction [exercice 3 et 4 e-nsi ](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
+    - Autres  [exercices e-nsi: partage](https://e-nsi.gitlab.io/pratique/N0/)
         
 
 
