@@ -166,7 +166,7 @@
 
 !!! done "séance 23 (mardi 08/12/2025):"
     - Correction [exercice 3 et 4 e-nsi ](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
-    - Autres  [exercices e-nsi: Partage, Autour de range](https://e-nsi.gitlab.io/pratique/N0/)
+    - Autres  [exercices e-nsi: Partage, Autour de range, Recadrer](https://e-nsi.gitlab.io/pratique/N0/)
         
 
 
