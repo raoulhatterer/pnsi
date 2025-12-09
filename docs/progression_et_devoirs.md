@@ -163,7 +163,13 @@
         - [Exercice 3 e-nsi : indices valeurs](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
         - [Exercice 4 e-nsi : nombre de bits](https://e-nsi.gitlab.io/pratique/N0/100-nb_bits/sujet/)
         - Réviser régulièrement les cours et les exercices déjà étudiés (commencer à réviser les listes et notamment les listes en compréhension pour le prochain DS).
+
+!!! done "séance 23 (mardi 08/12/2025):"
+        - Correction [exercice 3 et 4 e-nsi ](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
+        - Autres  [exercices e-nsi](https://e-nsi.gitlab.io/pratique/N0/)
         
+
+
 
 {# 
      
@@ -253,7 +259,6 @@
         - Finir l'exercice 8 (Q4)
         - Préparer le contrôle sur le Thème 3 (chapitres 3 et 4)
 
-!!! done "séance 23 (mardi 25/03/2025):"
     - Exercice 8 (cryptographie)
     - [T2 > Representation des donnees > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours.md)
     - Contrôle n°8 portant sur les réseaux (le Thème 3 (chapitres 3 et 4))
