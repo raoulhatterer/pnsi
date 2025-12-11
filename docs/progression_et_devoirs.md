@@ -168,7 +168,14 @@
     - Correction [exercice 3 et 4 e-nsi ](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
     - Autres  [exercices e-nsi: Partage, Autour de range, Recadrer, Autour des booléens, Années bissextiles](https://e-nsi.gitlab.io/pratique/N0/)
         
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (commencer à réviser les listes et notamment les listes en compréhension pour le prochain DS).
 
+
+!!! done "séance 24 (jeudi 11/12/2024):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (réviser les listes et notamment les listes en compréhension pour le prochain DS).
 
 
 {# 
@@ -191,7 +198,6 @@
 
 
     - Contrôle portant sur les listes
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     ??? note "Devoirs"
         - Apprendre le début du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) (jusqu'au premier Quiz).
 
@@ -265,7 +271,7 @@
     ??? note "Devoirs"
         - Résoudre l'énigme "À la recherche du personnage mystère" qui suit le cours sur les booléens
   
-!!! done "séance 24 (mardi 01/04/2025):"
+
     - [T2 > Representation des donnees > chap5 (les booléens) > Image mystère](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
     - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
     - T2 > Chapitre 3 : les dictionaires
