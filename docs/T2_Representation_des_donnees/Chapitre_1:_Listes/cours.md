@@ -346,7 +346,7 @@ Il suffit d'écraser la valeur actuelle avec une nouvelle valeur
     === "Énoncé"
         Construire une liste contenant tous les nombres inférieurs à 100 qui sont divisibles par 7.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         lst = []
@@ -363,7 +363,7 @@ Il suffit d'écraser la valeur actuelle avec une nouvelle valeur
         On considère la liste ```temp = [4, -5, 8, 10, -1, -2, 7, 13]```.  
         Construire la liste ```temp_pos``` qui ne contient que les éléments positifs de  ```temp```. 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         temp = [4, -5, 8, 10, -1, -2, 7, 13]
@@ -438,7 +438,7 @@ L'instruction `del`  (qui n'est pas une fonction) permet de supprimer un éléme
         ```
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python
         def recherche(caractere, mot):
@@ -489,7 +489,7 @@ qui produira la liste ```[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
         ```
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         À l'issue de ce code la variable ```compt``` contient ```[0, 0, 1, 1, 9, 0, 1, 0, 2, 0, 0, 0, 1, 3, 1, 1, 0, 1, 2, 5, 3, 0, 0, 2, 1, 0]```, qui correspond au nombre d'occurences de chaque lettre : 0 fois la lettre 'a', 0 fois la lettre 'b', 1 fois la lettre 'c', etc.
 
@@ -549,7 +549,7 @@ Pourtant les listes en compréhension *sans filtre* sont très fréquentes, nous
         Construire en compréhension la liste ```liste_voyelles``` qui contient toutes les voyelles présentes dans la variable ```phrase```.   
 
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```pycon
         >>> phrase = 'Bonjour les vacances sont finies'
@@ -605,7 +605,7 @@ Les listes en compréhension deviennent encore plus intéressantes lorsqu'on com
         1. On considère la fonction mathématique $f : x \mapsto 2x+3$. Coder la fonction ```f```.
         2. Créer (en compréhension) une liste contenant l'image des entiers de 1 à 10 par la fonction $f$.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def f(x):
@@ -621,7 +621,7 @@ Les listes en compréhension deviennent encore plus intéressantes lorsqu'on com
         On considère la liste ```lst = [51, 52, 66, 91, 92, 82, 65, 53, 86, 42, 79, 95]```. Seuls les nombres entre 60 et 90 ont une signification : ce sont des codes ASCII (récupérables par la fonction ```chr``` ).  
         Créer (en compréhension) une liste ```sol``` qui contient les lettres correspondants aux nombres ayant une signification.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```pycon
         >>> lst = [51, 52, 66, 91, 92, 82, 65, 53, 86, 42, 79, 95]
