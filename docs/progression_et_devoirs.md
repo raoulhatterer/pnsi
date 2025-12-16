@@ -178,6 +178,13 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés (réviser les listes et notamment les listes en compréhension pour le prochain DS).
 
 
+
+!!! done "séance 25 (mardi 16/12/2025):"
+    - Contrôle n°4 sur les listes
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML).
+
+
 {# 
      
 
@@ -282,7 +289,7 @@
 
 
  
-!!! done "séance 25 (mardi 22/04/2025):"
+
     - Test : portes logique et algorithmes simples (maximum, moyenne, occurrences)
     - Correction du contrôle réseau
     - [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
