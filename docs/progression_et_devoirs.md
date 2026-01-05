@@ -185,6 +185,12 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML).
 
 
+!!! done "séance 26 (jeudi 18/12/2025):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML).
+    
+
 {# 
      
 
@@ -298,7 +304,7 @@
         - Réviser le codage des entiers en binaire signé et le codage des réels et par quoi on remplace les tests d'égalité pour les réels. J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 
 
-!!! done "séance 26 (mardi 29/04/2025):"
+
     - Test: le codage des entiers en binaire signé et le codage des réels
     - [T4 > chap3: Tri par permutation (introduction au tri par insertion)](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours.md)
     - [T4 > chap3: Tri par insertion](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours.md)
