@@ -191,6 +191,23 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML).
     
 
+!!! done "séance 27 (mardi 06/01/2026):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML).
+
+!!! done "séance 28 (jeudi 08/01/2026):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML).
+        - Deux élèves ont encore à rattraper le dernier DS.   
+
+
+
+
+
+
+
 {# 
      
 
@@ -313,14 +330,14 @@
     ??? note "Devoirs"
         - Préparer un contrôle sur les derniers chapitres (sauf commandes linux): les booléens (les symboles américains et logiques ne sont pas à connaître par cœur), les bases, les dictionaires, le codage des entiers et des réels et les algorithmes déjà étudiés (maximum, moyenne, occurrences, tri par permutation, tri par insertion).
 
-!!! done "séance 27 (mardi 06/05/2025):"
+
     - Fin du jeu Terminus (les commandes Linux)
     - Contrôle n°9
     ??? note "Devoirs"
         - Apprendre les commandes Linux que vous avez relevées lors du jeu Terminus
         - Pas de cours la semaine prochaine à cause des épreuves du bac professionnel 
 
-!!! done "séance 28 (mardi 13/05/2025):"
+
     - Annulée à cause du bac professionnel
     ??? note "Devoirs"
         - Apprendre les commandes Linux que vous avez relevées lors du jeu Terminus    
