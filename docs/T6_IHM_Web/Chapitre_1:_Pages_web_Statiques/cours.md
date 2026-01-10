@@ -82,18 +82,54 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
     === "Correction"{# #}  
         - Capytale: 087b-5379747
  
-      
-### Premières conclusions sur l'utilisation du ```html```
 
-!!! done "À retenir"
+### Organiser le texte :heart:
+    
+!!! tip "Le texte affiché sur une page web est compris entre les balises `<body> </body>`"
+    
+!!! tip "Créer des paragraphes avec les balises `<p> </p>`"
+
+!!! tip "Revenir à la ligne avec la balise orpheline `<br/>`"
+
+!!! tip "Créer des titres avec les balises  `<h1>`,  `<h2>`,  `<h3>`…"
+
+!!! tip "Créer des listes avec les balises  `<li>`  et  `<ul>`  ou  `<ol>`"
+    ``` html
+    <!DOCTYPE html>
+    <html>
+    <body>
+        <ul>
+            <li>Pomme</li>
+            <li>Banane</li>
+        </ul>
+        
+        <ol>
+            <li>Allumer le four</li>
+            <li>Préparer la pâte</li>
+            <li>Mettre au four 20 minutes</li>
+        </ol>
+    </body>
+    </html>    
+    ```
+
+!!! tip "Mettre en valeur du texte important"
+    - [`<mark> </mark>`](https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/mark){:target="_blank"}
+    - [`<em> </em>`](https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/em){:target="_blank"}
+    - [`<strong> </strong>`](https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/strong){:target="_blank"}
+
+
+
+!!! done "Premières conclusions sur l'utilisation du ```html```"
 
     - Pour créer une page web, on crée un fichier ayant l'extension  `.html`  , qui pourra être ouvert dans le navigateur web simplement en faisant un double-clic dessus.
+    - Une page web est constituée de deux sections principales : l'en-tête`<head> </head>`  dont le contenu n'apparaît pas dans l'affichage de la page et le corps `<body> </body>`  qui, lui, apparaît.    
     - Chaque fichier HTML est constitué de balises.
     - Les balises peuvent avoir plusieurs formes :
         - `<balise> </balise>`  : **balises en paires**, elles s'ouvrent et se ferment pour délimiter le contenu (début et fin d'un titre, par exemple) ;
-        - `<balise>`  : **balises orphelines** (on ne les insère qu'en un seul exemplaire), elles permettent d'insérer un élément à un endroit précis (par exemple une image).
-    - Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg">`  ).
-    - Une page web est constituée de deux sections principales : l'en-tête`<head> </head>`  dont le contenu n'apparaît pas dans l'affichage de la page et le corps `<body> </body>`  qui, lui, apparaît.
+        - `<balise/>`  : **balises orphelines** (on ne les insère qu'en un seul exemplaire), elles permettent d'insérer un élément à un endroit précis (par exemple une image).
+    - Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg"/>`  ).
+    
+    
 
 ### En savoir plus
 
