@@ -105,7 +105,7 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
 
 
 
-### 1.2 Créer un lien hypertexte en HTML
+### 1.2 Créer un lien hypertexte en HTML :heart:
 
 #### a. Créer un lien hypertexte vers l'URL d'une page disponible sur internet
 
@@ -205,7 +205,7 @@ Découvrez nos conseils d’aménagement pour :<br>
 <p>Bonjour. Souhaitez-vous apprendre sur <a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a> ?</p>
 ```
 
-### 1.3 Insérez des images
+### 1.3 Insérez des images :heart:
 
 
 - Insérez une image avec la balise orpheline  `<img/>`
