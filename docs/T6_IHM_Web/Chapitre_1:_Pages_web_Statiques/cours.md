@@ -56,28 +56,6 @@ Il a été inventé en 1992 par [Tim Berners-Lee](https://fr.wikipedia.org/wiki/
 Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette magnifique page et **suivez le lien qui s'y trouve pour apprendre le fonctionnement des balises html**.
 
 
-!!! example "{{ exercice() }}"
-    === "Énoncé"
-        1. Avoir lu [la page d'introduction à HTML de mozilla](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started){:target="_blank"} et **réalisé les exercices d'apprentissage actif qui s'y trouvent**.
-        2. Création de pages personnelles
-            - Puis créer un dossier contenant un fichier ```mapage.html``` ainsi qu'un fichier `page2.html`.
-            - Créer une page contenant **une image** et un **lien vers le site du lycée** et **un lien vers une autre page**.
-    === "Canevas"{# #}
-        ```html
-        	<!DOCTYPE html>
-         	<html lang='fr'>
-               <head>
-       	        <meta charset="utf-8">
-        	        <title>Ma première page</title>
-               </head>
-           	
-               <body>
-               	
-               </body>
-           </html>    
-        ```
-    === "Correction"{# #}  
-        - Capytale: 087b-5379747
  
 
 !!! tip "Indications"
@@ -133,7 +111,7 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
 
 
 ```html
-    <a href="https://www.example.com">Visiter Example</a>
+    <a href="https://www.example.com">Visiter</a>
 ```
 
 Explication :
@@ -141,14 +119,14 @@ Explication :
 - `<a>` : balise d'ancrage (anchor) pour créer un lien
 - `href` : attribut qui contient l'URL de destination
 - `https://www.example.com` : URL de la page web
-- `Visiter Example` : texte cliquable affiché à l'utilisateur
+- `Visiter` : texte cliquable affiché à l'utilisateur
 
 
 
 #### b. Créer un lien hypertexte d'une page à une autre sur votre site
 
-```text title="Structure de dossiers correspondante à l'exemple"
-votre-site/
+```text title="Structure de dossiers correspondant à l'exemple"
+votre_site/
 ├── index.html                 # Fichier courant contenant les liens
 ├── page1.html                 # On va créer un lien 1 "Page 1" vers cette page
 ├── contenu/                   # Dossier au même niveau
@@ -180,8 +158,10 @@ votre-site/
 </html>
 ```
 
+`href="NOMDEFICHIER.EXTENSION"`  crée un lien hypertexte qui permet de télécharger un fichier. 
+
 !!! tip "Utilisez des chemins relatifs pour les liens internes"
-    C'est très important, car ils permettent à votre site d'être déplacé, renommé ou hébergé sur un autre domaine sans casser les liens. Un chemin comme `documents/guide.pdf` fonctionnera que votre site soit sur `www.monsite.com`, `localhost:8000` ou dans un sous-dossier `votre-site`. Les chemins absolus (`https://monsite.com/documents/guide.pdf`) rendraient votre site dépendant d'une URL spécifique et nécessiteraient une mise à jour en cas de changement d'hébergement.
+    C'est très important, car ils permettent à votre site d'être déplacé, renommé ou hébergé sur un autre domaine sans casser les liens. Un chemin comme `documents/guide.pdf` fonctionnera que votre site soit sur `www.monsite.com`, `localhost:8000` ou dans un sous-dossier `votre_site`. Les chemins absolus (`https://monsite.com/documents/guide.pdf`) rendraient votre site dépendant d'une URL spécifique et nécessiteraient une mise à jour en cas de changement d'hébergement.
 
     ```html
     <!-- BON : chemin relatif - portable -->
@@ -193,8 +173,88 @@ votre-site/
     
 
 
-#### Créer une ancre
+#### c. Créer une ancre
     
+Une ancre est un repère que l'on peut mettre dans une page HTML si elle est très longue, cela aide à la navigation et rend un contenu plus facile à parcourir. Cela permet par exemple aux visiteurs d'un site web d'aller directement à la partie qui les intéresse.
+
+Ce comportement est typique d'un site web "one page" où tout se situe sur la même page. 
+
+```html
+<h1>Ma grande page</h1>
+<p>
+Découvrez nos conseils d’aménagement pour :<br>
+    <a href="#cuisine">La cuisine</a><br>
+    <a href="#jardin">Le jardin</a><br>
+    <a href="#salon">Le salon</a><br>
+</p>
+<h2 id="cuisine">La cuisine</h2>
+<p>... (beaucoup de texte) ...</p>
+<h2 id="jardin">Le jardin</h2>
+<p>... (beaucoup de texte) ...</p>
+<h2 id="salon">Le salon</h2>
+<p>... (beaucoup de texte) ...</p>
+```
+
+[Voir le rendu](https://cdpn.io/cpe/boomboom/index.html?editors=1001&key=index.html-cbf237de-a798-fe8c-9b95-a09f9c60ccd1)
+
+#### d. Faire en sorte que le lien hypertexte ouvre un nouvel onglet
+
+[`target="_blank"`](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/1604646-creez-un-lien-hypertexte-en-html#34723224)
+
+```html
+<p>Bonjour. Souhaitez-vous apprendre sur <a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a> ?</p>
+```
+
+### 1.3 Insérez des images
+
+
+- Insérez une image avec la balise orpheline  `<img/>`
+- Ajoutez l'attribut  `src`  pour indiquer la source de l'image avec un chemin absolu si l'image vient d'internet
+(on copie colle donc simplement l'URL de l'image) ou avec un chemin relatif si l'image est en local sur votre ordinateur (on utilise alors le nom et l'arborescence du fichier de l'image en local pour indiquer sa source).
+
+
+On utilise également :
+
+- l'attribut `alt`  pour donner à l'image une description alternative
+- l'attribut `title` afin d'afficher une bulle d'aide
+
+
+
+!!! tip "Précautions :warning:"
+    - Si l'image est dans un sous-dossier nommé images, on précise :  `src="images/logo.png"` 
+    - Évitez à tout prix les accents, majuscules et espaces dans vos noms de fichiers et de dossiers. Par exemple, voici un chemin qui va poser problème : `Images du site/Image toute bête.jpg` 
+
+    Il faut idéalement :
+    
+    - supprimer les espaces (ou les remplacer par le symbole_) et les accents ;
+    - tout mettre en minuscules, comme ceci : `images_du_site/image_toute_bete.jpg.`
+
+### 1.4 Utiliser une image comme lien
+
+Si votre image est très grosse, il est conseillé d'en afficher une miniature cliquable sur votre site. De cette manière vos pages web mettront moins de temps à s'afficher. Si vos visiteurs souhaitent voir vos images en taille originale, ils n'auront qu'à cliquer dessus.
+
+Pour ce faire, il faut disposer de deux versions d’une photo : l'image d'origine, et une version de cette image moins lourde (donc plus petite).
+
+```html
+    <a href="images/montagne.jpg">
+        <img src="images/montagne_mini.jpg">
+    </a>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 !!! done "Premières conclusions sur l'utilisation du ```html```"
@@ -208,6 +268,32 @@ votre-site/
     - Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg"/>`  ).
     
     
+
+!!! example "{{ exercice() }}"
+    === "Énoncé"
+        1. Avoir lu [la page d'introduction à HTML de mozilla](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started){:target="_blank"} et **réalisé les exercices d'apprentissage actif qui s'y trouvent**.
+        2. Création de pages personnelles
+            - Puis créer un dossier contenant un fichier ```mapage.html``` ainsi qu'un fichier `page2.html`.
+            - Créer une page contenant **une image** et un **lien vers le site du lycée** et **un lien vers une autre page**.
+    === "Canevas"{# #}
+        ```html
+        	<!DOCTYPE html>
+         	<html lang='fr'>
+               <head>
+       	        <meta charset="utf-8">
+        	        <title>Ma première page</title>
+               </head>
+           	
+               <body>
+               	
+               </body>
+           </html>    
+        ```
+    === "Correction"{# #}  
+        - Capytale: 087b-5379747
+
+
+
 
 ### En savoir plus
 
