@@ -72,7 +72,7 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
     avec les balises `<p> </p>`
 
 !!! tip "Revenir à la ligne"
-    avec la balise orpheline `<br/>`
+    avec la balise orpheline `<br />` auto-fermante (beaucoup de développeurs expérimentés utilisent encore le slash par habitude XML/XHTML) ou plus simplement `<br>` (simplification regrettable en html5) 
 
 !!! tip "Créer des titres"
     avec les balises  `<h1>`,  `<h2>`,  `<h3>`…
@@ -114,7 +114,7 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
     <a href="https://www.example.com">Visiter</a>
 ```
 
-Explication :
+Explications :
 
 - `<a>` : balise d'ancrage (anchor) pour créer un lien
 - `href` : attribut qui contient l'URL de destination
@@ -205,18 +205,33 @@ Découvrez nos conseils d’aménagement pour :<br>
 <p>Bonjour. Souhaitez-vous apprendre sur <a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a> ?</p>
 ```
 
-### 1.3 Insérez des images :heart:
+### 1.3 Insérer des images :heart:
 
 
-- Insérez une image avec la balise orpheline  `<img/>`
-- Ajoutez l'attribut  `src`  pour indiquer la source de l'image avec un chemin absolu si l'image vient d'internet
+- Insérer une image avec la balise orpheline (auto-fermante)  `<img />` (beaucoup de développeurs expérimentés utilisent encore le slash par habitude XML/XHTML) ou plus simplement `<img>` (simplification regrettable en html5)
+- Ajouter l'attribut  `src`  pour indiquer la source de l'image avec un chemin absolu si l'image vient d'internet
 (on copie colle donc simplement l'URL de l'image) ou avec un chemin relatif si l'image est en local sur votre ordinateur (on utilise alors le nom et l'arborescence du fichier de l'image en local pour indiquer sa source).
 
 
 On utilise également :
 
-- l'attribut `alt`  pour donner à l'image une description alternative
-- l'attribut `title` afin d'afficher une bulle d'aide
+- l'attribut `alt`  pour donner à l'image une description alternative (obligatoire pour l'accessibilité)
+- l'attribut `title` afin d'afficher une bulle d'aide (optionnel)
+- l'attribut `width` permet de spécifier la largeur en pixels (sans unité)
+
+```html
+<!-- Image depuis internet (URL absolue) -->
+<img src="https://example.com/image.jpg" 
+     alt="Description de l'image" 
+     title="Bulle d'aide au survol" 
+     width="300">
+
+<!-- Image locale (chemin relatif) -->
+<img src="images/photo.jpg" 
+     alt="Ma photo locale" 
+     title="Photo prise en vacances" 
+     width="400">
+```
 
 
 
@@ -237,25 +252,9 @@ Pour ce faire, il faut disposer de deux versions d’une photo : l'image d'origi
 
 ```html
     <a href="images/montagne.jpg">
-        <img src="images/montagne_mini.jpg">
+        <img src="images/montagne_mini.jpg" alt="">
     </a>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 !!! done "Premières conclusions sur l'utilisation du ```html```"
 
@@ -265,7 +264,7 @@ Pour ce faire, il faut disposer de deux versions d’une photo : l'image d'origi
     - Les balises peuvent avoir plusieurs formes :
         - `<balise> </balise>`  : **balises en paires**, elles s'ouvrent et se ferment pour délimiter le contenu (début et fin d'un titre, par exemple) ;
         - `<balise/>`  : **balises orphelines** (on ne les insère qu'en un seul exemplaire), elles permettent d'insérer un élément à un endroit précis (par exemple une image).
-    - Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg"/>`  ).
+    - Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires, ou paramétrer un élément (exemple :  `<img src="photo.jpg" alt="paysage" />`  ).
     
     
 
@@ -320,7 +319,7 @@ Pour ce faire, il faut disposer de deux versions d’une photo : l'image d'origi
 L'acronyme ```css```  signifie _Cascading Style Sheets_ (feuilles de style en cascade). L'idée est de regrouper dans un seul fichier toutes les informations relatives à la mise en forme des éléments de la page html. 
 De manière très simplifiée, on peut dire que le fichier ```html``` s'occupe _du fond_ tandis que le fichier ```css``` s'occupe de la _forme_.
 
-Le fichier ```css``` (souvent nommé ```style.css```) doit être référencé au début du fichier ```html``` , au sein de la balise ```<head>```.
+Le fichier ```css``` (souvent nommé ```style.css```) doit être référencé au début du fichier ```html``` , à l'aide de la balise orpheline `<link>` au sein de la balise ```<head>```.
 
 
 !!! abstract "Exemple de couple ```html``` / ```css``` minimal"
@@ -357,6 +356,216 @@ Le fichier ```css``` (souvent nommé ```style.css```) doit être référencé au
     ```
 
 Pour contempler le nouveau rendu de cette magnifique page vous pouvez vous rendre sur Capytale (code 5b2f-1072956).
+
+
+### 2.1. Appliquer des propriétés CSS à une balise HTML
+
+!!! tip "Syntaxe"
+    - On écrit le nom de la balise (sans les chevrons) par exemple `h1` ou `p`. 
+    - Puis entre accolades `{ }` on écrit les propriétés et leurs valeurs. (On peut mettre autant de propriétés que l'on veut à l'intérieur des accolades).
+    - Chaque propriété est suivie du symbole `:` puis de la valeur correspondante.
+    - Chaque ligne se termine par point-virgule `;`.
+
+### 2.2 Appliquer une propriété CSS à plusieurs balises HTML à la fois
+
+```css
+h1 {
+    color: blue;
+}
+
+p {
+    color: blue;
+}
+```
+
+Le code ci-dessus, peut se réécrire d'une traite en séparant les noms des balises par une virgule.
+```css
+h1, p
+{
+    color: blue;
+}
+```
+
+
+### 2.3  `class` : appliquer un style à un ensemble d'éléments
+
+En CSS, on peut appliquer du style à un élément (ou plus) avec l'attribut `class`. 
+
+#### a. Étape 1 : marquer un élément avec l'attribut `class` dans le fichier ```html``` 
+
+`class` est un attribut que l'on peut mettre sur n'importe quelle balise HTML.
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Pays et Capitales</title>
+    <link rel="stylesheet" href="capitales.css">
+</head>
+<body>
+    <h1 class='exercice'>Pays et Capitales</h1>
+    <p class="enonce">Exercice 1 : Quelle est la capitale de la France ?</p>
+    <p class="correction">Solution : La capitale de la France est Paris.</p>
+    <p class="enonce">Exercice 2 : Quelle est la capitale du Japon ?</p>
+    <p class="correction">Solution : La capitale du Japon est Tokyo.</p>
+</body>
+</html>
+```
+#### b. Étape 2 : précéder le nom de l'attribut `class` par un point dans le fichier ```css``` 
+
+Dans le fichier CSS, on utilise le sélecteur point (.) suivi du nom de la classe pour appliquer un style à tous les éléments qui partagent cette classe.
+
+```css
+.exercice {
+    color: darkblue;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.enonce {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-left: 4px solid blue;
+    margin: 5px 0;
+}
+
+.correction {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid green;
+    font-style: italic;
+    margin: 5px 0;
+}
+```
+
+Explications :
+
+- `.exercice` : Ce style s'appliquera uniquement à l'élément `<h1>` qui a `class="exercice"`.
+- `.enonce` : Ce style s'appliquera aux deux paragraphes (`<p>`) qui ont `class="enonce"`.
+- `.correction` : Ce style s'appliquera aux deux paragraphes (`<p>`) qui ont `class="correction"`.
+
+
+[Voir le rendu](capitales.html)
+
+
+!!! note "Résultat"
+    Grâce aux classes, vous pouvez appliquer un style cohérent à plusieurs éléments HTML différents sans avoir à répéter le code CSS pour chacun. Cela rend votre code plus efficace et plus facile à maintenir.
+
+!!! tip "Couleurs"
+    D'ailleurs, on en profite pour utiliser la notation hexadécimale pour indiquer la couleur, ce qui nous permet d'être moins limité que par une liste de couleurs.
+
+
+
+### 2.4  `id` : appliquer un style à un seul élément
+
+Nous avons déjà utilisé l'attribut `id` (qui fonctionne selon la même méthode que `class`, mais  `id` ne peut être utilisé qu'une fois dans le code) pour créer des ancres pour des liens hypertexte internes à la page.
+
+En pratique donc, on n'utilisera en CSS un id que sur un élément qui est unique dans la page, comme le logo par exemple.
+
+#### a. Étape 1 : marquer un élément unique avec l'attribut `id` dans le fichier ```html``` 
+
+Exemple avec le logo, élément unique, que l'on va "marquer" grâce à l'attribut `id` dans le fichier ```html```.
+```html
+    <img src="images/logo.png" alt="Logo du site" id="logo">
+```
+
+#### b. Étape 2 : précéder le nom de l'attribut  `id`  par dièse  (#)  dans le fichier ```css``` 
+
+
+```css
+#logo {
+/* Indiquer les propriétés CSS ici */
+}
+```
+
+### 2.5 Les balises universelles
+
+!!! tip "La balise inline `<span> </span>` "
+    C'est une balise de type "inline", c'est-à-dire une balise que l'on place au sein d'un paragraphe de texte pour sélectionner certains mots uniquement. Les balises `<strong>`  et `<em>` sont de la même famille. 
+
+!!! tip "La balise de type block `<div> </div>`"
+    - C'est une balise de type "block", qui entoure un bloc de texte. Les balises `<p>`, `<h1>`  , etc., sont de la même famille. Ces balises ont quelque chose en commun : elles créent un nouveau “bloc”, dans la page, et provoquent donc obligatoirement un retour à la ligne.
+    - `<div>`  est une balise fréquemment utilisée dans la construction d'une mise en page.
+
+### 2.6 Contrôler l'apparence du texte
+
+
+- On modifie la taille du texte avec la propriété CSS `font-size`. On peut indiquer la taille en pixels, comme `16px` ; ou encore en “em”, comme `1.3em`.
+- On indique la police du texte avec la propriété CSS  `font-family`. 
+- De nombreuses propriétés de mise en forme du texte existent : `font-style` pour l'italique, `font-weight` pour la mise en gras, `text-decoration` pour le soulignement.
+- Le texte peut être aligné avec la propriété CSS `text-align`.  
+
+
+[Voir ici pour changer l'apparence du texte. ](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061298-changez-l-apparence-du-texte)
+
+
+### 2.7 Ajouter de la couleur
+
+- On change la couleur du texte avec la propriété  color  et la couleur de fond avec la propriété `background-color`.
+- On peut indiquer une couleur en écrivant son nom en anglais, `black`  par exemple, sous forme hexadécimale, comme  `#FFC8D3`, ou en notation RGB, comme  `rgb(250,25,118)`.
+- On peut ajouter une image de fond avec la propriété  `background-image`. On peut choisir de fixer l'image de fond, ou encore de la positionner où on veut sur la page.
+- On peut rendre une portion de la page transparente avec la propriété  `opacity`  ou avec la notation  RGBA  (une extension de la notation RGB, où la quatrième valeur indique le niveau de transparence).
+
+
+[Voir ici pour ajouter de la couleur ou un fond](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061312-ajoutez-de-la-couleur-et-un-fond)
+
+
+### 2.8 Créer des bordures
+
+- On peut appliquer une bordure à un élément avec la super-propriété CSS  `border`. Il faut indiquer la largeur de la bordure, sa couleur et son type (simple, double, pointillés, tirets).
+- On peut arrondir les bordures avec la propriété CSS  `border-radius`.
+- On peut ajouter une ombre aux blocs de texte avec  `box-shadow`. On doit indiquer le décalage vertical et horizontal de l'ombre, son niveau d'adoucissement et sa couleur.
+- Le texte peut lui aussi avoir une ombre avec  `text-shadow`.
+
+[Voir ici pour créer des bordures](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061337-creez-des-bordures-et-des-ombres)
+
+
+### 2.9 Sélectionner la bonne balise
+
+
+En CSS, le plus dur est bien souvent de réussir à cibler l'élément dont on veut changer le style.
+
+!!! tip "Le sélecteur universel  *"
+    Le sélecteur universel  *  sélectionne toutes les balises sans exception.
+    ```css
+    * {
+    /* Insérez ici votre style */
+    }
+    ```
+    
+!!! tip "Le sélecteur d'une balise contenue dans une autre :  A   B"
+    ```html
+    <h3>Titre avec <em>texte important</em></h3>
+    ```
+    Pour appliquer un style à toutes les balises `<em>` situées à l'intérieur d'une balise  `<h3>`, on écrirait alors dans ```css``` :
+    ```css
+    h3 em {
+    /* Insérez ici votre style */
+    }
+    ```
+
+    - Noter qu'il n'y a pas de virgule entre les deux noms de balises.
+
+
+!!! tip "Le sélecteur d'une balise qui en suit une autre : A  +  B"
+    ```css
+    h3 + p {
+    /* Insérez ici votre style */
+    }
+    ```
+    Ce qui aura pour résultat de sélectionner la première balise  `<p>`  située après un titre  `<h3>`.
+    
+    Exemple de code HTML associé :
+    ```html
+    <h3>Titre</h3>
+    <p>Paragraphe</p>
+    ```
+    
+[Pour aller plus loin](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/1605763-creez-des-apparences-dynamiques)
+
+
 
 
 
