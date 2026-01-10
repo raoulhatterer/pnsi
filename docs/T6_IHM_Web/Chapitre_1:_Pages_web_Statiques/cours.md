@@ -46,7 +46,7 @@ Il a été inventé en 1992 par [Tim Berners-Lee](https://fr.wikipedia.org/wiki/
           <li> la suite ... </li>
         </ul>  
         <p>
-          Pour apprendre le fonctionnement des balises, voir <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML/Introduction_%C3%A0_HTML/Getting_started"> ici</a> par exemple !
+          Pour apprendre le fonctionnement des balises, voir <a href="https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax">ce tutoriel</a> par exemple !
         </p>
       </body>
     </html>
@@ -58,13 +58,10 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        1. Lire [la page d'introduction à HTML de mozilla](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started){:target="_blank"} et réaliser les exercices d'apprentissage actif qui s'y trouvent.
-        2. Création d'une page personnelle
+        1. Avoir lu [la page d'introduction à HTML de mozilla](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started){:target="_blank"} et **réalisé les exercices d'apprentissage actif qui s'y trouvent**.
+        2. Création de pages personnelles
             - Puis créer un dossier contenant un fichier ```mapage.html``` ainsi qu'un fichier `page2.html`.
             - Créer une page contenant **une image** et un **lien vers le site du lycée** et **un lien vers une autre page**.
-        3. Indications:
-            - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel.
-            - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
     === "Canevas"{# #}
         ```html
         	<!DOCTYPE html>
@@ -83,17 +80,27 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
         - Capytale: 087b-5379747
  
 
-### Organiser le texte :heart:
+!!! tip "Indications"
+    - Vous pouvez utiliser l'éditeur de votre choix. Par exemple le logiciel _Sublime Text_  installé au lycée (pour le lancer cliquez sur l'icône Windows puis commencez à taper _Sublime_ au clavier) que vous pouvez aussi [installer](https://www.sublimetext.com){:target="_blank"} sur votre ordinateur personnel. Ou bien Notepad++.
+    - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
+
+
+
+### 1.1 Organiser le texte :heart:
     
-!!! tip "Le texte affiché sur une page web est compris entre les balises `<body> </body>`"
-    
-!!! tip "Créer des paragraphes avec les balises `<p> </p>`"
+!!! tip "Où écrire le texte affiché sur une page web"
+    Le texte affiché sur une page web est compris entre les balises `<body> </body>`    
+!!! tip "Créer des paragraphes"
+    avec les balises `<p> </p>`
 
-!!! tip "Revenir à la ligne avec la balise orpheline `<br/>`"
+!!! tip "Revenir à la ligne"
+    avec la balise orpheline `<br/>`
 
-!!! tip "Créer des titres avec les balises  `<h1>`,  `<h2>`,  `<h3>`…"
+!!! tip "Créer des titres"
+    avec les balises  `<h1>`,  `<h2>`,  `<h3>`…
 
-!!! tip "Créer des listes avec les balises  `<li>`  et  `<ul>`  ou  `<ol>`"
+!!! tip "Créer des listes"
+    avec les balises  `<li>`  et  `<ul>`  ou  `<ol>`
     ``` html
     <!DOCTYPE html>
     <html>
@@ -111,12 +118,83 @@ Allez contempler [ici](./web_minimale.html){:target="_blank"} le rendu de cette 
     </body>
     </html>    
     ```
+    [Voir le rendu.](listes.html)
 
 !!! tip "Mettre en valeur du texte important"
     - [`<mark> </mark>`](https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/mark){:target="_blank"}
     - [`<em> </em>`](https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/em){:target="_blank"}
     - [`<strong> </strong>`](https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/strong){:target="_blank"}
 
+
+
+### 1.2 Créer un lien hypertexte en HTML
+
+#### a. Créer un lien hypertexte vers l'URL d'une page disponible sur internet
+
+
+```html
+    <a href="https://www.example.com">Visiter Example</a>
+```
+
+Explication :
+
+- `<a>` : balise d'ancrage (anchor) pour créer un lien
+- `href` : attribut qui contient l'URL de destination
+- `https://www.example.com` : URL de la page web
+- `Visiter Example` : texte cliquable affiché à l'utilisateur
+
+
+
+#### b. Créer un lien hypertexte d'une page à une autre sur votre site
+
+```text title="Structure de dossiers correspondante à l'exemple"
+votre-site/
+├── index.html                 # Fichier courant contenant les liens
+├── page1.html                 # On va créer un lien 1 "Page 1" vers cette page
+├── contenu/                   # Dossier au même niveau
+│   └── autredossier/          # Sous-dossier
+│       └── page2.html         # On va créer un lien 2 "Page 2" vers cette page
+├── documents/                 # Dossier au même niveau
+│   └── guide.pdf              #On va créer un lien 3 : "Télécharger le guide"
+└── ...                        # Autres fichiers et dossiers
+```
+
+
+
+```html title='index.html'
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liens internes</title>
+</head>
+<body>
+    <!-- Lien 1 : vers page1.html dans le même dossier -->
+    <a href="page1.html">Page 1</a>
+    
+    <!-- Lien 2 : vers page2.html dans le sous-dossier -->
+    <a href="contenu/autredossier/page2.html">Page 2</a>
+    
+    <!-- Lien 3 : vers le PDF dans le dossier documents -->
+    <a href="documents/guide.pdf">Télécharger le guide</a>
+</body>
+</html>
+```
+
+!!! tip "Utilisez des chemins relatifs pour les liens internes"
+    C'est très important, car ils permettent à votre site d'être déplacé, renommé ou hébergé sur un autre domaine sans casser les liens. Un chemin comme `documents/guide.pdf` fonctionnera que votre site soit sur `www.monsite.com`, `localhost:8000` ou dans un sous-dossier `votre-site`. Les chemins absolus (`https://monsite.com/documents/guide.pdf`) rendraient votre site dépendant d'une URL spécifique et nécessiteraient une mise à jour en cas de changement d'hébergement.
+
+    ```html
+    <!-- BON : chemin relatif - portable -->
+    <a href="documents/guide.pdf">Guide PDF</a>
+
+    <!-- À ÉVITER pour les internes : chemin absolu - fragile -->
+    <a href="https://monsite.com/documents/guide.pdf">Guide PDF</a> 
+    ```
+    
+
+
+#### Créer une ancre
+    
 
 
 !!! done "Premières conclusions sur l'utilisation du ```html```"
