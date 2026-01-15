@@ -548,6 +548,8 @@ Pour faire de la mise en page avec Flexbox, il faut :
     - `row-reverse`  : organisés sur une ligne, mais en ordre inversé ;
     - `column-reverse`  : organisés sur une colonne, mais en ordre inversé.
 
+[Voir ici pour apprendre Flexbox](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061384-faites-votre-mise-en-page-avec-flexbox)
+
 Le jeu [Flexbox Froggy](https://flexboxfroggy.com/#fr).
 
 ### 2.10 Sélectionner la bonne balise
