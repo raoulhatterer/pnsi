@@ -1,0 +1,3906 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cours et exercices de première en spécialité NSI">
+      
+      
+        <meta name="author" content="R. Hatterer">
+      
+      
+        <link rel="canonical" href="https://raoulhatterer.github.io/pnsi/T6_IHM_Web/Chapitre_2%3A_Pages_web_Dynamiques/cours/">
+      
+      
+        <link rel="prev" href="../../Chapitre_1%3A_Pages_web_Statiques/cours/">
+      
+      
+        <link rel="next" href="../../Chapitre_3%3A_Protocole_HTTP/cours/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../xtra/favPNSI.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Chapitre 2: Pages web dynamiques - Première Spécialité NSI (Lycée de la méditerranée La Ciotat)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+    
+      
+    
+    <!-- Load CDNs : Pyodide (Python in WASM), Ace (Editor) and JQuery (Terminal) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.asm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-md5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/js/jquery.terminal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/css/jquery.terminal.min.css" rel="stylesheet">
+
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../xtra/pyoditeur.css">
+    
+      <link rel="stylesheet" href="../../../xtra/ajustements.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapitre-2-pages-web-dynamiques" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../.." title="Première Spécialité NSI (Lycée de la méditerranée La Ciotat)" class="md-header__button md-logo" aria-label="Première Spécialité NSI (Lycée de la méditerranée La Ciotat)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9zm5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Première Spécialité NSI (Lycée de la méditerranée La Ciotat)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapitre 2: Pages web dynamiques
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Passer au mode nuit"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer au mode nuit" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Passer au mode jour"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer au mode jour" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../progression_et_devoirs/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Progression et devoirs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../T1_Les_bases_de_Python/Chapitre_1%3A_Variables/cours/" class="md-tabs__link">
+          
+  
+  
+  T1: Les bases de Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../T2_Representation_des_donnees/sommaire/" class="md-tabs__link">
+          
+  
+  
+  T2: Rep. des données
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../T3_Architecture_materielle/sommaire/" class="md-tabs__link">
+          
+  
+  
+  T3: Arch. matérielle
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../T4_Algorithmique/sommaire/" class="md-tabs__link">
+          
+  
+  
+  T4: Algorithmique
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../T5_Traitement_de_donnees/sommaire/" class="md-tabs__link">
+          
+  
+  
+  T5 Trait. des données
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../sommaire/" class="md-tabs__link">
+          
+  
+  
+  T6: IHM sur le web
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../T7_Divers/1_Conseils_generaux/cours/" class="md-tabs__link">
+          
+  
+  
+  Divers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../T8_Projets" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Projets
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../remerciements/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Remerciements
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Première Spécialité NSI (Lycée de la méditerranée La Ciotat)" class="md-nav__button md-logo" aria-label="Première Spécialité NSI (Lycée de la méditerranée La Ciotat)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M7.4 20C5.9 18.6 5 16.6 5 14.5s.9-4.1 2.4-5.5l1.6.6c-1.3 1.1-2 3-2 4.9s.7 3.7 2 4.9zm5.3-2-.8-2-1.4 2H9l2.3-3.1L10 12h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 2-1.6-.6c1.3-1.2 2-3 2-4.9s-.7-3.7-2-4.9l1.6-.6c1.5 1.4 2.4 3.4 2.4 5.5s-.9 4.1-2.4 5.5M21 7H3V4h18z"/></svg>
+
+    </a>
+    Première Spécialité NSI (Lycée de la méditerranée La Ciotat)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../progression_et_devoirs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progression et devoirs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T1: Les bases de Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    T1: Les bases de Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_1%3A_Variables/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 1: Variables &amp; ES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 2: La boucle for
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapitre 2: La boucle for
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_2%3A_La_boucle_for/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_2%3A_La_boucle_for/exercices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_2%3A_La_boucle_for/exos_processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices sous Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 3: La boucle while
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapitre 3: La boucle while
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_3%3A_La_boucle_while/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_3%3A_La_boucle_while/exercices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 4: L'instruction conditionnelle if
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapitre 4: L'instruction conditionnelle if
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_4%3A_L%27instruction_conditionnelle_if/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_4%3A_L%27instruction_conditionnelle_if/exercices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 5: Les fonctions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapitre 5: Les fonctions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_5%3A_Les_fonctions/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Chapitre_5%3A_Les_fonctions/exercices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T1_Les_bases_de_Python/Exercices/exercices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices basiques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T2: Rep. des données
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    T2: Rep. des données
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/sommaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sommaire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 1: Listes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapitre 1: Listes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_1%3A_Listes/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_1%3A_Listes/exercices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_2%3A_Tuples/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 2• Les Tuples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_3%3A_Dictionnaires/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 3• Les dictionaires
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_4%3A_Bases/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 4• Les bases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 5: Booleens
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapitre 5: Booleens
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_5%3A_Booleens/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_5%3A_Booleens/enonce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Énigme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_6%3A_Codage_caracteres/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 6• Les caractères
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_7%3A_Codage_entiers/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 7• Les entiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T2_Representation_des_donnees/Chapitre_8%3A_Flottants/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 8• Les flottants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T3: Arch. matérielle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    T3: Arch. matérielle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/sommaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sommaire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_1%3A_Microbit/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 1: Microbit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_2%3A_Architecture_Von_Neumann/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 2.Architecture Von Neumann
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_3%3A_Architecture_reseau/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 3: Architecture d'un réseau
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_4%3A_Protocoles_de_communication/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 4: Protocoles de communication dans un réseau
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T3_Architecture_materielle/Chapitre_5%3A_Decouverte_des_commandes_Linux/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 5: Découverte des commandes UNIX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T4: Algorithmique
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    T4: Algorithmique
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/sommaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sommaire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_1%3A_Extremums_et_moyennes/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 1 Extremums et moyennes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_2%3A_Complexite/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 2 Complexité
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_3%3A_Tri_par_insertion/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 3 Tri par insertion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_4%3A_Tri_par_selection/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 4 Tri par sélection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_5%3A_Dichotomie/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 5 Dichotomie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_6%3A_Algorithmes_gloutons/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 6 Algorithmes gloutons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T4_Algorithmique/Chapitre_7%3A_Algorithme_KNN/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 7 Algorithme des KNN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T5 Trait. des données
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    T5 Trait. des données
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T5_Traitement_de_donnees/sommaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sommaire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T5_Traitement_de_donnees/Chapitre_1%3A_Manipulation_csv/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manipulation csv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T5_Traitement_de_donnees/Chapitre_2%3A_Trier_des_donnees/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trier des données
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T5_Traitement_de_donnees/Chapitre_3%3A_Pandas/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T6: IHM sur le web
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    T6: IHM sur le web
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sommaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thème 6 : IHM sur le web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_1%3A_Pages_web_Statiques/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 1: Pages web statiques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 2: Pages web dynamiques
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 2: Pages web dynamiques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-quand-le-client-peut-agir-sur-sa-page-exemple-avec-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Quand le client peut agir sur sa page (exemple avec JavaScript)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-quand-la-page-est-fabriquee-a-la-demande-par-le-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Quand la page est fabriquée à la demande par le serveur
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_3%3A_Protocole_HTTP/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 3: Protocole HTTP étude du chargement d'une page web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Chapitre_4%3A_Get_Post_Formulaires/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapitre 4: Requêtes GET, POST et formulaires
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Divers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Divers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T7_Divers/1_Conseils_generaux/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conseils de travail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T7_Divers/3_IDE/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T7_Divers/4_Processing/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T7_Divers/4_Processing_p5/cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processing au lycée ⇔ p5 sur Capytale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../T8_Projets" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../remerciements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Remerciements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+    
+                  
+
+
+  
+  
+
+
+<script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.js"></script>
+<script src="https://raoulhatterer.github.io/pnsi//js/sqlite_ide.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/sql/sql.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.css">
+<link rel="stylesheet" href="https://raoulhatterer.github.io/pnsi//css/sqlite_ide.css">
+<script>sqljs_base_path="https://raoulhatterer.github.io/pnsi/"</script>
+
+<h1 id="chapitre-2-pages-web-dynamiques">Chapitre 2: Pages web dynamiques<a class="headerlink" href="#chapitre-2-pages-web-dynamiques" title="Permanent link">⚓︎</a></h1>
+<p><img alt="image" class="center" src="../data/BO.png" /></p>
+<p><img alt="image" class="center" src="../data/meme.jpg" /></p>
+<h2 id="1-quand-le-client-peut-agir-sur-sa-page-exemple-avec-javascript">1. Quand le client peut agir sur sa page (exemple avec JavaScript)<a class="headerlink" href="#1-quand-le-client-peut-agir-sur-sa-page-exemple-avec-javascript" title="Permanent link">⚓︎</a></h2>
+<p><img alt="" class="center" src="../data/dynclient.png" /></p>
+<p>Jusqu'à présent, la page web envoyée par le serveur est :</p>
+<ol>
+<li>identique quel que soit le client.</li>
+<li>statique après réception sur l'ordinateur du client.</li>
+</ol>
+<p>Le JavaScript va venir régler le problème n°2 : il est possible de fabriquer une page sur laquelle le client va pouvoir agir <strong>localement</strong>, sans avoir à redemander une nouvelle page au serveur.</p>
+<p>Inventé en 1995 par <a href="https://fr.wikipedia.org/wiki/Brendan_Eich" target="_blank">Brendan Eich</a> pour le navigateur Netscape, le langage JavaScript s'est imposé comme la norme auprès de tous les navigateurs pour apporter de l'interactivité aux pages web.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple de couple <code>html</code> / <code>JavaScript</code> minimal</p>
+<p>Notre fichier <code>index.html</code> fait référence, au sein d'une balise <code>&lt;script&gt;</code>, à un fichier externe <code>script.js</code> qui contiendra notre code JavaScript.   </p>
+<ul>
+<li>
+<p>fichier <code>index.html</code> : 
+<div class="highlight"><span class="filename">HTML</span><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>un peu d&#39;action<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Une page web extrêmement dynamique<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Changez la couleur d&#39;arrière-plan:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;choix(&#39;yellow&#39;);&quot;</span><span class="p">&gt;</span>jaune<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;choix(&#39;green&#39;);&quot;</span><span class="p">&gt;</span>vert<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;choix(&#39;purple&#39;);&quot;</span><span class="p">&gt;</span>violet<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      En JavaScript, le nom de la couleur choisie est :
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;resultat&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>fichier <code>script.js</code> :
+<div class="highlight"><span class="filename">JavaScript</span><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">choix</span><span class="p">(</span><span class="nx">color</span><span class="p">){</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">background</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">color</span><span class="p">;</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;resultat&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="nx">color</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</li>
+</ul>
+</div>
+<p>Le résultat de cette page peut être consulté sur Capytale (code: 41af-1072993).</p>
+<p><strong>Commentaires</strong></p>
+<ul>
+<li>Au sein du bouton déclaré par la balise <code>button</code>, l'attribut  <code>onclick</code> reçoit le nom d'une fonction déclarée à l'intérieur du fichier <code>script.js</code>, ici la fonction <code>choix()</code>.</li>
+<li>Cette fonction nous permet de modifier à la fois l'aspect esthétique de la page (changement de la couleur de background) mais aussi le contenu de cette page, en faisant afficher le nom de la couleur.</li>
+<li>En JS, <code>getElementById</code> se réfère à  <code>id=</code>, sinon il existe aussi <code>getElementByName</code> qui utilise <code>name=</code>.</li>
+<li>Dans <code>label</code>, si l'on souhaite capturer le focus, on utilise <code>for=</code> pour faire une référence à <code>id</code> (qui est toujours unique).</li>
+<li>Pour regrouper plusieurs boutons radio on utilise <code>name</code>.</li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple d'utilisation conjointe de <code>id</code> et de <code>name</code> en JS</p>
+<div class="highlight"><span class="filename">JavaScript</span><pre><span></span><code><span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;button_1&quot;</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;radio&quot;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;regroupement1&quot;</span><span class="w"> </span><span class="o">/&gt;&lt;</span><span class="nx">label</span><span class="w"> </span><span class="k">for</span><span class="o">=</span><span class="s2">&quot;button_1&quot;</span><span class="o">&gt;</span><span class="nx">Text</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="mf">1</span><span class="o">&lt;</span><span class="err">/label&gt;&lt;br&gt;</span>
+<span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;button_2&quot;</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;radio&quot;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;regroupement1&quot;</span><span class="w"> </span><span class="o">/&gt;&lt;</span><span class="nx">label</span><span class="w"> </span><span class="k">for</span><span class="o">=</span><span class="s2">&quot;button_2&quot;</span><span class="o">&gt;</span><span class="nx">Text</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="mf">2</span><span class="o">&lt;</span><span class="err">/label&gt;&lt;br&gt;</span>
+<span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;button_3&quot;</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;radio&quot;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;regroupement1&quot;</span><span class="w"> </span><span class="o">/&gt;&lt;</span><span class="nx">label</span><span class="w"> </span><span class="k">for</span><span class="o">=</span><span class="s2">&quot;button_3&quot;</span><span class="o">&gt;</span><span class="nx">Text</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="mf">3</span><span class="o">&lt;</span><span class="err">/label&gt;&lt;br&gt;</span>
+<span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;button_4&quot;</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;radio&quot;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;regroupement2&quot;</span><span class="w"> </span><span class="o">/&gt;&lt;</span><span class="nx">label</span><span class="w"> </span><span class="k">for</span><span class="o">=</span><span class="s2">&quot;button_4&quot;</span><span class="o">&gt;</span><span class="nx">Text</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="mf">4</span><span class="o">&lt;</span><span class="err">/label&gt;&lt;br&gt;</span>
+<span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;button_5&quot;</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;radio&quot;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;regroupement2&quot;</span><span class="w"> </span><span class="o">/&gt;&lt;</span><span class="nx">label</span><span class="w"> </span><span class="k">for</span><span class="o">=</span><span class="s2">&quot;button_5&quot;</span><span class="o">&gt;</span><span class="nx">Text</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="mf">5</span><span class="o">&lt;</span><span class="err">/label&gt;&lt;br&gt;</span>
+<span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;button_6&quot;</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;radio&quot;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;regroupement2&quot;</span><span class="w"> </span><span class="o">/&gt;&lt;</span><span class="nx">label</span><span class="w"> </span><span class="k">for</span><span class="o">=</span><span class="s2">&quot;button_6&quot;</span><span class="o">&gt;</span><span class="nx">Text</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="mf">6</span><span class="o">&lt;</span><span class="err">/label&gt;&lt;br&gt;    </span>
+</code></pre></div>
+</div>
+<p>La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilisateurs très complexes au sein d'un navigateur, équivalentes à celles produites par des logiciels externes (pensez à Discord, par ex.). Bien sûr, dans ces cas complexes, le serveur est aussi sollicité pour modifier la page, comme nous le verrons en partie 3.</p>
+<p><strong>En savoir plus</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide" target="_blank">le guide JavaScript de la fondation Mozilla</a></li>
+<li><a href="https://openclassrooms.com/fr/courses/7696886-apprenez-a-programmer-avec-javascript" target="_blank">le cours d'OpenClassrooms sur le JavaScript</a></li>
+<li><a href="https://www.w3schools.com/js/" target="_blank">le site W3 sur le JavaScript</a></li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exercice  1</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Énoncé</label><label for="__tabbed_1_2">Exemple avec <code>let</code> et  <code>var</code></label><label for="__tabbed_1_3">Correction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Dans Chrome se rendre sur <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide" target="_blank">le guide JavaScript de la fondation Mozilla</a></li>
+<li>Ouvrir les outils de développement dans Chrome</li>
+<li>Afficher l'onglet <em>Console</em></li>
+<li>Afficher une alerte en utilisant la fonction <code>alert()</code>: <code>alert("NSI, ça déchire!");</code> dans la console </li>
+<li>D'après le guide, indiquer à quoi servent <code>let</code>, <code>var</code>, <code>const</code> et <code>console.log()</code></li>
+<li>Quand doit-on utiliser un point-virgule en JS ?</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">JavaScript</span><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">gamma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12.7</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">y</span><span class="p">;</span>
+<span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">gamma</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">x</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">varTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// c&#39;est la même variable !</span>
+<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 2</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 2</span>
+<span class="p">}</span><span class="w"> </span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">letTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// c&#39;est une variable différente</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 2</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 1</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Il faut déclarer une variable avec le mot-clé <code>let</code> en le faisant suivre de son nom: <code>let myVariable;</code></li>
+<li>Une fois une variable déclarée, on peut lui donner une valeur : <code>myVariable = "Bob";</code></li>
+<li>On peut aussi faire les deux opérations sur une même ligne si on le souhaite : <code>let myVariable = "Bob";</code></li>
+<li>Le mot-clé <code>let</code> permet de définir des variables au sein d'un bloc et des blocs qu'il contient. <code>var</code> permet quant à lui de définir une variable dont la portée est celle de la fonction englobante.</li>
+<li>Il faut déclarer une constante avec le mot-clé <code>const</code>: <code>const myConstante = "Marley";</code></li>
+<li>Un point-virgule en fin de ligne indique là où se termine l'instruction ; ce n'est impérativement requis que si vous devez séparer des instructions sur une même ligne. Toutefois, certains pensent qu'il est de bonne pratique de les mettre à la fin de chaque instruction. </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  2</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Énoncé</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Créer:<ul>
+<li>un <code>&lt;input&gt;</code> de type <code>range</code> permettant de transmette un âge qui sera compris entre 7 ans et 100 ans</li>
+<li>un bouton permettant d'afficher l'âge de la personne et si la personne est mineure ou majeure
+<div>
+<input type="range" id="age" name="age"
+min="7" max="100">
+</input>
+<label for="age">Age</label>
+</div>
+<button type="button" onclick="majorite(age.value);">Majeur ?</button>
+<p id="majorite"></p></li>
+</ul>
+</li>
+<li>Le bouton utilisera un évènement <code>onclick</code> pour transmettre une valeur à la fonction:  <code>&lt;button type="button" onclick="majorite(age.value);"&gt;Majeur ?&lt;/button&gt;</code></li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li>Placer le JavaScript dans un fichier annexe.</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Correction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">HTML</span><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Exercice<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Majorité<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;range&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;age&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;age&quot;</span>
+         <span class="na">min</span><span class="o">=</span><span class="s">&quot;7&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;age&quot;</span><span class="p">&gt;</span>Age<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    // ici la fonction transmet la valeur (référencée par id) 
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;majorite(age.value);&quot;</span><span class="p">&gt;</span>Majeur ?<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;majorite&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">JavaScript</span><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">majorite</span><span class="p">(</span><span class="nx">age</span><span class="p">){</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">limite</span><span class="o">=</span><span class="mf">18</span><span class="p">;</span><span class="w"> </span><span class="c1">//const permet de déclarer une constante</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span><span class="w">     </span><span class="c1">//var permet de déclarer une variable globale</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">limite</span><span class="p">){</span>
+<span class="w">    </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot; Tu es mineur&quot;</span><span class="p">;</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot; Vous êtes majeur&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;âge:&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span>
+<span class="c1">// affichage dans la console</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span><span class="w"> </span>
+<span class="c1">// affichage dans une balise html</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;majorite&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  3</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Énoncé</label><label for="__tabbed_4_2">Correction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Créer:<ul>
+<li>un <code>&lt;input&gt;</code> de type <code>text</code> (le type par défaut) permettant de rentrer un nombre que l'on souhaite compris entre 7 et 100</li>
+<li>un bouton permettant de tester si la donnée est correcte.</li>
+</ul>
+</li>
+<li>Inclure le JavaScript dans le fichier html</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">HTML</span><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Validation par fonction JavaScript<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Saisir un nombre compris entre 7 and 100:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;numb&quot;</span><span class="p">&gt;</span>
+// ici la fonction ne transmet pas la valeur
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;myFunction()&quot;</span><span class="p">&gt;</span>Valider<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;demo&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">myFunction</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;numb&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span><span class="w"> </span><span class="c1">//autre façon de récupérer la valeur</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">text</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">7</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Entrée non valide&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Entrée valide&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;demo&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">text</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span> 
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  4</p>
+<ul>
+<li>Reprenez votre page personnelle créée au dernier exercice du chapitre précédent et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres d'utiliser des inputs de différents types:<ul>
+<li>text (une chaîne de caractères) ;</li>
+<li>number (un nombre) ;</li>
+<li>range (une valeur numérique) ;</li>
+<li>checkbox (une case à cocher) ;</li>
+<li>radio (un bouton radio) ;</li>
+<li>button (un bouton)...</li>
+</ul>
+</li>
+<li>Rajoutez des <a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank">conditions</a> <code>if</code>, <code>else if</code>, <code>else</code> et utilisez <a href="https://www.w3schools.com/js/js_comparisons.asp">les opérateurs logiques</a> AND (noté <code>&amp;&amp;</code> en JS) et OR (noté <code>||</code> en JS). </li>
+<li>Publier la version incluant le JS sur Capytale (code 1895-5198726)</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  5: Calculatrice RPN</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:6"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><input id="__tabbed_5_5" name="__tabbed_5" type="radio" /><input id="__tabbed_5_6" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Énoncé</label><label for="__tabbed_5_2">Aperçu</label><label for="__tabbed_5_3">index.html</label><label for="__tabbed_5_4">style.css</label><label for="__tabbed_5_5">calculatrice.js</label><label for="__tabbed_5_6">Correction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>La HP Prime est une calculatrice graphique programmable à écran tactile couleur du fabricant américain Hewlett-Packard (HP). La calculatrice prend en charge trois logiques d'entrée différentes : la notation algébrique sur une ligne, une notation similaire à la notation mathématique sur papier, appelée notation Textbook par HP, et la notation polonaise inversée (RPN).</li>
+<li><a href="https://fr.wikipedia.org/wiki/Notation_polonaise_inverse" target="_blank">La notation polonaise inverse</a> permet de faire des calculs arithmétiques sans utiliser de parenthèses et sans faire référence à une quelconque adresse mémoire, les données étant stockées dans une pile (les piles seront étudiées de façon détaillée en classe de terminale).</li>
+<li>Un émulateur de la HP Prime est officiellement disponible pour divers systèmes d’exploitation: Android (Google Play), iOS (Apple App Store) et MS Windows (Microsoft Store). Il existe également une version MacOS et une version Linux.</li>
+<li>Les <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">Flex Box CSS</a> sont un standard CSS3 de disposition des éléments dans une page web. Ce standard permet d'avoir un design adaptatif à l'écran. Les éléments peuvent être réagencés selon la taille de l'écran.</li>
+<li>Les onglets suivants contiennent  l'ébauche du code implémentant une calculatrice RPN. Compléter le code pour avoir une calculatrice entièrement fonctionnelle.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Ebauche:
+<img alt="" class="center" src="../data/ebauche-calculatriceRPN.png" />
+A réaliser:
+<img alt="" class="center" src="../data/calculatriceRPN.PNG" /></p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">HTML</span><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;IE=edge&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;calculatrice.js&quot;</span> <span class="na">defer</span><span class="p">&gt;</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Calculatrice RPN<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Calculatrice RPN en JavaScript<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Pile<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pile&quot;</span><span class="p">&gt;</span>  
+  3:<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;pile3&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> 
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pile&quot;</span><span class="p">&gt;</span>  
+  2:<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;pile2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> 
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pile&quot;</span><span class="p">&gt;</span>  
+  1:<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;pile1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> 
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Saisie<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;centrer&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;tampon&quot;</span><span class="p">&gt;</span>Ready<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;centrer&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nombres&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ligne&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(7)&quot;</span>   <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(8)&quot;</span>   <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>8<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(9)&quot;</span>   <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>9<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ligne&quot;</span><span class="p">&gt;</span>     
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(4)&quot;</span>  <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(5)&quot;</span>  <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(6)&quot;</span>  <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>6<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ligne&quot;</span><span class="p">&gt;</span>     
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(1)&quot;</span>  <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(2)&quot;</span>  <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;nombre(3)&quot;</span>  <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;operations&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;clearAll()&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>Clear<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;division()&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>/<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;soustraction()&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>-<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;addition()&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;enter()&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;touche&quot;</span><span class="p">&gt;</span>Enter<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">CSS</span><pre><span></span><code><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#008CBA</span><span class="p">;</span>
+<span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">pile</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="kc">flex</span><span class="p">;</span>
+<span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="kc">space-between</span><span class="p">;</span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w">  </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="kc">x-large</span><span class="p">;</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="kt">pt</span><span class="w"> </span><span class="kc">dashed</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">centrer</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="kc">flex</span><span class="p">;</span>
+<span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">tampon</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="kc">xx-large</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lucida Console&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="mi">550</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">min-height</span><span class="p">:</span><span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="kc">right</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">touche</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="kc">x-large</span><span class="p">;</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">cursor</span><span class="p">:</span><span class="w"> </span><span class="kc">pointer</span><span class="p">;</span>
+<span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span><span class="w"> </span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">black</span><span class="p">;</span><span class="w"> </span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#008CBA</span><span class="p">;</span><span class="w"> </span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nombres</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="kc">solid</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="c">/* largeur du clavier numérique */</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">ligne</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span><span class="w"> </span><span class="c">/* pour positionner les touches */</span>
+<span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"> </span><span class="c">/* centrées sur la ligne */</span>
+<span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="p">.</span><span class="nc">operations</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span><span class="w"> </span><span class="c">/* pour positionner les touches d&#39;opérations */</span>
+<span class="w">  </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">column</span><span class="p">;</span><span class="w"> </span><span class="c">/* en une colonne */</span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="kc">solid</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">JavaScript</span><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">pile3</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">pile2</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">pile1</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">tampon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">nombre</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">tampon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="o">*</span><span class="nx">tampon</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">x</span><span class="p">;</span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;tampon&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tampon</span><span class="p">;</span><span class="w"> </span>
+<span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">clearAll</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// attention clear() est un mot réservé </span>
+<span class="w">  </span><span class="nx">pile3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">pile2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">pile1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">tampon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">affichage</span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">enter</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">pile3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pile2</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">pile2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pile1</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">tampon</span><span class="w"> </span><span class="o">!=</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">pile1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tampon</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">tampon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">affichage</span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">addition</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">tampon</span><span class="o">!=</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="nx">enter</span><span class="p">()};</span><span class="w">  </span>
+<span class="w">  </span><span class="nx">pile1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">pile2</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">pile1</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">pile2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pile3</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">pile3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">tampon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">affichage</span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">division</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">tampon</span><span class="o">!=</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="nx">enter</span><span class="p">()};</span><span class="w">  </span>
+<span class="w">  </span><span class="nx">pile1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">pile2</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">pile1</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">pile2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pile3</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">pile3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">tampon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">affichage</span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">affichage</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;pile3&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pile3</span><span class="p">;</span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;pile2&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pile2</span><span class="p">;</span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;pile1&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pile1</span><span class="p">;</span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;tampon&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tampon</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Capytale (code 9bcf-2789938)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<h2 id="2-quand-la-page-est-fabriquee-a-la-demande-par-le-serveur">2. Quand la page est fabriquée à la demande par le serveur<a class="headerlink" href="#2-quand-la-page-est-fabriquee-a-la-demande-par-le-serveur" title="Permanent link">⚓︎</a></h2>
+<p><img alt="" class="center" src="../data/dynserveur.png" /></p>
+<p>Rappelons que toutes les pages que nous avons créées jusqu'à présent sont uniformément envoyées par le serveur au client. Aucune «préparation» de la page en amont n'a lieu sur le serveur, aucun dialogue n'a lieu avec le serveur une fois que la page a été livrée. 
+Évidemment, si le web était comme ceci, il ne serait qu'une gigantesque bibliothèque en consultation seule (ce fut le cas pendant longtemps, et ce qui n'était déjà pas si mal).</p>
+<p>Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via les frameworks Django, Jinja2, Flask...), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple de serveur qui se contente de lire des formulaires</p>
+<ul>
+<li>Langage: Dans ce TP, nous utilisons le langage Python via la bibliothèque <code>jinja2</code>. </li>
+<li>Placer les fichiers suivants dans un même dossier:<ul>
+<li>Le fichier <a href="../serveur.py"><code>serveur.py</code></a> (ce nom devra être conservé) sera à utiliser tel quel. Nous n'aurons pas à le modifier (sauf si l'on désire changer le port). <strong>Il ne devra pas être exécuté</strong>, mais il <strong>devra être présent</strong> au côté des autres fichiers.</li>
+<li>Les fichiers qu'il faudra modifier sont les fichiers:<ul>
+<li><code>dynserveur.py</code> (ce nom peut être changé) qui contient le code que l'on souhaite voir exécuter sur le serveur. Ce fichier devra être exécuté dans Spyder. </li>
+<li><code>formulaire1.html</code> (ce nom peut être changé) qui contient un formulaire (voir page 202 du livre) permettant d'envoyer des données sous forme de dictionnaire au serveur. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">dynserveur.py</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">serveur</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_template</span><span class="p">,</span> <span class="n">render</span><span class="p">,</span> <span class="n">OK</span><span class="p">,</span> <span class="n">Redirect</span><span class="p">,</span> <span class="n">pageDynamique</span><span class="p">,</span> <span class="n">lancerServeur</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">traitement1</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="nb">vars</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Traitement du formulaire1&quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Le formulaire à envoyé:&quot;</span><span class="p">,</span><span class="nb">vars</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Redirect</span><span class="p">(</span><span class="s1">&#39;/formulaire1.html&#39;</span><span class="p">)</span>
+
+<span class="n">pageDynamique</span><span class="p">(</span><span class="s1">&#39;/traitement_formulaire1&#39;</span><span class="p">,</span> <span class="n">traitement1</span><span class="p">)</span>
+
+<span class="c1"># Lancer le serveur</span>
+<span class="n">lancerServeur</span><span class="p">()</span>
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">formulaire1.html</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>À l'exécution du script <code>dynserveur.py</code> dans Spyder, le serveur devrait se lancer et un message devrait vous dire sur quel port (habituellement sur le port 8000). </li>
+<li>Se rendre ensuite à l'adresse suivante <code>http://127.0.0.1:8000</code> ou tout simplement <code>127.0.0.1:8000</code> ou <code>localhost:8000</code>. </li>
+<li>Les fichiers présents dans votre dossier doivent aparaitre dans votre navigateur internet.</li>
+<li>À partir de là vous pouvez ouvrir <code>formulaire1.html</code></li>
+<li>Vérifiez que tout fonctionne et que les données sont bien envoyées sous forme de dictionnaire.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="highlight"><span class="filename">HTML</span><pre><span></span><code><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Formulaire de base<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Formulaire de base<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/traitement_formulaire1&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Message : <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;msg&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;age&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;42&quot;</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;regle&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;range&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;60&quot;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Envoyer&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<div class="admonition done">
+<p class="admonition-title">À retenir</p>
+<ul>
+<li>Une page web peut contenir plusieurs formulaires.</li>
+<li>Un formulaire peut contenir plusieurs <code>&lt;input&gt;</code> dont obligatoirement un <code>&lt;input&gt;</code> de type <code>sumit</code> pour soumettre le formulaire.</li>
+<li>Lors de la soumission d'un formulaire, c'est-à-dire lorsque l’on clique le bouton «Envoyer», le navigateur communique deux éléments au serveur:<ul>
+<li>une URL spécifiée grâce à l'attribut <code>action</code> du formulaire (dans l'exemple ci-dessus, l'url <code>"/traitement_formulaire1"</code> est une <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL" target="_blank">URL relative</a> où <code>/</code> correspond au dossier racine) ;</li>
+<li>un dictionnaire qui contient les valeurs saisies dans le formulaire.</li>
+</ul>
+</li>
+<li>À la réception de ces éléments, le serveur:<ul>
+<li>se sert de l'URL pour faire le lien avec une fonction (grâce à <code>pageDynamique</code>) ;</li>
+<li>effectue un traitement des données dans la fonction ;</li>
+<li>renvoie une page au navigateur.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  6: Un service Web (activité pages 196-197 du manuel)</p>
+<ul>
+<li>Télécharger le programme <code>serveur.py</code> (un lien est donné en haut de la page 196) ainsi que les autres fichiers fournis.</li>
+<li>Résumé de ce qu'il faut faire pour lancer le serveur (une fois que les fichiers sont bien complétés conformément à ce qui est demandé dans l'activité): ouvrir fichier <code>dynserveur.py</code> dans Spyder pour l'exécuter pour démarrer le serveur (il ne faudra jamais modifier le fichier <code>serveur.py</code> par contre les autres fichiers pourront si besoin être modifiés). Ouvrir <code>localhost:8000</code> dans un navigateur.</li>
+</ul>
+</div>
+<div class="admonition done">
+<p class="admonition-title">Utiliser un template pour générer une page HTML</p>
+<ul>
+<li>
+<p>Jinja2 est ce que l’on appelle un moteur de templates (patrons en français…). L'intérêt de Jinja2 est qu’il est écrit en Python et très fortement intégré à ce langage. </p>
+</li>
+<li>
+<p>Les moteurs de templates fonctionnent quasiment tous de la même manière : à partir d’un patron (template), on effectue le rendu en transmettant un contexte.</p>
+</li>
+<li>
+<p>Un patron est constitué de parties fixes et de parties variables ; Jinja2 fournit même des boucles et des tests. Il est ainsi possible de générer différentes sorties avec un même patron en fonction du contexte.</p>
+</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  7</p>
+<details>
+<summary>exercice 17 page 212: Boite à secrets (requette POST)</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Quelques indications supplémentaires</label><label for="__tabbed_8_2">Correction <code>secret.html</code></label><label for="__tabbed_8_3">Correction <code>secret.py</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Télécharger les 2 fichiers qui sont fournis avec l’exercice.</li>
+<li>Les renommer <code>serveur.py</code> et <code>secret.py</code></li>
+<li>Dans le fichier <code>secret.py</code> rechercher l'instruction <code>Pagedynamique</code> pour déterminer le nom de l'action qu'il faudra utiliser dans le formulaire.</li>
+<li>Créer un fichier secret.html contenant un formulaire avec notamment: <ul>
+<li>une zone de saisie de type <code>text</code> pour le nom ;</li>
+<li>une zone de saisie de type <code>password</code> pour le mot de passe ;</li>
+<li>une zone de saisie de type <code>text</code> pour le secret ;</li>
+<li>un bouton pour envoyer le formulaire.</li>
+</ul>
+</li>
+<li>Dans le fichier <code>secret.py</code> rechercher le nom des clés utilisées par le dictionnaire <code>secrets</code> pour déterminer l'attribut <code>name</code> des différentes zones de saisie.</li>
+<li>Dans ce même fichier html, rajouter le code jinja2 pour permettre d'afficher l'ancien message secret envoyé par le serveur. </li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">HTML</span><pre><span></span><code><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span> 
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#39;utf-8&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Boite à secrets est une page dynamique<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Boîte à secrets<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#39;/secret&#39;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#39;POST&#39;</span><span class="p">&gt;</span>
+      Nom :                  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text&#39;</span>     <span class="na">name</span><span class="o">=</span><span class="s">&#39;nom&#39;</span><span class="p">&gt;</span>        <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      Mot de passe :         <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;password&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;motdepasse&#39;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      Secret à enregistrer : <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text&#39;</span>     <span class="na">name</span><span class="o">=</span><span class="s">&#39;secret&#39;</span><span class="p">&gt;</span>     <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+                             <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;submit&#39;</span>   <span class="na">value</span><span class="o">=</span><span class="s">&#39;Valider&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{message}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">serveur</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_template</span><span class="p">,</span> <span class="n">render</span><span class="p">,</span> <span class="n">OK</span><span class="p">,</span> <span class="n">pageDynamique</span><span class="p">,</span> <span class="n">lancerServeur</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="c1"># dictionnaire des secrets : la clé est le nom,</span>
+<span class="c1">#                            la valeur est un tuple (mot de passe, secret)</span>
+<span class="n">secrets</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">secret</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="nb">vars</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Fonction secret appelée&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">vars</span><span class="p">)</span>
+    <span class="c1"># extraire les valeurs du formulaire</span>
+    <span class="c1"># vars est un dictionaire</span>
+    <span class="n">nom</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>  <span class="c1"># valeur pour la clé &#39;nom&#39;</span>
+    <span class="n">motdepasse</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;motdepasse&#39;</span><span class="p">]</span> <span class="c1"># valeur pour la clé &#39;motdepasse&#39; </span>
+    <span class="n">secret</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;secret&#39;</span><span class="p">]</span> <span class="c1"># valeur pour la clé &#39;secret&#39;</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">if</span> <span class="n">nom</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">secrets</span><span class="p">:</span>
+        <span class="c1"># créer un nouveau secret pour ce nom </span>
+        <span class="n">secrets</span><span class="p">[</span><span class="n">nom</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">motdepasse</span><span class="p">,</span> <span class="n">secret</span><span class="p">)</span> 
+        <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;Secret enregistré&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># récuperer le contenu du secret</span>
+        <span class="p">(</span><span class="n">mdp</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span> <span class="o">=</span> <span class="n">secrets</span><span class="p">[</span><span class="n">nom</span><span class="p">]</span>
+        <span class="c1"># vérifier si le mot de passe est corret</span>
+        <span class="k">if</span> <span class="n">mdp</span> <span class="o">!=</span> <span class="n">motdepasse</span><span class="p">:</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;mot de passe incorrect !&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># révéler l&#39;ancien secret (si vide) </span>
+            <span class="k">if</span> <span class="n">secret</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;ancien secret : &#39;</span> <span class="o">+</span> <span class="n">s</span>
+            <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># enregistrer le nouveau secret (si non vide)</span>
+                <span class="n">secrets</span><span class="p">[</span><span class="n">nom</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">motdepasse</span><span class="p">,</span> <span class="n">secret</span><span class="p">)</span> <span class="c1"># écrase l&#39;ancien secret</span>
+    <span class="c1"># retourner la page avec le message</span>
+    <span class="n">template</span> <span class="o">=</span> <span class="n">get_template</span><span class="p">(</span><span class="s1">&#39;secret.html&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">OK</span><span class="p">(</span><span class="n">render</span><span class="p">(</span><span class="n">template</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="n">msg</span><span class="p">}))</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">affichage_initial</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="nb">vars</span><span class="p">):</span>
+    <span class="c1"># Affiche la page secret.html avec {{ message }} = &#39;&#39;</span>
+    <span class="n">template</span> <span class="o">=</span> <span class="n">get_template</span><span class="p">(</span><span class="s1">&#39;secret.html&#39;</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">return</span> <span class="n">OK</span><span class="p">(</span><span class="n">render</span><span class="p">(</span><span class="n">template</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="n">msg</span><span class="p">}))</span>
+
+<span class="n">pageDynamique</span><span class="p">(</span><span class="s1">&#39;/secret&#39;</span><span class="p">,</span> <span class="n">secret</span><span class="p">)</span> <span class="c1"># appel par submit du formulaire</span>
+<span class="n">pageDynamique</span><span class="p">(</span><span class="s1">&#39;/secret.html&#39;</span><span class="p">,</span> <span class="n">affichage_initial</span><span class="p">)</span> <span class="c1"># ouverture initiale de la page</span>
+
+<span class="n">lancerServeur</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</details>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  8</p>
+<details>
+<summary>Plan de classe</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Énoncé</label><label for="__tabbed_9_2">Indications</label><label for="__tabbed_9_3">Correction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<details>
+<summary>Ressources autorisées:</summary>
+<ul>
+<li>Ce cours</li>
+<li>Votre manuel sur Correlyce</li>
+<li>Vous avez également le droit de consulter les différents fichiers que vous avez déjà utilisés dans le cadre des exemples et exercices du cours.</li>
+</ul>
+</details>
+<ol>
+<li>Créer un fichier <code>formulaire.html</code> contenant le code permettant d'afficher le plan de classe vierge suivant:
+   <img alt="" class="center" src="../data/planclasse.png" />
+   Utiliser le style <code>css</code> suivant pour la mise en forme:
+   <div class="highlight"><span class="filename">CSS</span><pre><span></span><code><span class="nt">html</span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h1</span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="w">    </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span><span class="p">{</span>
+<span class="w">    </span><span class="k">margin-left</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="k">margin-right</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">th</span><span class="o">,</span><span class="w"> </span><span class="nt">td</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>Rajouter le code nécessaire pour obtenir le formulaire suivant:
+   <img alt="" class="center" src="../data/Formulaire_eleve.png" /></li>
+<li>Créer un fichier <code>dynserveur.py</code> et ajouter un patron au fichier <code>formulaire.html</code> pour remplir les cases du plan de classe au fur et à mesure que des places sont attribuées aux élèves. Le code affichera «place libre» dans les cases restant libres. Enregistrer le fichier html modifié sous un nouveau nom: <code>patron.html</code>.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Créer 4 listes nommées <code>rang1</code>, <code>rang2</code>, <code>rang3</code>, et  <code>rang4</code> dans  le script <code>dynserveur.py</code>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="n">pl</span> <span class="o">=</span> <span class="s2">&quot;place libre&quot;</span>
+<span class="n">rang1</span> <span class="o">=</span> <span class="p">[</span><span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">]</span>  
+</code></pre></div></li>
+<li>Écrire la fonction <code>traitement1</code> qui terminera par:
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code>   <span class="k">return</span> <span class="n">OK</span><span class="p">(</span><span class="n">render</span><span class="p">(</span><span class="n">template</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;rang1&#39;</span><span class="p">:</span> <span class="n">rang1</span><span class="p">,</span>
+                               <span class="s1">&#39;rang2&#39;</span><span class="p">:</span> <span class="n">rang2</span><span class="p">,</span>
+                               <span class="s1">&#39;rang3&#39;</span><span class="p">:</span> <span class="n">rang3</span><span class="p">,</span>
+                               <span class="s1">&#39;rang4&#39;</span><span class="p">:</span> <span class="n">rang4</span><span class="p">}))</span>
+</code></pre></div></li>
+<li>Utiliser les 4 listes pour stocker le nom des élèves à l'endroit le plus logique au fur et à mesure de leur réception par le serveur. Prévoir une alerte si un emplacement était déjà occupé.</li>
+<li>Utiliser la fonction suivante pour tester dans la console que votre code traite bien les données envoyées par le formulaire.
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">affiche_plan_dans_console</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Affiche le plan de classe dans la console</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;rang1:&quot;</span><span class="p">,</span> <span class="n">rang1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;rang2:&quot;</span><span class="p">,</span> <span class="n">rang2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;rang3:&quot;</span><span class="p">,</span> <span class="n">rang3</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;rang4:&quot;</span><span class="p">,</span> <span class="n">rang4</span><span class="p">)</span>
+</code></pre></div></li>
+<li>Comme dans l'activité pages 196-197 du manuel utiliser des boucles dans le patron pour afficher chacun des rangs. </li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>
+<p>fichier <code>formulaire.html</code>
+<div class="highlight"><span class="filename">HTML</span><pre><span></span><code><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#39;utf-8&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Formulaire de base<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;style.css&#39;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/css&#39;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Plan de classe<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>info 2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne A<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne B<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne C<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne D<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne E<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Rang 1<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Rang 2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Rang 3<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Rang 4<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Formulaire élève<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#39;/eleve&#39;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#39;POST&#39;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zone1&#39;</span><span class="p">&gt;</span>Nom:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zone1&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;nom&#39;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zone2&#39;</span><span class="p">&gt;</span>Prénom:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zone2&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;prenom&#39;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Colonne:
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneA&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;A&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneA&#39;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneB&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;B&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneB&#39;</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneC&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;C&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneC&#39;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneD&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;D&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneD&#39;</span><span class="p">&gt;</span>D<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneE&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;E&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneE&#39;</span><span class="p">&gt;</span>E<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneRang&#39;</span><span class="p">&gt;</span>Rang:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;number&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneRang&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;rang&#39;</span> <span class="na">min</span><span class="o">=</span><span class="s">&#39;1&#39;</span> <span class="na">max</span><span class="o">=</span><span class="s">&#39;4&#39;</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>     
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;submit&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;Envoyer&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>fichier <code>dynserveur.py</code>
+<div class="highlight"><span class="filename"><span style="color:black">🐍 Script Python</span></span><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">serveur</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_template</span><span class="p">,</span> <span class="n">render</span><span class="p">,</span> <span class="n">OK</span><span class="p">,</span> <span class="n">Redirect</span><span class="p">,</span> <span class="n">pageDynamique</span><span class="p">,</span> <span class="n">lancerServeur</span>
+
+<span class="c1"># Traitement des données</span>
+<span class="c1"># Créer 4 listes nommées rang1, rang2, rang3 et rang4</span>
+<span class="c1"># Chaque rang comporte 5 places initialement libres donc</span>
+<span class="n">pl</span> <span class="o">=</span> <span class="s1">&#39;place libre&#39;</span>
+<span class="n">rang1</span> <span class="o">=</span> <span class="p">[</span><span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">]</span>
+<span class="n">rang2</span> <span class="o">=</span> <span class="p">[</span><span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">]</span> 
+<span class="n">rang3</span> <span class="o">=</span> <span class="p">[</span><span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">]</span>
+<span class="n">rang4</span> <span class="o">=</span> <span class="p">[</span><span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="n">pl</span><span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">traitement</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="nb">vars</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;Traitement du formulaire&#39;&#39;&#39;</span>
+    <span class="c1"># Vérifions la récupération des données par le serveur</span>
+    <span class="c1"># Pour cela, affichons dans la console python le dictionnaire </span>
+    <span class="c1"># envoyé par le formulaire.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Le formulaire à envoyé:&#39;</span><span class="p">,</span><span class="nb">vars</span><span class="p">)</span>
+
+    <span class="c1"># On peut prévoir de contrôler la validité des données transmises </span>
+    <span class="n">colonne_valide</span><span class="p">,</span> <span class="n">rang_valide</span><span class="p">,</span> <span class="n">place_disponible</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span>
+
+    <span class="c1"># Traitement des données</span>
+    <span class="c1"># Utilisons les 4 listes pour stocker le nom des élèves à l&#39;endroit le</span>
+    <span class="c1"># plus logique au fur et à mesure de leur réception par le serveur.</span>
+
+    <span class="c1"># Détermination de l&#39;index de liste suivant la colonne</span>
+    <span class="k">if</span>   <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;colonne&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;colonne&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;colonne&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="k">elif</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;colonne&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;colonne&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;E&#39;</span><span class="p">:</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="k">else</span><span class="p">:</span> <span class="n">colonne_valide</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="c1"># remarque: colonne_valide n&#39;est pas exploité mais pourrait l&#39;être </span>
+    <span class="k">if</span>   <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;rang&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;1&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">rang1</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">==</span><span class="n">pl</span><span class="p">:</span> <span class="n">rang1</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span>  <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">place_disponible</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">elif</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;rang&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;2&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">rang2</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">==</span><span class="n">pl</span><span class="p">:</span> <span class="n">rang2</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span>  <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">place_disponible</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">elif</span>   <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;rang&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;3&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">rang3</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">==</span><span class="n">pl</span><span class="p">:</span> <span class="n">rang3</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span>  <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">place_disponible</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">elif</span>   <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;rang&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;4&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">rang4</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">==</span><span class="n">pl</span><span class="p">:</span> <span class="n">rang4</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span>  <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">place_disponible</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">else</span><span class="p">:</span> <span class="n">rang_valide</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="c1"># remarque: rang_valide n&#39;est pas exploité mais pourrait l&#39;être</span>
+
+    <span class="c1"># On peut prévoir d&#39;afficher une alerte dans la console</span>
+    <span class="c1"># si un emplacement était déjà occupé</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">place_disponible</span><span class="p">:</span>
+        <span class="n">col</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;colonne&#39;</span><span class="p">]</span>
+        <span class="n">rg</span>  <span class="o">=</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;rang&#39;</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Alerte: vérifier la place </span><span class="si">{</span><span class="n">col</span><span class="si">}{</span><span class="n">rg</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Afficher le plan dans la console</span>
+    <span class="c1"># permet de vérifier que la gestion des 4 listes est correcte</span>
+    <span class="n">affiche_plan_dans_console</span><span class="p">()</span>
+    <span class="n">cle</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;colonne&#39;</span><span class="p">]</span><span class="o">+</span><span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;rang&#39;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cle</span><span class="p">)</span>
+
+
+    <span class="c1"># Si c&#39;est le cas on peut renvoyer les listes vers la page html</span>
+    <span class="n">template</span> <span class="o">=</span> <span class="n">get_template</span><span class="p">(</span><span class="s1">&#39;patron.html&#39;</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rang1&#39;</span><span class="p">:</span> <span class="n">rang1</span><span class="p">,</span>
+           <span class="s1">&#39;rang2&#39;</span><span class="p">:</span> <span class="n">rang2</span><span class="p">,</span>
+           <span class="s1">&#39;rang3&#39;</span><span class="p">:</span> <span class="n">rang3</span><span class="p">,</span>
+           <span class="s1">&#39;rang4&#39;</span><span class="p">:</span> <span class="n">rang4</span><span class="p">}</span>
+    <span class="k">return</span> <span class="n">OK</span><span class="p">(</span><span class="n">render</span><span class="p">(</span><span class="n">template</span><span class="p">,</span> <span class="n">msg</span><span class="p">))</span>
+
+<span class="n">pageDynamique</span><span class="p">(</span><span class="s1">&#39;/eleve&#39;</span><span class="p">,</span> <span class="n">traitement</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">affiche_plan_dans_console</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Affiche le plan de classe dans la console</span>
+<span class="sd">    étape intermédiaire de vérification</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;rang1:&#39;</span><span class="p">,</span> <span class="n">rang1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;rang2:&#39;</span><span class="p">,</span> <span class="n">rang2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;rang3:&#39;</span><span class="p">,</span> <span class="n">rang3</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;rang4:&#39;</span><span class="p">,</span> <span class="n">rang4</span><span class="p">)</span>
+
+<span class="c1"># Lancer le serveur</span>
+<span class="n">lancerServeur</span><span class="p">()</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>fichier <code>patron.html</code>
+<div class="highlight"><span class="filename">HTML</span><pre><span></span><code><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#39;utf-8&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Formulaire et plan<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;style.css&#39;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/css&#39;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Plan de classe<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>info 2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne A<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne B<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne C<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne D<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Colonne E<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Rang 1<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        {%for eleve in rang1%}
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{eleve}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        {% endfor %}
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Rang 2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        {%for eleve in rang2%}
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{eleve}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        {% endfor %}
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Rang 3<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        {%for eleve in rang3%}
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{eleve}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        {% endfor %}
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Rang 4<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        {%for eleve in rang4%}
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{eleve}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        {% endfor %}
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Formulaire élève<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#39;/eleve&#39;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#39;POST&#39;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zone1&#39;</span><span class="p">&gt;</span>Nom:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zone1&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;nom&#39;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zone2&#39;</span><span class="p">&gt;</span>Prénom:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zone2&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;prenom&#39;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Colonne:
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneA&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;A&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneA&#39;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneB&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;B&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneB&#39;</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneC&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;C&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneC&#39;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneD&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;D&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneD&#39;</span><span class="p">&gt;</span>D<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneE&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;colonne&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;E&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneE&#39;</span><span class="p">&gt;</span>E<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;zoneRang&#39;</span><span class="p">&gt;</span>Rang:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;number&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;zoneRang&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;rang&#39;</span> <span class="na">min</span><span class="o">=</span><span class="s">&#39;1&#39;</span> <span class="na">max</span><span class="o">=</span><span class="s">&#39;4&#39;</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;submit&#39;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#39;Envoyer&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Ne pas oublier le fichier <code>style.css</code></p>
+</li>
+<li>
+<p>Tous ces fichiers doivent être dans un même dossier qui doit également contenir le fichier <code>serveur.py</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</details>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  9</p>
+<details>
+<summary>Résolutions d'équations du second degré</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Énoncé</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Réaliser un serveur permettant la résolution d'équations du second degré. </li>
+</ul>
+</div>
+</div>
+</div>
+</details>
+</div>
+<script src="https://raoulhatterer.github.io/pnsi//js/material-tabbed-fix.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+    <script src="../../../js/ide.js"></script> 
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "toc.integrate", "header.autohide", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../xtra/config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../xtra/interpreter.js"></script>
+      
+    
+  </body>
+</html>
