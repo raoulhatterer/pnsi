@@ -522,7 +522,7 @@ Exemple avec le logo, élément unique, que l'on va "marquer" grâce à l'attrib
 [Voir ici pour créer des bordures](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061337-creez-des-bordures-et-des-ombres)
 
 
-### 2.9 Faites votre mise en page avec Flexbox
+### 2.9 Mise en page avec Flexbox
 
 Pour faire de la mise en page avec Flexbox, il faut :
 
@@ -534,20 +534,19 @@ Pour faire de la mise en page avec Flexbox, il faut :
 <div class="element element3">Élément 3</div>
 </div>
 ```
-2. Aligner les éléments d'un conteneur avec  `display: flex ;`
-3. Donner  une direction aux éléments avec la propriété  `flex-direction`
+2. Aligner les éléments d'un conteneur avec  `display: flex ;` et donner  une direction aux éléments avec la propriété  `flex-direction`
 ```css
 .container {
     display: flex;
     flex-direction: column;
 }
 ```
-Cette propriété CSS peut prendre les valeurs suivantes :
+   Cette propriété CSS peut prendre les valeurs suivantes :
 
-- `row`  : organisés sur une ligne (par défaut) ;
-- `column`  : organisés sur une colonne ;
-- `row-reverse`  : organisés sur une ligne, mais en ordre inversé ;
-- `column-reverse`  : organisés sur une colonne, mais en ordre inversé.
+   - `row`  : organisés sur une ligne (par défaut) ;
+   - `column`  : organisés sur une colonne ;
+   - `row-reverse`  : organisés sur une ligne, mais en ordre inversé ;
+   - `column-reverse`  : organisés sur une colonne, mais en ordre inversé.
 
 
 ### 2.10 Sélectionner la bonne balise
