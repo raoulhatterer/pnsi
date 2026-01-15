@@ -534,7 +534,7 @@ Pour faire de la mise en page avec Flexbox, il faut :
 <div class="element element3">Élément 3</div>
 </div>
 ```
-2. Aligner les éléments d'un conteneur avec  `display: flex ;` et donner  une direction aux éléments avec la propriété  `flex-direction`
+2. Aligner les éléments d'un conteneur avec  `display: flex ;` et leur donner une direction avec la propriété  `flex-direction`
 ```css
 .container {
     display: flex;
@@ -543,11 +543,12 @@ Pour faire de la mise en page avec Flexbox, il faut :
 ```
    Cette propriété CSS peut prendre les valeurs suivantes :
 
-   - `row`  : organisés sur une ligne (par défaut) ;
-   - `column`  : organisés sur une colonne ;
-   - `row-reverse`  : organisés sur une ligne, mais en ordre inversé ;
-   - `column-reverse`  : organisés sur une colonne, mais en ordre inversé.
+    - `row`  : organisés sur une ligne (par défaut) ;
+    - `column`  : organisés sur une colonne ;
+    - `row-reverse`  : organisés sur une ligne, mais en ordre inversé ;
+    - `column-reverse`  : organisés sur une colonne, mais en ordre inversé.
 
+Le jeu [Flexbox Froggy](https://flexboxfroggy.com/#fr).
 
 ### 2.10 Sélectionner la bonne balise
 
