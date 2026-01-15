@@ -203,6 +203,16 @@
         - Deux élèves ont encore à rattraper le dernier DS.   
 
 
+!!! done "séance 29 (mardi 13/01/2026):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML et le CSS).
+
+!!! done "séance 30 (jeudi 15/01/2026):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    ??? note "Devoirs"
+        - Finir votre site personnel et le déposer sur Capytale (Exercice5 HTML code 2808-2730306).
+        - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML et le CSS en vue du prochain contrôle).
 
 
 
