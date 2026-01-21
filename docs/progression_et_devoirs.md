@@ -215,6 +215,23 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML et le CSS en vue du prochain contrôle).
 
 
+!!! done "séance 31 (mardi 20/01/2026):"
+    - Correction du contrôle n°5 sur les listes
+    - Correction du site personnel qui était à déposer sur Capytale (Exercice5 HTML code 2808-2730306).
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML et le CSS en vue du prochain contrôle).
+        - Le prochain cours (du jeudi 22/01/2026) est annulé pour cause de présentation de la spécialité NSI aux élèves de seconde.
+        
+!!! done "séance 32 (jeudi 22/01/2026):"
+    - Séance annulée  pour cause de présentation de la spécialité NSI aux élèves de seconde.
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML et le CSS en vue du prochain contrôle).
+
+    
+
+        
+
+
 
 
 
