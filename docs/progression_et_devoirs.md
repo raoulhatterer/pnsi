@@ -227,6 +227,19 @@
     ??? note "Devoirs"
         - Réviser régulièrement les cours et les exercices déjà étudiés (notamment ce qui a été vu sur le HTML et le CSS en vue du prochain contrôle).
 
+!!! done "séance 33 (mardi 27/01/2026):"
+    - Contrôle sur le HTML et le CSS
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+
+!!! done "séance 34 (jeudi 29/01/2026):"
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_2:_Pages_web_Dynamiques/cours.md)
+    - le Java-script
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+        - Faire le chalenge "Passe ton hack".
+
     
 
         
