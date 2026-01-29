@@ -235,10 +235,10 @@
 
 !!! done "séance 34 (jeudi 29/01/2026):"
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_2:_Pages_web_Dynamiques/cours.md)
-    - le Java-script
+    - les bases de Java-script
     ??? note "Devoirs"
         - Réviser régulièrement les cours et les exercices déjà étudiés.
-        - Faire le chalenge "Passe ton hack".
+        - Faire le chalenge "Passe ton hack (ouvert du 19 janvier au 6 février 2026)".
 
     
 
@@ -251,37 +251,7 @@
 {# 
      
 
-        - Avoir trouvé un nom d'équipe pour le chalenge "Passe ton hack d'abord"
-        
 
-
-
-    
-
-    ??? note "Devoirs"
-        
-
-
-    ??? note "Devoirs"
-        - [Exercices sur les listes](T2_Representation_des_donnees/Chapitre_1:_Listes/exercices.md) à déposer dans votre répertoire personnel sur le site collaboratif.
-        - Préparer le contrôle de mardi prochain (sur les listes et tout ce qui précède).
-
-
-    - Contrôle portant sur les listes
-    ??? note "Devoirs"
-        - Apprendre le début du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) (jusqu'au premier Quiz).
-
-    - HTML et CSS
-    - Apprendre la suite du cours [créez votre site web en HTML5 sur OPENCLASSROOMS](https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3) portant sur le CSS (donc jusqu'au second Quiz).
-    - Exercices 2 à 4 du cours
-    ??? note "Devoirs"
-        - S'ils n'ont pas été finis en cours, finir exercices 2 à 4. 
-        - Faire l'exercice 5 et publier ce travail sur Capytale (Exercice5 HTML code 2808-2730306).
-        - Réviser HTML CSS pour un contrôle à la rentrée
-
-
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
-    - Les bases de JavaScript
     - Exercices 1 à  3
     ??? note "Devoirs"
         - Exercice 4 sur le javascript
