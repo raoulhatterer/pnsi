@@ -240,6 +240,14 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés.
         - Faire le chalenge "Passe ton hack (ouvert du 19 janvier au 6 février 2026)".
 
+
+!!! done "séance 35 (mardi 03/02/2026):"
+    - rattrapage du contrôle pour les absents
+    - chalenge "Passe ton hack (ouvert du 19 janvier au 6 février 2026)".
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+        - Faire le chalenge "Passe ton hack (ouvert du 19 janvier au 6 février 2026)".
+
     
 
         
