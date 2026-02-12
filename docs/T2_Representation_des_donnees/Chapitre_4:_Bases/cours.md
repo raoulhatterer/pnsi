@@ -99,6 +99,17 @@ Donc $243_{10}=11110011_2$
             mot = '0b'+ mot
             return mot
         ```
+        ou bien  
+        ``` python linenums='1'
+        def binaire(n):
+            mot = ''
+            while n > 0:
+                quotient = n//2
+                reste = n%2
+                mot = str(reste) + mot
+                n = quotient
+            return '0b'+ mot
+        ```
         ")}}
 
 ## 2. Le système hexadécimal 
