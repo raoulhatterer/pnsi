@@ -248,7 +248,31 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés.
         - Faire le chalenge "Passe ton hack (ouvert du 19 janvier au 6 février 2026)".
 
+ 
+!!! done "séance 36 (jeudi 05/02/2026):"
+    - correction du contrôle
+    - chalenge "Passe ton hack (ouvert du 19 janvier au 6 février 2026)".
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+        - Faire le chalenge "Passe ton hack (ouvert du 19 janvier au 6 février 2026)".
+
     
+ 
+!!! done "séance 37 (mardi 10/02/2026):"
+    - T2 > Chap 4 Les bases
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+  
+!!! done "séance 38 (jeudi 12/02/2026):"
+    - T2 > Chap 5 Les booléens
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+    
+   
+
+           
 
         
 
