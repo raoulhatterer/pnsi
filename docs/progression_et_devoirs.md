@@ -265,7 +265,7 @@
 
   
 !!! done "séance 38 (jeudi 12/02/2026):"
-    - T2 > Chap 5 Les booléens
+    - T2 > Chap 5 Les booléens (exercices 1 à 4)
     ??? note "Devoirs"
         - Réviser régulièrement les cours et les exercices déjà étudiés.
 
