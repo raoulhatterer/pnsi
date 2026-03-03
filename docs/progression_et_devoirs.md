@@ -269,6 +269,13 @@
     ??? note "Devoirs"
         - Réviser régulièrement les cours et les exercices déjà étudiés.
 
+!!! done "séance 39 (mardi 03/03/2026):"
+    - T2 > Chap 5 Les booléens (fin du cours)
+    - Énigme à la recherche du personnage mystère
+    ??? note "Devoirs"
+        - Terminer l'énigme à la recherche du personnage mystère.
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
     
    
 
