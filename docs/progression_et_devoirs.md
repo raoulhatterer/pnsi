@@ -279,6 +279,16 @@
     
    
 
+!!! done "séance 40 (jeudi 05/03/2026):"
+    - Correction de l'Énigme à la recherche du personnage mystère
+    - Architecture d'un réseau
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+    
+   
+
+         
            
 
         
