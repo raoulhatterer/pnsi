@@ -283,6 +283,7 @@
     - Correction de l'Énigme à la recherche du personnage mystère
     - Architecture d'un réseau
     ??? note "Devoirs"
+        - Finir l'exercice 2
         - Réviser régulièrement les cours et les exercices déjà étudiés.
 
     
