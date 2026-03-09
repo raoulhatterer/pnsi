@@ -6,6 +6,9 @@
 
 ## 1. Quelle est la différence entre Internet et le Web ?
 
+
+![](data/i_did_not.png){: .center width=50%}
+
 ### 1.1 Internet est l'infrastructure réseau
 
 Internet désigne l'infrastructure technique mondiale qui permet la communication entre ordinateurs. C'est le support physique et logiciel sur lequel reposent tous les échanges de données.
@@ -51,7 +54,7 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
     - Les autres services (email, messagerie, jeux...) utilisent aussi Internet, mais sans passer par votre navigateur.
 
 
-
+![](data/i_invented.png){: .center width=50%}
 
 
 
@@ -62,7 +65,7 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
 Les bits transmis d'un ordinateur à un autre contiennent, en plus des données _utiles_ (le mot «bonjour» dans un email), une multitude de données (tout aussi utiles) qui vont aider à l'acheminement de ces bits au bon endroit, puis au bon ordinateur, puis au bon logiciel. 
 Les différents protocoles qui régissent cette transmission sont regroupés dans ce qui est appelé un **modèle**. Deux modèles synthétisent ces protocoles :
 
-- le **modèle Internet** (ou modèle **TCP/IP**, 1974), organisé en **4** couches : liaison, réseau, transport, application.
+- le **modèle Internet** (ou modèle **TCP/IP**, naissance conceptuelle en 1974), organisé en **4** couches : liaison, réseau, transport, application.
 - le **modèle OSI** (Open Systems Interconnection, 1984), organisé en **7** couches : physique, liaison, réseau, transport, session, présentation,application.
 
 
@@ -84,9 +87,38 @@ Lorsque ce même message sera réceptionné, les transformations seront effectu�
 
 
 !!! info "La suite des protocoles Internet"
-    - C'est l'ensemble des protocoles utilisés pour le transfert des données sur Internet. Elle est aussi appelée suite TCP/IP, d'après le nom de ses deux premiers protocoles : TCP (de l'anglais Transmission Control Protocol) et IP (de l'anglais Internet Protocol). Ils ont été inventés en 1974 par Vinton G. Cerf et Bob Kahn.
+    - C'est l'ensemble des protocoles utilisés pour le transfert des données sur Internet. Elle est aussi appelée suite TCP/IP, d'après le nom de ses deux premiers protocoles : TCP (de l'anglais Transmission Control Protocol) et IP (de l'anglais Internet Protocol). Ils ont été inventés de façon conceptuelle en 1974 par **Vinton G. Cerf** et **Bob Kahn**.
 
-![](data/i_did_not.png){: .center width=50%}
+
+![image](data/Cerf_Kahn.jpg){: .center width=40% .rounded-corners}
+
+
+??? info "Petite chronologie pour clarifier"
+
+    # 1960-1969 : La préhistoire
+
+    - 1962-1968 : Théorie de la commutation de paquets (Leonard Kleinrock, Paul Baran, Donald Davies)
+    - 1969 : Création d'ARPANET (4 nœuds : UCLA, Stanford, UCSB, Utah)
+
+    # 1970-1973 : Les protocoles propriétaires
+
+    - ARPANET utilise le NCP (Network Control Program), son propre protocole
+    - D'autres réseaux existent : ALOHAnet (Hawaï), CYCLADES (France), Telenet (commercial)
+
+    # 1974 : La naissance conceptuelle
+
+    - Publication de l'article sur TCP par Cerf et Kahn
+    - Mais TCP/IP n'est pas encore implémenté !
+
+    # 1983 : La vraie naissance d'Internet
+
+    - Le 1er janvier 1983, ARPANET bascule officiellement de NCP vers TCP/IP
+    - C'est là qu'Internet naît vraiment comme interconnexion de réseaux hétérogènes
+
+
+    Avant TCP/IP, chaque réseau parlait son propre langage. Ces réseaux ne pouvaient pas se parler entre eux. Pour interconnecter des réseaux différents, il fallait un protocole commun : TCP/IP.
+
+
 
 
 - **couches 7-6-5  — couches application-présentation-session :** 
@@ -99,7 +131,7 @@ Ces couches (réunies dans le modèle Internet en une couche unique «applicatio
     - Le web a été inventé en 1989 par le physicien britannique Tim Berners-Lee, qui travaillait alors au CERN (Organisation européenne pour la recherche nucléaire) en Suisse. Berners-Lee a développé le langage HTML (Hypertext Markup Language) pour créer des pages web et le protocole HTTP (Hypertext Transfer Protocol) pour permettre la transmission de ces pages sur Internet.
 
 
-![](data/i_invented.png){: .center width=50%}
+
 
 !!! info "File Transfer Protocol (protocole de transfert de fichier), ou FTP"
     - Protocole de communication destiné au partage de fichiers sur un réseau TCP/IP. 

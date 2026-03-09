@@ -17,6 +17,13 @@
 }
 
 
+.rounded-corners {
+    border-radius: 15px;  /* Ajustez la valeur selon vos préférences */
+    overflow: hidden;      /* Pour s'assurer que l'image reste dans les limites arrondies */
+}
+
+
+
 th {
     border: 1px solid var(--md-typeset-table-color);
     border-spacing: 0;
