@@ -2,7 +2,60 @@
 
 ![image](data/BO.png){: .center}
 
-## 1. Les modèles internet en couches
+
+
+## 1. Quelle est la différence entre Internet et le Web ?
+
+### 1.1 Internet est l'infrastructure réseau
+
+Internet désigne l'infrastructure technique mondiale qui permet la communication entre ordinateurs. C'est le support physique et logiciel sur lequel reposent tous les échanges de données.
+
+#### Internet c'est :
+
+- Un réseau de réseaux interconnectés à l'échelle planétaire
+- Une infrastructure physique : câbles sous-marins, routeurs, satellites, fibres optiques
+- Un ensemble de protocoles (dont TCP/IP) qui permettent aux données de circuler
+- Le "système routier" numérique qui relie les ordinateurs entre eux
+
+Petite histoire : Les prémices d'Internet remontent aux années 1960 avec ARPANET, mais le véritable Internet (basé sur TCP/IP) est né en 1983.
+
+### 1.2 Le Web est un service parmi d'autres sur Internet
+
+Le World Wide Web (www) est un service de contenu qui utilise Internet comme support. Il a été inventé en 1989 par Tim Berners-Lee au CERN.
+
+#### Le Web c'est :
+
+- Un système de pages reliées entre elles par des hyperliens
+- Les sites web que vous consultez avec un navigateur (Chrome, Firefox...)
+- Des adresses URL commençant par `http://` ou `https://`
+- Un service qui utilise le protocole HTTP/HTTPS pour transférer des pages
+
+#### D'autres services cohabitent sur Internet
+
+Le Web est le service le plus visible, mais Internet permet bien d'autres usages :
+
+| Service                | Protocole         | Exemple                     |
+|------------------------|-------------------|-----------------------------|
+| Courrier électronique  | SMTP, POP, IMAP   | Gmail, Outlook              |
+| Messagerie instantanée | Protocoles variés | WhatsApp, Messenger         |
+| Transfert de fichiers  | FTP               | FileZilla                   |
+| Jeux en ligne          | Multiples         | Fortnite, World of Warcraft |
+| Téléphonie             | VoIP              | Skype, Zoom                 |
+
+!!! warning "Attention à ne pas confondre"
+    Le Web est aujourd'hui tellement populaire que beaucoup utilisent les termes "Internet" et "Web" comme des synonymes. C'est une erreur ! Le Web n'est qu'un locataire parmi d'autres dans l'immeuble Internet.
+
+!!! info "En résumé"
+    - Internet c'est l'infrastructure (le réseau physique et ses protocoles).
+    - Le Web c'est ce que vous voyez dans votre navigateur (les pages et les sites).
+    - Les autres services (email, messagerie, jeux...) utilisent aussi Internet, mais sans passer par votre navigateur.
+
+
+
+
+
+
+## 2. Les modèles internet en couches
 
 
 
@@ -96,9 +149,9 @@ Ce principe fondateur, actuellement menacé par certains acteurs politiques et i
 
 
 
-## 2. Observation des trames avec Filius
+## 3. Observation des trames avec Filius
 
-### 2.1. Ping à travers un switch
+### 3.1. Ping à travers un switch
 Vous pouvez télécharger le fichier [ping_switch.fls](data/ping_switch.fls).
 
 - Relions une machine ```192.168.0.10``` d'adresse MAC ```BC:81:81:42:9C:31```  à une machine ```192.168.0.11``` d'adresse MAC ```2A:AB:AC:27:D6:A7``` à travers un switch.  
@@ -172,7 +225,7 @@ Schématisons cette trame Ethernet (couche 2 du modèle OSI) :
 
 
 
-### 2.2. Ping à travers un routeur
+### 3.2. Ping à travers un routeur
 
 Vous pouvez télécharger le fichier [ping_routeur.fls](data/ping_routeur.fls).
 
@@ -244,7 +297,7 @@ On peut observer dans Filius cette trame, en se positionnant sur l'interface ```
 En suivant le même principe, la machine ```192.168.1.1 ``` pourra envoyer son _pong_.
 
 
-### 2.3. Exercice
+### 3.3. Exercice
 
 !!! note "Exercice de bac"
     === "Énoncé"
@@ -273,35 +326,35 @@ En suivant le même principe, la machine ```192.168.1.1 ``` pourra envoyer son _
 
 
 
-## 3. Protocole du bit alterné
+## 4. Protocole du bit alterné
 
 Ce protocole est un exemple simple de fiabilisation du transfert de données. 
 
-### 1. Contexte
+### 4.1. Contexte
 
 - Alice veut envoyer à Bob un message M, qu'elle a prédécoupé en sous-messages M0, M1, M2,...
 - Alice envoie ses sous-messages à une cadence Δt fixée
 
 Remarque: en pratique, les sous-messages partent quand leur acquittement a été reçu ou qu'on a attendu celui-ci trop longtemps (on parle alors de _timeout_).
 
-### 2. Situation idéale
+#### Situation idéale
 
 ![](data/ideale.png){: .center} 
 
 Dans cette situation, les sous-messages arrivent tous à destination dans le bon ordre. La transmission est correcte.
 
-### 3. Situation réelle
+#### Situation réelle
 Mais parfois, les choses ne se passent pas toujours aussi bien. Car si on maîtrise parfaitement le timing de l'envoi des sous-messages d'Alice, on ne sait pas combien de temps vont mettre ces sous-messages pour arriver, ni même (attention je vais passer dans un tunnel) s'ils ne vont pas être détruits en route.
 
 ![](data/realite.png){: .center} 
 
 Le sous-message M0 est arrivé après le M1, le message M2 n'est jamais arrivé...
 
-Que faire ?
+#### Que faire ?
 
 Écartons l'idée de numéroter les sous-messages, afin que Bob puisse remettre dans l'ordre les messages arrivés, ou même redemander spécifiquement des sous-messages perdus. C'est ce que réalise le protocole TCP (couche 4 — transport), c'est très efficace, mais cher en ressources. Essayons de trouver une solution plus basique.
 
-### 3. Solution naïve...
+#### Solution naïve...
 
 Pourquoi ne pas demander à Bob d'envoyer un signal pour dire à Alice qu'il vient bien de recevoir son sous-message ?
 Nous appellerons ce signal ACK (comme _acknowledgement_, traduisible par «accusé de réception»).
@@ -311,14 +364,14 @@ Ce signal ACK permettra à Alice de renvoyer un message qu'elle considérera com
 
 N'ayant pas reçu le ACK consécutif à son message M1, Alice suppose (avec raison) que ce message n'est pas parvenu jusqu'à Bob, et donc renvoie le message M1.
 
-### 4. Mais peu efficace...
+#### Mais peu efficace...
 
 ![](data/naivebad.png){: .center} 
 
 Le deuxième ACK de Bob a mis trop de temps pour arriver (ou s'est perdu en route) et donc Alice a supposé que son sous-message M1 n'était pas arrivé. Elle l'a donc renvoyé, et Bob se retrouve avec deux fois le sous-message M1. La transmission est incorrecte. 
 En faisant transiter un message entre Bob et Alice, nous multiplions par 2 la probabilité que des problèmes techniques de transmission interviennent. Et pour l'instant rien ne nous permet de les détecter.
 
-### 5. Bob prend le contrôle
+### 4.2. Bob prend le contrôle (protocole du bit alterné)
 
 Bob va maintenant intégrer une méthode de validation du sous-message reçu. Il pourra décider de le garder ou de l'écarter. Le but est d'éviter les doublons.
 
@@ -335,25 +388,25 @@ Bob, de son côté, va contrôler la validité de ce qu'il reçoit : il ne garde
 
 Observons ce protocole dans plusieurs cas :
 
-##### 5.1 Cas où le sous-message est perdu
+##### Cas où le sous-message est perdu
 
 ![](data/alt2.png){: .center} 
 
 
 
-##### 5.2 Cas où le ACK  est perdu
+##### Cas où le ACK  est perdu
 ![](data/alt1.png){: .center} 
 
 Le protocole a bien détecté le doublon du sous-message M1.
 
-##### 5.3 Cas où un sous-message est en retard
+##### Cas où un sous-message est en retard
 
 ![](data/alt3.png){: .center} 
 
 Le protocole a bien détecté le doublon du sous-message M1... mais que se passerait-il si notre premier sous-message M1 était _encore plus_ en retard ?
 
 
-### 6. Conclusion
+### 4.3. Conclusion
 Le protocole du bit alterné a longtemps été utilisé au sein de la couche 2 du modèle OSI (distribution des trames Ethernet). Simple et léger, il peut toutefois être facilement mis en défaut, ce qui explique qu'il ait été remplacé par des protocoles plus performants.
 
 
