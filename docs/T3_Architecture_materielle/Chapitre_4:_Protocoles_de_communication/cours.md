@@ -48,13 +48,6 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
 !!! warning "Attention à ne pas confondre"
     Le Web est aujourd'hui tellement populaire que beaucoup utilisent les termes "Internet" et "Web" comme des synonymes. C'est une erreur ! Le Web n'est qu'un locataire parmi d'autres dans l'immeuble Internet.
 
-!!! info "En résumé"
-    - Internet c'est l'infrastructure (le réseau physique et ses protocoles).
-    - Le Web c'est ce que vous voyez dans votre navigateur (les pages et les sites).
-    - Les autres services (email, messagerie, jeux...) utilisent aussi Internet, mais sans passer par votre navigateur.
-
-
-![](data/i_invented.png){: .center width=50%}
 
 ### 1.3 Les protocoles
 
@@ -68,7 +61,6 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
 !!! info "L'Hypertext Transfer Protocol (HTTP) (Protocole de transfert hypertexte)"
     - Protocole de base qui autorise le transfert de fichiers sur le web, typiquement entre un navigateur web et un serveur HTTP afin que des utilisateurs puissent les consulter. 
     - Le web a été inventé en 1989 par le physicien britannique Tim Berners-Lee, qui travaillait alors au CERN (Organisation européenne pour la recherche nucléaire) en Suisse. Berners-Lee a développé le langage HTML (Hypertext Markup Language) pour créer des pages web et le protocole HTTP (Hypertext Transfer Protocol) pour permettre la transmission de ces pages sur Internet.
-
 
 
 
@@ -89,6 +81,13 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
 !!! info "Protocole de résolution d'adresse (en anglais Address Resolution Protocol)."
     - Le protocole ARP permet de connaître l'adresse physique d'une carte réseau correspondant à une adresse IP, c'est pour cela qu'il s'appelle Protocole de résolution d'adresse (en anglais ARP signifie Address Resolution Protocol).
 
+!!! info "En résumé"
+    - Internet c'est l'infrastructure (le réseau physique et ses protocoles).
+    - Le Web c'est ce que vous voyez dans votre navigateur (les pages et les sites).
+    - Les autres services (email, messagerie, jeux...) utilisent aussi Internet, mais sans passer par votre navigateur.
+
+
+![](data/i_invented.png){: .center width=50%}
 
 
 ## 2. Les modèles internet en couches
