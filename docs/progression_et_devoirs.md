@@ -289,7 +289,20 @@
     
    
 
-         
+!!! done "séance 41 (mardi 10/03/2026):"
+    - Architecture d'un réseau
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+    
+
+!!! done "séance 42 (jeudi 12/03/2026):"
+    - T3 > chapitre 4 Protocoles de communication dans un réseau
+    - Exercice de bac
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+        - Commencer à réviser le contrôle prévu mardi 24 mars (**T2 > chap 4 et 5** ainsi que **T3 > chap 4**)
+       
            
 
         
