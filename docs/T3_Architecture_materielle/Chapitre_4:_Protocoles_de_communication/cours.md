@@ -83,7 +83,7 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
 
 
 !!! info "Internet Control Message Protocol (Protocole de message de contrôle sur Internet), ou ICMP"
-    - L’un des protocoles fondamentaux constituant la suite des protocoles Internet. C'est un protocole de couche réseau (couche n° 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission. ICMP permet de transporter des messages de contrôle et d’erreur pour qu'une machine émettrice sache qu'il y a eu un incident de réseau, par exemple lorsqu’un service ou un hôte est inaccessible. La commande `Ping` est un exemple d'application utilisant des messages de contrôle ICMP.
+    - C'est un protocole de couche réseau (couche n° 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission. ICMP permet de transporter des messages de contrôle et d’erreur pour qu'une machine émettrice sache qu'il y a eu un incident de réseau, par exemple lorsqu’un service ou un hôte est inaccessible. La commande `Ping` est un exemple d'application utilisant des messages de contrôle ICMP.
 
 
 !!! info "Protocole de résolution d'adresse (en anglais Address Resolution Protocol)."
