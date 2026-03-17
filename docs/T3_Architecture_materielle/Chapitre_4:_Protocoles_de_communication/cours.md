@@ -87,7 +87,7 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
 
 
 !!! info "Protocole de résolution d'adresse (en anglais Address Resolution Protocol)."
-    - Le protocole ARP a un rôle phare parmi les protocoles de la couche Internet de la suite TCP/IP, car il permet de connaître l'adresse physique d'une carte réseau correspondant à une adresse IP, c'est pour cela qu'il s'appelle Protocole de résolution d'adresse (en anglais ARP signifie Address Resolution Protocol).
+    - Le protocole ARP permet de connaître l'adresse physique d'une carte réseau correspondant à une adresse IP, c'est pour cela qu'il s'appelle Protocole de résolution d'adresse (en anglais ARP signifie Address Resolution Protocol).
 
 
 
