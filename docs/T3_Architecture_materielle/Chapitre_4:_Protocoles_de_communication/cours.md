@@ -56,6 +56,39 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
 
 ![](data/i_invented.png){: .center width=50%}
 
+### 1.3 Les protocoles
+
+
+!!! info "La suite des protocoles Internet"
+    - C'est l'ensemble des protocoles utilisés pour le transfert des données sur Internet. Elle est aussi appelée suite TCP/IP, d'après le nom de ses deux premiers protocoles : TCP (de l'anglais Transmission Control Protocol) et IP (de l'anglais Internet Protocol). Ils ont été inventés de façon conceptuelle en 1974 par **Vinton G. Cerf** et **Bob Kahn**.
+
+
+
+
+!!! info "L'Hypertext Transfer Protocol (HTTP) (Protocole de transfert hypertexte)"
+    - Protocole de base qui autorise le transfert de fichiers sur le web, typiquement entre un navigateur web et un serveur HTTP afin que des utilisateurs puissent les consulter. 
+    - Le web a été inventé en 1989 par le physicien britannique Tim Berners-Lee, qui travaillait alors au CERN (Organisation européenne pour la recherche nucléaire) en Suisse. Berners-Lee a développé le langage HTML (Hypertext Markup Language) pour créer des pages web et le protocole HTTP (Hypertext Transfer Protocol) pour permettre la transmission de ces pages sur Internet.
+
+
+
+
+!!! info "File Transfer Protocol (protocole de transfert de fichier), ou FTP"
+    - Protocole de communication destiné au partage de fichiers sur un réseau TCP/IP. 
+
+
+!!! info "Internet Protocol (protocole internet), ou IP" 
+    - Les protocoles IP assurent l'acheminement des paquets. Ils ne se préoccupent pas du contenu des paquets, mais fournissent une méthode pour les mener à destination. Lorsque deux terminaux communiquent entre eux via ce protocole, aucun chemin pour le transfert des données n'est établi à l'avance : il est dit que le protocole est « non orienté connexion ».
+    - En matière de fiabilité, le seul service offert par un protocole IP est de s'assurer que les en-têtes de paquets transmis ne comportent pas d'erreurs grâce à l'utilisation de somme de contrôle (checksum). Si l'en-tête d'un paquet comprend une erreur, sa somme de contrôle ne sera pas valide et le paquet sera détruit sans être transmis. 
+    - Les garanties non offertes par un protocole IP (corruption de données, ordre d'arrivée des paquets, perte ou destruction de paquets, duplication des paquets) sont déléguées aux protocoles de niveau supérieur. La raison principale de cette absence de gestion de la fiabilité est la volonté de réduire le niveau de complexité des routeurs et ainsi de leur permettre de disposer d'une plus grande rapidité. L'intelligence est alors déportée vers les points d'extrémité du réseau.
+
+
+!!! info "Internet Control Message Protocol (Protocole de message de contrôle sur Internet), ou ICMP"
+    - L’un des protocoles fondamentaux constituant la suite des protocoles Internet. C'est un protocole de couche réseau (couche n° 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission. ICMP permet de transporter des messages de contrôle et d’erreur pour qu'une machine émettrice sache qu'il y a eu un incident de réseau, par exemple lorsqu’un service ou un hôte est inaccessible. La commande `Ping` est un exemple d'application utilisant des messages de contrôle ICMP.
+
+
+!!! info "Protocole de résolution d'adresse (en anglais Address Resolution Protocol)."
+    - Le protocole ARP a un rôle phare parmi les protocoles de la couche Internet de la suite TCP/IP, car il permet de connaître l'adresse physique d'une carte réseau correspondant à une adresse IP, c'est pour cela qu'il s'appelle Protocole de résolution d'adresse (en anglais ARP signifie Address Resolution Protocol).
+
 
 
 ## 2. Les modèles internet en couches
@@ -85,9 +118,6 @@ Lorsque ce même message sera réceptionné, les transformations seront effectu�
 
 
 
-
-!!! info "La suite des protocoles Internet"
-    - C'est l'ensemble des protocoles utilisés pour le transfert des données sur Internet. Elle est aussi appelée suite TCP/IP, d'après le nom de ses deux premiers protocoles : TCP (de l'anglais Transmission Control Protocol) et IP (de l'anglais Internet Protocol). Ils ont été inventés de façon conceptuelle en 1974 par **Vinton G. Cerf** et **Bob Kahn**.
 
 
 ![image](data/Cerf_Kahn.jpg){: .center width=40% .rounded-corners}
@@ -124,57 +154,26 @@ Lorsque ce même message sera réceptionné, les transformations seront effectu�
 ### Couches application-présentation-session (couches 7-6-5) 
 Ces couches (réunies dans le modèle Internet en une couche unique «application» ) regroupent les protocoles nécessaires à la bonne mise en forme d'un message (au sens large) avant sa transmission. Ces protocoles peuvent être de nature très différente : protocole HTTP pour la transmisson de pages web, protocole FTP pour le transfert de fichiers, protocoles POP ou IMAP pour le courrier électronique...
 
-
-
-!!! info "L'Hypertext Transfer Protocol (HTTP) (Protocole de transfert hypertexte)"
-    - Protocole de base qui autorise le transfert de fichiers sur le web, typiquement entre un navigateur web et un serveur HTTP afin que des utilisateurs puissent les consulter. 
-    - Le web a été inventé en 1989 par le physicien britannique Tim Berners-Lee, qui travaillait alors au CERN (Organisation européenne pour la recherche nucléaire) en Suisse. Berners-Lee a développé le langage HTML (Hypertext Markup Language) pour créer des pages web et le protocole HTTP (Hypertext Transfer Protocol) pour permettre la transmission de ces pages sur Internet.
-
-
-
-
-!!! info "File Transfer Protocol (protocole de transfert de fichier), ou FTP"
-    - Protocole de communication destiné au partage de fichiers sur un réseau TCP/IP. 
-
-
-
-
 ### Couche transport (couche 4)   
 Le protocole majeur de cette couche est le protocole TCP :
     - il s'assure par SYN-ACK que l'émetteur et le récepteur sont prêts à échanger des messages. 
     - il découpe en segments numérotés le message à transmettre (côté émetteur) ou bien recompose le message total en remettant les segments dans l'ordre (côté récepteur).    
 Les éléments échangés avec la couche inférieure sont des **segments**.
 
-
 ### Couche réseau (couche 3)   
 Cette couche est la seule à être directement concernée par la topologie du réseau. La couche réseau construit une voie de communication de bout à bout. **Elle utilise les adresses IP (Internet Protocol) pour  identifier les machines sur le réseau internet.** C'est la couche où chaque segment numéroté est encapsulé dans un paquet qui, suivant le protocole IP, va contenir son adresse source et son adresse de destination. **C'est à ce niveau que se décide si le message doit rester dans le réseau local ou être envoyé sur un autre réseau via la passerelle du routeur.** C'est aussi la dernière couche supportée par toutes les machines du réseau pour le transport des données utilisateur : les couches supérieures sont réalisées uniquement dans les machines d'extrémité.  
 Les éléments échangés avec la couche inférieure sont des **paquets**.
-
-
-!!! info "Internet Protocol (protocole internet), ou IP" 
-    - Les protocoles IP assurent l'acheminement des paquets. Ils ne se préoccupent pas du contenu des paquets, mais fournissent une méthode pour les mener à destination. Lorsque deux terminaux communiquent entre eux via ce protocole, aucun chemin pour le transfert des données n'est établi à l'avance : il est dit que le protocole est « non orienté connexion ».
-    - En matière de fiabilité, le seul service offert par un protocole IP est de s'assurer que les en-têtes de paquets transmis ne comportent pas d'erreurs grâce à l'utilisation de somme de contrôle (checksum). Si l'en-tête d'un paquet comprend une erreur, sa somme de contrôle ne sera pas valide et le paquet sera détruit sans être transmis. 
-    - Les garanties non offertes par un protocole IP (corruption de données, ordre d'arrivée des paquets, perte ou destruction de paquets, duplication des paquets) sont déléguées aux protocoles de niveau supérieur. La raison principale de cette absence de gestion de la fiabilité est la volonté de réduire le niveau de complexité des routeurs et ainsi de leur permettre de disposer d'une plus grande rapidité. L'intelligence est alors déportée vers les points d'extrémité du réseau.
-
-
-!!! info "Internet Control Message Protocol (Protocole de message de contrôle sur Internet), ou ICMP"
-    - L’un des protocoles fondamentaux constituant la suite des protocoles Internet. C'est un protocole de couche réseau (couche n° 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission. ICMP permet de transporter des messages de contrôle et d’erreur pour qu'une machine émettrice sache qu'il y a eu un incident de réseau, par exemple lorsqu’un service ou un hôte est inaccessible. La commande `Ping` est un exemple d'application utilisant des messages de contrôle ICMP.
 
 ### Couche liaison (couche 2)   
 Les adresses MAC sont utilisées pour relier les machines au réseau d'où le nom de couche liaison. Suivant le protocole de la couche 1 (Ethernet, wifi ou autre), les informations sont transmises d'une carte réseau à une autre, grâce à leur adresse MAC (Media Access Controler).  
 Les éléments échangés avec la couche inférieure sont des **trames**.  
 C'est l'encapsulation finale du message. 
 
-
 ### Couche physique (couche 1) 
 C'est la couche où le message est transmis physiquement d'un point à un autre. Par signal lumineux (fibre optique), par ondes (wifi), par courant électrique (Ethernet)... Les éléments transmis sont les **bits**. 
 
  
-
-
 Lors de son parcours, une trame peut être partiellement décapsulée et remonter à la couche 3, avant de redescendre et de continuer son chemin. C'est le cas notamment lors du passage dans un routeur. Mais jamais, lors de son acheminement, le contenu réel du message n'est ouvert : les paquets transmis sont acheminés de manière identique, qu'ils contiennent les éléments constitutifs d'une vidéo YouTube ou d'un email à votre cousin.  
-
-
 
 
 Ce principe fondateur, actuellement menacé par certains acteurs politiques et industriels, est connu sous l'expression **«la neutralité du net»**.
@@ -203,10 +202,6 @@ Vous pouvez télécharger le fichier [ping_switch.fls](data/ping_switch.fls).
 ![](data/K4.png){: .center}   
 
 Cette première ligne est une requête **ARP**. ARP est un protocole qui s'interface entre la couche 3 / réseau (appelée dans la capture d'écran _Internet_)  et la couche 2 / liaison (appelée dans la capture d'écran _Réseau_). Comme indiqué dans le commentaire, elle consiste à un appel à tout le réseau : "Est-ce que quelqu'un ici possède l'IP ```192.168.0.11``` ?
-
-!!! info "Protocole de résolution d'adresse (en anglais Address Resolution Protocol)."
-    - Le protocole ARP a un rôle phare parmi les protocoles de la couche Internet de la suite TCP/IP, car il permet de connaître l'adresse physique d'une carte réseau correspondant à une adresse IP, c'est pour cela qu'il s'appelle Protocole de résolution d'adresse (en anglais ARP signifie Address Resolution Protocol).
-
 
 
 
