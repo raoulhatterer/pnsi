@@ -22,7 +22,43 @@ Internet désigne l'infrastructure technique mondiale qui permet la communicatio
 
 Petite histoire : Les prémices d'Internet remontent aux années 1960 avec ARPANET, mais le véritable Internet (basé sur TCP/IP) est né en 1983.
 
-### 1.2 Le Web est un service parmi d'autres sur Internet
+
+### 1.2 Petite chronologie pour clarifier la naissance d'Internet
+
+#### 1960-1969 : La préhistoire
+
+- 1962-1968 : Théorie de la commutation de paquets (Leonard Kleinrock, Paul Baran, Donald Davies)
+- 1969 : Création d'ARPANET (4 nœuds : UCLA, Stanford, UCSB, Utah)
+
+#### 1970-1973 : Les protocoles propriétaires
+
+- ARPANET utilise le NCP (Network Control Program), son propre protocole
+- D'autres réseaux existent : ALOHAnet (Hawaï), CYCLADES (France), Telenet (commercial)
+
+#### 1974 : La naissance conceptuelle
+
+
+
+
+![image](data/Cerf_Kahn.jpg){: .center width=40% .rounded-corners}
+
+
+
+- Publication de l'article sur TCP par Cerf et Kahn
+- Mais TCP/IP n'est pas encore implémenté !
+
+#### 1983 : La vraie naissance d'Internet
+
+- Le 1er janvier 1983, ARPANET bascule officiellement de NCP vers TCP/IP
+- C'est là qu'Internet naît vraiment comme interconnexion de réseaux hétérogènes
+
+
+Avant TCP/IP, chaque réseau parlait son propre langage. Ces réseaux ne pouvaient pas se parler entre eux. Pour interconnecter des réseaux différents, il fallait un protocole commun : TCP/IP.
+
+
+
+
+### 1.3 Le Web est un service parmi d'autres sur Internet
 
 Le World Wide Web (www) est un service de contenu qui utilise Internet comme support. Il a été inventé en 1989 par Tim Berners-Lee au CERN.
 
@@ -49,7 +85,11 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
     Le Web est aujourd'hui tellement populaire que beaucoup utilisent les termes "Internet" et "Web" comme des synonymes. C'est une erreur ! Le Web n'est qu'un locataire parmi d'autres dans l'immeuble Internet.
 
 
-### 1.3 Les protocoles
+
+
+
+
+### 1.4 Les protocoles
 
 
 !!! info "La suite des protocoles Internet"
@@ -107,68 +147,48 @@ Remarque: Ce sont des modèles théoriques et d'une certaine rigidité. Leur uti
 
 Dans la suite de ce cours, nous évoquerons les couches par leur numéro dans le modèle OSI.
 
+
+### 2.1 Principe
+
 Lors de son émission, un message va subir successivement toutes les transformations effectuées par chaque couche, depuis sa création (couche 7) jusqu'à sa transmission physique (couche 1).  
 
 Lorsque ce même message sera réceptionné, les transformations seront effectuées dans l'ordre inverse, jusqu'à la présentation du message au destinataire.
 
 
 
-[![image](data/memeOSI.jpeg){: .center width=5%}](data/memeOSI.jpeg){. target="_blank"}
+[![image](data/memeOSI.jpeg){: .center width=40%}](data/memeOSI.jpeg){. target="_blank"}
+
+
+### 2.2 Le modèle OSI enfin compris grâce à une vraie panne réseau
 
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yfxhERGbQ98?si=bZXXyA5B_hVSsL2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+La vidéo est informative. Les commandes saisies par Sonia ne sont pas à connaître.
 
 
-![image](data/Cerf_Kahn.jpg){: .center width=40% .rounded-corners}
+### 2.3 Les couches
 
-
-??? info "Petite chronologie pour clarifier"
-
-    # 1960-1969 : La préhistoire
-
-    - 1962-1968 : Théorie de la commutation de paquets (Leonard Kleinrock, Paul Baran, Donald Davies)
-    - 1969 : Création d'ARPANET (4 nœuds : UCLA, Stanford, UCSB, Utah)
-
-    # 1970-1973 : Les protocoles propriétaires
-
-    - ARPANET utilise le NCP (Network Control Program), son propre protocole
-    - D'autres réseaux existent : ALOHAnet (Hawaï), CYCLADES (France), Telenet (commercial)
-
-    # 1974 : La naissance conceptuelle
-
-    - Publication de l'article sur TCP par Cerf et Kahn
-    - Mais TCP/IP n'est pas encore implémenté !
-
-    # 1983 : La vraie naissance d'Internet
-
-    - Le 1er janvier 1983, ARPANET bascule officiellement de NCP vers TCP/IP
-    - C'est là qu'Internet naît vraiment comme interconnexion de réseaux hétérogènes
-
-
-    Avant TCP/IP, chaque réseau parlait son propre langage. Ces réseaux ne pouvaient pas se parler entre eux. Pour interconnecter des réseaux différents, il fallait un protocole commun : TCP/IP.
-
-
-
-
-### Couches application-présentation-session (couches 7-6-5) 
+#### Couches application-présentation-session (couches 7-6-5) 
 Ces couches (réunies dans le modèle Internet en une couche unique «application» ) regroupent les protocoles nécessaires à la bonne mise en forme d'un message (au sens large) avant sa transmission. Ces protocoles peuvent être de nature très différente : protocole HTTP pour la transmisson de pages web, protocole FTP pour le transfert de fichiers, protocoles POP ou IMAP pour le courrier électronique...
 
-### Couche transport (couche 4)   
+#### Couche transport (couche 4)   
 Le protocole majeur de cette couche est le protocole TCP :
     - il s'assure par SYN-ACK que l'émetteur et le récepteur sont prêts à échanger des messages. 
     - il découpe en segments numérotés le message à transmettre (côté émetteur) ou bien recompose le message total en remettant les segments dans l'ordre (côté récepteur).    
 Les éléments échangés avec la couche inférieure sont des **segments**.
 
-### Couche réseau (couche 3)   
+#### Couche réseau (couche 3)   
 Cette couche est la seule à être directement concernée par la topologie du réseau. La couche réseau construit une voie de communication de bout à bout. **Elle utilise les adresses IP (Internet Protocol) pour  identifier les machines sur le réseau internet.** C'est la couche où chaque segment numéroté est encapsulé dans un paquet qui, suivant le protocole IP, va contenir son adresse source et son adresse de destination. **C'est à ce niveau que se décide si le message doit rester dans le réseau local ou être envoyé sur un autre réseau via la passerelle du routeur.** C'est aussi la dernière couche supportée par toutes les machines du réseau pour le transport des données utilisateur : les couches supérieures sont réalisées uniquement dans les machines d'extrémité.  
 Les éléments échangés avec la couche inférieure sont des **paquets**.
 
-### Couche liaison (couche 2)   
+#### Couche liaison (couche 2)   
 Les adresses MAC sont utilisées pour relier les machines au réseau d'où le nom de couche liaison. Suivant le protocole de la couche 1 (Ethernet, wifi ou autre), les informations sont transmises d'une carte réseau à une autre, grâce à leur adresse MAC (Media Access Controler).  
 Les éléments échangés avec la couche inférieure sont des **trames**.  
 C'est l'encapsulation finale du message. 
 
-### Couche physique (couche 1) 
+#### Couche physique (couche 1) 
 C'est la couche où le message est transmis physiquement d'un point à un autre. Par signal lumineux (fibre optique), par ondes (wifi), par courant électrique (Ethernet)... Les éléments transmis sont les **bits**. 
 
  
