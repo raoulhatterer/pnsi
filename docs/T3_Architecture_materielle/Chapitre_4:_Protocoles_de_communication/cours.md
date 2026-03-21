@@ -20,10 +20,17 @@ Internet désigne l'infrastructure technique mondiale qui permet la communicatio
 - Un ensemble de protocoles (dont TCP/IP) qui permettent aux données de circuler
 - Le "système routier" numérique qui relie les ordinateurs entre eux
 
-Petite histoire : Les prémices d'Internet remontent aux années 1960 avec ARPANET, mais le véritable Internet (basé sur TCP/IP) est né en 1983.
+!!! info "Internet est né en 1983"
+    Les prémices d'Internet remontent aux années 1960 avec ARPANET, mais **le véritable Internet (basé sur TCP/IP) est né en 1983**.
 
 
 ### 1.2 Petite chronologie pour clarifier la naissance d'Internet
+
+
+![image](data/Cerf_Kahn.jpg){: .center width=40% .rounded-corners}
+
+Avant TCP/IP, chaque réseau parlait son propre langage. Ces réseaux ne pouvaient pas se parler entre eux. Pour interconnecter des réseaux différents, il fallait un protocole commun : TCP/IP.
+
 
 #### 1960-1969 : La préhistoire
 
@@ -37,13 +44,6 @@ Petite histoire : Les prémices d'Internet remontent aux années 1960 avec ARPAN
 
 #### 1974 : La naissance conceptuelle
 
-
-
-
-![image](data/Cerf_Kahn.jpg){: .center width=40% .rounded-corners}
-
-
-
 - Publication de l'article sur TCP par Cerf et Kahn
 - Mais TCP/IP n'est pas encore implémenté !
 
@@ -51,12 +51,6 @@ Petite histoire : Les prémices d'Internet remontent aux années 1960 avec ARPAN
 
 - Le 1er janvier 1983, ARPANET bascule officiellement de NCP vers TCP/IP
 - C'est là qu'Internet naît vraiment comme interconnexion de réseaux hétérogènes
-
-
-Avant TCP/IP, chaque réseau parlait son propre langage. Ces réseaux ne pouvaient pas se parler entre eux. Pour interconnecter des réseaux différents, il fallait un protocole commun : TCP/IP.
-
-
-
 
 ### 1.3 Le Web est un service parmi d'autres sur Internet
 
