@@ -113,8 +113,9 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
     - C'est un protocole de couche réseau (couche n° 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission. ICMP permet de transporter des messages de contrôle et d’erreur pour qu'une machine émettrice sache qu'il y a eu un incident de réseau, par exemple lorsqu’un service ou un hôte est inaccessible. La commande `Ping` est un exemple d'application utilisant des messages de contrôle ICMP.
 
 
-!!! info "Protocole de résolution d'adresse (en anglais Address Resolution Protocol)."
-    - Le protocole ARP permet de connaître l'adresse physique d'une carte réseau correspondant à une adresse IP, c'est pour cela qu'il s'appelle Protocole de résolution d'adresse (en anglais ARP signifie Address Resolution Protocol).
+!!! info "Protocole ARP de résolution d'adresse (en anglais Address Resolution Protocol)."
+    ![image](./data/ARP.jpg){: .center width=50% .rounded-corners}
+    Le protocole ARP permet de connaître l'adresse physique d'une carte réseau correspondant à une adresse IP, c'est pour cela qu'il s'appelle Protocole de résolution d'adresse (en anglais ARP signifie Address Resolution Protocol).
 
 !!! info "En résumé"
     - Internet c'est l'infrastructure (le réseau physique et ses protocoles).
@@ -166,26 +167,71 @@ La vidéo est informative. Les commandes saisies par Sonia ne sont pas à conna�
 ### 2.3 Les couches
 
 #### Couches application-présentation-session (couches 7-6-5) 
-Ces couches (réunies dans le modèle Internet en une couche unique «application» ) regroupent les protocoles nécessaires à la bonne mise en forme d'un message (au sens large) avant sa transmission. Ces protocoles peuvent être de nature très différente : protocole HTTP pour la transmisson de pages web, protocole FTP pour le transfert de fichiers, protocoles POP ou IMAP pour le courrier électronique...
+
+![image](./data/couche567.jpg){: .center .rounded-corners}
+
+![image](./data/application.jpg){: .center width=50% .rounded-corners}
+
+Ces couches (réunies dans le modèle Internet en une couche unique «application» ) regroupent les protocoles nécessaires à la bonne mise en forme d'un message (au sens large) avant sa transmission. 
+
+
+![image](./data/https.jpg){: .center width=50% .rounded-corners}
+
+Ces protocoles peuvent être de nature très différente : 
+
+- protocole HTTP pour la transmisson de pages web, 
+- protocole FTP pour le transfert de fichiers, protocoles POP ou IMAP pour le courrier électronique...
+
+
 
 #### Couche transport (couche 4)   
+
+![image](./data/couche4.jpg){: .center width=50% .rounded-corners}
+
 Le protocole majeur de cette couche est le protocole TCP :
-    - il s'assure par SYN-ACK que l'émetteur et le récepteur sont prêts à échanger des messages. 
-    - il découpe en segments numérotés le message à transmettre (côté émetteur) ou bien recompose le message total en remettant les segments dans l'ordre (côté récepteur).    
+
+- il s'assure par SYN-ACK que l'émetteur et le récepteur sont prêts à échanger des messages. 
+- il découpe en segments numérotés le message à transmettre (côté émetteur) ou bien recompose le message total en remettant les segments dans l'ordre (côté récepteur).    
+
+![image](./data/TCP.jpg){: .center width=50% .rounded-corners}
+
+
 Les éléments échangés avec la couche inférieure sont des **segments**.
 
+
+![image](./data/ICMP_TCP.jpg){: .center width=50% .rounded-corners}
+
+
 #### Couche réseau (couche 3)   
-Cette couche est la seule à être directement concernée par la topologie du réseau. La couche réseau construit une voie de communication de bout à bout. **Elle utilise les adresses IP (Internet Protocol) pour  identifier les machines sur le réseau internet.** C'est la couche où chaque segment numéroté est encapsulé dans un paquet qui, suivant le protocole IP, va contenir son adresse source et son adresse de destination. **C'est à ce niveau que se décide si le message doit rester dans le réseau local ou être envoyé sur un autre réseau via la passerelle du routeur.** C'est aussi la dernière couche supportée par toutes les machines du réseau pour le transport des données utilisateur : les couches supérieures sont réalisées uniquement dans les machines d'extrémité.  
+
+
+Cette couche est la seule à être directement concernée par la topologie du réseau. La couche réseau construit une voie de communication de bout à bout. **Elle utilise les adresses IP (Internet Protocol) pour  identifier les machines sur le réseau internet.** 
+
+![image](./data/couche3.jpg){: .center width=50% .rounded-corners}
+
+C'est la couche où chaque segment numéroté est encapsulé dans un paquet qui, suivant le protocole IP, va contenir son adresse source et son adresse de destination. **C'est à ce niveau que se décide si le message doit rester dans le réseau local ou être envoyé sur un autre réseau via la passerelle du routeur.** 
+
+![image](./data/couche3IP.jpg){: .center width=50% .rounded-corners}
+
+C'est aussi la dernière couche supportée par toutes les machines du réseau pour le transport des données utilisateur : les couches supérieures sont réalisées uniquement dans les machines d'extrémité.  
 Les éléments échangés avec la couche inférieure sont des **paquets**.
 
 #### Couche liaison (couche 2)   
-Les adresses MAC sont utilisées pour relier les machines au réseau d'où le nom de couche liaison. Suivant le protocole de la couche 1 (Ethernet, wifi ou autre), les informations sont transmises d'une carte réseau à une autre, grâce à leur adresse MAC (Media Access Controler).  
+
+Les adresses MAC sont utilisées pour relier les machines au réseau d'où le nom de couche liaison. 
+
+![image](./data/couche2.jpg){: .center width=50% .rounded-corners}
+
+Suivant le protocole de la couche 1 (Ethernet, wifi ou autre), les informations sont transmises d'une carte réseau à une autre, grâce à leur adresse MAC (Media Access Controler).  
 Les éléments échangés avec la couche inférieure sont des **trames**.  
 C'est l'encapsulation finale du message. 
 
-#### Couche physique (couche 1) 
+#### Couche physique (couche 1)
+
+
 C'est la couche où le message est transmis physiquement d'un point à un autre. Par signal lumineux (fibre optique), par ondes (wifi), par courant électrique (Ethernet)... Les éléments transmis sont les **bits**. 
 
+![image](./data/couche1.jpg){: .center width=50% .rounded-corners}
  
 Lors de son parcours, une trame peut être partiellement décapsulée et remonter à la couche 3, avant de redescendre et de continuer son chemin. C'est le cas notamment lors du passage dans un routeur. Mais jamais, lors de son acheminement, le contenu réel du message n'est ouvert : les paquets transmis sont acheminés de manière identique, qu'ils contiennent les éléments constitutifs d'une vidéo YouTube ou d'un email à votre cousin.  
 
