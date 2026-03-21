@@ -87,7 +87,8 @@ Le Web est le service le plus visible, mais Internet permet bien d'autres usages
 
 
 !!! info "La suite des protocoles Internet"
-    - C'est l'ensemble des protocoles utilisés pour le transfert des données sur Internet. Elle est aussi appelée suite TCP/IP, d'après le nom de ses deux premiers protocoles : TCP (de l'anglais Transmission Control Protocol) et IP (de l'anglais Internet Protocol). Ils ont été inventés de façon conceptuelle en 1974 par **Vinton G. Cerf** et **Bob Kahn**.
+    - C'est l'ensemble des protocoles utilisés pour le transfert des données sur Internet. Elle est aussi appelée suite TCP/IP, d'après le nom de ses deux premiers protocoles : TCP (de l'anglais Transmission Control Protocol) et IP (de l'anglais Internet Protocol). 
+    - Ils ont été inventés de façon conceptuelle en 1974 par **Vinton G. Cerf** et **Bob Kahn**.
 
 
 
