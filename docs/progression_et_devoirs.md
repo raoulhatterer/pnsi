@@ -314,6 +314,7 @@
 !!! done "séance 44 (jeudi 26/03/2026):"
     - T4 > Algoritmique 
     ??? note "Devoirs"
+        - Programmer recherche_occurrence (en utilisant range).
         - Réviser régulièrement les cours et les exercices déjà étudiés.
        
     
