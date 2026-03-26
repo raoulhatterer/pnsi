@@ -305,6 +305,18 @@
        
            
 
+!!! done "séance 43 (mardi 24/03/2026):"
+    - Contrôle Bases, Binaire, réseaux
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+       
+           
+!!! done "séance 44 (jeudi 26/03/2026):"
+    - T4 > Algoritmique 
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+       
+    
         
 
 
