@@ -319,6 +319,12 @@
        
     
         
+          
+!!! done "séance 45 (mardi 31/03/2026):"
+    - T4 > Algoritmique > Tri par insertion
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+       
 
 
 
