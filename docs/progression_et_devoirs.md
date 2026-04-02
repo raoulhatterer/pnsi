@@ -325,6 +325,12 @@
     ??? note "Devoirs"
         - Réviser régulièrement les cours et les exercices déjà étudiés.
        
+          
+!!! done "séance 46 (jeudi 02/04/2026):"
+    - T4 > Algoritmique > Tri par sélection
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+       
 
 
 
