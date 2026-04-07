@@ -332,6 +332,16 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés.
        
 
+!!! done "séance 47 (mardi 07/04/2026):"
+    - T4 > Algoritmique > Dichotomie
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+        - Savoir refaire la programation de la dichotomie au moins au niveau 2 étoiles.
+       
+
+
+
+
 
 
 
