@@ -340,6 +340,15 @@
        
 
 
+!!! done "séance 48 (jeudi 09/04/2026):"
+    - Correction du contrôle sur les réseaux
+    - T2 > Chapitre 3 : les dictionaires
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+        - Réviser le contrôle sur l'algorithmique prévu à la rentrée.
+       
+
+
 
 
 
