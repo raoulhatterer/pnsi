@@ -348,6 +348,12 @@
         - Réviser le contrôle sur l'algorithmique prévu à la rentrée.
        
 
+!!! done "séance 49 (lundi 27/04/2026):"
+    - Contrôle sur l'algorithmique
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+
 
 
 
