@@ -168,7 +168,7 @@ Ces méthodes sont importantes (elles figurent explicitement au programme de NSI
         ```
         Créer une fonction `achat(habit)` qui augmente de 1 le nombre d'habits (pantalon, pull ou tee-shirt) de mon dressing.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         dressing = {'pantalons':3, 'pulls':4, 'tee-shirts':8}
@@ -220,7 +220,7 @@ Nous allons résoudre ce problème grâce aux tests d'appartenance.
     === "Énoncé"
         Améliorer la fonction `achat(habit)` en y incluant un test pour prendre en compte les nouveaux habits.
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         def achat(habit):
@@ -243,7 +243,7 @@ Nous allons résoudre ce problème grâce aux tests d'appartenance.
         Créer un dictionnaire qui associera à chaque prénom son nombre d'occurrences dans la liste.
         
     === "Correction"
-        {{ correction(False,
+        {{ correction(True,
         "
         ```python linenums='1'
         occurrence = {}
@@ -261,7 +261,7 @@ Nous allons résoudre ce problème grâce aux tests d'appartenance.
         On considère la liste suivante :
         ```lst = ['5717', '1133', '5545', '4031', '6398', '2734', '3070', '1346', '7849', '7288', '7587', '6217', '8240', '5733', '6466', '7972', '7341', '6616', '5061', '2441', '2571', '4496', '4831', '5395', '8584', '3033', '6266', '2452', '6909', '3021', '5404', '3799', '5053', '8096', '2488', '8519', '6896', '7300', '5914', '7464', '5068', '1386', '9898', '8313', '1072', '1441', '7333', '5691', '6987', '5255']``` 
 
-        Quel est le **chiffre** qui revient le plus fréquemment dans cette liste ?
+        Quel est le **chiffre** (pas le nombre !!) qui revient le plus fréquemment dans cette liste ?
         
     === "Correction"
             {{ correction(False,
