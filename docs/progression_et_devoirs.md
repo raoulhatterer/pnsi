@@ -365,6 +365,7 @@
     - Codage des entiers relatifs
     - Codage des flottants
     ??? note "Devoirs"
+        - Exercice 3 sur les flottants
         - Réviser régulièrement les cours et les exercices déjà étudiés.
 
 
