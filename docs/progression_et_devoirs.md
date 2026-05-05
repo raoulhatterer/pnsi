@@ -363,6 +363,7 @@
 
 !!! done "séance 51 (mardi 05/05/2026):"
     - Codage des entiers relatifs
+    - Codage des flottants
     ??? note "Devoirs"
         - Réviser régulièrement les cours et les exercices déjà étudiés.
 
