@@ -370,6 +370,15 @@
 
 
 
+!!! done "séance 52 (jeudi 07/05/2026):"
+    - Correction du contrôle DS7 algoritmique
+    - Exercice 3 sur le codage des flottants
+    - Algorithmes gloutons
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+
+
 
 
 
