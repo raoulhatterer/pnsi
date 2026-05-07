@@ -375,6 +375,7 @@
     - Exercice 3 sur le codage des flottants
     - Algorithmes gloutons
     ??? note "Devoirs"
+        - Améliorer le Rendu de monnaie qui fonctionnait jusqu'à 3 euros.
         - Réviser régulièrement les cours et les exercices déjà étudiés.
 
 
