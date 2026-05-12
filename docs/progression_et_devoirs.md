@@ -380,6 +380,13 @@
 
 
 
+!!! done "séance 53 (mardi 12/05/2026):"
+    - Encodage des caractères
+    - Algorithmes gloutons
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+
 
 
 
@@ -388,11 +395,6 @@
      
 
 
-    - Exercices 1 à  3
-    ??? note "Devoirs"
-        - Exercice 4 sur le javascript
-        - Préparer contrôle sur le HTML CSS
-        
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Contrôle sur le HTML et le JS
     - Exercice: calculatrice en JS
