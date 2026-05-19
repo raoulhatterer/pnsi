@@ -389,6 +389,13 @@
 
 
 
+!!! done "séance 54 (mardi 19/05/2026):"
+    - Problème du sac à dos
+    - Manipulation de fichiers csv
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+
 
 
 {# 
