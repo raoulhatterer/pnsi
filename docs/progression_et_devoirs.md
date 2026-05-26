@@ -396,6 +396,18 @@
         - Réviser régulièrement les cours et les exercices déjà étudiés.
 
 
+!!! done "séance 55 (jeudi 21/05/2026):"
+    - Manipulation de fichiers csv
+    - Exercice "Le top 14"
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
+
+!!! done "séance 56 (mardi 26/05/2026):"
+    - T3 > Chapitre 5: Découverte des commandes UNIX
+    ??? note "Devoirs"
+        - Réviser régulièrement les cours et les exercices déjà étudiés.
+
 
 
 {# 
