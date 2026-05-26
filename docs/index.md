@@ -55,7 +55,7 @@
 - :arrow_right: [T3 > Architecture réseau > chap3](./T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
 - :arrow_right: [T3 > Architecture réseau > chap4](./T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours.md)
 - :arrow_right: [T2 > Dictionnaires](././T2_Representation_des_donnees/Chapitre_3:_Dictionnaires/cours.md)
-- - :arrow_right: [T4 > Algorithmique > chapitres 1 & 2](./T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
+- :arrow_right: [T4 > Algorithmique > chapitres 1 & 2](./T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
 - :arrow_right: [T4 > Algoritmique > Tri par insertion ](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours/)
 - :arrow_right: [T2 > Representation des données > Le codage des entiers](./T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
 - :arrow_right: [T2 > Representation des données > Le codage des flottants](./T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
