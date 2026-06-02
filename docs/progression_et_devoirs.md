@@ -408,26 +408,17 @@
     ??? note "Devoirs"
         - Réviser régulièrement les cours et les exercices déjà étudiés.
 
+        
+!!! done "séance 57 (mardi 02/06/2025):"
+    - Correction du jeu Terminus (commandes Linux)
+    - T3 > Programmation d'une carte à microcontrôleur (MicroBit)
 
 
 {# 
      
 
 
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
-    - Contrôle sur le HTML et le JS
-    - Exercice: calculatrice en JS
-    ??? note "Devoirs"
-        - Terminer l'exercice calculatrice en JS
-
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
-    - Quand la page est fabriquée à la demande par le serveur
-    - Exercices 6 et 7
-    - Distribution des codes du chalenge passe ton hack d'abord
-    ??? note "Devoirs"
-        - Finir l'exercice 7
-        - Contrôle html + css: j'ai mis les productions d'Arno et d'Adrien dans la partie  `Documents` du site collaboratif pour ceux qui souhaitent voir comment ils ont fait.
-
+  
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - (chap2) Exercice 7: Boîte à secrets
     - (chap2) Exercice 8: Plan de classe
@@ -439,86 +430,10 @@
         - Exercice 1
     - Exercice 9 chap2 : réalisation d'un serveur qui traite la résolution des équations du second degré 
 
-    - [T3 > Architecture réseau > chap3](T3_Architecture_materielle/Chapitre_3:_Architecture_reseau/cours.md)
-    ??? note "Devoirs"
-        - Réviser le contrôle portant sur le thème 6 (sauf javascript)
-!!! done "séance 20 (mardi 04/03/2025):"
-    - Contrôle sur le thème 6
-    - [T3 > Architecture réseau > chap4](T3_Architecture_materielle/Chapitre_4:_Protocoles_de_communication/cours.md)
-    ??? note "Devoirs"
-        - Réviser le protocole du bit alterné
 
-
-    - [T2 > Chapitre5: Les booléens](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
-    - Exercices 1 à 7
-    ??? note "Devoirs"
-        - Apprendre par coeur les tables de vérité des fonctions logiques AND, OR, XOR, NOT, NAND, NOR.
-        - Réviser les calculs à la main avec les opérateurs logiques.
-
-
-    - Correction du contrôle sur le thème 6
-    - Exercice 8 (cryptographie)
-    ??? note "Devoirs"
-        - Finir l'exercice 8 (Q4)
-        - Préparer le contrôle sur le Thème 3 (chapitres 3 et 4)
-
-    - Exercice 8 (cryptographie)
-    - [T2 > Representation des donnees > chap4 (les bases)](T2_Representation_des_donnees/Chapitre_4:_Bases/cours.md)
-    - Contrôle n°8 portant sur les réseaux (le Thème 3 (chapitres 3 et 4))
-    ??? note "Devoirs"
-        - Résoudre l'énigme "À la recherche du personnage mystère" qui suit le cours sur les booléens
-  
-
-    - [T2 > Representation des donnees > chap5 (les booléens) > Image mystère](T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
-    - [T4 > Algorithmique](T4_Algorithmique/Chapitre_1:_Extremums_et_moyennes/cours.md)
-    - T2 > Chapitre 3 : les dictionaires
-    ??? note "Devoirs"
-        - Exercices 3 et 4 sur les dictionaires + donner la complexité de chacun des algorithmes utilisés 
-        - Apprendre par coeur les algorithmes `extremum`, `moyenne` et `recherche_occurence`.
-        - Réviser les booléens (apprendre les tables de vérité du AND du OR et du XOR par coeur) et les algorithmes déjà étudiés (les apprendre par coeur). J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
 
 
  
-
-    - Test : portes logique et algorithmes simples (maximum, moyenne, occurrences)
-    - Correction du contrôle réseau
-    - [T2 > Le codage des entiers](T2_Representation_des_donnees/Chapitre_7:_Codage_entiers/cours.md)
-    - [T2 > Le codage des flottants](T2_Representation_des_donnees/Chapitre_8:_Flottants/cours.md)
-    ??? note "Devoirs"
-        - Réviser le codage des entiers en binaire signé et le codage des réels et par quoi on remplace les tests d'égalité pour les réels. J'interrogerai quelques élèves (test écrit noté pendant environ 1/4 d'heure). 
-
-
-
-    - Test: le codage des entiers en binaire signé et le codage des réels
-    - [T4 > chap3: Tri par permutation (introduction au tri par insertion)](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours.md)
-    - [T4 > chap3: Tri par insertion](T4_Algorithmique/Chapitre_3:_Tri_par_insertion/cours.md)
-    - [T3 > Les commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours.md)
-
-    ??? note "Devoirs"
-        - Préparer un contrôle sur les derniers chapitres (sauf commandes linux): les booléens (les symboles américains et logiques ne sont pas à connaître par cœur), les bases, les dictionaires, le codage des entiers et des réels et les algorithmes déjà étudiés (maximum, moyenne, occurrences, tri par permutation, tri par insertion).
-
-
-    - Fin du jeu Terminus (les commandes Linux)
-    - Contrôle n°9
-    ??? note "Devoirs"
-        - Apprendre les commandes Linux que vous avez relevées lors du jeu Terminus
-        - Pas de cours la semaine prochaine à cause des épreuves du bac professionnel 
-
-
-    - Annulée à cause du bac professionnel
-    ??? note "Devoirs"
-        - Apprendre les commandes Linux que vous avez relevées lors du jeu Terminus    
-
-!!! done "séance 29 (mardi 20/05/2025):"
-    - [T4 > chap5: Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours.md)
-    - [T4 > chap5: Algorithmes gloutons](T4_Algorithmique/Chapitre_6:_Algorithmes_gloutons/cours.md)    
-    ??? note "Devoirs"    
-        - Apprendre l'algorithme de recherche dichotomique dans une liste triée (possiblement j'interrogerai quelques élèves).
-        - Faire l'exercice 3 (Remplir le sac à dos `butin` en utilisant la stratégie gloutonne.)
-
-!!! done "séance 30 (mardi 27/05/2025):"
-    - [T5 Traitement des données > fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours.md)
-    ??? note "Devoirs"
 
 !!! done "séance 31 (mardi 03/06/2025):"
     - T3 > Programmation d'une carte à microcontrôleur (MicroBit)
@@ -529,16 +444,6 @@
 
 
 
-
-
-
-
-!!! done "séance 31 (mardi 03/06/2025):"
-    - T3 > Programmation d'une carte à microcontrôleur (MicroBit)
-    - T3 > Architecture Von Neumann
-    ??? note "Devoirs"
-        - [exercice tri à bulles sur le site e-nsi](https://e-nsi.gitlab.io/pratique/N2/500-tri_bulles/sujet/)
-        - 
 
 #}
 ### À suivre
