@@ -15,8 +15,27 @@ Dans le cas de sites Web modernes et interactifs, les clients (c’est-à-dire l
 Pour la transmission de ces informations au serveur, le protocole HTTP prévoit différentes méthodes de requête. Les deux plus importantes sont **GET** et **POST**. Bien que les deux aboutissent au même résultat, elles sont fondamentalement différentes.
 
 
+## 1. Les formulaires
 
-## 1. La méthode GET
+
+Un formulaire web est une zone interactive d'une page HTML destinée à recueillir des données saisies par l'utilisateur. Ces informations sont transmises à un serveur lors de la validation, généralement par un clic sur un bouton. Cette zone est délimitée par la balise `<form>`, dont les attributs `action` (URL de destination) et `method` (méthode HTTP utilisée) définissent les modalités d'envoi. La balise se ferme par `</form>`.
+
+À l'intérieur du formulaire, les champs de saisie sont principalement créés à l'aide de l'élément `<input>`. L'attribut `type` détermine la nature de la donnée attendue. Les valeurs les plus courantes sont :
+
+- `text` : chaîne de caractères libre ;
+- `password` : mot de passe (masqué à la saisie) ;
+- `number` : valeur numérique ;
+- `range` : sélection d'une valeur numérique via un curseur ;
+- `checkbox` : case à cocher (sélection multiple possible) ;
+- `radio` : bouton radio (sélection unique dans un groupe) ;
+- `button` : bouton générique (sans action par défaut) ;
+- `hidden` : champ invisible, utilisé pour transmettre des données serveur sans affichage à l'écran (exemple : identifiant interne d'un produit dans un site e-commerce) ;
+- `reset` : bouton de réinitialisation du formulaire (rétablit les valeurs par défaut) ;
+- `submit` : bouton d'envoi du formulaire au serveur.
+
+L'attribut `value` définit la valeur initiale du champ, et est pris en charge par la plupart des types d'`<input>`. Enfin, l'attribut `name` est essentiel : il sert d'identifiant pour chaque champ dans les paramètres de la requête envoyée au serveur.
+
+## 2. La méthode GET
 
 Considérons le formulaire suivant, inclus dans une page html ouverte dans le navigateur du client :
 
@@ -51,6 +70,7 @@ On aurait pu aussi avoir un type :
 #### Test :
 1. Rendez-vous sur la page [http://glassus1.free.fr/ex_get.html](http://glassus1.free.fr/ex_get.html){:target="_blank"} et testez un mot de passe.
 2. Observez attentivement l'url de la page sur laquelle vous êtes arrivés. Que remarquez-vous ?
+3. Affichez le code source de la page et  identifiez la méthode utilisée par le formulaire. 
 
 
 #### La méthode GET et la confidentialité :
@@ -81,7 +101,7 @@ Les paramètres passés au serveur par la méthode GET sont transmis **dans l'ur
 
 
 
-## 2. La méthode POST
+## 3. La méthode POST
 
 Dans notre code de formulaire du 1.1, modifions l'attribut ```method```, auparavant égal à ```"get"```. Passons-le égal à ```"post"```  :
 
