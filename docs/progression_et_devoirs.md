@@ -6,17 +6,14 @@
     - [Les conditions matérielles de travail](T7_Divers/1_Conseils_generaux/cours.md)
     - [T1 > chap1 : Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
-        - Installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-        - Enregistrer un fichier `variable.py` contenant les exercices du chapitre sur les variables sur clé USB
-        - Feuille Wims1 sur les variables
-
+        - Revoir ce qui a été vu sur les variables
 
 {# 
 
 !!! done "séance 2 (mardi 09/09/26):"
     - [T1 > chap1 : Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
-        - Si ce n'est pas encore fait: Installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
+        - Installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Enregistrer un fichier `variable.py` contenant les exercices du chapitre sur les variables sur clé USB et le déposer dans vos devoirs
         - Feuille Wims1 sur les variables (attention : les élèves qui n'ont pas fait le travail qui était demandé pour la précédente séance ont un zéro jusqu'à ce que le travail soit fait)
     
