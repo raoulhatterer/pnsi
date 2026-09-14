@@ -8,15 +8,14 @@
     ??? note "Devoirs"
         - Revoir ce qui a été vu sur les variables
 
-{# 
 
-!!! done "séance 2 (mardi 09/09/26):"
-    - [T1 > chap1 : Les variables](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
+
+!!! done "séance 2 (jeudi 10/09/26):"
+    - [T1 > chap1 : Les entrées sorties](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
-        - Installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-        - Enregistrer un fichier `variable.py` contenant les exercices du chapitre sur les variables sur clé USB et le déposer dans vos devoirs
-        - Feuille Wims1 sur les variables (attention : les élèves qui n'ont pas fait le travail qui était demandé pour la précédente séance ont un zéro jusqu'à ce que le travail soit fait)
-    
+        - Revoir le chapitre 1
+
+{# 
     
 !!! done "séance 3 (mardi 08/09/2026):"
     - Test1 sur les variables
@@ -24,6 +23,7 @@
     - Les entrés sorties
     - [T1 > chap2 : La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
     ??? note "Devoirs"
+            - Feuille Wims1 sur les variables (attention : les élèves qui n'ont pas fait le travail qui était demandé pour la précédente séance ont un zéro jusqu'à ce que le travail soit fait)
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Réviser régulièrement les notions déjà étudiées
 
