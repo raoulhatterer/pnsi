@@ -249,57 +249,75 @@ Si nécessaire, on peut le convertir en liste :
 Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **itérable** assimilable à une liste de nombres.  
 
 
-
 !!! example "{{ exercice() }}"
+    
+    Faire afficher les séries de nombres suivantes.
 
-        Faire afficher les séries de nombres suivantes.
-        
-        On utilisera la syntaxe ```print(k, end = ' ')``` ) pour afficher les nombres horizontalement.
+    On utilisera la syntaxe ```print(k, end = ' ')``` ) pour afficher les nombres horizontalement.
 
-        A. ```0 1 2 3 4 5``` 
-        ??? note "Correction"
-            {{ correction(True,
-            "
-            ```python linenums='1'
-            for k in range(6):
-                print(k, end = ' ')
-            ```
-            "
-            ) }}
-        B. ```10 11 12 13 14 15 ``` 
-        ??? note "Correction"
-            {{ correction(True,
-            "        
-            ```python linenums='1'
-            for k in range(10,16):
-                print(k, end = ' ')
-            ```
-            "
-            ) }}
-        C. ```3 6 9 12 ``` 
-        ??? note "Correction"
-            {{ correction(True,
-            "
-            ```python linenums='1'
-            for k in range(3,13,3):
-                print(k, end = ' ')
-            ```
-            "
-            ) }}
-        D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
-        ??? note "Correction"
-            {{ correction(True,
-            "        
-            ```python linenums='1'
-            for k in range(10,-1,-1):
-                print(k, end = ' ')
-            ```
-            "
-            ) }}
+    A. ```0 1 2 3 4 5``` 
+    ??? note "Correction"
+        {{ correction(True,
+        "
+        ```python linenums='1'
+        for k in range(6):
+            print(k, end = ' ')
+        ```
+        "
+        ) }}
+    B. ```10 11 12 13 14 15 ``` 
+    ??? note "Correction"
+        {{ correction(True,
+        "        
+        ```python linenums='1'
+        for k in range(10,16):
+            print(k, end = ' ')
+        ```
+        "
+        ) }}
+    C. ```3 6 9 12 ``` 
+    ??? note "Correction"
+        {{ correction(True,
+        "
+        ```python linenums='1'
+        for k in range(3,13,3):
+            print(k, end = ' ')
+        ```
+        "
+        ) }}
+    D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
+    ??? note "Correction"
+        {{ correction(True,
+        "        
+        ```python linenums='1'
+        for k in range(10,-1,-1):
+            print(k, end = ' ')
+        ```
+        "
+        ) }}
 
-!!! example "{{ exercice() }}"
+
+
+### 4.4 Indice et longueur de chaîne (ou de liste)
+
+Manipuler les chaînes de caractères (ou les listes) à l'aide d'une boucle peut nécessiter de connaître la longueur ou d'accéder à un élément en particulier de la chaîne (ou de la liste). 
+
+!!! tip "À savoir :heart:"
     - La fonction `len(chaine)`retourne la longueur d'une chaîne de caractère. 
+      ```pycon
+      >>> test = "NSI"
+      >>> len(test)
+      ```
+      donne 3
+
     - L'instruction `chaine[indice]` permet d'obtenir la lettre se trouvant à la position `indice` dans `chaine`.
+      ```pycon
+      >>> test[0]
+      ```
+      donne "N"
+
+
+!!! example "{{ exercice() }}"
     
     Comparer les deux méthodes suivantes. Puis proposer un script pour afficher une à une les lettres d'un mot sauf la dernière lettre. 
     === "Méthode 1"
@@ -312,7 +330,7 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
         for indice in range(len(chaine)):
             print(chaine[indice])
         ```
-    === "Correction"
+    === "Correction"{#
         Les deux méthodes proposées affichent la même chose à savoir une lettre après l'autre de la chaîne de caractère. 
         Pour éviter d'afficher la dernière lettre on peut faire:
         {{ correction(True,
@@ -322,7 +340,7 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
             print(chaine[indice])
         ```
         "
-        ) }}
+        ) }}#}
 
 
 

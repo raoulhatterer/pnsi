@@ -15,22 +15,25 @@
     ??? note "Devoirs"
         - Revoir le chapitre 1
 
-{# 
+
     
-!!! done "séance 3 (mardi 08/09/2026):"
-    - Test1 sur les variables
-    - Correction du test1
-    - Les entrés sorties
+!!! done "séance 3 (mardi 15/09/2026):"
     - [T1 > chap2 : La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
+    - Utilisation du debugger dans Spyder
     ??? note "Devoirs"
-            - Feuille Wims1 sur les variables (attention : les élèves qui n'ont pas fait le travail qui était demandé pour la précédente séance ont un zéro jusqu'à ce que le travail soit fait)
-        - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
+        - Feuille Wims1 sur les variables 
+        - Feuille Wims2 sur la boucle for (remarque : en Python % donne le reste de la division euclidienne. Par exemple: 17%5 donne 2 car 17 divisé par 5 donne 3 et il reste 2). 
+        - Exercice 3 du cours à ramener sur clé USB
+        - Si ce n'est pas encore fait, installer Anaconda (ou équivalent) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Réviser régulièrement les notions déjà étudiées
 
 {#
 !!! done "séance 4 (mardi 16/09/26):"
     - [T1 > chap2 : boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
-    - Utilisation du debugger dans Spyder
+
+    - Test1 sur les variables
+    - Correction du test1
+    - Les entrés sorties
 
 
 !!! done "séance 5 (jeudi 18/09/2024):"
