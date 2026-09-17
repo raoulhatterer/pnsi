@@ -27,18 +27,23 @@
         - Si ce n'est pas encore fait, installer Anaconda (ou équivalent) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Réviser régulièrement les notions déjà étudiées
 
+
+!!! done "séance 4 (jeudi 17/09/26):"
+    - [T1 > chap2 : la double boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
+    - Exercices 1 à 3 sur la boucle `for`
+    ??? note "Devoirs"
+        - Feuille Wims2 sur la boucle for (remarque : en Python % donne le reste de la division euclidienne. Par exemple: 17%5 donne 2 car 17 divisé par 5 donne 3 et il reste 2). 
+        - Si ce n'est pas encore fait, installer Anaconda (ou équivalent) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
+        - Réviser régulièrement les notions déjà étudiées (un test est prévu la semaine prochaine)    
+        - Exercice 4 boucle for
+
 {#
-!!! done "séance 4 (mardi 16/09/26):"
-    - [T1 > chap2 : boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
-
-    - Test1 sur les variables
-    - Correction du test1
-    - Les entrés sorties
-
 
 !!! done "séance 5 (jeudi 18/09/2024):"
     - [T1 > chap2 : boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
     - Exercice 1 et 2 sur la boucle for
+    - Test1 sur les variables
+    - Correction du test1
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Réviser régulièrement les notions déjà étudiées
