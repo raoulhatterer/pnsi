@@ -8,15 +8,11 @@
     ??? note "Devoirs"
         - Revoir ce qui a été vu sur les variables
 
-
-
 !!! done "séance 2 (jeudi 10/09/26):"
     - [T1 > chap1 : Les entrées sorties](T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
     ??? note "Devoirs"
         - Revoir le chapitre 1
 
-
-    
 !!! done "séance 3 (mardi 15/09/2026):"
     - [T1 > chap2 : La boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
     - Utilisation du debugger dans Spyder
@@ -27,7 +23,6 @@
         - Si ce n'est pas encore fait, installer Anaconda (ou équivalent) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Réviser régulièrement les notions déjà étudiées
 
-
 !!! done "séance 4 (jeudi 17/09/26):"
     - [T1 > chap2 : la double boucle `for`](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)        
     - Exercices 1 à 3 sur la boucle `for`
@@ -35,7 +30,11 @@
         - Feuille Wims2 sur la boucle for (remarque : en Python % donne le reste de la division euclidienne. Par exemple: 17%5 donne 2 car 17 divisé par 5 donne 3 et il reste 2). 
         - Si ce n'est pas encore fait, installer Anaconda (ou équivalent) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
         - Réviser régulièrement les notions déjà étudiées (un test est prévu la semaine prochaine)    
-        - Exercice 4 boucle for
+        - Exercice 4 boucle for à ramener sur clé USB
+
+
+
+
 
 {#
 
