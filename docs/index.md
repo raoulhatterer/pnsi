@@ -22,29 +22,12 @@
 
 ### :high_brightness: Thème(s) en cours d'étude
 
-- :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
+- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
 
 
 {#
 
 
-
-
-- :arrow_right: [T3 > Von Neuman](T3_Architecture_materielle/Chapitre_2:_Architecture_Von_Neumann/cours/)
-
-
-<!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
-<!-- - Dans le thème3 Architecture matérielle: -->
-<!--     - chapitre 1: Microbit -->
-<!--     - chapitre 2: Architecture Von Neumann -->
-
-#}
-
-### Anciens thèmes traités
-
-
-- :arrow_right: [T1 > Variables & ES](./T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
-- :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
 - :arrow_right: [T1 > La boucle ```#!python while```](./T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.m.md)
 - :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](./T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours.md)
 - :arrow_right: [T1 > Les fonctions](./T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours.md)
@@ -63,7 +46,24 @@
 - :arrow_right: [T4 > Dichotomie](T4_Algorithmique/Chapitre_5:_Dichotomie/cours/)
 - :arrow_right: [T5 > Manipulation de fichiers csv](T5_Traitement_de_donnees/Chapitre_1:_Manipulation_csv/cours/)
 - :arrow_right: [T3 > Architecture matérielle > Commandes Linux](T3_Architecture_materielle/Chapitre_5:_Decouverte_des_commandes_Linux/cours/)
+- :arrow_right: [T3 > Von Neuman](T3_Architecture_materielle/Chapitre_2:_Architecture_Von_Neumann/cours/)
+- :arrow_right: [T3 > Microbit](T3_Architecture_materielle/Chapitre_1:_Microbit/cours/)
 
+
+
+
+
+<!-- - [Projets](./T8_Projets/1_Consignes/consignes/) -->
+<!-- - Dans le thème3 Architecture matérielle: -->
+<!--     - chapitre 1: Microbit -->
+<!--     - chapitre 2: Architecture Von Neumann -->
+
+#}
+
+### Anciens thèmes traités
+
+
+- :arrow_right: [T1 > Variables & ES](./T1_Les_bases_de_Python/Chapitre_1:_Variables/cours.md)
 
 
 ### Programme
