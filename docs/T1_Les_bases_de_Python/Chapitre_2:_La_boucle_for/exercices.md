@@ -52,7 +52,7 @@
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
         ```
-    === "Correction" {# exo2 #}
+    === "Correction"   {# exo2 #}
         1.
         ```python linenums='1'
         sol = ""
@@ -90,7 +90,7 @@
         ```
 
         Cette variable `chaine` est appelée un **accumulateur**.
-    === "Correction"  {#  exo3 #}
+    === "Correction"   {# exo3 #}
         ```python linenums='1'
         chaine = ""
         for lettre in ['b', 'r', 'a', 'v', 'o']:
@@ -98,6 +98,8 @@
 
         print(chaine)
         ```
+    
+
 
 
 !!! example "{{ exercice() }}"
@@ -121,7 +123,7 @@
         mot_secret = ""
         ```
 
-    === "Correction"  {# exo4 #}
+    === "Correction"   {# exo4 #}
         ```python linenums='1'
         mystere = [111, 107, 44, 32, 98, 105, 101, 110, 32, 106, 111, 117, 233]
         mot_secret = ""
@@ -141,7 +143,7 @@
 
         Écrire un programme avec une variable `somme` **accumulateur** (comme à l'exercice 3) qui contiendra la valeur souhaitée en fin de programme.
 
-    === "Correction"  {# exo5 #}
+    === "Correction"   {# exo5 #}
         ```python linenums='1'
         somme = 0
         for k in range(1,1001):
@@ -153,7 +155,7 @@
     === "Énoncé"
     
         Calculer $1\times 2 \times 3 \times \dots 99 \times 100$.
-    === "Correction"  {# exo6 #}
+    === "Correction"   {# exo6 #}
         ```python linenums='1'
         produit = 1
         for k in range(1,100):
