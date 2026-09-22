@@ -330,7 +330,7 @@ Manipuler les chaînes de caractères (ou les listes) à l'aide d'une boucle peu
         for indice in range(len(chaine)):
             print(chaine[indice])
         ```
-    === "Correction"{#
+    === "Correction"{# #}
         Les deux méthodes proposées affichent la même chose à savoir une lettre après l'autre de la chaîne de caractère. 
         Pour éviter d'afficher la dernière lettre on peut faire:
         {{ correction(True,
@@ -340,7 +340,7 @@ Manipuler les chaînes de caractères (ou les listes) à l'aide d'une boucle peu
             print(chaine[indice])
         ```
         "
-        ) }}#}
+        ) }}
 
 
 

@@ -40,7 +40,7 @@ Chaque pixel de cette zone est repérée par des coordonnées dans le repère su
     - `triangle`: permet de tracer un triangle. En paramètres, les coordonnées des sommets.
 
 
-??? note "Exemples"
+??? note "Exemple n°1"
     Copier-coller le code suivant et faire varier les paramètres pour bien les comprendre.
 
     ```python
@@ -61,7 +61,7 @@ Chaque pixel de cette zone est repérée par des coordonnées dans le repère su
     - `strokeWeight`: permet de définir la largeur du pinceau. En paramètre, le nombre de pixel.
     - `fill`: permet de définir la couleur de remplissage de la forme. En paramètres, les trois composantes RGB de la couleur.
     
-??? note "Exemples"
+??? note "Exemple n°2"
     Copier-coller le code suivant et faire varier les paramètres pour bien les comprendre.
 
     ```python
