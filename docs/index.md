@@ -20,6 +20,11 @@
     - Le site [e-nsi](https://e-nsi.gitlab.io/pratique/tags/){:target="_blank"} propose des exercices d'entraînement à la pratique de la programmation en lien avec la spécialité NSI.
     - Pour chaque exercice, on trouve un énoncé, souvent pour créer une fonction, puis des exemples d'application de la fonction. Ensuite, une zone de saisie du code qui est accompagné des premiers tests. Il y a des tests secrets qui permettent ensuite d'accepter (ou valider) votre code.
 
+
+!!! info "Pour utiliser le module P5 avec Capytale"
+    - [alternative pour continuer à utiliser p5](https://capytale.forge.apps.education.fr/basthon/basthon-capytale/parts/noyaux-isoles.html)
+
+
 ### :high_brightness: Thème(s) en cours d'étude
 
 - :arrow_right: [T1 > La boucle ```#!python for ... in ...```](./T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/cours.md)
