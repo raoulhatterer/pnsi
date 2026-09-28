@@ -43,21 +43,23 @@
         - Installer le programme Processing sur votre ordinateur et ajouter la gestion de python. Lire [Quick Start](https://github.com/jdf/processing.py#python-mode-for-processing) qui explique l'installation de python
         - Tester [les deux exemples du cours](T1_Les_bases_de_Python/Chapitre_2:_La_boucle_for/exos_processing.md) et prendre une photo (ou une capture d'écran) avec chacun de ces exemples et la mettre sur clé USB.
 
-{#    
-!!! done "séance 6 (mardi 23/09/2024):"
-    - Test1 sur les variables
-    - Correction du test1
-    
+
+!!! done "séance 6 (jeudi 24/09/2026):"
+    - Test1 sur les variables et la boucle `for`
+    - [T1 > chap3 : La boucle while](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
     ??? note "Devoirs"
+        - Si ce n'est pas encore fait, installer Anaconda (ou équivalent sans IA) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
     
+{#        
 
 !!! done "séance 7 (jeudi 25/09/2025):"
+    - Correction du test1
     ??? note "Devoirs"
         - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
         - Préparer le contrôle n°2  qui portera sur les 2 premiers chapitres (variables, boucle `for`)
     
 !!! done "séance 8 (mardi 30/09/2025):"
-    - [T1 > chap3 : La boucle while](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
+
     - Correction des exercices Processing 
     ??? note "Devoirs"
         - Terminer le dessin de la maison et rendre votre travail sur Capytale
