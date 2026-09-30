@@ -50,15 +50,20 @@
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda (ou équivalent sans IA) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
     
-{#        
+
 
 !!! done "séance 7 (jeudi 25/09/2025):"
     - Correction du test1
+    - Exercice d'évacuation
     ??? note "Devoirs"
+        - Si ce n'est pas encore fait, installer Anaconda (ou équivalent sans IA) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
+
+
+
+{#            
+!!! done "séance 8 (mardi 30/09/2025):"
         - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
         - Préparer le contrôle n°2  qui portera sur les 2 premiers chapitres (variables, boucle `for`)
-    
-!!! done "séance 8 (mardi 30/09/2025):"
 
     - Correction des exercices Processing 
     ??? note "Devoirs"
