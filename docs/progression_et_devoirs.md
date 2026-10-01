@@ -60,22 +60,26 @@
 
 
 
-{#            
-!!! done "séance 8 (mardi 30/09/2025):"
-        - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
-        - Préparer le contrôle n°2  qui portera sur les 2 premiers chapitres (variables, boucle `for`)
 
-    - Correction des exercices Processing 
+!!! done "séance 8 (mardi 30/09/2025):"
+    - [T1 > chap3 : La boucle `while`](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
+    - [T1 > chap3 : Exercice 1  sur la boucle `while`](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/exercices.md)    
     ??? note "Devoirs"
-        - Terminer le dessin de la maison et rendre votre travail sur Capytale
-        - Réviser pour un contrôle portant sur les 2 premiers chapitres (j'ai mis la correction des exercices sur la boucle `for`).
         - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
+        - Exercices 2 et 3 sur la boucle `while` (à ramener sur clé USB).
+
+
+{#            
+
 
 !!! done "séance 9 (jeudi 2/10/2025):"
-    - Contrôle chap 1 et 2
-    - Chap 3 : if else
+        - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
+        - Correction des exercices Processing         
+        - Chap 3 : if else
     ??? note "Devoirs"
         - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
+        - Terminer le dessin de la maison et rendre votre travail sur Capytale
+        - Réviser pour un contrôle portant sur les 2 premiers chapitres (j'ai mis la correction des exercices sur la boucle `for`).
 
 
 
