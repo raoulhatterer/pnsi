@@ -69,7 +69,7 @@
         - Exercices 2 et 3 sur la boucle `while` (à ramener sur clé USB).
 
 
-{#            
+{#         C-c i pour insérer la date   
 
 
 !!! done "séance 9 (jeudi 2/10/2025):"
