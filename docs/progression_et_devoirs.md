@@ -52,7 +52,7 @@
     
 
 
-!!! done "séance 7 (jeudi 25/09/2025):"
+!!! done "séance 7 (mardi 29/09/2026):"
     - Correction du test1
     - Exercice d'évacuation
     ??? note "Devoirs"
@@ -61,7 +61,7 @@
 
 
 
-!!! done "séance 8 (mardi 30/09/2025):"
+!!! done "séance 8 (jeudi 01/10/2026):"
     - [T1 > chap3 : La boucle `while`](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
     - [T1 > chap3 : Exercice 1  sur la boucle `while`](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/exercices.md)    
     ??? note "Devoirs"
