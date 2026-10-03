@@ -66,7 +66,7 @@
     - [T1 > chap3 : Exercice 1  sur la boucle `while`](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/exercices.md)    
     ??? note "Devoirs"
         - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
-        - Exercices 2 et 3 sur la boucle `while` (à ramener sur clé USB).
+        - Exercices 2 et 3 sur la boucle `while` (à ramener sur clé USB si le lycée est ouvert ; sinon le cours se fera en visio).
 
 
 {#         C-c i pour insérer la date   
