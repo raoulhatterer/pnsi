@@ -69,27 +69,31 @@
         - Exercices 2 et 3 sur la boucle `while` (à ramener sur clé USB si le lycée est ouvert ; sinon le cours se fera en visio).
 
 
+
+
+
+!!! done "séance 9 (mardi 06/10/2026):"
+    - Cours en visio.  https://cv-paca.apps.education.fr/meeting/signin/authentifie/5279/hash/53853e3af2c435a9bd19e7e031f228c535159a6c 
+    - Appel en début de séance : élèves tous absents
+    - Création d'un nouveau lien:  https://cv-paca.apps.education.fr/meeting/signin/authentifie/6420/hash/b309b18c20fab6fed39ae54e56c24a86fe45677c
+
+
+
 {#         C-c i pour insérer la date   
 
-
-!!! done "séance 9 (jeudi 2/10/2025):"
-        - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
-        - Correction des exercices Processing         
-        - Chap 3 : if else
-    ??? note "Devoirs"
-        - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
-        - Terminer le dessin de la maison et rendre votre travail sur Capytale
-        - Réviser pour un contrôle portant sur les 2 premiers chapitres (j'ai mis la correction des exercices sur la boucle `for`).
-
-
-
 !!! done "séance 10 (mardi 7/10/2025):"
+    - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
+    - Correction des exercices Processing         
+    - Chap 3 : if else
     - Correction du contrôle chap 1 et 2
     - https://compute-it.toxicode.fr/    
     - Chap 3 : if else elif
     - exercices de la page de cours sur l'instruction conditionnelle If else elif
     ??? note "Devoirs"
         - Faire la feuille 4 de wims sur `if` 
+        - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
+        - Terminer le dessin de la maison et rendre votre travail sur Capytale
+        - Réviser pour un contrôle portant sur les 2 premiers chapitres (j'ai mis la correction des exercices sur la boucle `for`).
 
 
 !!! done "séance 10 (jeudi 9/10/2025):"
