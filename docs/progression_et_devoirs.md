@@ -73,10 +73,23 @@
 
 
 !!! done "séance 9 (mardi 06/10/2026):"
-    - Cours en visio.  https://cv-paca.apps.education.fr/meeting/signin/authentifie/5279/hash/53853e3af2c435a9bd19e7e031f228c535159a6c 
-    - Appel en début de séance : élèves tous absents
+    - Cours en visio.  
+    - Appel en début de séance : élèves tous absents ?!? Lien sûrement défectueux.
     - Création d'un nouveau lien:  https://cv-paca.apps.education.fr/meeting/signin/authentifie/6420/hash/b309b18c20fab6fed39ae54e56c24a86fe45677c
-
+    - Élèves tous présents sauf: 
+        - **Les absents du lycée de la méditerranée sont :**
+        - DEWILDE Camille
+        - DIAS Mathis
+        - NICOLET TEDOLDI Lucas
+        - TALBI Rayan
+        - **Les absents du Lycée Lumière sont :**
+        - BOSSELUT Léo
+        - DUSCHENE Heikel
+        - VINCENT Lorik
+        - VOONG Chi-Linh
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    ??? note "Devoirs"
+        - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
 
 
 {#         C-c i pour insérer la date   
