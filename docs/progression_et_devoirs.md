@@ -92,21 +92,15 @@
         - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
 
 
+
+
+!!! done "séance 10 (jeudi 08/10/2026):"
+    **Séance annulée pour cause d'accueil des élèves au lycée.**
+    
+    Le lycée a prévu d'accueillir à nouveau les élèves en présentiel si la situation le permet. Dans un premier temps, il ne s'agit pas de faire cours, mais simplement d'avoir un échange au sujet de la situation et de son évolution. Jeudi matin, ce sont les premières qui seront accueillies. Jeudi après-midi, les terminales. Et vendredi matin, les élèves de seconde.
+  
 {#         C-c i pour insérer la date   
 
-!!! done "séance 10 (mardi 7/10/2025):"
-    - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
-    - Correction des exercices Processing         
-    - Chap 3 : if else
-    - Correction du contrôle chap 1 et 2
-    - https://compute-it.toxicode.fr/    
-    - Chap 3 : if else elif
-    - exercices de la page de cours sur l'instruction conditionnelle If else elif
-    ??? note "Devoirs"
-        - Faire la feuille 4 de wims sur `if` 
-        - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
-        - Terminer le dessin de la maison et rendre votre travail sur Capytale
-        - Réviser pour un contrôle portant sur les 2 premiers chapitres (j'ai mis la correction des exercices sur la boucle `for`).
 
 
 !!! done "séance 10 (jeudi 9/10/2025):"
@@ -117,6 +111,13 @@
    
    
 !!! done "séance 11 (mardi 14/10/2025):"
+    - Finir les exercices Processing et P5 et les rassembler sur une page  Capytale (code : cfef-4055579)
+    - Correction des exercices Processing         
+    - Chap 3 : if else
+    - Correction du contrôle chap 1 et 2
+    - https://compute-it.toxicode.fr/    
+    - Chap 3 : if else elif
+    - exercices de la page de cours sur l'instruction conditi
     - correction des exercices finir de la page d'exercices If else elif (code capytale 9fee-4323961)    
     - Les fonctions (Thème 1 Chapitre 5) 
     ??? note "Devoirs"
