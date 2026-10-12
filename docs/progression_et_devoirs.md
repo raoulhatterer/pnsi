@@ -68,10 +68,6 @@
         - Faire la feuille 3 de wims sur la boucle `while` pour mardi prochain.
         - Exercices 2 et 3 sur la boucle `while` (à ramener sur clé USB si le lycée est ouvert ; sinon le cours se fera en visio).
 
-
-
-
-
 !!! done "séance 9 (mardi 06/10/2026):"
     - Cours en visio.  
     - Appel en début de séance : élèves tous absents ?!? Lien sûrement défectueux.
@@ -91,14 +87,35 @@
     ??? note "Devoirs"
         - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
 
-
-
-
 !!! done "séance 10 (jeudi 08/10/2026):"
     **Séance annulée pour cause d'accueil des élèves au lycée.**
     
     Le lycée a prévu d'accueillir à nouveau les élèves en présentiel si la situation le permet. Dans un premier temps, il ne s'agit pas de faire cours, mais simplement d'avoir un échange au sujet de la situation et de son évolution. Jeudi matin, ce sont les premières qui seront accueillies. Jeudi après-midi, les terminales. Et vendredi matin, les élèves de seconde.
   
+
+
+!!! done "séance 11 (mardi 13/10/2026):"
+    - Cours en visio. Lien :  https://cv-paca.apps.education.fr/meeting/signin/authentifie/6420/hash/b309b18c20fab6fed39ae54e56c24a86fe45677c
+    - Élèves tous présents sauf: 
+        - **Les absents du lycée de la méditerranée sont :**
+        - 
+        - 
+        - 
+        - 
+        - **Les absents du Lycée Lumière sont :**
+        - 
+        - 
+        - 
+        - 
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    ??? note "Devoirs"
+        - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+
+
+
+
+
+
 {#         C-c i pour insérer la date   
 
 
