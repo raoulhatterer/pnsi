@@ -91,7 +91,8 @@
     **Séance annulée pour cause d'accueil des élèves au lycée.**
     
     Le lycée a prévu d'accueillir à nouveau les élèves en présentiel si la situation le permet. Dans un premier temps, il ne s'agit pas de faire cours, mais simplement d'avoir un échange au sujet de la situation et de son évolution. Jeudi matin, ce sont les premières qui seront accueillies. Jeudi après-midi, les terminales. Et vendredi matin, les élèves de seconde.
-  
+    ??? note "Devoirs"  
+        - Le lycée étant fermé mardi prochain, soyez présent au cours en visio. Lien :  https://cv-paca.apps.education.fr/meeting/signin/authentifie/6420/hash/b309b18c20fab6fed39ae54e56c24a86fe45677c
 
 
 !!! done "séance 11 (mardi 13/10/2026):"
