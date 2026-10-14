@@ -49,17 +49,12 @@
     - [T1 > chap3 : La boucle while](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda (ou équivalent sans IA) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-    
-
 
 !!! done "séance 7 (mardi 29/09/2026):"
     - Correction du test1
     - Exercice d'évacuation
     ??? note "Devoirs"
         - Si ce n'est pas encore fait, installer Anaconda (ou équivalent sans IA) sur votre ordinateur personnel pour disposer de Spyder et de Jupyter NoteBook.
-
-
-
 
 !!! done "séance 8 (jeudi 01/10/2026):"
     - [T1 > chap3 : La boucle `while`](T1_Les_bases_de_Python/Chapitre_3:_La_boucle_while/cours.md)
@@ -106,6 +101,13 @@
         - **Les absents du Lycée Lumière sont :**
         - KASPARIAN Illan
         - VINCENT Lorik
+    ??? note "Devoirs"
+        - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+
+
+!!! done "séance 12 (jeudi 15/10/2026):"
+    - Cours en visio. Lien :  https://cv-paca.apps.education.fr/meeting/signin/authentifie/6420/hash/b309b18c20fab6fed39ae54e56c24a86fe45677c
+    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     ??? note "Devoirs"
         - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
 
