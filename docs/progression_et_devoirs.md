@@ -69,7 +69,6 @@
     - Création d'un nouveau lien:  https://cv-paca.apps.education.fr/meeting/signin/authentifie/6420/hash/b309b18c20fab6fed39ae54e56c24a86fe45677c
     - Élèves tous présents sauf: 
         - **Les absents du lycée de la méditerranée sont :**
-        - DEWILDE Camille
         - DIAS Mathis
         - NICOLET TEDOLDI Lucas
         - TALBI Rayan
@@ -95,19 +94,27 @@
     - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
     - Élèves tous présents sauf: 
         - **Les absents du lycée de la méditerranée sont :**
-        - DEWILDE Camille
+        - BENAMAR Yassine
         - DIAS Mathis
         - TALBI Rayan
         - **Les absents du Lycée Lumière sont :**
+        - DUCHESNE Heyckel 
         - KASPARIAN Illan
-        - VINCENT Lorik
+        - MONET Victor
     ??? note "Devoirs"
         - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
 
 
 !!! done "séance 12 (jeudi 15/10/2026):"
     - Cours en visio. Lien :  https://cv-paca.apps.education.fr/meeting/signin/authentifie/6420/hash/b309b18c20fab6fed39ae54e56c24a86fe45677c
-    - [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    - [T6 > Interactions sur une page web (les feuilles de style)](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    - Élèves tous présents sauf: 
+        - **Les absents du lycée de la méditerranée sont :**
+        - DIAS Mathis
+        - TALBI Rayan
+        - **Les absents du Lycée Lumière sont :**
+        - KASPARIAN Illan
+        - VINCENT Lorik
     ??? note "Devoirs"
         - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
 
