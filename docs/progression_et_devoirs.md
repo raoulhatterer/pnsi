@@ -116,7 +116,7 @@
         - KASPARIAN Illan
         - VINCENT Lorik
     ??? note "Devoirs"
-        - Revoir les pages web en html pur [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+        - Revoir les pages web en html et CSS  [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
 
 
 
