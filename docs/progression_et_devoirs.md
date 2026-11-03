@@ -119,6 +119,13 @@
         - Revoir les pages web en html et CSS  [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
 
 
+!!! done "séance 13 (mardi 03/11/2026):"
+    - [T6 > Interactions sur une page web (les flexbox)](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    - Exercice 2 (à faire sur capytale a90b-12512460)
+    ??? note "Devoirs"
+        - Revoir les pages web en html et CSS  [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+        - Terminer l'exercice 2 sur capytale a90b-12512460
+
 
 
 
