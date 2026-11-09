@@ -126,6 +126,17 @@
         - Revoir les pages web en html et CSS  [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
         - Terminer l'exercice 2 sur capytale a90b-12512460
 
+!!! done "séance 14 (jeudi 05/11/2026):"
+    - Élèves tous absents sauf DIAS Mathis et SIEBENHAAR-JULES Owen
+    
+    Révision python sur le site e-nsi:
+    
+    - [Somme de deux entiers](https://e-nsi.gitlab.io/pratique/N0/001-somme/sujet/)
+    - [Indices ou valeurs ?](https://e-nsi.gitlab.io/pratique/N0/100-indices_valeurs/sujet/)
+    ??? note "Devoirs"
+        - Revoir les pages web en html et CSS  [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+        - Terminer l'exercice 2 sur capytale a90b-12512460
+
 
 
 
