@@ -621,13 +621,13 @@ En CSS, le plus dur est bien souvent de réussir à cibler l'élément dont on v
         - Utilisez la balise `<code> </code>` pour représenter un court fragment de code machine.
 	    - Utilisez `Alt+0151` pour un tiret long sous Windows.  
         - Créez un fichier `tableau.html`et un fichier `style.css ` afin de recréer la page de l'onglet suivant qui explique comment inclure des caractères spéciaux en HTML. Ne pas oublier de mettre en forme les bordures du tableau grâce à la feuille de style.
-        - Publiez ce travail sur Capytale (Exercice4 HTML code 5dba-2681064)
+        - Publiez ce travail sur Capytale (Exercice4 HTML)
 
     === "Page à recréer"
         __Voici une capture d'image de la page que vous devez recréer en HTML et CSS:__
         ![image](data/caracteres+speciaux.png)
     === "Correction"
-    {{ correction(False,
+    {{ correction(True,
     "
         ```html linenums='1'
             <h1>Références d'entités : inclure les caractères spéciaux en HTML</h1>
@@ -740,5 +740,5 @@ En CSS, le plus dur est bien souvent de réussir à cibler l'élément dont on v
     Réalisation d'une page web personnelle
     === "Énoncé"
         - Pour la forme: pour le contenu, écrire un fichier 'html' (ou mieux plusieurs fichiers `html` liés entre eux) sans mettre d'accents pour le nom des fichiers)  et un fichier avec un nom du type `style_prenom.css` pour le style (remplacer `prenom` par votre prénom sans accents). __Utiliser un maximum des balises `html` et des propriétés `css` citées dans les deux aide-mémoires ci-dessus (aide-mémoires que je vous demanderai d'imprimer et d'amener en cours).__ À utiliser impérativement: `class`, `id`, `div` et `span`. 
-        - Pour le fond: présentez-vous, présentez vos parents, les études que vous souhaitez faire et par la suite le métier que vous souhaitez exercer. Présentez aussi votre œuvre culturelle préférée  (livre, film, tableau, musique...), en expliquant pourquoi elle vous a marqué. Faites-nous part de votre animal totem (celui qui correspond le mieux à votre caractère ou à votre sensibilité) en expliquant votre choix. Ajoutez d'autres pages si vous le souhaitez (du moment qu'elles sont personnelles). Terminez par une page  où vous indiquerez, sous forme de tableau, les balises `html` que vous avez utilisées (vous en donnerez aussi l'utilité) et vous ferez de même pour les  styles `css` que vous avez utilisés.
-        - Publiez ce travail sur Capytale (Exercice5 HTML code 2808-2730306). 
+        - Pour le fond: présentez-vous, présentez vos parents, les études que vous souhaitez faire et par la suite le métier que vous souhaitez exercer. Présentez aussi votre œuvre culturelle préférée  (livre, film, tableau, musique...), en expliquant pourquoi elle vous a marqué. Faites-nous part de votre animal totem (celui qui correspond le mieux à votre caractère ou à votre sensibilité) en expliquant votre choix. Ajoutez d'autres pages si vous le souhaitez (du moment qu'elles sont personnelles). Optionnel : Terminez par une page  où vous indiquerez, sous forme de tableau, les balises `html` que vous avez utilisées (vous en donnerez aussi l'utilité) et vous ferez de même pour les  styles `css` que vous avez utilisés.
+        - Publiez ce travail sur Capytale (Exercice5 HTML). 

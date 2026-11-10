@@ -137,6 +137,14 @@
         - Revoir les pages web en html et CSS  [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
         - Terminer l'exercice 2 sur capytale a90b-12512460
 
+!!! done "séance 15 (mardi 10/11/2026):"
+    - [T6 > Interactions sur une page web (les tableaux et les caractères spéciaux)](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+    - Exercice 4
+    ??? note "Devoirs"
+        - Revoir les pages web en html et CSS  [T6 > Interactions sur une page web](T6_IHM_Web/Chapitre_1:_Pages_web_Statiques/cours.md)
+        - Exercice 5 à faire sur capitale
+        - Réviser le contrôle prévu mardi prochain
+        
 
 
 
