@@ -1,4 +1,5 @@
 # Chapitre 4 : Instruction conditionnelle if
+{{ initexo(0)}}
 
 ![image](data/if_else_meme.jpeg){: .center width=50%}
 
@@ -113,7 +114,7 @@ True
 True
 ```
 
-!!! example "Exercice"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         Compter le nombre de voyelles de la phrase ```'cet exercice est prodigieusement ennuyeux'``` 
 
@@ -157,7 +158,7 @@ True
     ```     
 
 
-!!! example "Exercice"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         Afficher la liste de tous les nombres entre 1 et 100 qui sont divisibles à la fois par 2 et par 7. 
     === "Correction"

@@ -145,6 +145,13 @@
         - Exercice 5 à faire sur capitale
         - Réviser le contrôle prévu mardi prochain
         
+!!! done "séance 16 (jeudi 12/11/2026):"
+    - Vérification de l'exercice 5
+    - [T1 > L'instruction conditionnelle ```#!python if```](T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours.md)
+    - Exercice 1 du cours
+    ??? note "Devoirs"
+        - Réviser le contrôle prévu mardi prochain
+        - Imprimer les 2 aides mémoire (html et css)
 
 
 
