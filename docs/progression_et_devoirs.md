@@ -154,6 +154,10 @@
         - Imprimer les 2 aides mémoire (html et css)
 
 
+!!! done "séance 17 (mardi 17/11/2026):"
+    - Contrôle HTML CSS sur Capytale
+    ??? note "Devoirs"
+
 
 
 {#         C-c i pour insérer la date   
