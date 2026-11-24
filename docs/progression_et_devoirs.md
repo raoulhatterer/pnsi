@@ -158,6 +158,26 @@
     - Contrôle HTML CSS sur Capytale
     ??? note "Devoirs"
 
+!!! done "séance 18 (jeudi 19/11/2026):"
+    - [T1 > L'instruction conditionnelle ```#!python if```](./T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours.md)
+    - [https://compute-it.toxicode.fr/](https://compute-it.toxicode.fr/)
+    ??? note "Devoirs"
+        - Terminer  [https://compute-it.toxicode.fr/](https://compute-it.toxicode.fr/)
+
+
+!!! done "séance 19 (mardi 24/11/2026):"
+    - Rattrapage Contrôle HTML CSS sur Capytale
+    - [T1 > exercices sur l'instruction conditionnelle ```#!python if``` ](./T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/exercices.md)
+    - [T1 > Les fonctions](./T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours.md)
+    ??? note "Devoirs"
+    - [T1 > Exercice 2 sur l'instruction conditionnelle ```#!python if``` ](./T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/exercices.md)
+    - Revoir le cours et les exercices déjà corrigés
+    
+    
+
+
+
+
 
 
 {#         C-c i pour insérer la date   
@@ -176,8 +196,6 @@
     - Correction des exercices Processing         
     - Chap 3 : if else
     - Correction du contrôle chap 1 et 2
-    - https://compute-it.toxicode.fr/    
-    - Chap 3 : if else elif
     - exercices de la page de cours sur l'instruction conditi
     - correction des exercices finir de la page d'exercices If else elif (code capytale 9fee-4323961)    
     - Les fonctions (Thème 1 Chapitre 5) 

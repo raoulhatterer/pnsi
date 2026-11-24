@@ -22,13 +22,13 @@
 ### :high_brightness: Thème(s) en cours d'étude
 
 - :arrow_right: [T1 > L'instruction conditionnelle ```#!python if```](./T1_Les_bases_de_Python/Chapitre_4:_L'instruction_conditionnelle_if/cours.md)
+- :arrow_right: [T1 > Les fonctions](./T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours.md)
 
 {#
 
 
 
 
-- :arrow_right: [T1 > Les fonctions](./T1_Les_bases_de_Python/Chapitre_5:_Les_fonctions/cours.md)
 - :arrow_right: [T2 > Les listes](./T2_Representation_des_donnees/Chapitre_1:_Listes/cours.md)
 - :arrow_right: [T2 > Representation des données > chap4 (les bases)](./T2_Representation_des_donnees/Chapitre_4:_Bases/cours.md)
 - :arrow_right: [T2 > Representation des données > chap5 (les booléens)](./T2_Representation_des_donnees/Chapitre_5:_Booleens/cours.md)
